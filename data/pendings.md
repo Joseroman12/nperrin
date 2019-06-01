@@ -16,6 +16,11 @@ If something is not specific or clear, it means I have to think more about that 
 * Make GraphQL wrapper for REST video, repo and server.
 * Prepare talks and workshops.
 
+## Computer
+
+* Format mac.
+* Install suckless programs.
+
 ## Learning
 
 * Makefiles.
