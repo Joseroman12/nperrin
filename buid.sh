@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # this ugly, very ugly
 
 files_append_content='

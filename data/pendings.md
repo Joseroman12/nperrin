@@ -5,6 +5,7 @@ If something is not specific or clear, it means I have to think more about that 
 ## Programming
 
 * Make program to form words from an input of text.
+* Analize facebook data from download.
 * Make program to save like pocket read later sites, with puppeteer.
 * Make program to track hours from an excel and send them to my boss.
 * Make program to convert md to html. Just that. In a low level language.  
@@ -19,6 +20,7 @@ If something is not specific or clear, it means I have to think more about that 
 ## Computer
 
 * Format mac.
+* Link `sh` to `dash`.
 * Install suckless programs and "non GUI" programs.
 
 ## Learning
