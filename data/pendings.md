@@ -8,7 +8,7 @@ If something is not specific or clear, it means I have to think more about that 
 * Make program to save like pocket read later sites, with puppeteer.
 * Make program to track hours from an excel and send them to my boss.
 * Make program to convert md to html. Just that. In a low level language.  
-* Better https://nperrin.io site.
+* Better https://nperrin.io site, see [improvements](/improvements).
 
 ## Educational
 
@@ -19,7 +19,7 @@ If something is not specific or clear, it means I have to think more about that 
 ## Computer
 
 * Format mac.
-* Install suckless programs.
+* Install suckless programs and "non GUI" programs.
 
 ## Learning
 
@@ -35,5 +35,5 @@ If something is not specific or clear, it means I have to think more about that 
 
 ## Completed
 
-* Learn VIM (is like a lot to say "learn", but yes).
+* ~~Learn VIM (is like a lot to say "learn", but yes)~~.
 
