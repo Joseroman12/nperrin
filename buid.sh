@@ -19,16 +19,15 @@ rm -fr ./public/ && mkdir public && cp -R ./static/* ./public
 
 # markdown to html
 build_from_path () {
-    path="${1/data/public}"
+    path="$(echo "$1" |sed 's/data/public/;s/\.md/\.html/')"
     mkdir -p "$(dirname "$path")"
-    path="${path/.md/.html}"
     ./markdown-to-html.js < "$1" > "$path"
 }
 find data/* -name '*.md' | while read -r file; do build_from_path "$file"; done
 
 # create html files for directories
 create_html_file_list () {
-    item_date="$(sed -E 's/(\-)?[a-z].*//' <<< "$1")"
+    item_date="$(echo "$1" |sed -E 's/(\-)?[a-z].*//')"
     item_name="$item_date - $(echo "$1" |sed -E 's/([0-9]*\-)*//' )"
     echo "        <li>
             <a href=\"./$1\">${item_name# - }</a>
