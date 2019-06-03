@@ -6,7 +6,7 @@ Ya sabía lo básico de desarrollo web, pero si quería conseguir un trabajo, te
 
 Hice varios proyectos que terminaron en nada pero me sirvieron para agarrarle un poco más la mano a las herramientas que usaría trabajando. Ahora me arrepiento bastante de nunca haber terminado uno de esos proyectos, aunque todo sirvió.
 
-### La búsqueda
+## La búsqueda
 
 Meses después emprendí la búsqueda de mi primer trabajo como desarrollador. No tenía idea de cómo era el proceso de selección, sin embargo estaba bastante confiado de que iba a poder entrar a cualquier empresa que quisiese, pensando que todas estaban desesperadas por conseguir más desarrolladores y de que yo podía demostrar que tenía potencial (aún sin proyectos para mostrar).
 
@@ -30,20 +30,20 @@ Después para rematar también me aceptaron de la empresa donde hice mi primer c
 
 La empresa donde confirmé tampoco era mala, la gente y el ambiente de trabajo parecían muy buenos. Lo que si me llamó la atención es que no tuve una entrevista técnica muy estricta, para enviar mi CV solamente tuve que responder algunas preguntas técnicas, después hablé un poco con el CTO de la empresa, me hizo algunas preguntas por call, pero nada muy loco. El proceso de selección de esta empresa fue bastante rápido, para la siguiente semana ya estaba trabajando.
 
-### Empezando a trabajar
+## Empezando a trabajar
 
 Las ansias por empezar me distrajeron todo el fin de semana, quería que llegue el lunes y no tenía idea que me esperaba cuando llegue.
 
-Lo que me esperó el primer día fue bastante papeleo, por suerte no era el único que entraba así que me acompañaron otras personas para completar los documentos legales y fue un poco más ameno. Una vez que terminamos con las burocosas nos acompañaron al espacio abierto de trabajo donde estaban todas los programadores, testers, QAs, etc. (trabajando y concentrados), ahí la persona de RRHH que nos acompañaba levantó la voz para que todos paren de trabajar y escuchen cómo ella nos presentaba mientras nosotros 3 nos limitábamos al rol de espectadores, en frente y a la vista de toda la oficina. Una vez terminada la presentación de los 3, todos continuaron por hacer un animado (y algo desincronizado) saludo en conjunto. Me pareció genial y muy original el gesto. Después de esto me mostraron mi escritorio para que instale mi enterno de desarrollo y todo eso.
+Lo que me esperó el primer día fue bastante papeleo, por suerte no era el único que entraba así que me acompañaron otras personas para completar los documentos legales y fue un poco más ameno. Una vez que terminamos con las burocosas nos acompañaron al espacio abierto de trabajo donde estaban todas los programadores, testers, QAs, etc. (trabajando y concentrados), ahí la persona de RRHH que nos acompañaba levantó la voz para que todos paren de trabajar y escuchen cómo ella nos presentaba mientras nosotros 3 nos limitábamos al rol de espectadores, en frente y a la vista de toda la oficina. Una vez terminada la presentación de los 3, todos continuaron por hacer un animado (y algo desincronizado) saludo en conjunto. Me pareció genial y muy original el gesto. Después de esto me mostraron mi escritorio para que instale mi entorno de desarrollo y todo eso.
 
 Al día siguiente hablamos con el CTO, la misma persona con la que había tenido un call en la entrevista, nos conoció un poco y después nos dio para investigar y aprender algunos temas. Así pasaron 2 semanas de capacitación, pero estaba haciendo más de lo mismo que cuando no trabajaba, no estaba asignado a ningún proyecto todavía y quería trabajar, así que empecé a joder un poco (mucho) para que me metan a hacer algo, así es como me asignaron a mi primer proyecto profesional, un sistema interno, con el que estuve 3 meses (o por ahí).
 
 Después me asignaron a otro proyecto, ahora para un cliente de afuera, o sea que tenía que dejar bien a la empresa con lo que hacía, fue una buena experiencia también. Durante unos meses seguí con ese proyecto, pero cada vez un poco menos motivado por diferentes motivos del proyecto y la empresa. Así que faltando unos meses para completar el año en esa empresa decidí renunciar y empezar a trabajar por mi cuenta.
 
-### Aprendizajes
+## Aprendizajes
 
 Hoy en día trabajo como freelance, me sigo viendo con algunos amigos de la empresa, sigo yendo al microcentro y también puedo asegurar que soy mucho más humilde que antes con lo que creo conocer. Cada día sigo aprendiendo cosas nuevas y sorprendiéndome por todas las asunciones en las que me basaba. Aprendí a ser más paciente, empatizar más y comunicarme mejor con otras personas con las que trabajo. Otra cosa muy importante que aprendí fue a manejar la carga de trabajo que hago y manejar las frustraciones que surgían por alguna eventualidad. Todavía tengo bastantes cosas que trabajar, pero no tengo apuro.
 
 Todos estos aprendizajes no solo me ayudaron a trabajar mejor con otros, sino también conmigo.
 
-![After snoop consulting con Norman Perrin en el medio](/img/blog/mi-primer-trabajo/after-snoop.jpeg)*After office de empresa donde trabajé, ya había renunciado. (Soy el del medio).*
+![After snoop consulting con Norman Perrin en el medio](/img/blog/mi-primer-trabajo/after-snoop.jpeg)_After office de empresa donde trabajé, ya había renunciado. (Soy el del medio)._

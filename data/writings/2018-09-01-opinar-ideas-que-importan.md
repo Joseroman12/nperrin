@@ -32,7 +32,7 @@ Y si nunca te corrigen, qué puede pasar?
 
 Probablemente sigas pensando de la misma forma, e incentivado porque pensás que nadie tiene el valor para contra-argumentar lo que pensás.
 
-*“Alarma de pensamiento independiente”*.
+_“Alarma de pensamiento independiente”_.
 Pensás que nadie piensa como vos?
 Probablemente muchas personas piensen así, y quizás estén mal, pero no lo vas a saber.
 
@@ -52,15 +52,15 @@ Aunque no hayas articulado estas ideas antes, probablemente ya las considerabas.
 
 Si todos deberíamos discutir ideas o limitarnos a hacer lo que sabemos hacer mejor es otra discusión. Pero, para mi (siempre lo fue), cuál debería ser el comportamiento esperado al discutir ideas?
 
-* Tener en cuenta lo que escribo (conveniente).
+- Tener en cuenta lo que escribo (conveniente).
 
-* Darse tiempo para reflexionar sobre uno y si su comportamiento es el mejor para lo que quiere.
+- Darse tiempo para reflexionar sobre uno y si su comportamiento es el mejor para lo que quiere.
 
-* Abrir el diálogo.
+- Abrir el diálogo.
 
-* Ser más tolerante.
+- Ser más tolerante.
 
-* Y no tener miedo a opinar (estaría bueno escribir de esto, no es fácil de hacer).
+- Y no tener miedo a opinar (estaría bueno escribir de esto, no es fácil de hacer).
 
 ### Le finit
 

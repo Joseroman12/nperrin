@@ -2,7 +2,7 @@
 
 Una oportunidad de ayudar que surgió de muy poco.
 
-Hace poco en la [WebConf](https://webconf.tech/) que se hizo en Córdoba conocí a [Jessi](https://twitter.com/JessiePenaloza) que me mencionó de un grupo de programadores que querían aprender Git... al usarlo todos los días ofrecí mi ayuda. Me dió el OK y de 1 semana a otra ya me había comprometido a presentar esta herramienta. 
+Hace poco en la [WebConf](https://webconf.tech/) que se hizo en Córdoba conocí a [Jessi](https://twitter.com/JessiePenaloza) que me mencionó de un grupo de programadores que querían aprender Git... al usarlo todos los días ofrecí mi ayuda. Me dió el OK y de 1 semana a otra ya me había comprometido a presentar esta herramienta.
 
 Inicialmente iba a ser una presentación, pero al no ser tantos, terminamos haciendo un [workshop o guía](/tech/2019-05-18-guia-introduccion-a-git) que preparé.
 
@@ -21,4 +21,3 @@ Y para el segundo meetup tuvimos alto host gracias a [picante verde](https://pic
 Este grupo recién está empezando así que no tiene una estructura todavía. Espero noticias de ellos.
 
 Y gracias por la buena onda.
-

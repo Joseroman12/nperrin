@@ -10,7 +10,6 @@ To navigate thought the site, I recommend using [vimium](https://chrome.google.c
 
 There isn't one. I just wanted to worry less about design decisions.
 
-I even copied the css for [this guy](http://bettermotherfuckingwebsite.com/), and the table styles from GitHub markdown pages.
+I even copied the css for [this guy](http://bettermotherfuckingwebsite.com/), and the table styles from GitHub markdown pages. This is the [only css I use](/styles.css).
 
-Although the design is very simple, I'll make some [improvements](./improvements) to the site, but the main "philosophy" will mantain the same.
-
+Although the design is very simple, I'll make some [improvements](/site-improvements) to the site, but the main "philosophy" will maintain the same.

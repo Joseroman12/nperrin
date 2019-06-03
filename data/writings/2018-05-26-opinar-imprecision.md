@@ -32,11 +32,9 @@ El conocimiento previo que tenía es un conjunto de ideas que llegaron a ser con
 
 Entonces resumiendo hasta ahora vimos que una experiencia puede ser imprecisa por:
 
-* Fundamentos aprendidos.
-
-* Perspectiva incompleta.
-
-* Interpretación (conocimiento previo + experiencia).
+- Fundamentos aprendidos.
+- Perspectiva incompleta.
+- Interpretación (conocimiento previo + experiencia).
 
 Y recién empezamos.
 
@@ -70,7 +68,7 @@ Sobre los círculos cercanos y los grupos sociales es un tema aparte del que voy
 
 Es fácil pensar que deberíamos ser más críticos con lo que tomamos como verdades para nuestros fundamentos, que incluso tendríamos que ser críticos con lo que experimentamos, pero la realidad es que la mayoría no tiene ganas para aplicar el esfuerzo para hacerlo (me incluyo fuertemente en esta).
 
-Quiero decir, con el poco tiempo o nulo que nos damos para reflexionar sobre un tema, quién va a poner esfuerzo para ponerse a preguntarse el *porqué del porqué del porqué*?.
+Quiero decir, con el poco tiempo o nulo que nos damos para reflexionar sobre un tema, quién va a poner esfuerzo para ponerse a preguntarse el _porqué del porqué del porqué_?.
 
 No es difícil llegar a la conclusión de que es más fácil trabajar una opinión desde una verdad de nivel anterior (recordando por ejemplo que ley de gravedad sería una verdad de nivel bajo), que además a eso agregarle el analizar todas las verdades anteriores de la que se basa.
 
@@ -81,6 +79,7 @@ Entonces… Todo lo que hablamos. Para qué?
 ![mano a mano con darín](/img/writings/mano-a-mano-darin.jpeg)
 
 Según las condiciones actuales, por ahora no vamos a poner más esfuerzo en ser más críticos. Pero… y esta conclusión es la parte más importante de todo:
+
 > Entendiendo nuestras imprecisiones podríamos estar más abiertos a descartar una idea y entender que no existe una verdad absoluta, lo que nos va a llevar a ser más tolerantes y nos llevaría a tener discusiones más productivas.
 
 ![ok](/img/writings/ok.gif)
