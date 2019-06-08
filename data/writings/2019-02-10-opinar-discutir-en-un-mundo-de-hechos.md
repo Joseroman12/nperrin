@@ -20,7 +20,7 @@ Escuchamos sobre teorías económicas, políticas, etc. Y no está mal que exist
 
 ### Discutiendo
 
-No hace falta tener un posgrado para compartir nuestra opinión sobre algún acontecimiento o política social. Discutir con otros tiene un montón de beneficios (como voy a escribir en otro artículo). Pero deberíamos tener en cuenta la [imprecisión que podemos tener al discutir](/2018-05-26-opiniones-imprecision/).
+No hace falta tener un posgrado para compartir nuestra opinión sobre algún acontecimiento o política social. Discutir con otros tiene un montón de beneficios (como voy a escribir en otro artículo). Pero deberíamos tener en cuenta la [imprecisión que podemos tener al discutir](/writings/2018-05-26-opiniones-imprecision/).
 
 ### Conclusión
 

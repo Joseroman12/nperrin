@@ -4,7 +4,7 @@ This section is not meant to stay fixed. I'll try and change some things.
 
 Am I following this rules now? yes, tracking them [here](/me/habits).
 
-To start on weekends I won't follow the rules, also when organizing a hangout.
+To start, on weekends I won't follow the rules, also when organizing a hangout.
 
 ## Index
 
