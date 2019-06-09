@@ -23,13 +23,12 @@ To start, on weekends I won't follow the rules, also when organizing a hangout.
 ### Food
 
 - No sugar.
-- No high carbs.
+- No wheat.
 - No more than 2 meals per day.
 - No more than 2 coffees per day.
-- No coffee after 18hs.
+- No coffee, tea or chocolate after 18hs.
 - No coffee or tea before 1hr after having a meal.
 - No chamomile tea before 18hs.
-- No chocolate at night.
 
 ### Exercise
 
@@ -44,6 +43,7 @@ To start, on weekends I won't follow the rules, also when organizing a hangout.
 
 - Personal
   - Not at morning, when possible.
+  - After morning, not frequently (1hr of time in between) at least it's a conversation.
   - Check mail two times per day max.
 - Professional
   - Be available but define focus time to work.
@@ -56,7 +56,6 @@ To start, on weekends I won't follow the rules, also when organizing a hangout.
 
 ### Internet
 
-- Not at home, unless is a weekend.
 - Download content when possible and consume later, like youtube.
 - One thing at a time.
 
