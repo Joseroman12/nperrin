@@ -3,8 +3,9 @@ body {
   max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
+  padding:0 10px;
+  background-color: #eee;
   color: #444;
-  padding:0 10px
 }
 
 h1,
@@ -13,13 +14,18 @@ h3 {
   line-height: 1.2;
 }
 
+h1 {
+  padding-left: 10px;
+  border-left: 5px solid tomato;
+}
+
 a {
   color: #222;
   text-decoration-color: #222;
 }
 
 a:hover {
-  text-decoration-color: lightblue;
+  text-decoration-color: tomato;
 }
 
 img {
@@ -32,14 +38,16 @@ blockquote {
 
 pre {
   overflow-x: scroll;
-  padding: 20px;
-  background-color: whitesmoke;
-  border-left: 5px solid lightblue;
+  padding: 15px;
+  background-color: #4d4d4d;
+  border-left: 5px solid #222;
 }
 
 code {
-  padding: 3px;
-  background-color: whitesmoke;
+  padding: 1px 3px;
+  font-size: 16px;
+  background-color: #4d4d4d;
+  color: #f2f2f2;
 }
 
 table {
@@ -48,18 +56,28 @@ table {
   border-spacing: 0;
 }
 
+table thead th {
+  background-color: #3b3b3b;
+}
+
 table tr {
   border-top: 1px solid #c6cbd1;
+  background-color: #4d4d4d;
 }
 
 table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: #3b3b3b;
 }
 
 table td,
 table th {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #222;
   padding: 6px 13px;
+}
+
+table th,
+table td {
+  color: #f2f2f2;
 }
 
 table td code {
