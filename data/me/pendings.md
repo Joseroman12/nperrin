@@ -5,6 +5,7 @@ If something is not specific or clear, it means I have to think more about that 
 ## Programming
 
 - Make program to form words from an input of text.
+- Make ios dating app to learn swift.
 - Analize facebook data from download.
 - Make program to save like pocket read later sites, with puppeteer.
 - Make program to track hours from an excel and send them to my boss.
@@ -35,6 +36,3 @@ If something is not specific or clear, it means I have to think more about that 
 - Move alone by 2019.
 - Travel to Europe by 2020 [June - August].
 
-## Completed
-
-- ~~Learn VIM (is like a lot to say "learn", but yes)~~.
