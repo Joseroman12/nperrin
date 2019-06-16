@@ -13,7 +13,7 @@ Creando para que aprendan los conceptos básicos de **git** y **GitHub** así pu
   - [Repositorio remoto](#repositorio-remoto)
   - [Repositorio local](#repositorio-local)
   - [Juntando las partes](#juntando-las-partes)
-- [Vamo a lo bife](#vamo-a-lo-bife)
+- [Workshop](#workshop)
   - [Configuración inicial](#configuración-inicial)
   - [Repositorio de cero](#repositorio-de-cero)
     - [Creando un repositorio local](#creando-un-repositorio-local)
@@ -26,7 +26,7 @@ Creando para que aprendan los conceptos básicos de **git** y **GitHub** así pu
   - [Configurar git](#configurar-git)
   - [Creando y clonando un repositorio](#creando-y-clonando-un-repositorio)
   - [Trabajando localmente](#trabajando-localmente)
-  - [Trabajando en la nube](#trabajando-en-la-nube)
+  - [Trabajando en la nube](#trabajando-en-la-nube)
 - [Cierre](#cierre)
 
 ## Antes de empezar
