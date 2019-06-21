@@ -2,32 +2,7 @@
 
 Creando para que aprendan los conceptos básicos de **git** y **GitHub** así pueden manejarse con facilidad subiendo código a repositorios y haciendo cambios.
 
-## Tabla de contenido
-
-- [Antes de empezar](#antes-de-empezar)
-- [Paso 0](#paso-0)
-- [El problema](#el-problema)
-- [Introducción](#introducción)
-  - [Versionado](#versionado)
-  - [Distribuido](#distribuido)
-  - [Repositorio remoto](#repositorio-remoto)
-  - [Repositorio local](#repositorio-local)
-  - [Juntando las partes](#juntando-las-partes)
-- [Workshop](#workshop)
-  - [Configuración inicial](#configuración-inicial)
-  - [Repositorio de cero](#repositorio-de-cero)
-    - [Creando un repositorio local](#creando-un-repositorio-local)
-    - [Viendo el estado](#viendo-el-estado)
-    - [Agregando un cambio](#agregando-un-cambio)
-    - [Confirmando el cambio](#confirmando-el-cambio)
-    - [Usando la nube](#usando-la-nube)
-  - [Repositorio ya creado](#repositorio-ya-creado)
-- [TLDR](#tldr)
-  - [Configurar git](#configurar-git)
-  - [Creando y clonando un repositorio](#creando-y-clonando-un-repositorio)
-  - [Trabajando localmente](#trabajando-localmente)
-  - [Trabajando en la nube](#trabajando-en-la-nube)
-- [Cierre](#cierre)
+## Tabla de contenidos
 
 ## Antes de empezar
 
@@ -46,7 +21,7 @@ Para empezar vamos a tener algunos requisitos previos.
 2. **Conocimientos comandos básicos unix**, para manejarse entre archivos, crear carpetas, etc. desde la terminal (si no saben tampoco es problema, pero es algo menos que entender).
 3. **git** instalado en su máquina. Pueden confirmar que esté instalado escribiendo
 
-```sh
+```bash
 $ git --version
 ```
 
@@ -143,25 +118,25 @@ Para los 2 casos, primero tenemos que configurar un poco **git**.
 
 Configuro mi nombre:
 
-```sh
+```bash
 $ git config --global user.name "[usuario github]" # Usar su nombre de usuario de GitHub
 ```
 
 Configuro mi mail:
 
-```sh
+```bash
 $ git config --global user.email "[mail github]" # Usar su mail de GitHub
 ```
 
 Configuro mi editor por defecto
 
-```sh
+```bash
 $ git config --global core.editor "[comando para abrir editor]" # "subl -n -w" para Sublime Text o "code" para VSCode...
 ```
 
 Si quiero ver los valores que tienen puedo usar
 
-```sh
+```bash
 $ git config --get user.name
 ```
 
@@ -177,7 +152,7 @@ Si quiero cambiar el `user.name` o `user.email`, simplemente vuelvo a escribir e
 4. Ahora que tenemos un proyectito metámosle **git**.
 5. **Inicializamos** un repositorio con este comando:
 
-```sh
+```bash
 $ git init
 ```
 
@@ -187,7 +162,7 @@ Quizás no nos dimos cuenta, pero se nos creó una carpeta oculta llamada `.git/
 
 Un comando que vamos a usar todo el tiempo:
 
-```sh
+```bash
 $ git status
 ```
 
@@ -201,7 +176,7 @@ Habiendo tirado el comando, nos va a decir que no hay cambios que hacer, que hay
 
 Tanto para agregar un cambio, archivo nuevo, borrado, etc. vamos a usar
 
-```sh 
+```bash 
 $ git add [nombre_archivo]
 ```
 
@@ -217,7 +192,7 @@ También está bueno tener en cuenta que yo puedo agregar un archivo, modificarl
 
 Podemos agregar archivo por archivo... o usar un `*` para indicarle que queremos agregar todos los archivos.
 
-```sh
+```bash
 $ git add -A
 ```
 
@@ -225,7 +200,7 @@ $ git add -A
 
 A no preocuparse, _tenemos un comando para revertir el que les acabo de enseñar_:
 
-```sh
+```bash
 $ git reset [nombre_archivo]
 ```
 
@@ -237,7 +212,7 @@ Al confirmar el cambio vamos a agarrar todos los cambios a agregar que pusimos y
 
 Para eso lo vamos a hacer con:
 
-```sh
+```bash
 $ git commit -m "[un mensaje descriptivo]"
 ```
 
@@ -247,13 +222,13 @@ Y cómo vemos el historial de cambios (commits)?
 
 _Hay un comando para eso._
 
-```sh
+```bash
 $ git log
 ```
 
 Si queremos un mensaje más conciso le podemos agregar la opción `--oneline`.
 
-```sh
+```bash
 $ git log --oneline
 ```
 
@@ -267,7 +242,7 @@ Si queremos pisar el commit podemos seguir los siguientes pasos:
 2. Agregar nuestros cambios `git add *`.
 3. Pisar nuestro commit:
 
-```sh
+```bash
 $ git commit --amend
 ```
 
@@ -281,29 +256,29 @@ Ahora probemos de agregar otra página a la web y linkearla, o simplemente agreg
 
 De paso les digo que si tienen una modificación que quieren revertir, y todavía no agregaron (con `add`). Pueden ver las diferencias con
 
-```sh
+```bash
 $ git diff
 ```
 
 y volver al estado anterior con
 
-```sh
+```bash
 $ git checkout [nombre archivo]
 ```
 
 o para revertir TODAS las modificaciones
 
-```sh
+```bash
 git checkout .
 ```
 
 Una vez que tenemos el cambio hecho, vamos a agregar los cambios y commitearlos como ya vimos.
 
-```sh
+```bash
 $ git add -A
 ```
 
-```sh
+```bash
 $ git commit -m "agrego nueva página"
 ```
 
@@ -313,7 +288,7 @@ Y recuerden de tirar `git status` así van viendo el estado del repositorio.
 
 Ahora podemos revertir ese commit con:
 
-```sh
+```bash
 $ git reset HEAD~1
 ```
 
@@ -343,7 +318,7 @@ Cómo?
 
 5. Posicionados en nuestro repositorio vamos a escribir:
 
-```sh
+```bash
 $ git remote add origin https://github.com/[usuario]/[nombre de repositorio].git
 ```
 
@@ -351,7 +326,7 @@ Esto va a declarar la variable `origin` con el valor de la url que le pasamos.
 
 Para ver a dónde quedó apuntando nuestro repositorio podemos hacer
 
-```sh
+```bash
 $ git remote show origin
 ```
 
@@ -359,7 +334,7 @@ $ git remote show origin
 
 No hay problema, podemos pisar el valor de `origin` así
 
-```sh
+```bash
 $ git remote set-url origin https://github.com/[usuario]/[nombre de repositorio].git
 ```
 
@@ -367,13 +342,13 @@ Nos debería decir que se hace `fetch` (traer cambios) y `push` (subir cambios) 
 
 6. Ahora que los tenemos referenciados, podemos **_pushear_** nuestros cambios.
 
-```sh
+```bash
 $ git push origin master
 ```
 
 Y si alguien subió cambios, podemos traer cambios con
 
-```sh
+```bash
 $ git pull origin master
 ```
 
@@ -383,7 +358,7 @@ Si ahora nos fijamos en el repositorio remoto, ya tenemos nuestros cambios subid
 
 No se preocupen, _tenemos un comando para arreglarlo_.
 
-```sh
+```bash
 $ git revert [hash]
 ```
 
@@ -391,7 +366,7 @@ Pero qué demonios es el **_hash_**?
 
 Es un **_código identificador del commit_**. Lo podemos ver con
 
-```sh
+```bash
 $ git log --oneline
 ```
 
@@ -406,7 +381,7 @@ f6069db (HEAD -> master, origin/master) otro mensaje descriptivo
 
 Y queremos revertir el segundo commit, tendríamos que hacer
 
-```sh
+```bash
 $ git revert f6069db
 ```
 
@@ -426,7 +401,7 @@ Para esta parte vamos a seguir estos pasos:
 2. Vamos a un directorio vacío.
 3. Clonamos el repositorio remoto a nuestra máquina.
 
-```sh
+```bash
 $ git clone https://github.com/[usuario]/[nombre del repositorio].git
 ```
 
