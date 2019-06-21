@@ -1,12 +1,12 @@
 # Guía introducción a JavaScript
 
-Esta guía van a encontrar explicaciones y ejercicios de los conceptos que considero básicos de programación en JavaScript.
+En esta guía van a encontrar explicaciones y ejercicios de los conceptos que considero básicos de programación en JavaScript.
 
 Hay otra guía un poco más amena que se llama "[JavaScript para gatos](https://jsparagatos.com/)". Recomiendo que lean esa guía y en todo caso si les quedó alguna consulta, guiarse por la tabla de contenidos de esta guía. O si confían en mi estilo, leerla directamente.
 
 También recomiendo la guía de MDN "[JavaScript](https://developer.mozilla.org/es/docs/Learn/JavaScript)".
 
-Aunque pueden saltearse un ejercicio, no lo recomiendo. Quizás parezca trivial y piensen que saben cómo resolverlo, de ser así, más razón para hacerlos. Los ejercicios no van a ser muy largos y los va a ayudar a consolidar lo que acaban de leer.
+**Hago los ejercicios?** Aunque pueden saltearse un ejercicio, no lo recomiendo. Quizás parezca trivial y piensen que saben cómo resolverlo, de ser así, más razón para hacerlos. Los ejercicios no van a ser muy largos y los va a ayudar a consolidar lo que acaban de leer.
 
 ## Tabla de contenidos
 
