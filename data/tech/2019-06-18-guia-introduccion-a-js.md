@@ -63,7 +63,7 @@ Por ejemplo podemos escribir
 alert("Hola mundo!");
 ```
 
-y cuando lo ejecutemos aprentando "Run" vamos a ver que aparece una ventana molesta con nuestro mensaje.
+y cuando lo ejecutemos apretando "Run" vamos a ver que aparece una ventana molesta con nuestro mensaje.
 
 Si nos molesta mucho esa ventana podemos escribir
 
@@ -214,11 +214,11 @@ Es como un `alert` pero te deja ponerle un valor, y lo que devuelve puede ser as
 Algo a tener en cuenta con `prompt` es que siempre te devuelve un valor tipo `string`. Por lo tanto si preguntamos por la edad, luego no podemos usar ese valor que retorna el `prompt` como si fuese un número. Lo tenemos que convertir de `string` a `number`. Para eso podemos usar la función `Number` de la siguiente manera
 
 ```javascript
-var edad_texto = prompt("Cuál es tu edad?")
-var edad_numero = Number(edad)
-var edad_cumpleanios = edad_number + 1
+var edad_texto = prompt("Cuál es tu edad?");
+var edad_numero = Number(edad);
+var edad_cumpleanios = edad_number + 1;
 
-alert("Cuando cumplas años vas a tener " + edad_cumpleanios)
+alert("Cuando cumplas años vas a tener " + edad_cumpleanios);
 ```
 
 ### Errores comunes
@@ -286,7 +286,7 @@ En matemática se dice que el orden de la suma no importa, en nuestro caso sí.
 Cuál piensan que va a ser el mensaje si hacemos algo como
 
 ```javascript
-console.log("Tres más dos es: " + 3 + 2)
+console.log("Tres más dos es: " + 3 + 2);
 ```
 
 JavaScript nos va a mostrar por consola `"Tres más dos es: 32"`, lo cuál sería correcto si nos referimos a strings, porque estaría haciendo una concatenación, pero nosotros queremos que lo sume y después muestre el resultado como string.
@@ -294,9 +294,9 @@ JavaScript nos va a mostrar por consola `"Tres más dos es: 32"`, lo cuál serí
 Lo aconsejable para no entrar en problemas es calcular las partes por separado y después mostrarlo por consola. Por ejemplo
 
 ```javascript
-var resultado = 3 + 2
+var resultado = 3 + 2;
 
-console.log("Tres más dos es: " + resultado)
+console.log("Tres más dos es: " + resultado);
 ```
 
 De esta forma se calcula primero la cuenta numérica y luego se hace la concatenación.
@@ -316,7 +316,7 @@ Volvió a repetir lo de arriba, pero ahora en vez de transformar un 3 transform�
 Por suerte podemos agrupar y priorizar ciertas operaciones, igual que en matemática, con los paréntesis.
 
 ```javascript
-console.log("Tres más dos es: " + (3 + 2))
+console.log("Tres más dos es: " + (3 + 2));
 ```
 
 Y ahora el paréntesis se va a resolver antes y luego su resultado (5) va a ser concatenado igual que antes.
@@ -361,7 +361,7 @@ saludar();
 
 ### Parámetros
 
-Está genial con que podamos reutilizar código, poníendole un nombre más entendible al código que queremos ejecutar, pero si quiero que ese "Norman" no esté, y en cambio esa variable tenga como valor lo que me ingresan?
+Está genial con que podamos reutilizar código, poniéndole un nombre más entendible al código que queremos ejecutar, pero si quiero que ese "Norman" no esté, y en cambio esa variable tenga como valor lo que me ingresan?
 
 Podríamos usar parámetros
 
@@ -450,24 +450,20 @@ Antes algunas aclaraciones
 
 - Se suele usar el nombre "index" como archivo principal de la carpeta en donde esté.
 - Usen nombres descriptivos.
-- No pongan caracteres especiales, espacios ni mayúsculas en los nombres de archivos. Reemplazen los espacios por `_` o `-` y dejen todo en minúscula.
+- No pongan caracteres especiales, espacios ni mayúsculas en los nombres de archivos. Reemplacen los espacios por `_` o `-` y dejen todo en minúscula.
 
 ### Ahora sí
 
-1. Creense una carpeta, en algún lado accesible, como el escritorio.
+1. Creen una carpeta, en algún lado accesible, como el escritorio.
 2. Creen un archivo `index.html` dentro de esa carpeta, con este contenido.
 
 ```html
 <html>
+  <head></head>
 
-<head></head>
-
-<body>
-
-	<button>Botón</button>
-
-</body>
-
+  <body>
+    <button>Botón</button>
+  </body>
 </html>
 ```
 
@@ -485,11 +481,11 @@ El problema es que nunca definimos esa función.
 
 Para eso vamos a crear un archivo JavaScript llamado `script.js`, aunque el nombre lo pueden elegir ustedes, siempre y cuando tenga la extensión `.js` al final.
 
-En este archivo vamos a seguir escribriendo JavaScript como veníamos haciendo antes, entonces si tengo que definir una función, en el archivo voy a escribir algo como
+En este archivo vamos a seguir escribiendo JavaScript como veníamos haciendo antes, entonces si tengo que definir una función, en el archivo voy a escribir algo como
 
 ```javascript
 function hacer_algo_re_loco() {
-	alert("Ho-La")
+  alert("Ho-La");
 }
 ```
 
@@ -497,9 +493,9 @@ Pero eso no es suficiente. Si volvemos a apretar el botón vamos a seguir tenien
 
 ```html
 <body>
-	<!-- tags HTML...  -->
+  <!-- tags HTML...  -->
 
-	<script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 ```
 
@@ -509,7 +505,7 @@ Entonces ahora si apretamos ekl botón, el botón hace lo que tiene que hacer!
 
 Felicitaciones, ya saben cómo ejecutar código JavaScript desde una página web.
 
-En otras guías vamos a ver otros métodos, pero por ahora si quieren seguir los ejercicios desde sus HTMLs, pueden usar esta forma.
+No es mucho, pero ya saben cómo vincularlos. Más adelante vamos a ver casos más divertidos obteniendo información de formularios, trayendo información de afuera, animando elementos, ... Por ahora espero que les haya sido útil para saber cómo se vinculan.
 
 ## Condicionales
 
@@ -542,11 +538,11 @@ Estos operadores son como la suma o resta, pero en vez de devolver un número, d
 He aquí la sintaxis
 
 ```javascript
-var nombre_del_profesor = "Norman"
-var nombre_ingresado = prompt("Cuál es tu nombre?")
+var nombre_del_profesor = "Norman";
+var nombre_ingresado = prompt("Cuál es tu nombre?");
 
-var es_profesor = nombre_ingresado === nombre_del_profesor
-console.log(es_profesor)
+var es_profesor = nombre_ingresado === nombre_del_profesor;
+console.log(es_profesor);
 ```
 
 Empezamos a entender cómo nos puede ayudar esto en nuestros programas, y cómo esto puede decidir distintos "caminos".
@@ -556,13 +552,13 @@ En este ejemplo con `es_profesor` podría mostrar cierta pantalla si es un profe
 ### Ahora sí
 
 ```javascript
-var nombre = prompt("Cuál es tu nombre?")
-var es_profesor = nombre === "Norman"
+var nombre = prompt("Cuál es tu nombre?");
+var es_profesor = nombre === "Norman";
 
-if(es_profesor) {
-	alert("Bienvenido querido profesor! 😁")
+if (es_profesor) {
+  alert("Bienvenido querido profesor! 😁");
 } else {
-	alert("Hola")
+  alert("Hola");
 }
 ```
 
@@ -577,15 +573,15 @@ En el bloque de código pueden ir el número de sentencias que queramos, como en
 Otra cosa a tener en cuenta es que no hace falta que haya un `else`. Por ejemplo, supongamos que tenemos un sistema que toma los nombres de la gente que llega a clase, se saluda a todos los que llegan, pero si es un profesor se le da una manzana.
 
 ```javascript
-var nombre_del_profesor = "Norman"
+var nombre_del_profesor = "Norman";
 
-var nombre_del_ingresante = prompt("Hola! Cómo te llamás?")
+var nombre_del_ingresante = prompt("Hola! Cómo te llamás?");
 
-if(nombre_del_ingresante === nombre_del_profesor) {
-	alert("Tomá una manzana")
+if (nombre_del_ingresante === nombre_del_profesor) {
+  alert("Tomá una manzana");
 }
 
-alert("Bienvenido, " + nombre_del_ingresante)
+alert("Bienvenido, " + nombre_del_ingresante);
 ```
 
 No hizo falta poner un else, porque en el caso en el que no era profesor, no había un comportamiento específico. Luego el último `alert` se va a ejecutar tanto para el profesor, como para el que no es profesor.
@@ -599,17 +595,17 @@ Sigamos con el ejemplo anterior. Pero ahora, si el ingresante se llama "Nicolás
 Ok? Entonces quedaría así
 
 ```javascript
-var nombre = prompt("Hola! Cómo te llamás?")
+var nombre = prompt("Hola! Cómo te llamás?");
 
-if(nombre === "Nicolás") {
-	alert("Tomá un ananá")
+if (nombre === "Nicolás") {
+  alert("Tomá un ananá");
 }
 
-if(nombre === "Norman") {
-	alert("Tomá una manzana")
+if (nombre === "Norman") {
+  alert("Tomá una manzana");
 }
 
-alert("Bienvenido, " + nombre)
+alert("Bienvenido, " + nombre);
 ```
 
 Genial!
@@ -618,36 +614,36 @@ Estaría bueno que los sistemas sean así de simples, aunque por lo general son 
 
 ### Condiciones añadidas
 
-Seguimos con lo anterior, ahora vamos a decir que se acaban de unir 2 mundos que antes eran paralelos, en uno se habla normal, en otro se dicen las palabras al revez. El programa ahora debería ser algo así
+Seguimos con lo anterior, ahora vamos a decir que se acaban de unir 2 mundos que antes eran paralelos, en uno se habla normal, en otro se dicen las palabras al revés. El programa ahora debería ser algo así
 
 ```javascript
-var respuesta_mundo_normal = prompt("Estamos en el mundo normal?")
-var es_mundo_normal = respuesta_mundo_normal === "Sí"
+var respuesta_mundo_normal = prompt("Estamos en el mundo normal?");
+var es_mundo_normal = respuesta_mundo_normal === "Sí";
 
-if(es_mundo_normal) {
-	var nombre = prompt("Hola! Cómo te llamás?")
+if (es_mundo_normal) {
+  var nombre = prompt("Hola! Cómo te llamás?");
 
-	if(nombre === "Nicolás") {
-		alert("Tomá un ananá")
-	}
+  if (nombre === "Nicolás") {
+    alert("Tomá un ananá");
+  }
 
-	if(nombre === "Norman") {
-		alert("Tomá una manzana")
-	}
+  if (nombre === "Norman") {
+    alert("Tomá una manzana");
+  }
 
-	alert("Bienvenido, " + nombre)
+  alert("Bienvenido, " + nombre);
 } else {
-	var nombre = prompt("Aloh! Omoc et samall?")
+  var nombre = prompt("Aloh! Omoc et samall?");
 
-	if(nombre === "Salocin") {
-		alert("Amot nu ánana")
-	}
+  if (nombre === "Salocin") {
+    alert("Amot nu ánana");
+  }
 
-	if(nombre === "Namron") {
-		alert("Amot anu anaznam")
-	}
+  if (nombre === "Namron") {
+    alert("Amot anu anaznam");
+  }
 
-	alert("Odinevneib, " + nombre)
+  alert("Odinevneib, " + nombre);
 }
 ```
 
@@ -670,12 +666,12 @@ Contamos con el operador
 El primer operador es fácil, el de negación simplemente transforma un `true` a `false` y luego al revez, un `false` a `true`. Se escribe así
 
 ```javascript
-var fui_al_mundial = false
-var soy_argentino = true
+var fui_al_mundial = false;
+var soy_argentino = true;
 
-console.log(!fui_al_mundial) //> true
-console.log(!soy_argentino) //> false
-console.log(!!soy_argentino) //> true
+console.log(!fui_al_mundial); //> true
+console.log(!soy_argentino); //> false
+console.log(!!soy_argentino); //> true
 ```
 
 Después seguimos con los otros operadores. Estos otros operadores se usan como el `+`, `*`, ... o sea con 2 valores de cada lado. Estos valores deben ser de tipo booleano. Y al usarlos nos devuelve otro booleano.
@@ -683,22 +679,22 @@ Después seguimos con los otros operadores. Estos otros operadores se usan como 
 Su sintaxis es la siguiente
 
 ```javascript
-var es_profesor = true
-var es_pelado = false
+var es_profesor = true;
+var es_pelado = false;
 
 // es profesor y es pelado: las 2 deben cumplirse para que sea true.
-console.log(es_profesor && es_pelado) //> false
+console.log(es_profesor && es_pelado); //> false
 
 // es profesor o es pelado: alguna de las 2 debe cumplirse para que sea true.
-console.log(es_profesor || es_pelado) //> true
+console.log(es_profesor || es_pelado); //> true
 
-es_pelado = false
+es_pelado = false;
 
 // ya con que alguno de los valores sea falso cuando se opera con &&, el resultado va a ser falso.
-console.log(es_profesor && es_pelado) //> false
+console.log(es_profesor && es_pelado); //> false
 
 // si es todo falso, va a ser falso sin importar el operador que se aplique.
-console.log(es_profesor || es_pelado) //> false
+console.log(es_profesor || es_pelado); //> false
 ```
 
 Todas las posibilidades de resultados están en esta tabla, para que lo vean mejor
@@ -713,32 +709,32 @@ Todas las posibilidades de resultados están en esta tabla, para que lo vean mej
 Ahora que conocemos estos operadores, vamos a usarlo con el anterior ejemplo.
 
 ```javascript
-var respuesta_mundo_normal = prompt("Estamos en el mundo normal?")
-var es_mundo_normal = respuesta_mundo_normal === "Sí"
+var respuesta_mundo_normal = prompt("Estamos en el mundo normal?");
+var es_mundo_normal = respuesta_mundo_normal === "Sí";
 
-if(es_mundo_normal) {
-	prompt("Hola! Cómo te llamás?")
+if (es_mundo_normal) {
+  prompt("Hola! Cómo te llamás?");
 } else {
-	var nombre = prompt("Aloh! Omoc et samall?")
+  var nombre = prompt("Aloh! Omoc et samall?");
 }
 
-if(es_mundo_normal && nombre === "Nicolás") {
-	alert("Tomá un ananá")
+if (es_mundo_normal && nombre === "Nicolás") {
+  alert("Tomá un ananá");
 }
 
-if(es_mundo_normal && nombre === "Norman") {
-	alert("Tomá una manzana")
+if (es_mundo_normal && nombre === "Norman") {
+  alert("Tomá una manzana");
 }
 
-if(!es_mundo_normal && nombre === "Salocin") {
-	alert("Amot nu ánana")
+if (!es_mundo_normal && nombre === "Salocin") {
+  alert("Amot nu ánana");
 }
 
-if(!es_mundo_normal && nombre === "Namron") {
-	alert("Amot anu anaznam")
+if (!es_mundo_normal && nombre === "Namron") {
+  alert("Amot anu anaznam");
 }
 
-alert("Odinevneib, " + nombre)
+alert("Odinevneib, " + nombre);
 ```
 
 Ufff que largo condicionales, vamos a hacer algo de práctica para repasar.
@@ -753,6 +749,89 @@ Dado una orda de marcianos que invaden el planeta, obtener una respuesta adecuad
 1. A la condición anterior se agrega que en caso que sean amigables, les comunicamos con `alert` que vamos a darles una caja de chocolates.
 1. Ahora vamos a preguntarles también cuántos vinieron al planeta. Si la respuesta es menor a 100, decirles que necesitan a 10 marcianos para inspecciones, si la respuesta es mayor a 10000 entonces decirles que están para lo que necesiten, y si la respuesta está entre 100 y 10000, decirles que el Hipódromo de Palermo está abierto las 24hs.
 1. Finalmente, preguntarles si la batata es mejor que el membrillo, y si toman el mate amargo o dúlce. Si prefieren el la batata y el mate dúlce, decirles que están en guerra. Si prefieren la batata y toman mate amargo, o si prefieren el membrillo y toman mate dulce, decirles que pueden quedarse unos días. Finalmente si prefieren el membrillo y toman mate amargo decirles que pueden quedarse el tiempo que necesiten.
+
+## Objetos
+
+Algo que ya veníamos usando y quizás no se dieron cuenta.
+
+Los objetos son otro tipo de dato, como texto, número o función, y que nos permite agrupar valores.
+
+```javascript
+var persona = {
+  nombre: "Norman",
+  apellido: "Perrin",
+  edad: 24,
+  puede_volar: false
+};
+```
+
+Si ven la variable `persona` está declarando dentro de sí otras variables. Luego para acceder a los valores de las "subvariables", usamos el `.`.
+
+```javascript
+console.log(persona.nombre);
+console.log(persona.puede_volar);
+console.log(persona);
+```
+
+### Partes
+
+- `{}`: apertura y cierre de llaves, adentro se ponen los atributos - valores que queramos. Este es un objeto vacío, es sintaxis válida.
+- `nombre`: atributo, o lo que decíamos antes como "subvariable". También se la llama propiedad. Este es un identificador, igual que como declaramos una variable.
+- `:` el dos puntos separa el atributo del valor. Del lado izquierdo va el identificador, del derecho el valor.
+- `"Norman"`: valor del atributo.
+- `,`: los distintos atributos valores se separan con una coma entre ellos. En el último atributo - valor no hace falta poner una coma, ya que no hay uno que le siga.
+
+### Cuándo se usa?
+
+Como dije antes, cuando quieran agrupar valores.
+
+Por ejemplo si quieren agrupar comandos para mostrar información en consola con cierto formato, pueden hacer lo siguiente.
+
+```javascript
+function mostrar_informacion(mensaje) {
+  console.log("[i]: " + mensaje);
+}
+
+function mostrar_error(mensaje) {
+  console.log("[e]: " + mensaje);
+}
+
+var consola = {
+  info: mostrar_informacion,
+  error: mostrar_error
+};
+
+consola.info("Se cargó la página correctamente!");
+consola.error("Hubo un problema al completar el formulario");
+```
+
+Agrupamos atributos que son parte de la consola, en esa misma variable. Entonces no tenemos varias funciones sueltas como `mostrar_informacion` o `mostrar_error`, sino que podemos acceder a ellas a través de `consola`.
+
+Incluso si no saben los atributos que tiene un objeto, la consola de chrome es tan amigable que nos da sugerencias.
+
+Por ejemplo, si escribimos en la consola (no snippet), `console.` cuando apretemos el `.` nos va a dar una lista de propiedades que podemos llamar.
+
+Cuando aparezca un símbolo parecido a una `ƒ` abajo, significa que el valor de ese atributo es de tipo función, pero como vimos en la definición de `persona`, también puede ser de tipo numérico, texto o booleano. Todo lo que pueda ser un valor... y si un objeto es un valor, adivinen, podemos poner un objeto como valor de un atributo, porque al final es otro tipo de dato, o sea un valor.
+
+```javascript
+var planeta = {
+  nombre: "Melmac",
+  habitantes: 1000000000,
+  habitante: {
+	dientes: 4,
+    frase_caracteristica: "No hay problema",
+    comida_preferida: "gato"
+  }
+};
+```
+
+Si queremos acceder a los valores más añadidos en la definición de ese objeto
+
+```javascript
+console.log('La comida preferida de alguien que vive en ' + planeta.nombre + ' es ' + planeta.habitante.comida_preferida)
+```
+
+Y váyanse familiarizando con esta sintaxis, porque JavaScript está lleno de objetos.
 
 ## Cheat Sheet
 
@@ -810,9 +889,9 @@ Actúan sobre valores booleanos
 Negación
 
 ```javascript
-console.log(!true) //> false
-console.log(!false) //> true
-console.log(!!true) //> true
+console.log(!true); //> false
+console.log(!false); //> true
+console.log(!!true); //> true
 ```
 
 Se ejecuta como `p && q` o `p || q`.
@@ -850,4 +929,3 @@ console.log(concatenacion);
 - [MeetupJS](https://meetupjs.com.ar/): mismo que el anterior pero orientado a JavaScript principalmente.
 - [ComunidadIT](http://www.comunidadit.org/): organización que da cursos y becas a estudiantes de programación.
 - [Puerta18](http://www.puerta18.org.ar/): hacking space que da talleres gratuitos de programación, entre otros.
-
