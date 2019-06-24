@@ -119,13 +119,13 @@ Para los 2 casos, primero tenemos que configurar un poco **git**.
 Configuro mi nombre:
 
 ```bash
-$ git config --global user.name "[usuario github]" # Usar su nombre de usuario de GitHub
+$ git config --global user.name "[usuario github]" # Usar su nombre de usuario de GitHub
 ```
 
 Configuro mi mail:
 
 ```bash
-$ git config --global user.email "[mail github]" # Usar su mail de GitHub
+$ git config --global user.email "[mail github]" # Usar su mail de GitHub
 ```
 
 Configuro mi editor por defecto
@@ -176,7 +176,7 @@ Habiendo tirado el comando, nos va a decir que no hay cambios que hacer, que hay
 
 Tanto para agregar un cambio, archivo nuevo, borrado, etc. vamos a usar
 
-```bash 
+```bash
 $ git add [nombre_archivo]
 ```
 

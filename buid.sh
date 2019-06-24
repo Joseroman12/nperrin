@@ -23,7 +23,7 @@ build_from_path () {
     mkdir -p "$(dirname "$path")"
     ./markdown-to-html.js < "$1" > "$path"
 }
-find data/* -name '*.md' | while read -r file; do build_from_path "$file"; done
+find data/* -name '*.md' |while read -r file; do build_from_path "$file"; done
 
 # create html files for directories
 create_html_file_list () {
@@ -47,5 +47,5 @@ create_html_from_directory () {
     append_content="$html_list$files_append_content$dir_list$final_append_content"
     echo "$append_content" >> "$1/index.html"
 }
-# find public -type d | while read f; do create_html_from_directory "$f"; done
-find public -type d | while read -r node; do create_html_from_directory "$node"; done
+# find public -type d |while read f; do create_html_from_directory "$f"; done
+find public -type d |while read -r node; do create_html_from_directory "$node"; done
