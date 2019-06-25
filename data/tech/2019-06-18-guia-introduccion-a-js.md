@@ -818,7 +818,7 @@ var planeta = {
   nombre: "Melmac",
   habitantes: 1000000000,
   habitante: {
-	dientes: 4,
+    dientes: 4,
     frase_caracteristica: "No hay problema",
     comida_preferida: "gato"
   }
@@ -828,10 +828,196 @@ var planeta = {
 Si queremos acceder a los valores más añadidos en la definición de ese objeto
 
 ```javascript
-console.log('La comida preferida de alguien que vive en ' + planeta.nombre + ' es ' + planeta.habitante.comida_preferida)
+console.log(
+  "La comida preferida de alguien que vive en " +
+    planeta.nombre +
+    " es " +
+    planeta.habitante.comida_preferida
+);
 ```
 
 Y váyanse familiarizando con esta sintaxis, porque JavaScript está lleno de objetos.
+
+### Ejercicios
+
+Todo este ejercicio debe resolverse definiendo **un** objeto. Pueden definir las funciones por separado.
+
+1. Crear un objeto que tenga atributos característicos de un cliente de una tienda de mascotas. El mismo debe tener 3 atributos, uno de tipo texto, otro numérico y por último un booleano.
+1. Agregar a la definición anterior, un atributo llamado "mascota" de tipo objeto, en ese objeto pueden haber los atributos que elijan.
+1. Agregar un atributo al cliente llamada "saludar" que sea de tipo función. Esta función debe recibir un nombre a saludar por parámetro y mandarle un saludo por `alert` a la persona, como `"Buen día " + nombre`. Luego de definir la función al cliente, llamarla pasándole su nombre.
+1. Agregarle el mismo atributo al perro, pero ahora en vez de decir `"Buen día " + nombre`, tiene que decir `"Ouf Ouf " + nombre`.
+1. Crear una función que obtenga un cliente, como el recién definido, por parámetro, y
+1. muestre por `alert` el nombre del cliente (o el atributo tipo texto que hayan elegido).
+1. ejecute la función `saludar` del perro, con el nombre del cliente.
+
+## Arrays
+
+O también llamadas: listas, vectores, arreglos... Para nosotros arrays o listas.
+
+Y qué son?
+
+> Tipo de valor que agrupa valores de forma ordenada
+
+Primero se puede decir que es una agrupación como los objetos, o sea que estos valores están contenidos en 1 lugar.
+
+Luego que estos valores están dispuestos de forma ordenada. Esto significa que podemos decir que un valor está antes o después que otro.
+
+Para que se entienda mejor
+
+```javascript
+var lista_de_alumnos = ["Camila", "Gabriel", "Martín", "Sol"];
+```
+
+Como vemos tiene una sintáxis parecida a los objetos, pero en vez de llaves `{}` se usan corchetes `[]`, y no se le dan nombres a los atributos, sino que se ponen directamente los valores.
+
+### Cómo accedo a los valores
+
+Al no tener nombres los atributos, se accede a través de su índice, el cual depende del orden que tenga ese valor dentro de la lista.
+
+```javascript
+console.log(lista_de_alumnos[0]);
+console.log(lista_de_alumnos[1]);
+console.log(lista_de_alumnos[2]);
+console.log(lista_de_alumnos[3]);
+```
+
+Si se fijan el primer elemento es el que tiene índice 0 y para acceder el último tiene como índice el tamaño de la lista menos 1 (4 - 1 = 3).
+
+Para saber el tamaño de la lista podemos usar un atributo del array llamado `length`.
+
+```javascript
+console.log(lista_de_alumnos.length); //> 4
+```
+
+Y de dónde salió ese `length`?
+
+### Atributos auto definidos
+
+Yo lo llamo así, o propiedades, porque son como lo de los objetos, pero quizás tenga otro nombre...
+
+No solo los arrays, sino todos los tipos de valores tienen atributos auto definidos. Qué son estos?
+
+Son atributos o propiedades a las que podemos acceder según el tipo de valor que manejemos. Por ejemplo, una lista o un texto va a tener un atributo `length`.
+
+```javascript
+console.log("norman".length); //> 6
+console.log(["n", "o", "r", "m", "a", "n"].length); //> 6
+```
+
+Mientras que un número o booleano no tienen esos atributos.
+
+Ustedes pueden ver qué funciones o atributos pueden llamar envolviendo un valor entre paréntesis y poniéndole punto, en consola
+
+```javascript
+("norman"). //> les va a auto sugerir qué poner
+```
+
+Los más interesantes de estos, están en los arrays, ya que nos dan formas de recorrerlo, transformarlo, filtrar elementos, y mucho más.
+
+Veamos algunos atributos interesantes de arrays.
+
+#### map
+
+El `map` recibe una lista de un tamaño y devuelve otra lista del mismo tamaño, pero con alguna transformación de sus elementos. Esa transformación es aplicada por una función que definimos nosotros, y se pasa como parámetro de la función `map`. Ejemplo:
+
+```javascript
+function doble(numero) {
+  return numero * 2;
+}
+
+var numeros = [2, 4, 6];
+var doble_de_los_numeros = numeros.map(doble);
+
+console.log(doble_de_los_numeros); //> [4, 8, 12]
+```
+
+Es importante definir bien la función a aplicar y tener en cuenta lo que recibe y devuelve.
+
+Como primer argumento el `map` recibe el valor actual que está recorriendo. `map` va a recorrer la lista de forma ordenada, aplicando la función a cada valor por separado.
+
+Luego el retorno va a ser un valor en la nueva lista, respetando el orden de recorrido.
+
+Otro ejemplo
+
+```javascript
+function transformar_texto_a_minuscula(texto) {
+  return texto.toLowerCase();
+}
+
+var nombres = ["Norman", "maRtín", "camIla", "JuaN"];
+var nombres_minuscula = nombres.map(transformar_texto_a_minuscula);
+
+console.log(nombres_minuscula); //> ["norman", "martín", "camila", "juan"]
+```
+
+#### filter
+
+El `filter` recibe una lista de un tamaño y devuelve otra lista del mismo tamaño o menor, con los mismos valores que tenía. Recibe como parámetro una función que retorna un booleano, según si debe o no filtrar el elemento. Un ejemplo:
+
+```javascript
+function es_nombre_de_superheroe(nombre) {
+  var tamanio_nombre = nombre.length;
+  var ante_penultima_letra = nombre[tamanio_nombre - 3];
+  var ante_ultima_letra = nombre[tamanio_nombre - 2];
+  var ultima_letra = nombre[tamanio_nombre - 1];
+
+  // me fijo si el nombre termina en "man"
+  if (
+    ante_penultima_letra === "m" &&
+    ante_ultima_letra === "a" &&
+    ultima_letra === "n"
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var nombres = ["spiderman", "nicolás", "norman", "ironman"];
+var superheroes = nombres.filter(es_nombre_de_superheroe);
+
+console.log(superheroes); //> una lista de todos los elementos menos nicolás.
+```
+
+Y si supiesen las funciones de string, podrían haber definido la función de esta otra manera
+
+```javascript
+function es_nombre_de_superheroe(nombre) {
+  return nombre.slice(-3) === "man";
+}
+```
+
+Igual les dejo que exploren eso por su cuenta.
+
+#### forEach
+
+A diferencia del `map` o `filter`, el `forEach` no devuelve un nuevo array, sino que **hace** algo por cada elemento que itera. El **hace** queda definido por la función que recibe el `forEach` por parámetro. Veamos un ejemplo
+
+```javascript
+var mensajes_molestos = [
+  "No te olvides de desactivar el adblock",
+  "Subscribite a nuestro newsletter",
+  "Hemos detectado un virus en su máquina"
+];
+
+mensajes_molestos.forEach(alert);
+```
+
+Es importante entender el propósito de cada función, el `forEach` es para **hacer** algo por cada elemento que itera.
+
+### Ejercicios
+
+Mucha info. Necesitamos algo de práctica
+
+1. Crear un array que tenga 4 elementos,
+1. todos de tipo string
+1. todos de tipo objeto
+1. todos de tipo función
+1. todos de tipo array
+1. Crear una función que tome un array de números como primer parámetro y devuelva la suma del primer y último número.
+1. Crear una función que tome un array de números y devuelva un array del mismo tamaño, pero que los valores de salida sean la mitad de los de entrada. O sea que calcule la mitad de todos los números.
+1. Crear una función que reciba un array de objetos que tengan un atributo `nombre`, y retorne un array de solo los nombres.
+1. Crear 3 funciones que toman un número por parámetro y retornar alguna operación con ese número (el doble, el siguiente, la mitad, etc). Luego crear una función que tome una lista de 3 funciones como primer parámetro, un número como segundo parámetro y devuelva una lista de 3 elementos con los resultados de las funciones ejecutadas con el número pasádo por segundo parámetro.
 
 ## Cheat Sheet
 
@@ -921,6 +1107,49 @@ function nombre(parametro1, parametro2, parametro3) {
 ```javascript
 var concatenacion = nombre("Hola, ", "cómo estás? ", "todo bien?");
 console.log(concatenacion);
+```
+
+### Objetos
+
+#### Declarar
+
+```javascript
+var planeta = {
+  nombre: "Melmac",
+  habitantes: 1000000000,
+  habitante: {
+    dientes: 4,
+    frase_caracteristica: "No hay problema",
+    comida_preferida: "gato"
+  }
+};
+```
+
+#### Acceder a valores
+
+```javascript
+console.log(planeta.nombre);
+console.log(planeta.habitante.dientes);
+```
+
+### Arrays
+
+#### Declarar
+
+```javascript
+var lista = [
+  {nombre: "Norman"},
+  {nombre: "Pepe"},
+  {nombre: "Mariana"}
+]
+```
+
+#### Acceder a valores
+
+```javascript
+console.log(lista[0].nombre)
+console.log(lista[1].nombre)
+console.log(lista[2].nombre)
 ```
 
 ## Comunidades geniales
