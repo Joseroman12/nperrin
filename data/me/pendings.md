@@ -6,6 +6,7 @@ If something is not specific or clear, it means I have to think more about that 
 
 - Make program to form words from an input of text.
 - Make program to save like pocket read later sites, with puppeteer.
+- Make program to remove or keep phone photos with adb.
 - Make program to track hours from an excel and send them to my boss.
 - Config pc to use `youtube-dl` from a list.
 - Make Sportclub activity db and client.
