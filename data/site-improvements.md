@@ -4,6 +4,9 @@
 
 - RSS feed.
 - GraphQL client.
+- Subdomains.
+- Pre-commit dictionary validation.
+- Text transform of special characters.
 
 ## Better
 
@@ -12,6 +15,7 @@
 - [Ugly build script](https://github.com/NormanPerrin/nperrin/blob/master/buid.sh).
 - Use vfile to see progress on markdown processing for development.
 - Preview depending on document.
+- Better obscure style code.
 
 ## Investigate
 
