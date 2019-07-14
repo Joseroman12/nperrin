@@ -11,7 +11,13 @@
 ## Better
 
 - Deploy on own server.
-- Replace contact endpoint.
+- Folder and file icon on list.
+- If file or directory is empty, do not show things, if both are empty, create an empty message or not create the file.
+- Add fixed footer with h-card.
+- Add fixed header with navigation.
+- Separate guides on another domain.
+    - Add next and previous buttons.
+    - Add progress bar.
 - [Ugly build script](https://github.com/NormanPerrin/nperrin/blob/master/buid.sh).
 - Use vfile to see progress on markdown processing for development.
 - Preview depending on document.

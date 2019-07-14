@@ -9,6 +9,7 @@
         "rehype-format": "^2.3.2",
         "rehype-stringify": "^6.0.0",
         "remark-external-links": "^5.0.0",
+        "remark-highlight.js": "^5.1.1",
         "remark-parse": "^6.0.3",
         "remark-rehype": "^4.0.1",
         "remark-slug": "^5.1.2",

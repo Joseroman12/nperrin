@@ -3,7 +3,7 @@ body {
   max-width: 650px;
   line-height: 1.6;
   font-size: 18px;
-  padding:0 10px;
+  padding: 0 10px;
   background-color: #eee;
   color: #444;
 }
@@ -37,17 +37,22 @@ blockquote {
 }
 
 pre {
+  background-color: #fafafa;
+  border-left: 4px solid #565656;
   overflow-x: scroll;
   padding: 15px;
-  background-color: #4d4d4d;
-  border-left: 5px solid #222;
 }
 
 code {
+  border: 1px solid #b3b3b3;
+  background-color: #fafafa;
   padding: 1px 3px;
   font-size: 16px;
-  background-color: #4d4d4d;
-  color: #f2f2f2;
+}
+
+pre code {
+  border: 0;
+  background-color: transparent;
 }
 
 table {
@@ -56,32 +61,20 @@ table {
   border-spacing: 0;
 }
 
-table thead th {
-  background-color: #3b3b3b;
-}
-
 table tr {
   border-top: 1px solid #c6cbd1;
-  background-color: #4d4d4d;
+  background-color: #efe9e8;
 }
 
+table thead tr,
 table tr:nth-child(2n) {
-  background-color: #3b3b3b;
+  background-color: #f0ede8;
 }
 
 table td,
 table th {
   border: 1px solid #222;
   padding: 6px 13px;
-}
-
-table th,
-table td {
-  color: #f2f2f2;
-}
-
-table td code {
-  background-color: transparent;
 }
 
 li p {
@@ -92,4 +85,26 @@ li p {
   body {
     max-width: none;
   }
+}
+
+.hljs-keyword,
+.hljs-name {
+  color: darkblue;
+}
+.hljs-string {
+  color: darkgreen;
+}
+.hljs-number {
+  color: blue;
+}
+.hljs-comment {
+  color: green;
+}
+.hljs-literal,
+.hljs-params {
+  color: #490389;
+}
+.hljs-title,
+.hljs-tag {
+  color: brown;
 }
