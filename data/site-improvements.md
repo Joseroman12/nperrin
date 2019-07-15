@@ -7,6 +7,7 @@
 - Subdomains.
 - Pre-commit dictionary validation.
 - Text transform of special characters.
+- Make og-meta links depending on page displayed.
 
 ## Better
 
