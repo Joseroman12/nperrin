@@ -1,15 +1,15 @@
-# What the fuck is this site?
+---
+title: 'WTF is this site'
+url: data/what-the-fuck-is-this-site.html
+description: 'Explanation on what nperrin.io is'
+date: 2019/07/17
+thumbnail-url: /img/excuse-me-what-the-fuck.jpg
+---
 
 Simple site that I've built to upload content. With some exceptions, more useful for me than others.
 
-I could have used a static site generator like [Gatsby](https://gatsbyjs.org), but wanted to learn doing one by myself (kind off, still used some high level tools).
+I could have used a static site generator like [Gatsby](https://gatsbyjs.org), but wanted to learn by doing something different, with some tools that I wanted to try. In specific I used shell scripts with shellcheck, and pandoc.
 
-To navigate thought the site, I recommend using [vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb).
+The code of the site is here: [nperrin github repository](https://github.com/normanperrin/nperrin). But as the code is not minified, you could download or inspect the code with dev tools. Feel free to copy and use as you want everything on this site.
 
-## Design philosophy
-
-There isn't one. I just wanted to worry less about design decisions.
-
-I even copied the css for [this guy](http://bettermotherfuckingwebsite.com/), and the table styles from GitHub markdown pages. This is the [only css I use](/styles.css).
-
-Although the design is very simple, I'll make some [improvements](/site-improvements) to the site, but the main "philosophy" will maintain the same.
+Also, I have a [privacy policy](/privacy-policy) if interested on reading it.

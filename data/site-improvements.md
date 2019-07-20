@@ -1,38 +1,32 @@
-# Improvements
+---
+title: 'Site improvements'
+url: data/site-improvements.html
+description: 'Things I could do to improve the site'
+date: 2019/07/18
+thumbnail-url: /img/nobody-cares.jpg
+---
 
 ## Add
 
 - RSS feed.
 - GraphQL client.
 - Subdomains.
-- Pre-commit dictionary validation.
-- Text transform of special characters.
-- Make og-meta links depending on page displayed.
+- Pre-commit dictionary validations.
+- Separate guides and add PDF download link.
+- webmentions.
+- h-entry.
+- Instagram replica with microformats.
 
 ## Better
 
 - Deploy on own server.
 - Folder and file icon on list.
-- If file or directory is empty, do not show things, if both are empty, create an empty message or not create the file.
-- Add fixed footer with h-card.
-- Add fixed header with navigation.
 - Separate guides on another domain.
     - Add next and previous buttons.
     - Add progress bar.
-- [Ugly build script](https://github.com/NormanPerrin/nperrin/blob/master/buid.sh).
-- Use vfile to see progress on markdown processing for development.
-- Preview depending on document.
-- Better obscure style code.
 
 ## Investigate
 
 - blogroll.
-- webmentions.
-- microformats.
 - webring.
-- h-card.
-
----
-
-Do you have an idea for me to view or investigate? Leave an [issue here](https://github.com/NormanPerrin/nperrin/issues).
 
