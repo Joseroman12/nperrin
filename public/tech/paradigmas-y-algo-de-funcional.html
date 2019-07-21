@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<title>Paradigmas y algo de funcional - Guía</title>
+		<meta charset="utf-8" />
+		<meta name="generator" content="pandoc" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=yes"
+		/>
+		<meta name="author" content="Norman Perrin" />
+		<meta
+			name="description"
+			content="Explicación de algunos conceptos para hablar de paradigmas e introducción al paradigma funcional"
+		/>
+		<meta name="dcterms.date" content="2018/02/16" />
+		<meta name="og:title" content="Paradigmas y algo de funcional - Guía" />
+		<meta
+			name="og:description"
+			content="Explicación de algunos conceptos para hablar de paradigmas e introducción al paradigma funcional"
+		/>
+		<meta name="og:site_name" content="Norman Perrin" />
+		<meta name="og:url" content="/tech/paradigmas-y-algo-de-funcional.html" />
+		<meta name="og:type" content="article" />
+		<meta
+			name="og:image"
+			content="/img/tech/paradigmas-y-algo-de-funcional/window-bash.jpeg"
+		/>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@NormanPerrinOK" />
+		<meta name="twitter:creator" content="@NormanPerrinOK" />
+		<meta
+			name="twitter:title"
+			content="Paradigmas y algo de funcional - Guía"
+		/>
+		<meta
+			name="twitter:description"
+			content="Explicación de algunos conceptos para hablar de paradigmas e introducción al paradigma funcional"
+		/>
+		<meta
+			name="twitter:url"
+			content="/tech/paradigmas-y-algo-de-funcional.html"
+		/>
+		<meta
+			name="twitter:image"
+			content="/img/tech/paradigmas-y-algo-de-funcional/window-bash.jpeg"
+		/>
+		<link rel="canonical" href="/tech/paradigmas-y-algo-de-funcional.html" />
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
+		<link rel="stylesheet" href="/css/general.css" />
+		<link rel="stylesheet" href="/css/code.css" />
+		<!--[if lt IE 9]>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<header id="title-block-header">
+			<h1>Paradigmas y algo de funcional</h1>
+		</header>
+		<main>
+			<p><em>Last update: 2018/02/16</em></p>
+			<p>
+				Al principio, cuando empecé a programar, estaba feliz con que mi
+				programa funcione como esperaba, o pueda entender algo de lo que copiaba
+				y pegaba. Todavía me acuerdo de los primeros programas que hice sacando
+				código de algunos blogs que encontraba por internet. Quizás no entendía
+				del todo lo que hacía ese choclo de código que tenía en mi .bat, pero
+				estaba bastante satisfecho con el resultado.
+			</p>
+			<figure>
+				<img
+					src="/img/tech/paradigmas-y-algo-de-funcional/window-bash.jpeg"
+					alt=""
+				/>
+				<figcaption>window old terminal</figcaption>
+			</figure>
+			<p>
+				Mi situación actual es un poco diferente, al avanzar empecé a hacer
+				programas más complejos y también trabajé con otras personas que tienen
+				que entender lo que escribo. Por eso es que ahora no solo me importa que
+				las cosas que hago funcionen, sino que se puedan entender y se puedan
+				modificar fácilmente también.
+			</p>
+			<h2 id="la-comunicación">La comunicación</h2>
+			<p>
+				Primero me gustaría empezar por definir algunas palabras que vamos a
+				usar frecuentemente cuando hablemos de código. Si ya conocen el
+				significado de expresividad, abstracción y declaratividad pueden
+				saltearse esta sección.
+			</p>
+			<p>
+				Tanto para otras personas como para el “Yo futuro”, es fundamental que
+				aprendamos a comunicarnos bien. Para eso contamos con algunas palabras
+				que encapsulan conceptos que podemos querer transmitirles a otros.
+			</p>
+			<p>
+				Solo les voy a introducir rápidamente 3 palabras que van a ser muy
+				frecuentes cuando empecemos a hablar de cómo escribir código y que
+				estaría bueno que usen en su día a día.
+			</p>
+			<ul>
+				<li>
+					<strong
+						><a href="http://wiki.uqbar.org/wiki/articles/expresividad.html"
+							>Expresividad</a
+						>:</strong
+					>
+					Un concepto subjetivo, vamos a decir que un código es más expresivo
+					que otro si podemos entender su “intención” de forma más rápida.
+				</li>
+				<li>
+					<strong
+						><a href="http://wiki.uqbar.org/wiki/articles/abstraccion.html"
+							>Abstracción</a
+						>:</strong
+					>
+					Me permite separar los conceptos que considero importantes en ese
+					momento, de los accesorios. Permitiéndome ver un problema en partes,
+					haciendo su entendimiento más sencillo.
+				</li>
+				<li>
+					<strong
+						><a href="http://wiki.uqbar.org/wiki/articles/declaratividad.html"
+							>Declaratividad</a
+						>:</strong
+					>
+					separar el “qué” del “cómo”. O sea tener código basado en definiciones
+					más que implementaciones. Podríamos decir también que forzamos la
+					separación entre el conocimiento del dominio y su manipulación.
+				</li>
+			</ul>
+			<p>Dejemos más claras estas definiciones analizando algo de código:</p>
+			<div class="sourceCode" id="cb1">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">// ejemplo 1</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">function</span> <span class="at">doble</span>(numero) <span class="op">{</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="cf">return</span> numero <span class="op">*</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="op">}</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="kw">function</span> <span class="at">mapearDoble1</span>(array) <span class="op">{</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="cf">return</span> <span class="va">array</span>.<span class="at">map</span>(doble)<span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="op">}</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="co">// ejemplo 2</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="kw">function</span> <span class="at">mapearDoble2</span>(array) <span class="op">{</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>  <span class="kw">const</span> respuesta <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">array</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>    <span class="va">respuesta</span>.<span class="at">push</span>(array[i] <span class="op">*</span> <span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>  <span class="op">}</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>  <span class="cf">return</span> respuesta<span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<p>
+				Empezando por la <strong>expresividad</strong>, como dijimos, es depende
+				quién lo mire. O sea, si nunca vi un <em>map…</em> y la verdad que me va
+				a resultar raro el ejemplo 1, en cambio si vengo del mundo imperativo
+				donde el* for(let i…)* lo repito mientras duermo, va a ser más fácil de
+				leer. Sabiendo las 2 formas, me parece más fácil de leer la primera, en
+				el segundo ejemplo tengo que ver qué hace con el array. Aunque con el
+				nombre puedo suponer que hace un recorrido el for, después tengo que ver
+				de qué forma va incrementando, también para asegurarme de que funcione
+				correctamente.
+			</p>
+			<p>
+				Analizando las <strong>abstracciones</strong> de cada uno, el primer
+				ejemplo define una para preocuparnos de la implementación de doble en
+				otro lado. Además dentro de mapearDoble1 usa map para recorrer el array,
+				abstrayéndose de cómo lo recorre y pasándole solamente la función de
+				mapeo. No solamente me despreocupo de la implementación de las otras
+				funciones cuando tengo abtrastracciones, sino que ahora el código está
+				más desacomplado también, lo que nos da más flexibilidad para cambios y
+				re-utilización.
+			</p>
+			<p>
+				Finalmente podemos decir que el ejemplo 1 es más
+				<strong>declarativo</strong> que el 2, al tener código basado más en
+				definiciones que algoritmia. Esto se puede ver cuando se lee la firma de
+				una función. Quizás se lee mejor que es una “definición” con una
+				notación del estilo:
+			</p>
+			<div class="sourceCode" id="cb2">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">const</span> doble <span class="op">=</span> numero <span class="kw">=&gt;</span> numero <span class="op">*</span> <span class="dv">2</span><span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Esto se lee, doble es una función que recibe un número y devuelve el
+				resultado de multiplicarlo por 2.
+			</p>
+			<h2 id="usando-el-paradigma-funcional">Usando el paradigma funcional</h2>
+			<p>
+				Con lo que vimos ya hay ciertas reglas generales que podríamos empezar a
+				aplicar:
+			</p>
+			<ul>
+				<li>
+					<p>
+						Elegir buenos nombres para las variables que escribamos
+						(expresividad)
+					</p>
+				</li>
+				<li>
+					<p>
+						Hacer código modular separando problemas (implementar buenas
+						abstracciones)
+					</p>
+				</li>
+				<li>
+					<p>
+						Intentar escribir un programa basado en definiciones más que
+						implementaciones (declaratividad).
+					</p>
+				</li>
+			</ul>
+			<p>
+				Pero se nos podrían ocurrir otras reglas o restricciones para generar
+				“mejor” código. Ahí es donde entran en juego los paradigmas de
+				programación, que nos da ciertos conceptos estandarizados y conocidos
+				con las cuales trabajar.
+			</p>
+			<p>
+				Vale aclarar que el uso de un paradigma no es excluyente del uso de
+				otro, muchas veces se suelen mezclar conceptos de paradigmas, o se
+				aplican en parte según lo que le sirva a las personas que trabajen con
+				el mismo.
+			</p>
+			<p>
+				Veamos un par de reglas del paradigma y los beneficios que nos puede
+				traer.
+			</p>
+			<h3 id="transparencia-referencial">
+				<a
+					href="http://wiki.uqbar.org/wiki/articles/transparencia-referencial--efecto-de-lado-y-asignacion-destructiva.html"
+					>Transparencia referencial</a
+				>
+			</h3>
+			<blockquote>
+				<p>
+					Existe transparencia referencial en una función cuando la misma puede
+					ser reemplazada por el valor que genera, según sus parámetros de
+					entrada.
+				</p>
+			</blockquote>
+			<p>
+				O sea que no vamos a modificar el contexto en el que se ejecuta ni
+				tampoco va a depender del contexto, solo de sus entradas, por lo que
+				nunca podríamos generar 2 salidas diferentes con una misma serie de
+				entradas.
+			</p>
+			<p>Aplicando bien este concepto obtenemos una función más:</p>
+			<ul>
+				<li>
+					<p>
+						<strong>Predecible</strong>, no dependemos más de las asunciones que
+						haya hecho el programador del contexto cuando creó esa función.
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>Testeable</strong>, ahora no hace falta que recreemos el
+						contexto de ejecución de una función para probarla, solo hay que
+						pasarle una serie de parámetros y esperar un resultado.
+					</p>
+				</li>
+			</ul>
+			<p>Veamos un ejemplo para entender mejor qué beneficios puede traer.</p>
+			<div class="sourceCode" id="cb3">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">class</span> Heladera <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="at">constructor</span>(comidas) <span class="op">{</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="kw">this</span>.<span class="at">comidas</span> <span class="op">=</span> comidas<span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="op">}</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="at">verComida</span>(nombre) <span class="op">{</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>    <span class="cf">return</span> <span class="kw">this</span>.<span class="va">comidas</span>.<span class="at">find</span>(comida <span class="kw">=&gt;</span> <span class="va">comida</span>.<span class="at">nombre</span> <span class="op">==</span> nombre)<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>  <span class="op">}</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="op">}</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="kw">class</span> Comida <span class="op">{</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>  <span class="at">constructor</span>(nombre<span class="op">,</span> saciedad) <span class="op">{</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>    <span class="kw">this</span>.<span class="at">cantidad</span> <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>    <span class="kw">this</span>.<span class="at">nombre</span> <span class="op">=</span> nombre<span class="op">;</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>    <span class="kw">this</span>.<span class="at">saciedad</span> <span class="op">=</span> saciedad<span class="op">;</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>  <span class="op">}</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a></span>
+<span id="cb3-18"><a href="#cb3-18"></a>  <span class="at">serComido</span>(persona) <span class="op">{</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>    <span class="va">persona</span>.<span class="at">comer</span>(<span class="kw">this</span>)<span class="op">;</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>    <span class="kw">this</span>.<span class="at">cantidad</span> <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>  <span class="op">}</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a></span>
+<span id="cb3-23"><a href="#cb3-23"></a>  <span class="at">setCantidad</span>(cantidad) <span class="op">{</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a>    <span class="kw">this</span>.<span class="at">cantidad</span> <span class="op">=</span> cantidad<span class="op">;</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>  <span class="op">}</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>  <span class="at">saciedad</span>() <span class="op">{</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>    <span class="cf">return</span> <span class="kw">this</span>.<span class="at">cantidad</span> <span class="op">*</span> <span class="kw">this</span>.<span class="at">saciedad</span><span class="op">;</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>  <span class="op">}</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a><span class="op">}</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a></span>
+<span id="cb3-31"><a href="#cb3-31"></a><span class="kw">class</span> Persona <span class="op">{</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>  <span class="at">constructor</span>(nombre) <span class="op">{</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>    <span class="kw">this</span>.<span class="at">nombre</span> <span class="op">=</span> nombre<span class="op">;</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a>    <span class="kw">this</span>.<span class="at">hambre</span> <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></span>
+<span id="cb3-35"><a href="#cb3-35"></a>  <span class="op">}</span></span>
+<span id="cb3-36"><a href="#cb3-36"></a>  <span class="at">comer</span>(comida) <span class="op">{</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a>    <span class="kw">this</span>.<span class="at">hambre</span> <span class="op">-=</span> <span class="va">comida</span>.<span class="at">saciedad</span><span class="op">;</span></span>
+<span id="cb3-38"><a href="#cb3-38"></a>  <span class="op">}</span></span>
+<span id="cb3-39"><a href="#cb3-39"></a><span class="op">}</span></span>
+<span id="cb3-40"><a href="#cb3-40"></a></span>
+<span id="cb3-41"><a href="#cb3-41"></a><span class="co">// ejecución</span></span>
+<span id="cb3-42"><a href="#cb3-42"></a><span class="kw">const</span> unaHeladera <span class="op">=</span> <span class="kw">new</span> <span class="at">Heladera</span>([</span>
+<span id="cb3-43"><a href="#cb3-43"></a>  <span class="kw">new</span> <span class="at">Comida</span>(<span class="st">&quot;Choripan&quot;</span><span class="op">,</span> <span class="dv">20</span>)<span class="op">,</span></span>
+<span id="cb3-44"><a href="#cb3-44"></a>  <span class="kw">new</span> <span class="at">Comida</span>(<span class="st">&quot;Empanada&quot;</span><span class="op">,</span> <span class="dv">10</span>)<span class="op">,</span></span>
+<span id="cb3-45"><a href="#cb3-45"></a>  <span class="kw">new</span> <span class="at">Comida</span>(<span class="st">&quot;Milanesa&quot;</span><span class="op">,</span> <span class="dv">30</span>)</span>
+<span id="cb3-46"><a href="#cb3-46"></a>])<span class="op">;</span></span>
+<span id="cb3-47"><a href="#cb3-47"></a></span>
+<span id="cb3-48"><a href="#cb3-48"></a><span class="kw">const</span> unaComida <span class="op">=</span> <span class="va">unaHeladera</span>.<span class="at">verComida</span>(<span class="st">&quot;Milanesa&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-49"><a href="#cb3-49"></a><span class="kw">const</span> unaPersona <span class="op">=</span> <span class="kw">new</span> <span class="at">Persona</span>(<span class="st">&quot;Pepe&quot;</span>)<span class="op">;</span></span>
+<span id="cb3-50"><a href="#cb3-50"></a></span>
+<span id="cb3-51"><a href="#cb3-51"></a><span class="va">unaComida</span>.<span class="at">setCantidad</span>(<span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb3-52"><a href="#cb3-52"></a>unaComida<span class="op">;</span> <span class="co">// Comida {cantidad: 1, nombre: &quot;Milanesa&quot;, saciedad: 30}</span></span>
+<span id="cb3-53"><a href="#cb3-53"></a>unaPersona<span class="op">;</span> <span class="co">// Persona {nombre: &quot;Pepe&quot;, hambre: 100}</span></span>
+<span id="cb3-54"><a href="#cb3-54"></a><span class="va">unaComida</span>.<span class="at">serComido</span>(unaPersona)<span class="op">;</span></span>
+<span id="cb3-55"><a href="#cb3-55"></a>unaComida<span class="op">;</span> <span class="co">// Comida {cantidad: 0, nombre: &quot;Milanesa&quot;, saciedad: 30}</span></span>
+<span id="cb3-56"><a href="#cb3-56"></a>unaPersona<span class="op">;</span> <span class="co">// Persona {nombre: &quot;Pepe&quot;, hambre: 70}</span></span></code></pre>
+			</div>
+			<p>
+				En este ejemplo podemos ver que no se está cumpliendo la transparencia
+				referencial: <em>.serComido</em> genera cambios en <em>unaPersona</em> y
+				en sí mismo, además como tiene estado interno
+				<strong>que puede cambiar</strong>, su ejecución depende de cómo se
+				encuentre en ese momento. Es importante remarcar que las funciones que
+				modifican el estado de un objeto, hacen impredecible los valores de las
+				siguientes ejecuciones si no se tuvieron en cuenta, o sea que el
+				problema no es que tenga estado interno, sino que este pueda cambiar sin
+				que nos demos cuenta.
+			</p>
+			<p>
+				Todo esto lo hace menos predecible y testeable. Puede traer bugs muy
+				fácilmente si esa misma instancia de <em>unaComida</em> o
+				<em>unaPersona</em> se usa por accidente en distintos lugares. Un cambio
+				en una parte del programa podría afectar muchas otras que usen esos
+				objetos.
+			</p>
+			<p>
+				Además es un ejemplo muy sencillo, se pueden imaginar que en un programa
+				mediano ya van a tener muchos cambios de estado de contexto y se puede
+				volver complejo de manejar si no tenemos la seguridad de la
+				transparencia referencial. Igualmente tampoco tenemos que tener todo
+				nuestro programa “puro”, sino que podemos implementar algunas
+				abstracciones, teniendo capas de funciones puras y quizás otra en la que
+				se maneje el estado (es una forma).
+			</p>
+			<p>
+				Un buen comienzo es empezar a declarar cada entrada y salida de nuestras
+				funciones, sin dejar ninguna entrada o salida “oculta”.
+			</p>
+			<p>Dejo que analicen tranquilos esta comparación.</p>
+			<div class="sourceCode" id="cb4">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">function</span> <span class="at">Heladera</span>(comidas) <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="cf">return</span> <span class="op">{</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="dt">verComida</span><span class="op">:</span> nombre <span class="kw">=&gt;</span> <span class="va">comidas</span>.<span class="at">find</span>(comida <span class="kw">=&gt;</span> <span class="va">comida</span>.<span class="at">nombre</span>() <span class="op">==</span> nombre)</span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="op">};</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="op">}</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="kw">function</span> <span class="at">Comida</span>(nombre<span class="op">,</span> saciedad<span class="op">,</span> cantidad) <span class="op">{</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>  <span class="cf">return</span> <span class="op">{</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>    <span class="dt">nombre</span><span class="op">:</span> () <span class="kw">=&gt;</span> nombre<span class="op">,</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>    <span class="dt">serComido</span><span class="op">:</span> persona <span class="kw">=&gt;</span> [</span>
+<span id="cb4-11"><a href="#cb4-11"></a>      <span class="at">Comida</span>(nombre<span class="op">,</span> saciedad<span class="op">,</span> <span class="dv">0</span>)<span class="op">,</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a>      <span class="va">persona</span>.<span class="at">comer</span>(saciedad <span class="op">*</span> cantidad)</span>
+<span id="cb4-13"><a href="#cb4-13"></a>    ]</span>
+<span id="cb4-14"><a href="#cb4-14"></a>  <span class="op">};</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="op">}</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a></span>
+<span id="cb4-17"><a href="#cb4-17"></a><span class="kw">function</span> <span class="at">Persona</span>(nombre<span class="op">,</span> hambre) <span class="op">{</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a>  <span class="cf">return</span> <span class="op">{</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a>    <span class="dt">hambre</span><span class="op">:</span> () <span class="kw">=&gt;</span> hambre<span class="op">,</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a>    <span class="dt">comer</span><span class="op">:</span> saciedad <span class="kw">=&gt;</span> <span class="at">Persona</span>(nombre<span class="op">,</span> hambre <span class="op">-</span> saciedad)</span>
+<span id="cb4-21"><a href="#cb4-21"></a>  <span class="op">};</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="op">}</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a></span>
+<span id="cb4-24"><a href="#cb4-24"></a><span class="co">// ejecución</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a><span class="kw">const</span> unaHeladera <span class="op">=</span> <span class="at">Heladera</span>([</span>
+<span id="cb4-26"><a href="#cb4-26"></a>  <span class="at">Comida</span>(<span class="st">&quot;Choripan&quot;</span><span class="op">,</span> <span class="dv">20</span><span class="op">,</span> <span class="dv">0</span>)<span class="op">,</span></span>
+<span id="cb4-27"><a href="#cb4-27"></a>  <span class="at">Comida</span>(<span class="st">&quot;Empanada&quot;</span><span class="op">,</span> <span class="dv">10</span><span class="op">,</span> <span class="dv">0</span>)<span class="op">,</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a>  <span class="at">Comida</span>(<span class="st">&quot;Milanesa&quot;</span><span class="op">,</span> <span class="dv">30</span><span class="op">,</span> <span class="dv">1</span>)</span>
+<span id="cb4-29"><a href="#cb4-29"></a>])<span class="op">;</span></span>
+<span id="cb4-30"><a href="#cb4-30"></a></span>
+<span id="cb4-31"><a href="#cb4-31"></a><span class="kw">const</span> unaComida <span class="op">=</span> <span class="va">unaHeladera</span>.<span class="at">verComida</span>(<span class="st">&quot;Milanesa&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-32"><a href="#cb4-32"></a><span class="kw">const</span> unaPersona <span class="op">=</span> <span class="at">Persona</span>(<span class="st">&quot;Pepe&quot;</span><span class="op">,</span> <span class="dv">100</span>)<span class="op">;</span></span>
+<span id="cb4-33"><a href="#cb4-33"></a></span>
+<span id="cb4-34"><a href="#cb4-34"></a><span class="co">// las entradas fueron declaradas cuando se ejecuto Comida(),</span></span>
+<span id="cb4-35"><a href="#cb4-35"></a><span class="co">// las mismas estan en el closure de las funciones nombre() y serComido(),</span></span>
+<span id="cb4-36"><a href="#cb4-36"></a><span class="co">// para cambiar esas variables hay que hacer una comida nueva, no puede ser sobre la misma.</span></span>
+<span id="cb4-37"><a href="#cb4-37"></a><span class="co">// aclarando, el estado actual es: { Milanesa, 30, 1 }</span></span>
+<span id="cb4-38"><a href="#cb4-38"></a>unaComida<span class="op">;</span> <span class="co">// {nombre: ƒ, serComido: ƒ}</span></span>
+<span id="cb4-39"><a href="#cb4-39"></a></span>
+<span id="cb4-40"><a href="#cb4-40"></a><span class="co">// lo mismo pasa con unaPersona</span></span>
+<span id="cb4-41"><a href="#cb4-41"></a><span class="co">// para aclarar el estado es: { Pepe, 100 }</span></span>
+<span id="cb4-42"><a href="#cb4-42"></a>unaPersona<span class="op">;</span> <span class="co">// {hambre: ƒ, comer: ƒ}</span></span>
+<span id="cb4-43"><a href="#cb4-43"></a></span>
+<span id="cb4-44"><a href="#cb4-44"></a><span class="va">unaComida</span>.<span class="at">serComido</span>(unaPersona)<span class="op">;</span> <span class="co">// [{…}, {…}]</span></span>
+<span id="cb4-45"><a href="#cb4-45"></a><span class="co">// ahora retorna como primer elemento una nueva comida con cantidad 0</span></span>
+<span id="cb4-46"><a href="#cb4-46"></a><span class="co">// como segundo elemento retorna la nueva persona con hambre 70</span></span></code></pre>
+			</div>
+			<p>
+				Para empezar, aclarar que usar class o function devolviendo un objeto no
+				son muy diferentes, los 2 pueden tener estado interno, lo importante a
+				tener en cuenta como restricción es no cambiar su estado interno del que
+				fue creado.
+			</p>
+			<p>
+				Ahora tenemos mayor control sobre el estado de nuestros objetos, ya que
+				no cambian, así ganamos más predictibilidad en nuestro código.
+			</p>
+			<h3 id="orden-superior">
+				<a href="http://wiki.uqbar.org/wiki/articles/orden-superior.html"
+					>Orden superior</a
+				>
+			</h3>
+			<blockquote>
+				<p>
+					Cuando una función puede recibir y ejecutar internamente otra función
+					o devolver una.
+				</p>
+			</blockquote>
+			<p>
+				Es una muy buena herramienta para reutilizar comportamiento. Ahora
+				podemos generar mejores abstracciones ya que lo que antes teníamos en la
+				misma función, la podemos separar, dejando en la definición de la
+				función solo lo constante y pasando por parámetro lo variable.
+			</p>
+			<div class="sourceCode" id="cb5">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">// ejemplo 1</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">function</span> <span class="at">esProgramador</span>(persona) <span class="op">{</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="cf">return</span> <span class="va">persona</span>.<span class="at">profesion</span> <span class="op">==</span> <span class="st">&quot;Programador&quot;</span><span class="op">;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="op">}</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="kw">function</span> <span class="at">esMayorEdad</span>(persona) <span class="op">{</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>  <span class="cf">return</span> <span class="va">persona</span>.<span class="at">edad</span> <span class="op">&gt;=</span> <span class="dv">18</span><span class="op">;</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="op">}</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="kw">function</span> <span class="at">filtrarPersonas</span>(personas<span class="op">,</span> criterio) <span class="op">{</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a>  <span class="cf">return</span> <span class="va">personas</span>.<span class="at">filter</span>(criterio)<span class="op">;</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="op">}</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="co">// ejemplo 2</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="kw">function</span> <span class="at">filtrarProgramadores</span>(personas) <span class="op">{</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a>  <span class="kw">const</span> personasFiltradas <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">personas</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a>    <span class="cf">if</span> (personas[i].<span class="at">profesion</span> <span class="op">==</span> <span class="st">&quot;Programador&quot;</span>) <span class="op">{</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a>      <span class="va">personasFiltradas</span>.<span class="at">push</span>(personas[i])<span class="op">;</span></span>
+<span id="cb5-20"><a href="#cb5-20"></a>    <span class="op">}</span></span>
+<span id="cb5-21"><a href="#cb5-21"></a>  <span class="op">}</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a>  <span class="cf">return</span> personasFiltradas<span class="op">;</span></span>
+<span id="cb5-23"><a href="#cb5-23"></a><span class="op">}</span></span>
+<span id="cb5-24"><a href="#cb5-24"></a></span>
+<span id="cb5-25"><a href="#cb5-25"></a><span class="kw">function</span> <span class="at">filtrarMayores</span>(personas) <span class="op">{</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a>  <span class="kw">const</span> personasFiltradas <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb5-27"><a href="#cb5-27"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">personas</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></span>
+<span id="cb5-28"><a href="#cb5-28"></a>    <span class="cf">if</span> (personas[i].<span class="at">edad</span> <span class="op">&gt;=</span> <span class="dv">18</span>) <span class="op">{</span></span>
+<span id="cb5-29"><a href="#cb5-29"></a>      <span class="va">personasFiltradas</span>.<span class="at">push</span>(personas[i])<span class="op">;</span></span>
+<span id="cb5-30"><a href="#cb5-30"></a>    <span class="op">}</span></span>
+<span id="cb5-31"><a href="#cb5-31"></a>  <span class="op">}</span></span>
+<span id="cb5-32"><a href="#cb5-32"></a>  <span class="cf">return</span> personasFiltradas<span class="op">;</span></span>
+<span id="cb5-33"><a href="#cb5-33"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<p>
+				Si vemos en el <strong>ejemplo 2</strong>, lo único que cambia es el
+				criterio de filtro entre las 2 funciones que se definen, seguimos
+				escribiendo cómo recorrer el array cuando lo podríamos abstraer. Vemos
+				cómo lo podemos hacer haciendo uso de la función <em>.filter</em> y
+				pasándole como parámetro el criterio de filtro.
+			</p>
+			<p>
+				Ganamos expresividad porque es más legible, hacemos buen uso de
+				abstracciones obteniendo una función mucho más flexible a cambios y
+				ganamos declaratividad ya que si vemos cada función del
+				<strong>ejemplo 1</strong> son algo más parecido a definiciones que una
+				serie de pasos. Qué más querés?
+			</p>
+			<h2 id="cerrando">Cerrando</h2>
+			<p>
+				Hay un montón de otros conceptos para ver, esto es solo un pantallazo de
+				lo que es un paradigma de programación y algo de funcional, y lo bueno
+				es que de a poco ya pueden empezarlos a aplicar. Mientras sigan
+				investigando y probando estos conceptos en programas reales, van a darse
+				cuenta de su utilidad y facilidad que les brinda en el desarrollo y más
+				importante, el mantenimiento. La comunidad es genial y la industria lo
+				está empezando a usar cada vez más. Es un muy buen momento para aprender
+				este paradigma.
+			</p>
+			<p><strong>Recursos y personas que recomiendo seguir:</strong></p>
+			<ul>
+				<li>
+					<a href="http://aprendehaskell.es/main.html"
+						>¡Aprende Haskell por el bien de todos!</a
+					>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UCiAxxHXVLBwlW72EhZweX3Q"
+						>Quilombo Driven Development</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://medium.com/javascript-scene/the-rise-and-fall-and-rise-of-functional-programming-composable-software-c2d91b424c8c"
+						>The Rise and Fall of Funcional Programming</a
+					>
+				</li>
+				<li><a href="https://twitter.com/drboolean">Brian Lonsdorf</a></li>
+				<li><a href="https://twitter.com/_ericelliott">Eric Elliott</a></li>
+			</ul>
+			<p><strong>Comunidades:</strong></p>
+			<ul>
+				<li>
+					<a href="http://slack.meetupjs.com.ar">Slack de MeetupJS</a> (tienen
+					canal de funcional, no solo se habla de JS)
+				</li>
+				<li>
+					<a href="http://fpchat-invite.herokuapp.com"
+						>Slack Functional Programming</a
+					>
+				</li>
+			</ul>
+		</main>
+		<footer>
+			<div class="h-card hcard vcard" style="display:none;">
+				<img
+					rel="me"
+					class="u-photo"
+					alt="Norman Perrin blurred"
+					src="/img/me.jpeg"
+				/>
+				<br />
+				<span>Name:</span>
+				<a class="p-name u-url" rel="me" href="https://nperrin.io/"
+					>Norman Perrin</a
+				>
+				<br />
+				<span>Email:</span>
+				<a class="u-email" href="mailto:nperrin@riseup.net"
+					>nperrin@riseup.net</a
+				>
+				<br />
+				<span>Twitter:</span>
+				<a class="u-url" rel="me" href="https://twitter.com/normanperrinok"
+					>@NormanPerrinOK</a
+				>
+				<br />
+				<span>Github:</span>
+				<a class="u-url" rel="me" href="https://github.com/normanperrin"
+					>normanperrin</a
+				>
+				<br />
+				<span>Jobs:</span>
+				<span class="p-job-title">Developer, Freelancer, Consultant</span>
+				<br />
+				<span>PGP Key:</span>
+				<a rel="pgpkey authn" href="/nperrin.asc" class="u-key"
+					>0xDD6DD4CB21147E87</a
+				>
+			</div>
+		</footer>
+	</body>
+</html>

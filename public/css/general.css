@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: eczar,Helvetica Neue,Arial,sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fefefe;
+  color: #333;
+}
+
+header {
+  padding: 15px;
+  text-align: center;
+  background-color: mediumspringgreen;
+}
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  border-bottom: 1px solid #aaa;
+}
+
+h2,
+h3 {
+  margin-top: 50px;
+  padding-bottom: 4px;
+}
+
+a {
+  color: #555;
+  text-decoration-color: #555;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr {
+  border-top: 1px solid #c6cbd1;
+}
+table thead tr,
+table td,
+table th {
+  border: 1px solid #222;
+  padding: 6px 13px;
+}
+
+table tr.header {
+  background-color: mediumspringgreen;
+}
+table tr.odd {
+  background-color: lightcyan;
+}
+table tr.even {
+  background-color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+
+}
+ul li {
+  position: relative;
+  line-height: 30px;
+}
+ul li::before {
+  content: "\271C";
+  color: #888;
+  font-size: .875em;
+  top: .025em;
+  left: -1.375em;
+  position: absolute;
+}
+ul li p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+@media print {
+  body {
+    max-width: none;
+  }
+}

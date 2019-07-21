@@ -1,0 +1,17 @@
+pre {
+  padding: 15px;
+  overflow-x: scroll;
+  border-radius: 15px;
+  background-color: #333;
+}
+
+pre code { color: azure; }
+
+span[id^=cb] { color: azure; }
+span.kw { color: mediumspringgreen; }
+span.op { color: aqua; }
+span.st { color: tomato; }
+span.at { color: lightblue; }
+span.co { color: greenyellow; }
+span.dv { color: dodgerblue; }
+
