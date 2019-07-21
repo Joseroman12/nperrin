@@ -23,7 +23,8 @@ description: 'Listing of files and directories for $files_url'
 
 	temp_file_name=".temp-$(echo "$1" |sed 's/\//-/')"
 	touch "$temp_file_name"
-	ls -p "$1" |grep -v \/ |grep -v index\.md |while read -r file_name; do add_file_item "$file_name" "$files_url" >> "$temp_file_name"; done
+	ls -p "$1" |grep -v \/ |grep -v index\.md |grep -v 404\.md |while read -r file_name; do add_file_item "$file_name" "$files_url" >> "$temp_file_name"; done
+	cat "$temp_file_name"
 	sort -r "$temp_file_name" >> "$file_path"
 	rm "$temp_file_name"
 
