@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# --- pre build ---
+rm -fr public && cp -R static public
+
+## -- build directories --
+printf '\nCreating listing directories:\n\n'
+
 add_file_item () {
 	file_name="$(echo "$1" |sed 's/md$/html/')"
 	file_url="$(echo $2/$file_name |sed 's@\/\/@\/@')"
@@ -24,7 +30,6 @@ description: 'Listing of files and directories for $files_url'
 	temp_file_name=".temp-$(echo "$1" |sed 's/\//-/')"
 	touch "$temp_file_name"
 	ls -p "$1" |grep -v \/ |grep -v index\.md |grep -v 404\.md |while read -r file_name; do add_file_item "$file_name" "$files_url" >> "$temp_file_name"; done
-	cat "$temp_file_name"
 	sort -r "$temp_file_name" >> "$file_path"
 	rm "$temp_file_name"
 
@@ -33,6 +38,19 @@ description: 'Listing of files and directories for $files_url'
 ' >> "$file_path"
 
 	ls -rp "$1" |grep \/ |while read -r dir_name; do echo "- [$dir_name](/$dir_name)" >> "$file_path"; done
+
+	printf '%s\n' "$file_path"
 }
 
 find data -type d |while read -r dir_path; do create_listing_file "$dir_path"; done
+
+# --- build files ---
+printf '\nConverting markdown to html files:\n\n'
+build_from_path () {
+	path="$(echo "$1" |sed 's/data/public/;s/\.md/\.html/')"
+	echo "$path"
+	mkdir -p "$(dirname "$path")"
+	pandoc -s --toc --template nperrin.html5 -f markdown -t html -o "$path" "$1"
+}
+
+find data/* -name '*.md' |while read -r file; do build_from_path "$file"; done

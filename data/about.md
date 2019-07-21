@@ -2,7 +2,7 @@
 title: About
 url: /about.html
 description: 'Information about Norman Perrin'
-date: 2019/07/17
+date: 2019/07/21
 ---
 
 Hi, I'm Norman Perrin.
@@ -19,11 +19,11 @@ I find programming very fun, and frustrating when things don't work well.
 That's why I'm motivated to build nice, trustable, and simple systems for the end users.
 Complex systems drives downs maintanibility and developer hapiness, so I always try to do simple things, removing as much complexity and things that could go wrong, and having the most control on the variables which I work with.
 
-Am I crazy for wanting the served source code (view-source:https://nperrin.io/about) to look nice? I like the idea of people copying and sharing their sites, and for that the source code should be expressive.
+Am I crazy for wanting the served source code (`view-source:https://nperrin.io/about`) to look nice? I like the idea of people copying and sharing their sites, and for that the source code should be easy to read and modify.
 
 ## E-mail
 
-- nperrin [at] riseup.net.
+- `nperrin [at] riseup.net`.
 - PGP Key: [0xDD6DD4CB21147E87](https://sks-keyservers.net/pks/lookup?op=get&search=0xDD6DD4CB21147E87) or [download public key](/nperrin.asc).
 
 ## Other platforms
