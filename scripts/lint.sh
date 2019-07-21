@@ -1,3 +1,3 @@
 #!/bin/sh
 
-prettier --use-tabs --write public/**/*.html
+find public -name '*.html' -exec prettier --use-tabs --write {} \;
