@@ -10,13 +10,13 @@ thumbnail-url: /img/post/opinar-discutir-en-un-mundo-de-hechos/eh.jpg
 
 Es cierto, la realidad no está hecha de opiniones. Pero…
 
-### La realidad se interpreta
+## La realidad se interpreta
 
 No podríamos comportarnos si no encontráramos patrones en hechos y los pudiésemos interpretar a significado. Solo con los hechos no hacemos nada.
 
 Entonces discutimos con hechos? Sí, pero siempre interpretándolos, dándoles significado. Esa parte no es exacta y varía según perspectiva. Ahí es donde entra una opinión.
 
-### Lo social es complejo
+## Lo social es complejo
 
 Las discusiones que involucran comportamiento social son las que más nos interesan discutir, porque es el tema del que más desconocemos, entonces una opinión en este tema entra fácil, pero andá a chequearla.
 
@@ -26,11 +26,11 @@ Piensen en intentar discutir alguna teoría física que todavía no fue probada 
 
 Escuchamos sobre teorías económicas, políticas, etc. Y no está mal que existan, al contrario, tienen que existir para guiar nuestro comportamiento. Inferir el comportamiento por experiencias es mejor que la nada.
 
-### Discutiendo
+## Discutiendo
 
 No hace falta tener un posgrado para compartir nuestra opinión sobre algún acontecimiento o política social. Discutir con otros tiene un montón de beneficios (como voy a escribir en otro artículo). Pero deberíamos tener en cuenta la [imprecisión que podemos tener al discutir](/post/opiniones-imprecision/).
 
-### Conclusión
+## Conclusión
 
 Estas discusiones valen la pena tenerlas por el simple hecho de que, mientras intentemos llenar los huecos de desconocimiento que tenemos, hay que definir comportamientos y seguir avanzando en la búsqueda de mejores respuestas.
 
