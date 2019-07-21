@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/nperrin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nperrin.io
+  * I am nperrin (https://keybase.io/nperrin) on keybase.
+  * I have a public key with fingerprint 9F35 617C 9BE1 3088 6E55  D9D1 DD6D D4CB 2114 7E87
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101c28ae44aee675dad12d56cffaa465186fcaf2ba365fe8e73cb46fdcd91e43b340a",
+      "fingerprint": "9f35617c9be130886e55d9d1dd6dd4cb21147e87",
+      "host": "keybase.io",
+      "key_id": "dd6dd4cb21147e87",
+      "kid": "0101c28ae44aee675dad12d56cffaa465186fcaf2ba365fe8e73cb46fdcd91e43b340a",
+      "uid": "22fa528016da88891fac66e612373d19",
+      "username": "nperrin"
+    },
+    "service": {
+      "hostname": "nperrin.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1563671215,
+  "expire_in": 157680000,
+  "prev": "af27378e34ff663194584c2218b35277ed67cb747e1e58439cd458d1c3e4faa1",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUmlIVUEYfa98uWRiqC2QkYMIldmbO/fO3Pd+VLRAC9KmVFA85t6Zqxf13ud7
+T9M08UeRYnsRiZELtki0QbRIURBmpRFC+0JULhmEBYFB61zLH0E/mz/DnDnfmXMO
+s3fCWFeM+2XRg6605Kod7q5BzbUJtV+pAJrNyoG/AhTwkY0XMh6OBApMBvzAC71Q
+l1TKZZlyjonCKIMSU7BuGJTKWIEqNnRqSBpFWDG4ygnSNRkbTGc+yGWkIdlLQSYw
+TCuPh4Ih04oIWZ+BFAyJ7tM4RF5VxVxRmI9BxjBjsq5JEMqEq0QM5tthZ0KY02iY
+Z5m2wMQhMGLvH/z/7LtkRE6SDKpIqhdiRlVV9UGD6hhzDCVEEIM+hxjmIYsWccG2
+gjwkgoKtmUCApabOnV6dIH8TfocJhuyIrduFAs+PRIJhvzMXKQ86xM1cC/yRCGim
+xUSJYqKUh8KmbQE/FEw9YjqaUMEIEyhBJRPwsqAZ4gHTYSgEq16xnHd4qZAUmQki
+KkdyrmFgjKBPVlRZlySoakiRCOEME10jok/IxQ3y6UwwGNQRl0V3EDipii0b+GXh
+k+YJzbCZZ9FISYiDrXG1bhTlcse4UielRTUqtLLhtbfGyn3aM/rxPGOcX+eKi00c
+ReZ9jv42Pp6lDx2c4alLiokeWKk8Bfamry132zI6pq/Imec+f3Ha7hUXcf/2j5VJ
+7Dqan7JvY+/QraV1TY9+Hru0+ty6q2fOfup6lPj4wPCG3i2e4RKgbTnhnlVdfjMr
+/rrG62ODPzxVNZ0X8lrn0snJOWq6J3+qvDzryarZA6mD+M5S3NNTNeXQmqyE729e
+nD+d3dFl3942531Cr0wOwz7S/Oz+rqojFblS97VLjeWXa639rc3dxNhzogwuWng0
+40bLupPRtSnPO5RdrwqbovYlVy7o7P9w6/jEFq0evr12r90fq45bsmzxmglusja7
+o6E4KWZn9freh33g1LuBwZnROSlz2uK+/AI=
+=V3k2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nperrin
+
+==================================================================
+
