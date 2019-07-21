@@ -2,7 +2,7 @@
 title: 'Pendings'
 url: /pendings.html
 description: 'Taks I want to accomplish'
-date: 2019/07/18
+date: 2019/07/20
 thumbnail-url: /img/pending-project.jpg
 ---
 
@@ -11,9 +11,9 @@ If something is not specific or clear, it means I have to think more about that 
 ## Programming
 
 - Make program to form words from an input of text.
-- Make program to save like pocket read later sites, with ~puppeteer~ pandoc.
+- Make program to save like pocket read later sites, with ~~puppeteer~~ pandoc.
 - Make program to remove or keep phone photos with adb.
-- Make program to track hours from an ~excel~ file and send them to my boss.
+- Make program to track hours from an ~~excel~~ file and send them to my boss.
 - Config mac to use `youtube-dl` from a list.
 - Make Sportclub activity db and client.
 - Make ios dating app to learn swift.
@@ -21,6 +21,7 @@ If something is not specific or clear, it means I have to think more about that 
 
 ## Educational
 
+- Make Security related videos.
 - Make short videos of web development and related tools.
 - Make DOM manipulation guide.
 - Make GraphQL wrapper for REST video, repo and server.
