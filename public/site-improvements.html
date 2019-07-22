@@ -10,14 +10,14 @@
 		/>
 		<meta name="author" content="Norman Perrin" />
 		<meta name="description" content="Things I could do to improve the site" />
-		<meta name="dcterms.date" content="2019/07/20" />
+		<meta name="dcterms.date" content="2019/07/21" />
 		<meta name="og:title" content="Site improvements - nperrin" />
 		<meta
 			name="og:description"
 			content="Things I could do to improve the site"
 		/>
 		<meta name="og:site_name" content="Norman Perrin" />
-		<meta name="og:url" content="data/site-improvements.html" />
+		<meta name="og:url" content="/site-improvements.html" />
 		<meta name="og:type" content="article" />
 		<meta name="og:image" content="/img/nobody-cares.jpg" />
 		<meta name="twitter:card" content="summary" />
@@ -28,9 +28,9 @@
 			name="twitter:description"
 			content="Things I could do to improve the site"
 		/>
-		<meta name="twitter:url" content="data/site-improvements.html" />
+		<meta name="twitter:url" content="/site-improvements.html" />
 		<meta name="twitter:image" content="/img/nobody-cares.jpg" />
-		<link rel="canonical" href="data/site-improvements.html" />
+		<link rel="canonical" href="/site-improvements.html" />
 		<link rel="icon" type="image/png" href="/img/favicon.png" />
 		<link rel="stylesheet" href="/css/general.css" />
 		<!--[if lt IE 9]>
@@ -43,12 +43,12 @@
 			<h1>Site improvements</h1>
 		</header>
 		<main>
-			<p><em>Last update: 2019/07/20</em></p>
+			<nav id="hierarchy" role="navigation">
+				<a href="/">nperrin</a><span> → </span><span>site-improvements</span>
+			</nav>
+			<p><em>Last update: 2019/07/21</em></p>
 			<h2 id="add">Add</h2>
 			<ul>
-				<li>
-					Add header navigation hierarchy to move easily thought the site.
-				</li>
 				<li>RSS feed.</li>
 				<li>GraphQL client.</li>
 				<li>
@@ -60,12 +60,6 @@
 					</ul>
 				</li>
 				<li>Pre-commit dictionary validations.</li>
-				<li>
-					Better <del>ugly</del>
-					<a href="https://github.com/NormanPerrin/nperrin/tree/src/scripts"
-						>several ugly build scripts</a
-					>.
-				</li>
 				<li>Separate guides and add PDF download link.</li>
 				<li>webmentions.</li>
 				<li>h-entry.</li>
@@ -74,7 +68,14 @@
 			<h2 id="better">Better</h2>
 			<ul>
 				<li>Deploy on own server.</li>
-				<li>Folder and file icon on list.</li>
+				<li>
+					<a href="https://github.com/NormanPerrin/nperrin/tree/src/scripts"
+						>Several ugly build scripts</a
+					>.
+				</li>
+				<li>
+					Folder and file icon on list + not showing empty Directories or Files.
+				</li>
 				<li>
 					Separate guides on another domain.
 					<ul>

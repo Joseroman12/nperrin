@@ -53,6 +53,10 @@
 			<h1>Introducción a Git y GitHub</h1>
 		</header>
 		<main>
+			<nav id="hierarchy" role="navigation">
+				<a href="/">nperrin</a><span> → </span><a href="/tech">tech</a
+				><span> → </span><span>guia-introduccion-a-git</span>
+			</nav>
 			<p><em>Last update: 2019/05/18</em></p>
 			<h2>Tabla de contenidos</h2>
 			<nav id="TOC" role="doc-toc">
@@ -146,7 +150,11 @@
 					esté instalado escribiendo
 				</li>
 			</ol>
-			<pre><code>$ git --version</code></pre>
+			<div class="sourceCode" id="cb1">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>$ <span class="fu">git</span> --version</span></code></pre>
+			</div>
 			<ol start="4" type="1">
 				<li>Una <strong>cuenta en GitHub</strong>.</li>
 			</ol>
@@ -297,13 +305,29 @@
 			</p>
 			<h3 id="configuración-inicial">Configuración inicial</h3>
 			<p>Configuro mi nombre:</p>
-			<pre><code>$ git config --global user.name &quot;[usuario github]&quot; # Usar su nombre de usuario de GitHub</code></pre>
+			<div class="sourceCode" id="cb2">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>$ <span class="fu">git</span> config --global user.name <span class="st">&quot;[usuario github]&quot;</span> <span class="co"># Usar su nombre de usuario de GitHub</span></span></code></pre>
+			</div>
 			<p>Configuro mi mail:</p>
-			<pre><code>$ git config --global user.email &quot;[mail github]&quot; # Usar su mail de GitHub</code></pre>
+			<div class="sourceCode" id="cb3">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>$ <span class="fu">git</span> config --global user.email <span class="st">&quot;[mail github]&quot;</span> <span class="co"># Usar su mail de GitHub</span></span></code></pre>
+			</div>
 			<p>Configuro mi editor por defecto</p>
-			<pre><code>$ git config --global core.editor &quot;[comando para abrir editor]&quot; # &quot;subl -n -w&quot; para Sublime Text o &quot;code&quot; para VSCode...</code></pre>
+			<div class="sourceCode" id="cb4">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a>$ <span class="fu">git</span> config --global core.editor <span class="st">&quot;[comando para abrir editor]&quot;</span> <span class="co"># &quot;subl -n -w&quot; para Sublime Text o &quot;code&quot; para VSCode...</span></span></code></pre>
+			</div>
 			<p>Si quiero ver los valores que tienen puedo usar</p>
-			<pre><code>$ git config --get user.name</code></pre>
+			<div class="sourceCode" id="cb5">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a>$ <span class="fu">git</span> config --get user.name</span></code></pre>
+			</div>
 			<p>
 				Si quiero cambiar el <code>user.name</code> o <code>user.email</code>,
 				simplemente vuelvo a escribir esos comandos con los valores correctos,
@@ -328,7 +352,11 @@
 				<li>Ahora que tenemos un proyectito metámosle <strong>git</strong>.</li>
 				<li><strong>Inicializamos</strong> un repositorio con este comando:</li>
 			</ol>
-			<pre><code>$ git init</code></pre>
+			<div class="sourceCode" id="cb6">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a>$ <span class="fu">git</span> init</span></code></pre>
+			</div>
 			<p>
 				Quizás no nos dimos cuenta, pero se nos creó una carpeta oculta llamada
 				<code>.git/</code>. Acá se va a guardar el historial de cambios, así que
@@ -337,7 +365,11 @@
 			</p>
 			<h4 id="viendo-el-estado">Viendo el estado</h4>
 			<p>Un comando que vamos a usar todo el tiempo:</p>
-			<pre><code>$ git status</code></pre>
+			<div class="sourceCode" id="cb7">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a>$ <span class="fu">git</span> status</span></code></pre>
+			</div>
 			<p>
 				Nos dice el <strong><em>estado de nuestro repositorio</em></strong
 				>. Cada vez que tiramos un comando podemos cambiar el estado del
@@ -355,7 +387,11 @@
 			<p>
 				Tanto para agregar un cambio, archivo nuevo, borrado, etc. vamos a usar
 			</p>
-			<pre><code>$ git add [nombre_archivo]</code></pre>
+			<div class="sourceCode" id="cb8">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a>$ <span class="fu">git</span> add [nombre_archivo]</span></code></pre>
+			</div>
 			<p>
 				Ahora, es importante entender que podemos tener un cambio en 3 estados,
 				uno cuando está <strong><em>modificado</em></strong> y sin agregar, otro
@@ -380,7 +416,11 @@
 				Podemos agregar archivo por archivo… o usar un <code>*</code> para
 				indicarle que queremos agregar todos los archivos.
 			</p>
-			<pre><code>$ git add -A</code></pre>
+			<div class="sourceCode" id="cb9">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a>$ <span class="fu">git</span> add -A</span></code></pre>
+			</div>
 			<p>
 				<strong>Pero momento!</strong> Qué pasa si nos equivocamos y agregamos
 				un archivo que no iba.
@@ -389,7 +429,11 @@
 				A no preocuparse,
 				<em>tenemos un comando para revertir el que les acabo de enseñar</em>:
 			</p>
-			<pre><code>$ git reset [nombre_archivo]</code></pre>
+			<div class="sourceCode" id="cb10">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a>$ <span class="fu">git</span> reset [nombre_archivo]</span></code></pre>
+			</div>
 			<p>Si no especificamos archivo nos va a hacer reset de todo.</p>
 			<h4 id="confirmando-el-cambio">Confirmando el cambio</h4>
 			<p>
@@ -398,7 +442,11 @@
 				contribución.
 			</p>
 			<p>Para eso lo vamos a hacer con:</p>
-			<pre><code>$ git commit -m &quot;[un mensaje descriptivo]&quot;</code></pre>
+			<div class="sourceCode" id="cb11">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a>$ <span class="fu">git</span> commit -m <span class="st">&quot;[un mensaje descriptivo]&quot;</span></span></code></pre>
+			</div>
 			<p>
 				Por favor, que el mensaje sea descriptivo… si le ponemos como mensaje
 				<em>“foo”</em>, <em>“bar”</em>, cuando veamos el historial de cambios no
@@ -406,12 +454,20 @@
 			</p>
 			<p>Y cómo vemos el historial de cambios (commits)?</p>
 			<p><em>Hay un comando para eso.</em></p>
-			<pre><code>$ git log</code></pre>
+			<div class="sourceCode" id="cb12">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a>$ <span class="fu">git</span> log</span></code></pre>
+			</div>
 			<p>
 				Si queremos un mensaje más conciso le podemos agregar la opción
 				<code>--oneline</code>.
 			</p>
-			<pre><code>$ git log --oneline</code></pre>
+			<div class="sourceCode" id="cb13">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a>$ <span class="fu">git</span> log --oneline</span></code></pre>
+			</div>
 			<p>
 				<strong>Pero momento!</strong> Qué pasa si nos equivocamos y commiteamos
 				algo equivocado.
@@ -423,7 +479,11 @@
 				<li>Agregar nuestros cambios <code>git add *</code>.</li>
 				<li>Pisar nuestro commit:</li>
 			</ol>
-			<pre><code>$ git commit --amend</code></pre>
+			<div class="sourceCode" id="cb14">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a>$ <span class="fu">git</span> commit --amend</span></code></pre>
+			</div>
 			<p>
 				Esto nos va a abrir el editor por defecto que hayamos elegido. Podemos
 				cambiarle el nombre al commit si nos equivocamos en algo, salvar el
@@ -450,17 +510,37 @@
 				todavía no agregaron (con <code>add</code>). Pueden ver las diferencias
 				con
 			</p>
-			<pre><code>$ git diff</code></pre>
+			<div class="sourceCode" id="cb15">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a>$ <span class="fu">git</span> diff</span></code></pre>
+			</div>
 			<p>y volver al estado anterior con</p>
-			<pre><code>$ git checkout [nombre archivo]</code></pre>
+			<div class="sourceCode" id="cb16">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a>$ <span class="fu">git</span> checkout [nombre archivo]</span></code></pre>
+			</div>
 			<p>o para revertir TODAS las modificaciones</p>
-			<pre><code>git checkout .</code></pre>
+			<div class="sourceCode" id="cb17">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">git</span> checkout .</span></code></pre>
+			</div>
 			<p>
 				Una vez que tenemos el cambio hecho, vamos a agregar los cambios y
 				commitearlos como ya vimos.
 			</p>
-			<pre><code>$ git add -A</code></pre>
-			<pre><code>$ git commit -m &quot;agrego nueva página&quot;</code></pre>
+			<div class="sourceCode" id="cb18">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a>$ <span class="fu">git</span> add -A</span></code></pre>
+			</div>
+			<div class="sourceCode" id="cb19">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1"></a>$ <span class="fu">git</span> commit -m <span class="st">&quot;agrego nueva página&quot;</span></span></code></pre>
+			</div>
 			<p>
 				Después de eso prueben de hacer <code>git log</code> a ver qué les dice.
 			</p>
@@ -469,7 +549,11 @@
 				del repositorio.
 			</p>
 			<p>Ahora podemos revertir ese commit con:</p>
-			<pre><code>$ git reset HEAD~1</code></pre>
+			<div class="sourceCode" id="cb20">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1"></a>$ <span class="fu">git</span> reset HEAD~1</span></code></pre>
+			</div>
 			<p>
 				Si hacemos <code>git log</code> nuestro commit desapareció, pero no se
 				preocupen, seguimos teniendo el cambio, se pueden fijar con
@@ -521,19 +605,31 @@
 			<ol start="5" type="1">
 				<li>Posicionados en nuestro repositorio vamos a escribir:</li>
 			</ol>
-			<pre><code>$ git remote add origin https://github.com/[usuario]/[nombre de repositorio].git</code></pre>
+			<div class="sourceCode" id="cb21">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1"></a>$ <span class="fu">git</span> remote add origin https://github.com/[usuario]/[nombre de repositorio].git</span></code></pre>
+			</div>
 			<p>
 				Esto va a declarar la variable <code>origin</code> con el valor de la
 				url que le pasamos.
 			</p>
 			<p>Para ver a dónde quedó apuntando nuestro repositorio podemos hacer</p>
-			<pre><code>$ git remote show origin</code></pre>
+			<div class="sourceCode" id="cb22">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1"></a>$ <span class="fu">git</span> remote show origin</span></code></pre>
+			</div>
 			<p>
 				<strong>Pero momento!</strong> Qué pasa si nos volvimos a equivocar y
 				pusimos la url mal.
 			</p>
 			<p>No hay problema, podemos pisar el valor de <code>origin</code> así</p>
-			<pre><code>$ git remote set-url origin https://github.com/[usuario]/[nombre de repositorio].git</code></pre>
+			<div class="sourceCode" id="cb23">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1"></a>$ <span class="fu">git</span> remote set-url origin https://github.com/[usuario]/[nombre de repositorio].git</span></code></pre>
+			</div>
 			<p>
 				Nos debería decir que se hace <code>fetch</code> (traer cambios) y
 				<code>push</code> (subir cambios) a la url que le pasamos.
@@ -544,9 +640,17 @@
 					<strong><em>pushear</em></strong> nuestros cambios.
 				</li>
 			</ol>
-			<pre><code>$ git push origin master</code></pre>
+			<div class="sourceCode" id="cb24">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1"></a>$ <span class="fu">git</span> push origin master</span></code></pre>
+			</div>
 			<p>Y si alguien subió cambios, podemos traer cambios con</p>
-			<pre><code>$ git pull origin master</code></pre>
+			<div class="sourceCode" id="cb25">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1"></a>$ <span class="fu">git</span> pull origin master</span></code></pre>
+			</div>
 			<p>
 				Si ahora nos fijamos en el repositorio remoto, ya tenemos nuestros
 				cambios subidos, el repositorio no está vacío, sino que tiene nuestro
@@ -557,7 +661,11 @@
 				subimos algo que no iba.
 			</p>
 			<p>No se preocupen, <em>tenemos un comando para arreglarlo</em>.</p>
-			<pre><code>$ git revert [hash]</code></pre>
+			<div class="sourceCode" id="cb26">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1"></a>$ <span class="fu">git</span> revert [hash]</span></code></pre>
+			</div>
 			<p>
 				Pero qué demonios es el <strong><em>hash</em></strong
 				>?
@@ -566,17 +674,27 @@
 				Es un <strong><em>código identificador del commit</em></strong
 				>. Lo podemos ver con
 			</p>
-			<pre><code>$ git log --oneline</code></pre>
+			<div class="sourceCode" id="cb27">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1"></a>$ <span class="fu">git</span> log --oneline</span></code></pre>
+			</div>
 			<p>
 				Van a ver que aparece un código al principio de cada commit, esa es el
 				<em>hash</em>. Entonces para revertir un commit tenemos que indicar qué
 				commit queremos revertir, referenciando su <em>hash</em>.
 			</p>
 			<p>Por ejemplo si vemos algo como:</p>
-			<pre><code>f6069db (HEAD -&gt; master, origin/master) otro mensaje descriptivo
+			<pre
+				class="console"
+			><code>f6069db (HEAD -&gt; master, origin/master) otro mensaje descriptivo
 87c0987 mensaje descriptivo</code></pre>
 			<p>Y queremos revertir el segundo commit, tendríamos que hacer</p>
-			<pre><code>$ git revert f6069db</code></pre>
+			<div class="sourceCode" id="cb29">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1"></a>$ <span class="fu">git</span> revert f6069db</span></code></pre>
+			</div>
 			<p>
 				Luego elegir un nombre para el commit que va a revertir el segundo
 				commit, guardar el archivo, cerrar el editor.
@@ -602,7 +720,11 @@
 				<li>Vamos a un directorio vacío.</li>
 				<li>Clonamos el repositorio remoto a nuestra máquina.</li>
 			</ol>
-			<pre><code>$ git clone https://github.com/[usuario]/[nombre del repositorio].git</code></pre>
+			<div class="sourceCode" id="cb30">
+				<pre
+					class="sourceCode bash"
+				><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1"></a>$ <span class="fu">git</span> clone https://github.com/[usuario]/[nombre del repositorio].git</span></code></pre>
+			</div>
 			<p>
 				Van a ver que se creó una carpeta en donde estaban. Esa carpeta es su
 				repositorio local.
