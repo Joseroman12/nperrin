@@ -32,7 +32,7 @@ Para empezar vamos a tener algunos requisitos previos.
 2. **Conocimientos comandos básicos unix**, para manejarse entre archivos, crear carpetas, etc. desde la terminal (si no saben tampoco es problema, pero es algo menos que entender).
 3. **git** instalado en su máquina. Pueden confirmar que esté instalado escribiendo
 
-```
+```bash
 $ git --version
 ```
 
@@ -129,25 +129,25 @@ Para los 2 casos, primero tenemos que configurar un poco **git**.
 
 Configuro mi nombre:
 
-```
+```bash
 $ git config --global user.name "[usuario github]" # Usar su nombre de usuario de GitHub
 ```
 
 Configuro mi mail:
 
-```
+```bash
 $ git config --global user.email "[mail github]" # Usar su mail de GitHub
 ```
 
 Configuro mi editor por defecto
 
-```
+```bash
 $ git config --global core.editor "[comando para abrir editor]" # "subl -n -w" para Sublime Text o "code" para VSCode...
 ```
 
 Si quiero ver los valores que tienen puedo usar
 
-```
+```bash
 $ git config --get user.name
 ```
 
@@ -163,7 +163,7 @@ Si quiero cambiar el `user.name` o `user.email`, simplemente vuelvo a escribir e
 4. Ahora que tenemos un proyectito metámosle **git**.
 5. **Inicializamos** un repositorio con este comando:
 
-```
+```bash
 $ git init
 ```
 
@@ -173,7 +173,7 @@ Quizás no nos dimos cuenta, pero se nos creó una carpeta oculta llamada `.git/
 
 Un comando que vamos a usar todo el tiempo:
 
-```
+```bash
 $ git status
 ```
 
@@ -187,7 +187,7 @@ Habiendo tirado el comando, nos va a decir que no hay cambios que hacer, que hay
 
 Tanto para agregar un cambio, archivo nuevo, borrado, etc. vamos a usar
 
-```
+```bash
 $ git add [nombre_archivo]
 ```
 
@@ -203,7 +203,7 @@ También está bueno tener en cuenta que yo puedo agregar un archivo, modificarl
 
 Podemos agregar archivo por archivo... o usar un `*` para indicarle que queremos agregar todos los archivos.
 
-```
+```bash
 $ git add -A
 ```
 
@@ -211,7 +211,7 @@ $ git add -A
 
 A no preocuparse, _tenemos un comando para revertir el que les acabo de enseñar_:
 
-```
+```bash
 $ git reset [nombre_archivo]
 ```
 
@@ -223,7 +223,7 @@ Al confirmar el cambio vamos a agarrar todos los cambios a agregar que pusimos y
 
 Para eso lo vamos a hacer con:
 
-```
+```bash
 $ git commit -m "[un mensaje descriptivo]"
 ```
 
@@ -233,13 +233,13 @@ Y cómo vemos el historial de cambios (commits)?
 
 _Hay un comando para eso._
 
-```
+```bash
 $ git log
 ```
 
 Si queremos un mensaje más conciso le podemos agregar la opción `--oneline`.
 
-```
+```bash
 $ git log --oneline
 ```
 
@@ -253,7 +253,7 @@ Si queremos pisar el commit podemos seguir los siguientes pasos:
 2. Agregar nuestros cambios `git add *`.
 3. Pisar nuestro commit:
 
-```
+```bash
 $ git commit --amend
 ```
 
@@ -267,29 +267,29 @@ Ahora probemos de agregar otra página a la web y linkearla, o simplemente agreg
 
 De paso les digo que si tienen una modificación que quieren revertir, y todavía no agregaron (con `add`). Pueden ver las diferencias con
 
-```
+```bash
 $ git diff
 ```
 
 y volver al estado anterior con
 
-```
+```bash
 $ git checkout [nombre archivo]
 ```
 
 o para revertir TODAS las modificaciones
 
-```
+```bash
 git checkout .
 ```
 
 Una vez que tenemos el cambio hecho, vamos a agregar los cambios y commitearlos como ya vimos.
 
-```
+```bash
 $ git add -A
 ```
 
-```
+```bash
 $ git commit -m "agrego nueva página"
 ```
 
@@ -299,7 +299,7 @@ Y recuerden de tirar `git status` así van viendo el estado del repositorio.
 
 Ahora podemos revertir ese commit con:
 
-```
+```bash
 $ git reset HEAD~1
 ```
 
@@ -329,7 +329,7 @@ Cómo?
 
 5. Posicionados en nuestro repositorio vamos a escribir:
 
-```
+```bash
 $ git remote add origin https://github.com/[usuario]/[nombre de repositorio].git
 ```
 
@@ -337,7 +337,7 @@ Esto va a declarar la variable `origin` con el valor de la url que le pasamos.
 
 Para ver a dónde quedó apuntando nuestro repositorio podemos hacer
 
-```
+```bash
 $ git remote show origin
 ```
 
@@ -345,7 +345,7 @@ $ git remote show origin
 
 No hay problema, podemos pisar el valor de `origin` así
 
-```
+```bash
 $ git remote set-url origin https://github.com/[usuario]/[nombre de repositorio].git
 ```
 
@@ -353,13 +353,13 @@ Nos debería decir que se hace `fetch` (traer cambios) y `push` (subir cambios) 
 
 6. Ahora que los tenemos referenciados, podemos **_pushear_** nuestros cambios.
 
-```
+```bash
 $ git push origin master
 ```
 
 Y si alguien subió cambios, podemos traer cambios con
 
-```
+```bash
 $ git pull origin master
 ```
 
@@ -369,7 +369,7 @@ Si ahora nos fijamos en el repositorio remoto, ya tenemos nuestros cambios subid
 
 No se preocupen, _tenemos un comando para arreglarlo_.
 
-```
+```bash
 $ git revert [hash]
 ```
 
@@ -377,7 +377,7 @@ Pero qué demonios es el **_hash_**?
 
 Es un **_código identificador del commit_**. Lo podemos ver con
 
-```
+```bash
 $ git log --oneline
 ```
 
@@ -385,14 +385,14 @@ Van a ver que aparece un código al principio de cada commit, esa es el _hash_. 
 
 Por ejemplo si vemos algo como:
 
-```
+```console
 f6069db (HEAD -> master, origin/master) otro mensaje descriptivo
 87c0987 mensaje descriptivo
 ```
 
 Y queremos revertir el segundo commit, tendríamos que hacer
 
-```
+```bash
 $ git revert f6069db
 ```
 
@@ -412,7 +412,7 @@ Para esta parte vamos a seguir estos pasos:
 2. Vamos a un directorio vacío.
 3. Clonamos el repositorio remoto a nuestra máquina.
 
-```
+```bash
 $ git clone https://github.com/[usuario]/[nombre del repositorio].git
 ```
 

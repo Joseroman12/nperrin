@@ -8,7 +8,8 @@ pre {
 pre code { color: azure; }
 
 span[id^=cb] { color: azure; }
-span.kw { color: mediumspringgreen; }
+span.kw,
+span.fu { color: mediumspringgreen; }
 span.op { color: aqua; }
 span.st { color: tomato; }
 span.at { color: lightblue; }
