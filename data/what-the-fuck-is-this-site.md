@@ -1,6 +1,6 @@
 ---
 title: 'WTF is this site'
-url: data/what-the-fuck-is-this-site.html
+url: /what-the-fuck-is-this-site.html
 description: 'Explanation on what nperrin.io is'
 date: 2019/07/17
 thumbnail-url: /img/excuse-me-what-the-fuck.jpg

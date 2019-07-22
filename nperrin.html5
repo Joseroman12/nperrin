@@ -37,10 +37,10 @@ $endif$
 
 <body>
 	<header id="title-block-header">
-		<nav id="hierarchy">$url$</nav>
 		<h1>$title$</h1>
 	</header>
 	<main>
+		<nav id="hierarchy">$url$</nav>
 $if(date)$
 		<p><em>Last update: $date$</em></p>
 $endif$

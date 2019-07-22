@@ -1,6 +1,6 @@
 ---
 title: 'Site improvements'
-url: data/site-improvements.html
+url: /site-improvements.html
 description: 'Things I could do to improve the site'
 date: 2019/07/21
 thumbnail-url: /img/nobody-cares.jpg
@@ -8,7 +8,6 @@ thumbnail-url: /img/nobody-cares.jpg
 
 ## Add
 
-- Add header navigation hierarchy to move easily thought the site.
 - RSS feed.
 - GraphQL client.
 - Subdomains for:
