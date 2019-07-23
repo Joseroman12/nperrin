@@ -2,7 +2,7 @@
 pre-title: Work
 title: Collaborator at Comunidad IT
 url: /work/comunidad-it
-date: 2019/07/23
+date: 2019/04/17
 ---
 
 From: 2018/07/10 to 2019/04/17.

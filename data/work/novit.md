@@ -2,7 +2,7 @@
 pre-title: Work
 title: Novit Fullstack developer
 url: /work/novit
-date: 2019/07/23
+date: 2018/10/31
 ---
 
 [Novit](https://www.novit.com.ar) is a small company that consults and develops for other companies. It also has his own product for companies.

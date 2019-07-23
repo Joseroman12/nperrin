@@ -2,7 +2,7 @@
 pre-title: Work
 title: Snoop Consulting Analyst Programmer
 url: /work/snoop-consulting
-date: 2019/07/23
+date: 2017/08/30
 ---
 
 The first job I had as a developer. [Snoop Consulting](https://www.snoopconsulting.com) is a software factory.

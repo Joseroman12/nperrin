@@ -2,7 +2,7 @@
 pre-title: Work
 title: 'Freelance Fullstack developer'
 url: /work/freelance
-date: 2019/07/23
+date: 2018/12/25
 ---
 
 Some **freelance** work worth mentioning.
@@ -21,7 +21,7 @@ Upload bulk of videos to a pro Vimeo account, showing progress of upload and wit
 
 ## Tu Accidente
 
-From: 2017-09-01 to 2018-01-01.
+From: 2017/09/01 to 2018/01/01.
 
 This was my first app as a Freelance developer. It was an app to follow user "tickets" and state of procedures, for a Lawyer firm.
 
