@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
 <head>
-	<title>Freelance Fullstack developer - Work</title>
+	<title>Introducción a la Programación Funcional - Meetup</title>
 	<meta charset="utf-8" />
 	<meta name="generator" content="pandoc" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 	<meta name="author" content="Norman Perrin" />
 	<meta name="description" content="" />
-	<meta name="dcterms.date" content="2018/12/25" />
-	<meta name="og:title" content="Freelance Fullstack developer - Work" />
+	<meta name="dcterms.date" content="2017/11/11" />
+	<meta name="og:title" content="Introducción a la Programación Funcional - Meetup" />
 	<meta name="og:description" content="" />
 	<meta name="og:site_name" content="Norman Perrin" />
-	<meta name="og:url" content="/work/freelance" />
+	<meta name="og:url" content="/meetup/introduccion-a-la-programacion-funcional" />
 	<meta name="og:type" content="article" />
 	<meta name="og:image" content="/img/me.jpeg" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@NormanPerrinOK">
 	<meta name="twitter:creator" content="@NormanPerrinOK" />
-	<meta name="twitter:title" content="Freelance Fullstack developer - Work" />
+	<meta name="twitter:title" content="Introducción a la Programación Funcional - Meetup" />
 	<meta name="twitter:description" content="" />
-	<meta name="twitter:url" content="/work/freelance" />
+	<meta name="twitter:url" content="/meetup/introduccion-a-la-programacion-funcional" />
 	<meta name="twitter:image" content="/img/me.jpeg" />
-	<link rel="canonical" href="/work/freelance" />
+	<link rel="canonical" href="/meetup/introduccion-a-la-programacion-funcional" />
 	<link rel="icon" type="image/png" href="/img/favicon.png" />
 	<link rel="stylesheet" href="/css/general.css" />
 	<!--[if lt IE 9]>
@@ -32,33 +32,13 @@
 
 <body>
 	<header id="title-block-header">
-		<h1>Freelance Fullstack developer</h1>
+		<h1>Introducción a la Programación Funcional</h1>
 	</header>
 	<main>
-		<nav id="hierarchy">/work/freelance</nav>
-		<p><em>Last update: 2018/12/25</em></p>
-<p>Some <strong>freelance</strong> work worth mentioning.</p>
-<h2 id="vimeo-uploader">Vimeo Uploader</h2>
-<p>From 2018/11/15 to 2018/12/15.</p>
-<p>Upload bulk of videos to a pro Vimeo account, showing progress of upload and with possibility to config the uploads according to the Vimeo API options.</p>
-<p><strong>Technologies</strong>:</p>
-<ul>
-<li>Frontend: JavaScript, PugJS template engine.</li>
-<li>Backend: NodeJS, Docker.</li>
-<li>Services: Vimeo API.</li>
-</ul>
-<h2 id="tu-accidente">Tu Accidente</h2>
-<p>From: 2017/09/01 to 2018/01/01.</p>
-<p>This was my first app as a Freelance developer. It was an app to follow user “tickets” and state of procedures, for a Lawyer firm.</p>
-<p>You can see the app <a href="https://play.google.com/store/apps/details?id=com.tuaccidente&amp;hl=en_US">here</a>.</p>
-<p>I developed this app with help of a friend from college. After the first iteration I leaved the development and then he gave support and add some additional features.</p>
-<p><strong>Technologies</strong>:</p>
-<ul>
-<li>Frontend for layer firm: JavaScript, Ionic 3.</li>
-<li>Frontend for user app: Ionic 3.</li>
-<li>Backend: NodeJS, Docker, AWS, DynamoDB.</li>
-<li>Services: Authentication with Google Firebase API.</li>
-</ul>
+		<nav id="hierarchy">/meetup/introduccion-a-la-programacion-funcional</nav>
+		<p><em>Last update: 2017/11/11</em></p>
+<p>Primer charla que me atreví a dar. Tuve la fortuna de que me tocó darla en <a href="https://www.medallia.com">Medallia</a> (gracias) y para la gente de <a href="https://freecodecampba.org">Free Code Camp BA</a>.</p>
+<p>El link al evento del meetup está <a href="https://www.meetup.com/es/freeCodeCampBA/events/244852127/">acá</a>.</p>
 	</main>
 	<footer>
 		<div class="h-card hcard vcard" style="display:none;">
