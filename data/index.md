@@ -15,6 +15,7 @@ description: 'Listing of files and directories for /'
 
 ## Directories
 
+- [work](/work)
 - [tech](/tech)
 - [post](/post)
 - [meetup](/meetup)
