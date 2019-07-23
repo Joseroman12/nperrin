@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 	<meta name="author" content="Norman Perrin" />
 	<meta name="description" content="Taks I want to accomplish" />
-	<meta name="dcterms.date" content="2019/07/20" />
+	<meta name="dcterms.date" content="2019/07/23" />
 	<meta name="og:title" content="Pendings - nperrin" />
 	<meta name="og:description" content="Taks I want to accomplish" />
 	<meta name="og:site_name" content="Norman Perrin" />
@@ -36,23 +36,22 @@
 	</header>
 	<main>
 		<nav id="hierarchy">/pendings.html</nav>
-		<p><em>Last update: 2019/07/20</em></p>
+		<p><em>Last update: 2019/07/23</em></p>
 <p>If something is not specific or clear, it means I have to think more about that subject, but still a to-do I want to accomplish.</p>
 <h2 id="programming">Programming</h2>
 <ul>
 <li>Make program to form words from an input of text.</li>
 <li>Make program to save like pocket read later sites, with <del>puppeteer</del> pandoc.</li>
-<li>Make program to remove or keep phone photos with adb.</li>
 <li>Make program to track hours from an <del>excel</del> file and send them to my boss.</li>
 <li>Config mac to use <code>youtube-dl</code> from a list.</li>
 <li>Make Sportclub activity db and client.</li>
-<li>Make ios dating app to learn swift.</li>
-<li>Better https://nperrin.io site, see <a href="/site-improvements">improvements</a>.</li>
+<li>Make ios dating app to learn React Native.</li>
+<li>Make ios app on Swift.</li>
+<li>Better <code>https://nperrin.io site</code>, see <a href="/site-improvements">improvements</a>.</li>
 </ul>
 <h2 id="educational">Educational</h2>
 <ul>
 <li>Make Security related videos.</li>
-<li>Make short videos of web development and related tools.</li>
 <li>Make DOM manipulation guide.</li>
 <li>Make GraphQL wrapper for REST video, repo and server.</li>
 </ul>
