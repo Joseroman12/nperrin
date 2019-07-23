@@ -2,26 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
-	<title>nperrin - dir</title>
+	<title>Novit Fullstack developer - Work</title>
 	<meta charset="utf-8" />
 	<meta name="generator" content="pandoc" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 	<meta name="author" content="Norman Perrin" />
-	<meta name="description" content="Listing of files and directories for /" />
-	<meta name="og:title" content="nperrin - dir" />
-	<meta name="og:description" content="Listing of files and directories for /" />
+	<meta name="description" content="" />
+	<meta name="dcterms.date" content="2019/07/23" />
+	<meta name="og:title" content="Novit Fullstack developer - Work" />
+	<meta name="og:description" content="" />
 	<meta name="og:site_name" content="Norman Perrin" />
-	<meta name="og:url" content="/" />
+	<meta name="og:url" content="/work/novit" />
 	<meta name="og:type" content="article" />
 	<meta name="og:image" content="/img/me.jpeg" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@NormanPerrinOK">
 	<meta name="twitter:creator" content="@NormanPerrinOK" />
-	<meta name="twitter:title" content="nperrin - dir" />
-	<meta name="twitter:description" content="Listing of files and directories for /" />
-	<meta name="twitter:url" content="/" />
+	<meta name="twitter:title" content="Novit Fullstack developer - Work" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="/work/novit" />
 	<meta name="twitter:image" content="/img/me.jpeg" />
-	<link rel="canonical" href="/" />
+	<link rel="canonical" href="/work/novit" />
 	<link rel="icon" type="image/png" href="/img/favicon.png" />
 	<link rel="stylesheet" href="/css/general.css" />
 	<!--[if lt IE 9]>
@@ -31,24 +32,29 @@
 
 <body>
 	<header id="title-block-header">
-		<h1>nperrin</h1>
+		<h1>Novit Fullstack developer</h1>
 	</header>
 	<main>
-		<nav id="hierarchy">/</nav>
-<h2 id="files">Files</h2>
+		<nav id="hierarchy">/work/novit</nav>
+		<p><em>Last update: 2019/07/23</em></p>
+<p><a href="https://www.novit.com.ar">Novit</a> is a small company that consults and develops for other companies. It also has his own product for companies.</p>
+<p>From: 2018/01/01 to 2018/10/31.</p>
+<h2 id="form-builder">Form Builder</h2>
+<p>Developed for a big state organism in Argentina.</p>
+<p>This solution creates surveys thought a web platform, then those surveys are used by another app that creates a React Native from that survey data, the employees of this organism use those apps then to take surveys.</p>
+<p><strong>Technologies</strong>:</p>
 <ul>
-<li><a href="/site-improvements.html">2019/07/21 - site-improvements</a></li>
-<li><a href="/about.html">2019/07/21 - about</a></li>
-<li><a href="/pendings.html">2019/07/20 - pendings</a></li>
-<li><a href="/what-the-fuck-is-this-site.html">2019/07/17 - what-the-fuck-is-this-site</a></li>
-<li><a href="/privacy-policy.html">2019/07/17 - privacy-policy</a></li>
+<li>Frontend: ReactJS, Redux.</li>
+<li>Backend: NodeJS, Mongoose.</li>
 </ul>
-<h2 id="directories">Directories</h2>
+<h2 id="trello-notifier">Trello Notifier</h2>
+<p>Developed as an internal project.</p>
+<p>Generate actions thought scrapping a Trello chrome extension. This actions were customizable, like hooks.</p>
+<p><strong>Technologies</strong>:</p>
 <ul>
-<li><a href="/work">work</a></li>
-<li><a href="/tech">tech</a></li>
-<li><a href="/post">post</a></li>
-<li><a href="/meetup">meetup</a></li>
+<li>Scrapper server: NodeJS, Puppeteer, Docker, AWS.</li>
+<li>Reporter server: NodeJS, Netlify Lambdas.</li>
+<li>Services: Zapier to schedule actions (fire hooks) and send mails.</li>
 </ul>
 	</main>
 	<footer>

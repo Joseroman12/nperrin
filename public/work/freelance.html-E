@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>Freelance Fullstack developer - Work</title>
+	<meta charset="utf-8" />
+	<meta name="generator" content="pandoc" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<meta name="author" content="Norman Perrin" />
+	<meta name="description" content="" />
+	<meta name="dcterms.date" content="2019/07/23" />
+	<meta name="og:title" content="Freelance Fullstack developer - Work" />
+	<meta name="og:description" content="" />
+	<meta name="og:site_name" content="Norman Perrin" />
+	<meta name="og:url" content="/work/freelance" />
+	<meta name="og:type" content="article" />
+	<meta name="og:image" content="/img/me.jpeg" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@NormanPerrinOK">
+	<meta name="twitter:creator" content="@NormanPerrinOK" />
+	<meta name="twitter:title" content="Freelance Fullstack developer - Work" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:url" content="/work/freelance" />
+	<meta name="twitter:image" content="/img/me.jpeg" />
+	<link rel="canonical" href="/work/freelance" />
+	<link rel="icon" type="image/png" href="/img/favicon.png" />
+	<link rel="stylesheet" href="/css/general.css" />
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header id="title-block-header">
+		<h1>Freelance Fullstack developer</h1>
+	</header>
+	<main>
+		<nav id="hierarchy">/work/freelance</nav>
+		<p><em>Last update: 2019/07/23</em></p>
+<p>Some <strong>freelance</strong> work worth mentioning.</p>
+<h2 id="vimeo-uploader">Vimeo Uploader</h2>
+<p>From 2018/11/15 to 2018/12/15.</p>
+<p>Upload bulk of videos to a pro Vimeo account, showing progress of upload and with possibility to config the uploads according to the Vimeo API options.</p>
+<p><strong>Technologies</strong>:</p>
+<ul>
+<li>Frontend: JavaScript, PugJS template engine.</li>
+<li>Backend: NodeJS, Docker.</li>
+<li>Services: Vimeo API.</li>
+</ul>
+<h2 id="tu-accidente">Tu Accidente</h2>
+<p>From: 2017-09-01 to 2018-01-01.</p>
+<p>This was my first app as a Freelance developer. It was an app to follow user “tickets” and state of procedures, for a Lawyer firm.</p>
+<p>You can see the app <a href="https://play.google.com/store/apps/details?id=com.tuaccidente&amp;hl=en_US">here</a>.</p>
+<p>I developed this app with help of a friend from college. After the first iteration I leaved the development and then he gave support and add some additional features.</p>
+<p><strong>Technologies</strong>:</p>
+<ul>
+<li>Frontend for layer firm: JavaScript, Ionic 3.</li>
+<li>Frontend for user app: Ionic 3.</li>
+<li>Backend: NodeJS, Docker, AWS, DynamoDB.</li>
+<li>Services: Authentication with Google Firebase API.</li>
+</ul>
+	</main>
+	<footer>
+		<div class="h-card hcard vcard" style="display:none;">
+			<img rel="me" class="u-photo" alt="Norman Perrin blurred" src="/img/me.jpeg">
+			<br>
+			<span>Name:</span>
+			<a class="p-name u-url" rel="me" href="https://nperrin.io/">Norman Perrin</a>
+			<br>
+			<span>Email:</span>
+			<a class="u-email" href="mailto:nperrin@riseup.net">nperrin@riseup.net</a>
+			<br>
+			<span>Twitter:</span>
+			<a class="u-url" rel="me" href="https://twitter.com/normanperrinok">@NormanPerrinOK</a>
+			<br>
+			<span>Github:</span>
+			<a class="u-url" rel="me" href="https://github.com/normanperrin">normanperrin</a>
+			<br>
+			<span>Jobs:</span>
+			<span class="p-job-title">Developer, Freelancer, Consultant</span>
+			<br>
+			<span>PGP Key:</span>
+			<a rel="pgpkey authn" href="/nperrin.asc" class="u-key">0xDD6DD4CB21147E87</a>
+		</div>
+	</footer>
+</body>
+
+</html>
