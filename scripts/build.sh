@@ -42,7 +42,7 @@ description: 'Listing of files and directories for $files_url'
 ## Directories
 ' >> "$file_path"
 
-ls -rp "$1" |grep \/ |while read -r dir_name; do echo "- [$(echo "$dir_name" |sed 's@\/$@@')](/$(echo "$dir_name" |sed 's@\/$@@'))" >> "$file_path"; done
+	ls -rp "$1" |grep \/ |while read -r dir_name; do echo "- [$(echo "$dir_name" |sed 's@\/$@@')](/$(echo "$dir_name" |sed 's@\/$@@'))" >> "$file_path"; done
 
 	printf '%s\n' "$file_path"
 }
@@ -67,9 +67,9 @@ build_from_path () {
 	if [ -z "$is_root" ]; then
 		nav_url="<a href=\"\/\">nperrin<\/a><span> → <\/span><span>$(echo "$path" |sed -E 's@.*\/(.*)\.html$@\1@')<\/span>"
 	fi
-	
-	sed -i -E 's@.*id=\"hierarchy\".*@		<nav id=\"hierarchy\" role=\"navigation\">'"$nav_url"'<\/nav>@' "$path"
 
+	sed -i.bak -E 's@.*id=\"hierarchy\".*@		<nav id=\"hierarchy\" role=\"navigation\">'"$nav_url"'<\/nav>@' "$path"
+	find public -name '*.bak' -exec rm {} \;
 }
 
 find data/* -name '*.md' |while read -r file; do build_from_path "$file"; done
