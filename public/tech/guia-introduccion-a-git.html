@@ -13,7 +13,7 @@
 			name="description"
 			content="Guía introductoria teórica y práctica de Git y GitHub"
 		/>
-		<meta name="dcterms.date" content="2019/05/18" />
+		<meta name="dcterms.date" content="2019/07/24" />
 		<meta name="og:title" content="Introducción a Git y GitHub - Guía" />
 		<meta
 			name="og:description"
@@ -57,7 +57,7 @@
 				<a href="/">nperrin</a><span> → </span><a href="/tech">tech</a
 				><span> → </span><span>guia-introduccion-a-git</span>
 			</nav>
-			<p><em>Last update: 2019/05/18</em></p>
+			<p><em>Last update: 2019/07/24</em></p>
 			<h2>Tabla de contenidos</h2>
 			<nav id="TOC" role="doc-toc">
 				<ul>
@@ -285,10 +285,6 @@
 				preocuparse, ya que tenemos una copia.
 			</p>
 			<h2 id="workshop">Workshop</h2>
-			<p>
-				El título es clickbait. Paso a paso y explicando las cosas, no se
-				preocupen.
-			</p>
 			<p>Vamos a tener 2 caminos.</p>
 			<ol type="1">
 				<li>
@@ -754,18 +750,15 @@
 				<tbody>
 					<tr class="odd">
 						<td>
-							<code>git config --global user.name "[usuario github]"</code>
+							<code
+								>git config --get user.name | Ver valor de configuración |
+								|</code
+							>git config –global user.name “[usuario github]”<code
+								>| Configurar nombre usuario | |</code
+							>git config –global user.email “[email github]”<code
+								>| Configurar email usuario | |</code
+							>git config –global core.editor “code”`
 						</td>
-						<td>Configurar nombre usuario</td>
-					</tr>
-					<tr class="even">
-						<td>
-							<code>git config --global user.email "[email github]"</code>
-						</td>
-						<td>Configurar email usuario</td>
-					</tr>
-					<tr class="odd">
-						<td><code>git config --global core.editor "code"</code></td>
 						<td>Configurar editor por defecto</td>
 					</tr>
 				</tbody>
