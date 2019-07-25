@@ -2,7 +2,7 @@
 title: 'Site improvements'
 url: /site-improvements.html
 description: 'Things I could do to improve the site'
-date: 2019/07/21
+date: 2019/07/24
 thumbnail-url: /img/nobody-cares.jpg
 ---
 
@@ -23,8 +23,6 @@ thumbnail-url: /img/nobody-cares.jpg
 ## Better
 
 - Deploy on own server.
-- [Several ugly build scripts](https://github.com/NormanPerrin/nperrin/tree/src/scripts).
-- Folder and file icon on list + not showing empty Directories or Files.
 - Separate guides on another domain.
     - Add next and previous buttons.
     - Add progress bar.
