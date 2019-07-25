@@ -1,21 +1,33 @@
 ---
-pre-title: dir
-title: nperrin
+pre-title: Index
+title: Home
 url: /
-description: 'Listing of files and directories for /'
+description: 'Home site for nperrin.io'
+date: 2019/07/24
 ---
 
-## Files
+This is a simple site that I've built to upload content. With some exceptions, more useful for me than others.
 
-- [2019/07/23 - pendings](/pendings\.html)
-- [2019/07/21 - site-improvements](/site-improvements\.html)
-- [2019/07/21 - about](/about\.html)
-- [2019/07/17 - what-the-fuck-is-this-site](/what-the-fuck-is-this-site\.html)
-- [2019/07/17 - privacy-policy](/privacy-policy\.html)
+I could have used a static site generator like [Gatsby](https://gatsbyjs.org), but wanted to do something different and try some new tools. In specific I used shell scripts with shellcheck, and pandoc.
 
-## Directories
+The code itself is here: [nperrin github repository](https://github.com/NormanPerrin/nperrin/tree/src). But you can also just look at the source code, as it's readable.
 
-- [work](/work)
-- [tech](/tech)
-- [post](/post)
-- [meetup](/meetup)
+Also, I have a [privacy policy](/privacy-policy) if interested on reading it.
+
+<nav id="file">
+	<ul>
+		<li>[2019/07/23 - pendings](/pendings)</li>
+		<li>[2019/07/21 - site-improvements](/site-improvements)</li>
+		<li>[2019/07/21 - about](/about)</li>
+		<li>[2019/07/17 - privacy-policy](/privacy-policy)</li>
+	</ul>
+</nav>
+<nav id="dir">
+	<ul>
+		<li>[post](/post)</li>
+		<li>[work](/work)</li>
+		<li>[meetup](/meetup)</li>
+		<li>[tech](/tech)</li>
+	</ul>
+</nav>
+

@@ -24,6 +24,7 @@ nav#hierarchy {
   width: fit-content;
   padding: 5px 15px;
   margin: auto;
+  margin-bottom: 30px;
   letter-spacing: 2px;
   background-color: #333;
 }
@@ -115,6 +116,16 @@ ul li::before {
 }
 ul li p {
   margin: 0;
+}
+nav#file ul li::before {
+  content: url(/icons/file.svg);
+  top: .2em;
+  left: -2em;
+}
+nav#dir li::before {
+  content: url(/icons/folder.svg);
+  top: .2em;
+  left: -2em;
 }
 
 img {

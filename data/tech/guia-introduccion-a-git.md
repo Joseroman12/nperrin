@@ -3,7 +3,7 @@ pre-title: Guía
 title: 'Introducción a Git y GitHub'
 url: /tech/guia-introduccion-a-git.html
 description: 'Guía introductoria teórica y práctica de Git y GitHub'
-date: 2019/05/18
+date: 2019/07/24
 lang: es
 show-toc: true
 toc-title: 'Tabla de contenidos'
@@ -115,8 +115,6 @@ Entonces podemos decir que es distribuido porque se trabaja en distintas partes,
 Si el día de mañana le pasa algo al servidor remoto, no hay de que preocuparse, ya que tenemos una copia.
 
 ## Workshop
-
-El título es clickbait. Paso a paso y explicando las cosas, no se preocupen.
 
 Vamos a tener 2 caminos.
 
@@ -428,6 +426,7 @@ Así que de acá en adelante pueden seguir los pasos de [viendo el estado](#vien
 
 | Comando                                            | Descripción                   |
 | -------------------------------------------------- | ----------------------------- |
+| `git config --get user.name                        | Ver valor de configuración    |
 | `git config --global user.name "[usuario github]"` | Configurar nombre usuario     |
 | `git config --global user.email "[email github]"`  | Configurar email usuario      |
 | `git config --global core.editor "code"`           | Configurar editor por defecto |

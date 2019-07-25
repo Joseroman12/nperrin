@@ -1,18 +1,23 @@
 ---
-pre-title: dir
-title: work
+pre-title: Index
+title: Work
 url: /work
-description: 'Listing of files and directories for /work'
+description: 'Jobs and work I did'
+date: 2019/07/24
 ---
 
-## Files
+Jobs and work I've done for you to review it.
 
-- [2019/07/23 - nobility](/work/nobility\.html)
-- [2019/06/25 - puerta-18](/work/puerta-18\.html)
-- [2019/04/17 - comunidad-it](/work/comunidad-it\.html)
-- [2018/12/25 - freelance](/work/freelance\.html)
-- [2018/10/31 - novit](/work/novit\.html)
-- [2017/08/30 - snoop-consulting](/work/snoop-consulting\.html)
+I won't explain a story for every project I had, but if you're interested in here more details of some project, don't doubt on concat me!
 
-## Directories
+<nav id="file">
+	<ul>
+		<li>[2019/07/23 - nobility](/work/nobility)</li>
+		<li>[2019/06/25 - puerta-18](/work/puerta-18)</li>
+		<li>[2019/04/17 - comunidad-it](/work/comunidad-it)</li>
+		<li>[2018/12/25 - freelance](/work/freelance)</li>
+		<li>[2018/10/31 - novit](/work/novit)</li>
+		<li>[2017/08/30 - snoop-consulting](/work/snoop-consulting)</li>
+	</ul>
+</nav>
 
