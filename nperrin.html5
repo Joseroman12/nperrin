@@ -59,10 +59,7 @@ $body$
 			<img rel="me" class="u-photo" alt="Norman Perrin blurred" src="/img/me.jpeg">
 			<br>
 			<span>Name:</span>
-			<a class="p-name u-url" rel="me" href="https://nperrin.io/">Norman Perrin</a>
-			<br>
-			<span>Email:</span>
-			<a class="u-email" href="mailto:nperrin@riseup.net">nperrin@riseup.net</a>
+			<a class="p-name u-url" rel="me" href="https://nperrin.io">Norman Perrin</a>
 			<br>
 			<span>Twitter:</span>
 			<a class="u-url" rel="me" href="https://twitter.com/normanperrinok">@NormanPerrinOK</a>
