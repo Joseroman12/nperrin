@@ -1,6 +1,6 @@
 ---
 title: Pendings
-url: /pendings.html
+url: /pendings
 description: Tasks I want to accomplish
 date: 2019/07/23
 thumbnail-url: /img/pending-project.jpg

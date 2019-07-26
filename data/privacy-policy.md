@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-url: /privacy-policy.html
+url: /privacy-policy
 description: nperrin.io Privacy Policy
 date: 2019/07/17
 thumbnail-url: /img/smiling-bottle-spying-the-shower.png

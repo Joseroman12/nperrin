@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>nperrin</title>
+		<link>https://nperrin.io</link>
+		<description>Recent content from Norman Perrin</description>
+		<language>en</language>
+		<image>
+			<url>https://nperrin.io/img/me.jpeg</url>
+			<title>Norman Perrin blurred</title>
+			<link>https://nperrin.io</link>
+			<width>140</width>
+			<height>140</height>
+		</image>
+		<managingEditor>nperrin</managingEditor>
+		<webMaster>nperrin</webMaster>
+		<lastBuildDate>Thu, 25 Jul 2019 21:05:29 -0300</lastBuildDate>
+		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Introducción a Git y GitHub</title>
+			<link>https://nperrin.io/tech/guia-introduccion-a-git.html<link>
+			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
+			<pubDate>Wed, 24 Jul 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/tech/guia-introduccion-a-git.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Site improvements</title>
+			<link>https://nperrin.io/site-improvements.html<link>
+			<description>Things I could do to improve the site</description>
+			<pubDate>Wed, 24 Jul 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/site-improvements.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Nobility Technical advisor & Fullstack developer</title>
+			<link>https://nperrin.io/work/nobility<link>
+			<description>Norman Perrin work on Nobility</description>
+			<pubDate>Tue, 23 Jul 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/work/nobility<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Pendings</title>
+			<link>https://nperrin.io/pendings.html<link>
+			<description>Tasks I want to accomplish</description>
+			<pubDate>Tue, 23 Jul 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/pendings.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>About</title>
+			<link>https://nperrin.io/about.html<link>
+			<description>Information about Norman Perrin</description>
+			<pubDate>Sun, 21 Jul 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/about.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Privacy Policy</title>
+			<link>https://nperrin.io/privacy-policy.html<link>
+			<description>nperrin.io Privacy Policy</description>
+			<pubDate>Wed, 17 Jul 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/privacy-policy.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Teacher at Puerta 18</title>
+			<link>https://nperrin.io/work/puerta-18<link>
+			<description>Norman Perrin work at Puerta 18</description>
+			<pubDate>Tue, 25 Jun 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/work/puerta-18<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Introducción a JavaScript</title>
+			<link>https://nperrin.io/tech/guia-introduccion-a-js.html<link>
+			<description>Guía introductoria teórica y práctica de JavaScript</description>
+			<pubDate>Tue, 18 Jun 2019 18:16:02 -0300</pubDate>"
+			<guid>https://nperrin.io/tech/guia-introduccion-a-js.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Workshop introductorio a Git y GitHub</title>
+			<link>https://nperrin.io/meetup/workshop-introduccion-a-git.html<link>
+			<description>Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub</description>
+			<pubDate>Sat, 18 May 2019 18:16:03 -0300</pubDate>"
+			<guid>https://nperrin.io/meetup/workshop-introduccion-a-git.html<guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+	</channel>
+</rss>

@@ -1,6 +1,6 @@
 ---
 title: About
-url: /about.html
+url: /about
 description: Information about Norman Perrin
 date: 2019/07/21
 ---

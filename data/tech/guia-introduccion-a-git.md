@@ -1,7 +1,7 @@
 ---
 pre-title: Guía
 title: Introducción a Git y GitHub
-url: /tech/guia-introduccion-a-git.html
+url: /tech/guia-introduccion-a-git
 description: Guía introductoria teórica y práctica de Git y GitHub
 date: 2019/07/24
 lang: es
