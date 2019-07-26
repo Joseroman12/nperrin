@@ -23,10 +23,10 @@ rss_item () {
 	compliant_date="$(map_date "$(grep '^date:' "$path" |sed -E 's/^date: (.*)/\1/')")"
 
 	title="$(printf '\t\t\t<title>%s</title>' "$(grep '^title:' "$path" |sed -E 's/title: (.*)/\1/')")"
-	link="$(printf '\t\t\t<link>https://nperrin.io%s<link>' "$(grep '^url:' "$path" |sed -E 's/url: (.*)/\1/')")"
+	link="$(printf '\t\t\t<link>https://nperrin.io%s</link>' "$(grep '^url:' "$path" |sed -E 's/url: (.*)/\1/')")"
 	description="$(printf '\t\t\t<description>%s</description>' "$(grep '^description:' "$path" |sed -E 's/description: (.*)$/\1/')")"
 	pubDate="$(printf '\t\t\t<pubDate>%s</pubDate>"' "$compliant_date")"
-	guid="$(printf '\t\t\t<guid>https://nperrin.io%s<guid>' "$(grep '^url:' "$path" |sed -E 's/url: (.*)/\1/')")"
+	guid="$(printf '\t\t\t<guid>https://nperrin.io%s</guid>' "$(grep '^url:' "$path" |sed -E 's/url: (.*)/\1/')")"
 	source="$(printf '\t\t\t<source url=\"https://nperrin.io/feed/index.xml\">nperrin</source>')"
 
 	printf '\t\t<item>\n%s\n%s\n%s\n%s\n%s\n%s\n\t\t</item>\n' "$title" "$link" "$description" "$pubDate" "$guid" "$source" >> "$output_rss"
