@@ -8,7 +8,7 @@ date: 2019/07/24
 
 Jobs and work I've done for you to review it.
 
-I won't explain a story for every project I had, but if you're interested in here more details of some project, don't doubt on concat me!
+I won't explain a story for every project I had, but if you're interested in hear more details of some project, don't doubt on concat me!
 
 <nav id="file">
 	<ul>
