@@ -14,7 +14,7 @@ rm .temp-rss
 printf '<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n<rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n\t<channel>\n\t\t<title>nperrin</title>\n\t\t<link>https://nperrin.io</link>\n\t\t<description>Recent content from Norman Perrin</description>\n\t\t<language>en</language>\n\t\t<image>\n\t\t\t<url>https://nperrin.io/img/me.jpeg</url>\n\t\t\t<title>Norman Perrin blurred</title>\n\t\t\t<link>https://nperrin.io</link>\n\t\t\t<width>140</width>\n\t\t\t<height>140</height>\n\t\t</image>\n\t\t<managingEditor>nperrin</managingEditor>\n\t\t<webMaster>nperrin</webMaster>\n\t\t<lastBuildDate>Thu, 25 Jul 2019 21:05:29 -0300</lastBuildDate>\n\t\t<atom:link href=\"https://nperrin.io/feed/index.xml\" rel=\"self\" type=\"application/rss+xml\"/>\n' > "$output_rss"
 
 map_date () {
-	timestamp="$(date -j -f '%Y/%m/%d' '+%s' "$1")"
+	timestamp="$(date -j -f '%Y/%m/%d %H:%M:%S' '+%s' "$1 00:00:00")"
 	date -r "$timestamp" '+%a, %d %b %Y %H:%M:%S %z'
 }
 

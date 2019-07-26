@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./scripts/build.sh && ./scripts/post-build.sh && ./scripts/lint.sh
+./scripts/feed-rss.sh && ./scripts/build.sh && ./scripts/post-build.sh && ./scripts/lint.sh
 
 rm -fr master/public/* && cp -r public/* master/public/
 
