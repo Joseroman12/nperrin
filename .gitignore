@@ -1,3 +1,6 @@
 .vscode/
+
 master/
+
 public/
+static/feed/index.xml
