@@ -7,7 +7,7 @@ list_dates () {
 	printf "%s %s\n" "$date" "$1"
 }
 
-find data -type f ! -name '404.md' ! -name 'index.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
+find data -type f ! -name '404.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
 feed_list="$(sort -r .temp-rss |head -n 10)"
 rm .temp-rss
 

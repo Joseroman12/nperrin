@@ -3,7 +3,7 @@ pre-title: Index
 title: Home
 url: /
 description: Home site for nperrin.io
-date: 2019/07/24
+date: 2019/07/26
 ---
 
 This is a simple site that I've built to upload content. With some exceptions, more useful for me than others.
@@ -12,7 +12,7 @@ I could have used a static site generator like [Gatsby](https://gatsbyjs.org), b
 
 The code itself is here: [nperrin github repository](https://github.com/NormanPerrin/nperrin/tree/src). But you can also just look at the source code, as it's readable.
 
-Also, I have a [privacy policy](/privacy-policy) if interested on reading it.
+To follow my updates you can access my [RSS feed here](/feed/index.xml).
 
 <nav id="file">
 	<ul>
