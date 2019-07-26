@@ -2,13 +2,13 @@
 title: Site improvements
 url: /site-improvements
 description: Things I could do to improve the site
-date: 2019/07/24
+date: 2019/07/26
 thumbnail-url: /img/nobody-cares.jpg
 ---
 
 ## Add
 
-- RSS feed.
+- Atom feed.
 - GraphQL client.
 - Subdomains for:
   - Professional site.
@@ -23,6 +23,9 @@ thumbnail-url: /img/nobody-cares.jpg
 ## Better
 
 - Deploy on own server.
+- RSS feed should
+    - show time of creation or modification.
+    - if modification, show git diff on description.
 - Separate guides on another domain.
     - Add next and previous buttons.
     - Add progress bar.
