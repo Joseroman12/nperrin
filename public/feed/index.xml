@@ -3,6 +3,7 @@
 	<channel>
 		<title>Norman Perrin</title>
 		<link>https://nperrin.io</link>
+		<docs>http://backend.userland.com/rss</docs>
 		<description>Recent content from Norman Perrin</description>
 		<language>en</language>
 		<image>
@@ -18,6 +19,7 @@
 			<title>Introducción a Git y GitHub</title>
 			<link>https://nperrin.io/tech/guia-introduccion-a-git</link>
 			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
+			<category>Tech</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/tech/guia-introduccion-a-git</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -26,6 +28,7 @@
 			<title>Site improvements</title>
 			<link>https://nperrin.io/site-improvements</link>
 			<description>Things I could do to improve the site</description>
+			<category>Main</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/site-improvements</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -34,6 +37,7 @@
 			<title>Nobility Technical advisor and Fullstack developer</title>
 			<link>https://nperrin.io/work/nobility</link>
 			<description>Norman Perrin work on Nobility</description>
+			<category>Work</category>
 			<pubDate>Tue, 23 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/work/nobility</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -42,6 +46,7 @@
 			<title>Pendings</title>
 			<link>https://nperrin.io/pendings</link>
 			<description>Tasks I want to accomplish</description>
+			<category>Main</category>
 			<pubDate>Tue, 23 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/pendings</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -50,6 +55,7 @@
 			<title>About</title>
 			<link>https://nperrin.io/about</link>
 			<description>Information about Norman Perrin</description>
+			<category>Main</category>
 			<pubDate>Sun, 21 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/about</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -58,6 +64,7 @@
 			<title>Privacy Policy</title>
 			<link>https://nperrin.io/privacy-policy</link>
 			<description>nperrin.io Privacy Policy</description>
+			<category>Main</category>
 			<pubDate>Wed, 17 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/privacy-policy</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -66,6 +73,7 @@
 			<title>Teacher at Puerta 18</title>
 			<link>https://nperrin.io/work/puerta-18</link>
 			<description>Norman Perrin work at Puerta 18</description>
+			<category>Work</category>
 			<pubDate>Tue, 25 Jun 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/work/puerta-18</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -74,6 +82,7 @@
 			<title>Introducción a JavaScript</title>
 			<link>https://nperrin.io/tech/guia-introduccion-a-js</link>
 			<description>Guía introductoria teórica y práctica de JavaScript</description>
+			<category>Tech</category>
 			<pubDate>Tue, 18 Jun 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/tech/guia-introduccion-a-js</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
@@ -82,6 +91,7 @@
 			<title>Workshop introductorio a Git y GitHub</title>
 			<link>https://nperrin.io/meetup/workshop-introduccion-a-git</link>
 			<description>Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub</description>
+			<category>Meetup</category>
 			<pubDate>Sat, 18 May 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/meetup/workshop-introduccion-a-git</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
