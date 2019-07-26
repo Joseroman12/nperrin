@@ -1,12 +1,12 @@
 ---
 pre-title: Guía
-title: 'Introducción a Git y GitHub'
+title: Introducción a Git y GitHub
 url: /tech/guia-introduccion-a-git.html
-description: 'Guía introductoria teórica y práctica de Git y GitHub'
+description: Guía introductoria teórica y práctica de Git y GitHub
 date: 2019/07/24
 lang: es
 show-toc: true
-toc-title: 'Tabla de contenidos'
+toc-title: Tabla de contenidos
 includes-code: true
 thumbnail-url: /img/tech/guia-introduccion-a-git/github-logo.png
 ---

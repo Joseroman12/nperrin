@@ -2,7 +2,7 @@
 pre-title: Index
 title: Home
 url: /
-description: 'Home site for nperrin.io'
+description: Home site for nperrin.io
 date: 2019/07/24
 ---
 

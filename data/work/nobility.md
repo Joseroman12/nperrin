@@ -2,6 +2,7 @@
 pre-title: Work
 title: Nobility Technical advisor & Fullstack developer
 url: /work/nobility
+description: Norman Perrin work on Nobility
 date: 2019/07/23
 ---
 

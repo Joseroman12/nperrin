@@ -1,8 +1,8 @@
 ---
 pre-title: Post
-title: 'Opinar: imprecisión'
+title: Opinar - imprecisión
 url: /post/opinar-imprecision.html
-description: 'Reflexión sobre la imprecisión que podemos tener al opinar'
+description: Reflexión sobre la imprecisión que podemos tener al opinar
 date: 2018/05/26
 lang: es
 thumbnail-url: /img/post/opinar-imprecision/jose-maria.jpeg

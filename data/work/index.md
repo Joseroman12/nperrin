@@ -2,7 +2,7 @@
 pre-title: Index
 title: Work
 url: /work
-description: 'Jobs and work I did'
+description: Jobs and work I did
 date: 2019/07/24
 ---
 

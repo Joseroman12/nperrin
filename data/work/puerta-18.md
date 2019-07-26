@@ -2,6 +2,7 @@
 pre-title: Work
 title: Teacher at Puerta 18
 url: /work/puerta-18
+description: Norman Perrin work at Puerta 18
 date: 2019/06/25
 ---
 

@@ -1,8 +1,8 @@
 ---
 pre-title: Post
-title: 'Mi primer trabajo'
+title: Mi primer trabajo
 url: /post/mi-primer-trabajo.html
-description: 'Cómo empecé mi carrera profesional como programador'
+description: Cómo empecé mi carrera profesional como programador
 date: 2018/01/13
 lang: es
 thumbnail-url: /img/post/mi-primer-trabajo/after-snoop.jpeg

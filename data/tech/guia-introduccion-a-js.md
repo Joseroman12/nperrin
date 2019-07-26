@@ -1,12 +1,12 @@
 ---
 pre-title: Guía
-title: 'Introducción a JavaScript'
+title: Introducción a JavaScript
 url: /tech/guia-introduccion-a-js.html
-description: 'Guía introductoria teórica y práctica de JavaScript'
+description: Guía introductoria teórica y práctica de JavaScript
 date: 2019/06/18
 lang: es
 show-toc: true
-toc-title: 'Tabla de contenidos'
+toc-title: Tabla de contenidos
 includes-code: true
 thumbnail-url: /img/tech/guia-introduccion-a-js/slaps-roof-of-javascript.jpg
 ---

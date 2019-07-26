@@ -2,6 +2,7 @@
 pre-title: Work
 title: Novit Fullstack developer
 url: /work/novit
+description: Norman Perrin work on Novit
 date: 2018/10/31
 ---
 

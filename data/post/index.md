@@ -2,7 +2,7 @@
 pre-title: Index
 title: Post
 url: /post
-description: 'Thoughts, reflexions I had some time. Or stories'
+description: Thoughts, reflexions I had some time. Or stories
 date: 2019/07/24
 ---
 

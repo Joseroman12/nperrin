@@ -1,7 +1,7 @@
 ---
-title: 'Pendings'
+title: Pendings
 url: /pendings.html
-description: 'Taks I want to accomplish'
+description: Tasks I want to accomplish
 date: 2019/07/23
 thumbnail-url: /img/pending-project.jpg
 ---

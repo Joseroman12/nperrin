@@ -1,7 +1,7 @@
 ---
-title: 'Site improvements'
+title: Site improvements
 url: /site-improvements.html
-description: 'Things I could do to improve the site'
+description: Things I could do to improve the site
 date: 2019/07/24
 thumbnail-url: /img/nobody-cares.jpg
 ---

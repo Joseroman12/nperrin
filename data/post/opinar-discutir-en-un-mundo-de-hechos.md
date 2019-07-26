@@ -1,8 +1,8 @@
 ---
 pre-title: Post
-title: 'Opinar: discutir en un mundo de hechos'
+title: Opinar - discutir en un mundo de hechos
 url: /post/opinar-discutir-en-un-mundo-de-hechos.html
-description: 'Reflexión sobre cómo podemos discutir sin estar seguros de lo que hablamos'
+description: Reflexión sobre cómo podemos discutir sin estar seguros de lo que hablamos
 date: 2019/02/10
 lang: es
 thumbnail-url: /img/post/opinar-discutir-en-un-mundo-de-hechos/eh.jpg
@@ -28,7 +28,7 @@ Escuchamos sobre teorías económicas, políticas, etc. Y no está mal que exist
 
 ## Discutiendo
 
-No hace falta tener un posgrado para compartir nuestra opinión sobre algún acontecimiento o política social. Discutir con otros tiene un montón de beneficios (como voy a escribir en otro artículo). Pero deberíamos tener en cuenta la [imprecisión que podemos tener al discutir](/post/opiniones-imprecision/).
+No hace falta tener un posgrado para compartir nuestra opinión sobre algún acontecimiento o política social. Discutir con otros tiene un montón de beneficios (como voy a escribir en otro artículo). Pero deberíamos tener en cuenta la [imprecisión que podemos tener al discutir](/post/opinar-imprecision/).
 
 ## Conclusión
 

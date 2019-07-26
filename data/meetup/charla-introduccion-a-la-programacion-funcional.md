@@ -1,6 +1,6 @@
 ---
 pre-title: Meetup
-title: 'Introducción a la Programación Funcional'
+title: Introducción a la Programación Funcional
 url: /meetup/introduccion-a-la-programacion-funcional
 date: 2017/11/11
 lang: es

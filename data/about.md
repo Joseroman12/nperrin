@@ -1,7 +1,7 @@
 ---
 title: About
 url: /about.html
-description: 'Information about Norman Perrin'
+description: Information about Norman Perrin
 date: 2019/07/21
 ---
 

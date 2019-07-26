@@ -2,7 +2,7 @@
 pre-title: Index
 title: Tech
 url: /tech
-description: 'Guides, cheatsheets, explanations, and tech posts'
+description: Guides, cheatsheets, explanations, and tech posts
 date: 2019/07/24
 ---
 
