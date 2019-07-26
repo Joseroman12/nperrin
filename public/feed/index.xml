@@ -13,8 +13,17 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Fri, 26 Jul 2019 20:08:56 -0300</lastBuildDate>
+		<lastBuildDate>Fri, 26 Jul 2019 20:19:04 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Site improvements</title>
+			<link>https://nperrin.io/site-improvements</link>
+			<description>Things I could do to improve the site</description>
+			<category>Main</category>
+			<pubDate>Fri, 26 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/site-improvements</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Home</title>
 			<link>https://nperrin.io/</link>
@@ -49,15 +58,6 @@
 			<category>Tech</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/tech/guia-introduccion-a-git</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Site improvements</title>
-			<link>https://nperrin.io/site-improvements</link>
-			<description>Things I could do to improve the site</description>
-			<category>Main</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/site-improvements</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 		<item>
