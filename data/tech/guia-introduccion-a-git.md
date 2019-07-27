@@ -8,7 +8,7 @@ lang: es
 show-toc: true
 toc-title: Tabla de contenidos
 includes-code: true
-thumbnail-url: /img/tech/guia-introduccion-a-git/github-logo.png
+thumbnail-url: /img/tech/Git-it.png
 ---
 
 ## Introducción

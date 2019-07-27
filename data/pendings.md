@@ -3,7 +3,7 @@ title: Pendings
 url: /pendings
 description: Tasks I want to accomplish
 date: 2019/07/23
-thumbnail-url: /img/pending-project.jpg
+thumbnail-url: /img/Pendings.png
 ---
 
 If something is not specific or clear, it means I have to think more about that subject, but still a to-do I want to accomplish.

@@ -5,7 +5,7 @@ url: /post/opinar-ideas-que-importan
 description: Reflexión sobre las opiniones y su importancia
 date: 2018/09/01
 lang: es
-thumbnail-url: /img/post/opinar-ideas-que-importan/not-listening.jpg
+thumbnail-url: /img/post/Ideas-que-importan.png
 ---
 
 Si tenés alguna red social ya sabés que las ideas se crean, comparten, discuten, bardean, …, y que no necesariamente las mejores para alimentar el debate son las que trascienden. Porque no querés debatir, ni siquiera tener la razón, querés que te la den.

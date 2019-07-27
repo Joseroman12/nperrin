@@ -8,7 +8,7 @@ lang: es
 show-toc: true
 toc-title: Tabla de contenidos
 includes-code: true
-thumbnail-url: /img/tech/guia-introduccion-a-js/slaps-roof-of-javascript.jpg
+thumbnail-url: /img/tech/JavaScript.png
 ---
 
 ## Introducción

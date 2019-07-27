@@ -3,6 +3,7 @@ title: About
 url: /about
 description: Information about Norman Perrin
 date: 2019/07/21
+thumbnail-url: /img/About.png
 ---
 
 Hi, I'm Norman Perrin.

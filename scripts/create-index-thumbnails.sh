@@ -1,11 +1,9 @@
 #!/bin/sh
 
-create_thumbnail () {
-	title="$(grep -E '^title:' "$1" |sed -E 's/title: (.*)/\1/')"
-	out_path="$(dirname "$1" |sed 's/data/static\/img/')/$title.png"
+path="$1"
+text="$2"
 
-	convert -background '#222222' -font Verdana -pointsize 80 -fill '#F3F3F3' label:"$title - nperrin" -gravity southeast -splice 120x120 -gravity northwest -splice 120x120 "$out_path"
-}
+out_path="$(dirname "$path" |sed 's@data@static\/img@')/$(echo "$text" |sed 's/ /-/g').png"
 
-find data -name 'index.md' |while read -r url; do create_thumbnail "$url"; done
+convert -background '#222222' -font Verdana -pointsize 80 -fill '#F3F3F3' label:"$text" -gravity southeast -splice 120x120 -gravity northwest -splice 120x120 "$out_path"
 

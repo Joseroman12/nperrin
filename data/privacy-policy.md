@@ -3,7 +3,7 @@ title: Privacy Policy
 url: /privacy-policy
 description: nperrin.io Privacy Policy
 date: 2019/07/17
-thumbnail-url: /img/watching.jpg
+thumbnail-url: /img/Privacy-policy.png
 ---
 
 The [nperrin.io](https://nperrin.io) website is served statically from Netlify, is not logging any data, is not using any scripts/applications for tracking its visitors, does not place any cookies on your computer.
