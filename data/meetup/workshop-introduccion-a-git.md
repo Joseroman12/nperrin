@@ -5,7 +5,7 @@ url: /meetup/workshop-introduccion-a-git
 description: Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub
 date: 2019/05/18
 lang: es
-thumbnail-url: /img/meetup/workshop-introduccion-a-git/tirando-magia-en-cordoba-con-genias-de-met.jpeg.jpg
+thumbnail-url: /img/meetup/workshop-introduccion-a-git/tirando-magia-en-cordoba-con-genias-de-met.jpeg
 ---
 
 Una oportunidad de ayudar que surgió de muy poco.
