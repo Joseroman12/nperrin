@@ -1,5 +1,6 @@
 ---
-title: Why using RSS feed | Post
+pre-title: Post
+title: Why using RSS feed
 url: /post/why-using-rss-feed.md
 date: 2019/07/28
 description: I've been using RSS feed over a month now. This brought me some benefits that I want to tell you about.

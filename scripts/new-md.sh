@@ -11,7 +11,8 @@ base_path="$(dirname "$1")"
 mkdir -p "data/$base_path"
 
 echo "---
-title: $title | nperrin
+pre-title: $(capitalize "$(basename "$(dirname "$1")" |sed 's/data/Main/')")
+title: $title
 url: /$1
 date: $(date '+%Y/%m/%d')
 lang: es
