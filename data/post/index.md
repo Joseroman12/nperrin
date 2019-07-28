@@ -19,6 +19,7 @@ Have a good reading.
 
 <nav id="file">
 	<ul>
+		<li>[2019/07/28 - why-using-rss-feed](/post/why-using-rss-feed)</li>
 		<li>[2019/02/10 - opinar-discutir-en-un-mundo-de-hechos](/post/opinar-discutir-en-un-mundo-de-hechos)</li>
 		<li>[2018/09/01 - opinar-ideas-que-importan](/post/opinar-ideas-que-importan)</li>
 		<li>[2018/05/26 - opinar-imprecision](/post/opinar-imprecision)</li>
