@@ -13,8 +13,17 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Sat, 27 Jul 2019 00:01:18 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 28 Jul 2019 14:19:34 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Why using RSS feed | Post</title>
+			<link>https://nperrin.io/post/why-using-rss-feed.md</link>
+			<description>I've been using RSS feed over a month now. This brought me some benefits that I want to tell you about.</description>
+			<category>Post</category>
+			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/post/why-using-rss-feed.md</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Site improvements</title>
 			<link>https://nperrin.io/site-improvements</link>
@@ -85,15 +94,6 @@
 			<category>Work</category>
 			<pubDate>Tue, 23 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/work/nobility</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Pendings</title>
-			<link>https://nperrin.io/pendings</link>
-			<description>Tasks I want to accomplish</description>
-			<category>Main</category>
-			<pubDate>Tue, 23 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/pendings</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 	</channel>
