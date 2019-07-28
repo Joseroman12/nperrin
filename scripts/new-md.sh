@@ -13,7 +13,7 @@ mkdir -p "data/$base_path"
 echo "---
 pre-title: $(capitalize "$(basename "$(dirname "$1")" |sed 's/data/Main/')")
 title: $title
-url: /$1
+url: /$(echo "$1" |sed 's/\.md//')
 date: $(date '+%Y/%m/%d')
 lang: es
 description: Awesome description
