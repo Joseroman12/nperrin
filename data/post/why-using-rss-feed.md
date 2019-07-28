@@ -43,7 +43,7 @@ As a content creator, if you want to notify your subscribers of a site update, y
 
 Maybe this is something that only happens to me.
 
-Reading through twitter I might encounter a random url of a new, I'll read it and go away without knowing if the source was trustable.
+Reading through twitter I might encounter a random url of a news, I'll read it and go away without knowing if the source was trustable.
 
 Having a list of news sites to get information lets me get a better knowledge if the site is trustable or not, as I follow that site through oher news too.
 
