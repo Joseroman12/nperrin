@@ -2,7 +2,7 @@
 title: Site improvements
 url: /site-improvements
 description: Things I could do to improve the site
-date: 2019/07/26
+date: 2019/07/28
 ---
 
 ## Add
@@ -10,7 +10,6 @@ date: 2019/07/26
 - Atom feed.
 - GraphQL client.
 - Subdomains for:
-  - Professional site.
   - Habits tracking.
   - Whatever I feel like adding.
 - Pre-commit dictionary validations.
@@ -22,6 +21,8 @@ date: 2019/07/26
 ## Better
 
 - Deploy on own server.
+- Thumbnail images sizes... would be good to be able to automatically generate well sized images.
+- Update listing on index files.
 - RSS feed should
     - show time of creation or modification.
     - if modification, show git diff on description.

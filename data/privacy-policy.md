@@ -11,7 +11,7 @@ Netlify, on the other hand, might (read will) save server logs on their infrastr
 
 ## Data Transfer
 
-All data is served over the HTTPS protocol, encrypting all data between the browser and the server. Your network provider will still be able to see that you are downloading data from nperrin.io, but they will not be able to see the content.
+All data is served over the HTTPS protocol, encrypting all data between the browser and the server. Your network provider will still be able to see that you are downloading data from [nperrin.io](https://nperrin.io), but they will not be able to see the content.
 
 ## Do Not Track
 

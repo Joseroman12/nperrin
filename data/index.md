@@ -2,22 +2,21 @@
 pre-title: Index
 title: Home
 url: /
-description: Home site for nperrin.io
-date: 2019/07/26
+description: Home site of Norman Perrin
+date: 2019/07/28
 ---
 
-This is a simple site that I've built to upload content. With some exceptions, more useful for me than others.
+Simple site I've built to upload content easily, built in a strange but fun way.
 
-I could have used a static site generator like [Gatsby](https://gatsbyjs.org), but wanted to do something different and try some new tools. In specific I used shell scripts with shellcheck, and pandoc.
+The code itself is here: [nperrin github repository](https://github.com/NormanPerrin/nperrin/tree/src). Feel free to copy anything you want.
 
-The code itself is here: [nperrin github repository](https://github.com/NormanPerrin/nperrin/tree/src). But you can also just look at the source code, as it's readable.
-
-To follow my updates you can access my [RSS feed here](/feed/index.xml).
+To follow my updates you can access my [RSS feed here](/feed/index.xml). I want to [improve a lot of things](/site-improvements), so if subscribed, expect some modification updates.
 
 <nav id="file">
 	<ul>
-		<li>[2019/07/23 - pendings](/pendings)</li>
-		<li>[2019/07/21 - site-improvements](/site-improvements)</li>
+		<li>[2019/07/28 - thanks](/thanks)</li>
+		<li>[2019/07/28 - pendings](/pendings)</li>
+		<li>[2019/07/28 - site-improvements](/site-improvements)</li>
 		<li>[2019/07/21 - about](/about)</li>
 		<li>[2019/07/17 - privacy-policy](/privacy-policy)</li>
 	</ul>

@@ -20,7 +20,6 @@ description: Awesome description
 show-toc: true
 toc-title: Table of contents
 includes-code: true
-thumbnail-url: /img/doggy.jpeg
 ---
 
 " >"data/$1"
