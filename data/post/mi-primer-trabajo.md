@@ -5,7 +5,6 @@ url: /post/mi-primer-trabajo
 description: Cómo empecé mi carrera profesional como programador
 date: 2018/01/13
 lang: es
-thumbnail-url: /img/post/mi-primer-trabajo/after-snoop.jpeg
 ---
 
 Hace 1 año, más o menos, empecé a sentir la necesidad de formarme profesionalmente. No solo quería “poner en práctica lo aprendido” sino que ya estaba en una edad donde quería empezar a pagarme mis cosas. Otro gran plus que me motivó fue conocer personas muy interesantes que ya estaban trabajando y hablarme con ellos de lo que hacían.

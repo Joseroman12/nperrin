@@ -5,7 +5,6 @@ url: /post/opinar-imprecision
 description: Reflexión sobre la imprecisión que podemos tener al opinar
 date: 2018/05/26
 lang: es
-thumbnail-url: /img/post/Imprecision.png
 ---
 
 ![listorti, está chequeado esto?](/img/post/opinar-imprecision/jose-maria.jpeg)

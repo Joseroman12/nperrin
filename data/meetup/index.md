@@ -4,7 +4,6 @@ title: Meetup
 url: /meetup
 description: Resume of some meetups or events I had at some time, and future ones
 date: 2019/07/24
-thumbnail-url: /img/meetup/Meetup.png
 ---
 
 Resume of some meetups or events I had at some time, and future ones.

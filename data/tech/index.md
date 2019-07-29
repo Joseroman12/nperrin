@@ -4,7 +4,6 @@ title: Tech
 url: /tech
 description: Guides, cheatsheets, explanations, and tech posts
 date: 2019/07/24
-thumbnail-url: /img/tech/Tech.png
 ---
 
 Guides, cheatsheets, explanations, and tech posts.

@@ -6,7 +6,6 @@ description: Explicación de algunos conceptos para hablar de paradigmas e intro
 date: 2018/02/16
 lang: es
 includes-code: true
-thumbnail-url: /img/tech/paradigmas-y-algo-de-funcional/window-bash.jpeg
 ---
 
 Al principio, cuando empecé a programar, estaba feliz con que mi programa funcione como esperaba, o pueda entender algo de lo que copiaba y pegaba. Todavía me acuerdo de los primeros programas que hice sacando código de algunos blogs que encontraba por internet. Quizás no entendía del todo lo que hacía ese choclo de código que tenía en mi .bat, pero estaba bastante satisfecho con el resultado.

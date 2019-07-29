@@ -4,7 +4,6 @@ title: Collaborator at Comunidad IT
 url: /work/comunidad-it
 description: Norman Perrin work on Comunidad IT
 date: 2019/04/17
-thumbnail-url: /img/work/Comunidad-IT.png
 ---
 
 From: 2018/07/10 to 2019/04/17.

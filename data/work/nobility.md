@@ -4,7 +4,6 @@ title: Nobility Technical advisor and Fullstack developer
 url: /work/nobility
 description: Norman Perrin work on Nobility
 date: 2019/07/23
-thumbnail-url: /img/work/Nobility.png
 ---
 
 [Nobility](https://www.nobilitytechnologies.com) is a small startup that is creating a Product while consulting for another companies.

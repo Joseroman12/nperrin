@@ -4,7 +4,6 @@ title: Post
 url: /post
 description: Thoughts, reflexions I had some time. Or stories
 date: 2019/07/24
-thumbnail-url: /img/post/Post.png
 ---
 
 My reflections and thoughts that I had in some period.

@@ -3,7 +3,6 @@ title: Site improvements
 url: /site-improvements
 description: Things I could do to improve the site
 date: 2019/07/26
-thumbnail-url: /img/Improvements.png
 ---
 
 ## Add

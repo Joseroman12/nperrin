@@ -4,7 +4,6 @@ title: Home
 url: /
 description: Home site for nperrin.io
 date: 2019/07/26
-thumbnail-url: /img/Home.png
 ---
 
 This is a simple site that I've built to upload content. With some exceptions, more useful for me than others.

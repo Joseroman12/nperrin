@@ -4,7 +4,6 @@ title: Freelance Fullstack developer
 url: /work/freelance
 description: Norman Perrin work as a freelancer
 date: 2018/12/25
-thumbnail-url: /img/work/Freelance.png
 ---
 
 Some **freelance** work worth mentioning.

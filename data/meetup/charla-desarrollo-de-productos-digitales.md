@@ -5,7 +5,6 @@ url: /meetup/charla-desarrollo-de-productos-digitales
 description: Recursos y resumen de la charla sobre Desarrollo de productos digitales, dada en ComunidadIT
 date: 2019/03/01
 lang: es
-thumbnail-url: /img/meetup/charla-desarrollo-de-productos-digitales/norman-selfie-grupal-1.jpg
 ---
 
 Este evento fue genial. Tuve mucho apoyo de amigos y estuve practicando la charla para que salga bien.

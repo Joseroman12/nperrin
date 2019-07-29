@@ -5,7 +5,6 @@ url: /post/opinar-discutir-en-un-mundo-de-hechos
 description: Reflexión sobre cómo podemos discutir sin estar seguros de lo que hablamos
 date: 2019/02/10
 lang: es
-thumbnail-url: /img/post/Discutir-en-un-mundo-de-Hechos.png
 ---
 
 Es cierto, la realidad no está hecha de opiniones. Pero…
