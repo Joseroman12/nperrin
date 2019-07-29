@@ -13,8 +13,26 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Sun, 28 Jul 2019 22:57:01 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 28 Jul 2019 23:48:27 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Thanks</title>
+			<link>https://nperrin.io/thanks</link>
+			<description>Deserved credit list</description>
+			<category>Main</category>
+			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/thanks</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Site improvements</title>
+			<link>https://nperrin.io/site-improvements</link>
+			<description>Things I could do to improve the site</description>
+			<category>Main</category>
+			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/site-improvements</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Why using RSS feed</title>
 			<link>https://nperrin.io/post/why-using-rss-feed</link>
@@ -25,20 +43,11 @@
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 		<item>
-			<title>Site improvements</title>
-			<link>https://nperrin.io/site-improvements</link>
-			<description>Things I could do to improve the site</description>
-			<category>Main</category>
-			<pubDate>Fri, 26 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/site-improvements</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
 			<title>Home</title>
 			<link>https://nperrin.io/</link>
-			<description>Home site for nperrin.io</description>
+			<description>Home site of Norman Perrin</description>
 			<category>Main</category>
-			<pubDate>Fri, 26 Jul 2019 00:00:00 -0300</pubDate>
+			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
@@ -85,15 +94,6 @@
 			<category>Meetup</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/meetup</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Nobility Technical advisor and Fullstack developer</title>
-			<link>https://nperrin.io/work/nobility</link>
-			<description>Norman Perrin work on Nobility</description>
-			<category>Work</category>
-			<pubDate>Tue, 23 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/work/nobility</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 	</channel>
