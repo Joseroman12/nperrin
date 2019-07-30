@@ -2,7 +2,7 @@
 pre-title: Post
 title: Why using RSS feed
 url: /post/why-using-rss-feed
-date: 2019/07/28
+date: 2019/07/30
 description: I've been using RSS feed over a month now. This brought me some benefits that I want to tell you about.
 ---
 
@@ -10,7 +10,7 @@ I've been using RSS feed over a month now. This brought me some benefits that I 
 
 But first, You may not be familiar with RSS, so let me give you a short explanation.
 
-## What is this?
+## What's this?
 
 RSS (Really Simple Syndication) is a way to share site updates on a standardized way.
 
@@ -24,11 +24,13 @@ If you want to have one, you first create an RSS file with certain format ([refe
 
 You have to host that file on some domain, like [`https:nperrin.io/feed/index.xml`](/feed/index.xml), and make sure to update it.
 
+A lot of sites exposes their RSS feeds. So you can have your own RSS feed list of sites you're interested. All in one place, and knowing your subscriptions (as contrast as a e-mail newsletter).
+
 ### RSS clients
 
 The RSS clients fetch the RSS files that you added (by their url), every X time. The client checks if they were any updates, if they were, you'll get an indication of that, maybe an article was added, then you could consume that content there.
 
-## What's so cool about this
+## What's so cool
 
 ### All in one place
 
@@ -74,12 +76,12 @@ A posible solution would be to proacticaly search for new types of content when 
 
 ## Conclusion
 
-There is a lot I don't know. I just uploaded my [rss feed](/feed/index.xml) yesterday, so feel free to correct me if you saw something wrong.
+There is a lot I don't know. I just uploaded my [rss feed](/feed/index.xml) yesterday (28 Jul), so feel free to correct me if you saw something wrong.
 
 Finally I'll let some links if you got interested.
 
 - [My RSS feed](/feed/index.xml).
-- [E-mail and RSS feed client](https://www.thunderbird.net/en-US/thunderbird/all/).
+- [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (is a RSS client too).
 - [RSS reference](https://validator.w3.org/feed/docs/rss2.html).
 - [Some RSS utils](https://github.com/NormanPerrin/utils/tree/master/rss).
 - [RSS wiki entry](https://en.wikipedia.org/wiki/RSS).
