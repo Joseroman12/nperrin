@@ -425,7 +425,7 @@ Así que de acá en adelante pueden seguir los pasos de [viendo el estado](#vien
 
 | Comando                                            | Descripción                   |
 | -------------------------------------------------- | ----------------------------- |
-| `git config --get user.name                        | Ver valor de configuración    |
+| `git config --get user.name`                       | Ver valor de configuración    |
 | `git config --global user.name "[usuario github]"` | Configurar nombre usuario     |
 | `git config --global user.email "[email github]"`  | Configurar email usuario      |
 | `git config --global core.editor "code"`           | Configurar editor por defecto |
