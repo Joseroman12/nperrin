@@ -3,7 +3,7 @@ pre-title: Post
 title: Mi primer trabajo
 url: /post/mi-primer-trabajo
 description: Cómo empecé mi carrera profesional como programador
-date: 2018/01/13
+date: 2018/01/13 00:00:00
 lang: es
 ---
 

@@ -3,7 +3,7 @@ pre-title: Index
 title: Post
 url: /post
 description: Thoughts, reflexions I had some time. Or stories
-date: 2019/07/24
+date: 2019/07/24 00:00:00
 ---
 
 My reflections and thoughts that I had in some period.

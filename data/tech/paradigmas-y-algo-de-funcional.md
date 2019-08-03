@@ -3,7 +3,7 @@ pre-title: Guía
 title: Paradigmas y algo de funcional
 url: /tech/paradigmas-y-algo-de-funcional
 description: Explicación de algunos conceptos para hablar de paradigmas e introducción al paradigma funcional
-date: 2018/02/16
+date: 2018/02/16 00:00:00
 lang: es
 includes-code: true
 ---

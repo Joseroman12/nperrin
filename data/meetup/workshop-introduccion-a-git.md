@@ -3,7 +3,7 @@ pre-title: Meetup
 title: Workshop introductorio a Git y GitHub
 url: /meetup/workshop-introduccion-a-git
 description: Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub
-date: 2019/05/18
+date: 2019/05/18 00:00:00
 lang: es
 ---
 

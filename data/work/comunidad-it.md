@@ -3,7 +3,7 @@ pre-title: Work
 title: Collaborator at Comunidad IT
 url: /work/comunidad-it
 description: Norman Perrin work on Comunidad IT
-date: 2019/04/17
+date: 2019/04/17 00:00:00
 ---
 
 From: 2018/07/10 to 2019/04/17.

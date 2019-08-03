@@ -3,7 +3,7 @@ pre-title: Work
 title: Freelance Fullstack developer
 url: /work/freelance
 description: Norman Perrin work as a freelancer
-date: 2018/12/25
+date: 2018/12/25 00:00:00
 ---
 
 Some **freelance** work worth mentioning.

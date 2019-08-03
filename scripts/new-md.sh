@@ -14,7 +14,7 @@ echo "---
 pre-title: $(capitalize "$(basename "$(dirname "$1")" |sed 's/data/Main/')")
 title: $title
 url: /$(echo "$1" |sed 's/\.md//')
-date: $(date '+%Y/%m/%d')
+date: $(date '+%Y/%m/%d %H:%M:%S')
 lang: es
 description: Awesome description
 show-toc: true

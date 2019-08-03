@@ -3,7 +3,7 @@ pre-title: Post
 title: Opinar - discutir en un mundo de hechos
 url: /post/opinar-discutir-en-un-mundo-de-hechos
 description: Reflexión sobre cómo podemos discutir sin estar seguros de lo que hablamos
-date: 2019/02/10
+date: 2019/02/10 00:00:00
 lang: es
 ---
 

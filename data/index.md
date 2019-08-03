@@ -3,7 +3,7 @@ pre-title: Index
 title: Home
 url: /
 description: Home site of Norman Perrin
-date: 2019/07/28
+date: 2019/07/28 00:00:00
 ---
 
 Simple site I've built to upload content easily, built in a strange but fun way.

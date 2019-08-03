@@ -3,7 +3,7 @@ pre-title: Index
 title: Work
 url: /work
 description: Jobs and work I did
-date: 2019/07/24
+date: 2019/07/24 00:00:00
 ---
 
 Jobs and work I've done for you to review it.

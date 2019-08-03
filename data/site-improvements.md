@@ -2,7 +2,7 @@
 title: Site improvements
 url: /site-improvements
 description: Things I could do to improve the site
-date: 2019/07/28
+date: 2019/07/28 00:00:00
 ---
 
 ## Add

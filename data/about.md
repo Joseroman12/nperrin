@@ -2,7 +2,7 @@
 title: About
 url: /about
 description: Information about Norman Perrin
-date: 2019/07/21
+date: 2019/07/21 00:00:00
 ---
 
 Hi, I'm Norman Perrin.

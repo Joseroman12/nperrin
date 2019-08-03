@@ -2,7 +2,7 @@
 title: Pendings
 url: /pendings
 description: Tasks I want to accomplish
-date: 2019/07/23
+date: 2019/07/23 00:00:00
 ---
 
 If something is not specific or clear, it means I have to think more about that subject, but still a to-do I want to accomplish.

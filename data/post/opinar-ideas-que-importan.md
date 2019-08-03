@@ -3,7 +3,7 @@ pre-title: Post
 title: Opinar - ideas que importan
 url: /post/opinar-ideas-que-importan
 description: Reflexión sobre las opiniones y su importancia
-date: 2018/09/01
+date: 2018/09/01 00:00:00
 lang: es
 ---
 

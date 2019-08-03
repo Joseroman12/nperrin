@@ -2,7 +2,7 @@
 pre-title: nperrin
 title: Thanks
 url: /thanks
-date: 2019/07/28
+date: 2019/07/28 00:00:00
 description: Deserved credit list
 ---
 
