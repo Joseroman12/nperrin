@@ -2,18 +2,16 @@
 title: Site improvements
 url: /site-improvements
 description: Things I could do to improve the site
-date: 2019/07/28 00:00:00
+date: 2019/08/04 10:21:45
 ---
 
 ## Add
 
+- Language redirects.
 - Atom feed.
-- GraphQL client.
-- Subdomains for:
-  - Habits tracking.
-  - Whatever I feel like adding.
+- Subdomains for habits tracking.
 - Pre-commit dictionary validations.
-- Separate guides and add PDF download link.
+- Add option to download lecture as PDF.
 - webmentions.
 - h-entry.
 - Instagram replica with microformats.
@@ -21,14 +19,8 @@ date: 2019/07/28 00:00:00
 ## Better
 
 - Deploy on own server.
-- Thumbnail images sizes... would be good to be able to automatically generate well sized images.
+- Update index list automatically.
 - Update listing on index files.
-- RSS feed should
-    - show time of creation or modification.
-    - if modification, show git diff on description.
-- Separate guides on another domain.
-    - Add next and previous buttons.
-    - Add progress bar.
 
 ## Investigate
 

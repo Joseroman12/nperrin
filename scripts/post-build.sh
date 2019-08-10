@@ -4,4 +4,3 @@
 
 find public -name 'index.html' -exec sed -i.bak 's@<p><\/nav><\/p>@<\/nav>@' {} \;
 find public -name '*.bak' -exec rm {} \;
-

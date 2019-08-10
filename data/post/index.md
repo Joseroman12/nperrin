@@ -18,11 +18,14 @@ Have a good reading.
 
 <nav id="file">
 	<ul>
-		<li>[2019/07/30 - why-using-rss-feed](/post/why-using-rss-feed)</li>
-		<li>[2019/02/10 - opinar-discutir-en-un-mundo-de-hechos](/post/opinar-discutir-en-un-mundo-de-hechos)</li>
-		<li>[2018/09/01 - opinar-ideas-que-importan](/post/opinar-ideas-que-importan)</li>
-		<li>[2018/05/26 - opinar-imprecision](/post/opinar-imprecision)</li>
-		<li>[2018/01/13 - mi-primer-trabajo](/post/mi-primer-trabajo)</li>
+		<li><span class="mobile-hide">[2019/07/30 - </span>why-using-rss-feed](/post/why-using-rss-feed)</li>
+		<li><span class="mobile-hide">[2019/02/10 - </span>opinions-discuss-in-a-fact-world](/post/opinions-discuss-in-a-fact-world)</li>
+		<li><span class="mobile-hide">[2018/09/01 - </span>opinions-ideas-that-matter](/post/opinions-ideas-that-matter)</li>
+		<li><span class="mobile-hide">[2018/05/26 - </span>opinions-imprecision](/post/opinions-imprecision)</li>
+		<li><span class="mobile-hide">[2018/01/13 - </span>my-first-job](/post/my-first-job)</li>
 	</ul>
 </nav>
-
+<nav id="dir">
+	<ul>
+	</ul>
+</nav>

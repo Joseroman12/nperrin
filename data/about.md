@@ -2,7 +2,7 @@
 title: About
 url: /about
 description: Information about Norman Perrin
-date: 2019/07/21 00:00:00
+date: 2019/08/04 10:12:19
 ---
 
 Hi, I'm Norman Perrin.
@@ -10,7 +10,7 @@ Hi, I'm Norman Perrin.
 An argentinian software developer and sometimes teacher.
 Born in 1994, interested in making quality work and help others.
 
-Now I'm working fulltime for a promising startup, while sharing what I know. Also giving some talks from time to time.
+Now I'm working as a freelance, while sharing what I learn. Also giving some talks from time to time.
 Looking with interest at going to Europe (I'm french too), and learning some non tech skill... haven't decided which one yet.
 
 ## Motivation
@@ -19,7 +19,7 @@ I find programming very fun, and frustrating when things don't work well.
 That's why I'm motivated to build nice, trustable, and simple systems for the end users.
 Complex systems drives downs maintanibility and developer hapiness, so I always try to do simple things, removing as much complexity and things that could go wrong, and having the most control on the variables which I work with.
 
-Am I crazy for wanting the served source code (`view-source:https://nperrin.io/about`) to look nice? I like the idea of people copying and sharing their sites, and for that the source code should be easy to read and modify.
+Am I crazy for wanting the served source code (`view-source:https://nperrin.io/about`) to look nice? I like the idea of people copying code of something they like and make it own, and for that the source code should be easy to read and modify.
 
 ## E-mail
 

@@ -21,5 +21,5 @@ Thanks for
 ## People
 
 - 2019/07/28 - [sizeof.cat](https://sizeof.cat): making an awesome site (mine is somewhat similar too...) and upload useful content.
-- 2019/07/28 - [Luke Smith](http://lukesmith.xyz): upload Unix tools related content. First vid I saw was one of ImageMagick.
+- 2019/07/28 - [Luke Smith](http://lukesmith.xyz): upload Unix tools related content. First vid I saw was one of ImageMagick, that I use sometimes.
 
