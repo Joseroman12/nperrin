@@ -6,42 +6,47 @@ body {
   font-weight: 400;
   font-family: eczar,Helvetica Neue,Arial,sans-serif;
   scroll-behavior: smooth;
-  background-color: #fefefe;
   color: #333;
+  background-color: #333;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2)), linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2));
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
 }
 
 header {
-  padding: 15px;
   text-align: center;
+  border-bottom: 5px solid #fefefe;
   background-color: mediumspringgreen;
 }
-header h1 {
-  margin: 0;
-  font-size: 26px;
-}
-
-nav#hierarchy {
-  width: fit-content;
-  padding: 5px 15px;
+header div {
+  max-width: 800px;
   margin: auto;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
-nav#hierarchy a {
-  color: aquamarine;
-  text-decoration-color: aquamarine;
-}
-nav#hierarchy span {
-  color: aquamarine;
+header div nav {
+  width: 70%;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 main {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
+  background-color: #fefefe;
+}
+
+h1 {
+  margin: 0;
+  font-size: 26px;
 }
 
 h1,
@@ -139,5 +144,17 @@ figcaption {
 @media print {
   body {
     max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  header div {
+    padding: 20px 10px;
+  }
+  .mobile-hide {
+    display: none;
   }
 }

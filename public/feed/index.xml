@@ -13,8 +13,53 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Sat, 03 Aug 2019 12:21:57 -0300</lastBuildDate>
+		<lastBuildDate>Fri, 09 Aug 2019 22:00:45 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Privacy Policy</title>
+			<link>https://nperrin.io/privacy-policy</link>
+			<description>nperrin.io Privacy Policy</description>
+			<category>Main</category>
+			<pubDate>Sun, 04 Aug 2019 10:24:29 -0300</pubDate>
+			<guid>https://nperrin.io/privacy-policy</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Site improvements</title>
+			<link>https://nperrin.io/site-improvements</link>
+			<description>Things I could do to improve the site</description>
+			<category>Main</category>
+			<pubDate>Sun, 04 Aug 2019 10:21:45 -0300</pubDate>
+			<guid>https://nperrin.io/site-improvements</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Home</title>
+			<link>https://nperrin.io/</link>
+			<description>Home site of Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Sun, 04 Aug 2019 10:18:53 -0300</pubDate>
+			<guid>https://nperrin.io/</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Pendings</title>
+			<link>https://nperrin.io/pendings</link>
+			<description>Tasks I want to accomplish</description>
+			<category>Main</category>
+			<pubDate>Sun, 04 Aug 2019 10:16:12 -0300</pubDate>
+			<guid>https://nperrin.io/pendings</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>About</title>
+			<link>https://nperrin.io/about</link>
+			<description>Information about Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Sun, 04 Aug 2019 10:12:19 -0300</pubDate>
+			<guid>https://nperrin.io/about</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Why using RSS feed</title>
 			<link>https://nperrin.io/post/why-using-rss-feed</link>
@@ -34,24 +79,6 @@
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 		<item>
-			<title>Site improvements</title>
-			<link>https://nperrin.io/site-improvements</link>
-			<description>Things I could do to improve the site</description>
-			<category>Main</category>
-			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/site-improvements</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Home</title>
-			<link>https://nperrin.io/</link>
-			<description>Home site of Norman Perrin</description>
-			<category>Main</category>
-			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
 			<title>Work</title>
 			<link>https://nperrin.io/work</link>
 			<description>Jobs and work I did</description>
@@ -67,33 +94,6 @@
 			<category>Tech</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/tech</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Introducción a Git y GitHub</title>
-			<link>https://nperrin.io/tech/guia-introduccion-a-git</link>
-			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
-			<category>Tech</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/tech/guia-introduccion-a-git</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Post</title>
-			<link>https://nperrin.io/post</link>
-			<description>Thoughts, reflexions I had some time. Or stories</description>
-			<category>Post</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/post</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Meetup</title>
-			<link>https://nperrin.io/meetup</link>
-			<description>Resume of some meetups or events I had at some time, and future ones</description>
-			<category>Meetup</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/meetup</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 	</channel>
