@@ -10,7 +10,7 @@ Sitio para subir lo que se me cruza por la cabeza, y aparte algunas cosas útile
 
 Construido con shell scripts y pandoc. Si estás interesado, el código con el que genero estas páginas está acá: [repositorio github nperrin](https://github.com/NormanPerrin/nperrin/tree/src). Sos libre de copiar y usar como quieras el código. Algunos scripts son medio feos, así que escucho sugerencias.
 
-Para seguir mis actualizaciones podés acceder a mi  [RSS feed acá](/es/feed/index.xml).
+Para seguir mis actualizaciones podés acceder a mi [RSS feed acá](/feed/es/index.xml).
 
 <nav id="file">
 	<ul>
