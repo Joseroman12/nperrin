@@ -4,4 +4,5 @@
 
 rm -fr master/public/* && cp -r public/* master/public/
 
+printf '\nDeploying site...\n'
 cd master && git add -A && git commit -m 'new site build' && git push origin master

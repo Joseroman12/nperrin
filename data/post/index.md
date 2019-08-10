@@ -18,11 +18,11 @@ Have a good reading.
 
 <nav id="file">
 	<ul>
-		<li><span class="mobile-hide">[2019/07/30 - </span>why-using-rss-feed](/post/why-using-rss-feed)</li>
-		<li><span class="mobile-hide">[2019/02/10 - </span>opinions-discuss-in-a-fact-world](/post/opinions-discuss-in-a-fact-world)</li>
-		<li><span class="mobile-hide">[2018/09/01 - </span>opinions-ideas-that-matter](/post/opinions-ideas-that-matter)</li>
-		<li><span class="mobile-hide">[2018/05/26 - </span>opinions-imprecision](/post/opinions-imprecision)</li>
-		<li><span class="mobile-hide">[2018/01/13 - </span>my-first-job](/post/my-first-job)</li>
+		<li>[<span class="mobile-hide">2019/07/30 - </span>why-using-rss-feed](/post/why-using-rss-feed)</li>
+		<li>[<span class="mobile-hide">2019/02/10 - </span>opinions-discuss-in-a-fact-world](/post/opinions-discuss-in-a-fact-world)</li>
+		<li>[<span class="mobile-hide">2018/09/01 - </span>opinions-ideas-that-matter](/post/opinions-ideas-that-matter)</li>
+		<li>[<span class="mobile-hide">2018/05/26 - </span>opinions-imprecision](/post/opinions-imprecision)</li>
+		<li>[<span class="mobile-hide">2018/01/13 - </span>my-first-job](/post/my-first-job)</li>
 	</ul>
 </nav>
 <nav id="dir">

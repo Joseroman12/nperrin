@@ -11,7 +11,7 @@ get_file_item () {
 	file_title="$(basename "$1" |sed 's@\.md@@')"
 	file_url="$(echo "$1" |sed 's/data//; s/\-es/\/es/; s@\.md@@')"
 	file_date="$(grep '^date:' < "$1" |sed 's/date\: //')"
-	printf '\t\t<li><span class="mobile-hide">[%s - </span>%s](%s)</li>\n' "$(echo "$file_date" |sed 's/ .*//')" "$file_title" "$file_url"
+	printf '\t\t<li>[<span class="mobile-hide">%s - </span>%s](%s)</li>\n' "$(echo "$file_date" |sed 's/ .*//')" "$file_title" "$file_url"
 }
 
 printf '<nav id=\"file\">\n\t<ul>\n'

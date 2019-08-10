@@ -17,11 +17,11 @@ Mi intensión al bajar mis ideas a algo escrito, es tenerlas un poco más claras
 Que tengas una buena lectura.
 <nav id="file">
 	<ul>
-		<li><span class="mobile-hide">[2019/07/30 - </span>por-que-usar-rss-feed](/es/articulo/por-que-usar-rss-feed)</li>
-		<li><span class="mobile-hide">[2019/02/10 - </span>opinar-discutir-en-un-mundo-de-hechos](/es/articulo/opinar-discutir-en-un-mundo-de-hechos)</li>
-		<li><span class="mobile-hide">[2018/09/01 - </span>opinar-ideas-que-importan](/es/articulo/opinar-ideas-que-importan)</li>
-		<li><span class="mobile-hide">[2018/05/26 - </span>opinar-imprecision](/es/articulo/opinar-imprecision)</li>
-		<li><span class="mobile-hide">[2018/01/13 - </span>mi-primer-trabajo](/es/articulo/mi-primer-trabajo)</li>
+		<li>[<span class="mobile-hide">2019/07/30 - </span>por-que-usar-rss-feed](/es/articulo/por-que-usar-rss-feed)</li>
+		<li>[<span class="mobile-hide">2019/02/10 - </span>opinar-discutir-en-un-mundo-de-hechos](/es/articulo/opinar-discutir-en-un-mundo-de-hechos)</li>
+		<li>[<span class="mobile-hide">2018/09/01 - </span>opinar-ideas-que-importan](/es/articulo/opinar-ideas-que-importan)</li>
+		<li>[<span class="mobile-hide">2018/05/26 - </span>opinar-imprecision](/es/articulo/opinar-imprecision)</li>
+		<li>[<span class="mobile-hide">2018/01/13 - </span>mi-primer-trabajo](/es/articulo/mi-primer-trabajo)</li>
 	</ul>
 </nav>
 <nav id="dir">

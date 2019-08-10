@@ -14,11 +14,11 @@ To follow my updates you can access my [RSS feed here](/feed/index.xml). I want 
 
 <nav id="file">
 	<ul>
-		<li><span class="mobile-hide">[2019/08/04 - </span>site-improvements](/site-improvements)</li>
-		<li><span class="mobile-hide">[2019/08/04 - </span>privacy-policy](/privacy-policy)</li>
-		<li><span class="mobile-hide">[2019/08/04 - </span>pendings](/pendings)</li>
-		<li><span class="mobile-hide">[2019/08/04 - </span>about](/about)</li>
-		<li><span class="mobile-hide">[2019/07/28 - </span>thanks](/thanks)</li>
+		<li>[<span class="mobile-hide">2019/08/04 - </span>site-improvements](/site-improvements)</li>
+		<li>[<span class="mobile-hide">2019/08/04 - </span>privacy-policy](/privacy-policy)</li>
+		<li>[<span class="mobile-hide">2019/08/04 - </span>pendings](/pendings)</li>
+		<li>[<span class="mobile-hide">2019/08/04 - </span>about](/about)</li>
+		<li>[<span class="mobile-hide">2019/07/28 - </span>thanks](/thanks)</li>
 	</ul>
 </nav>
 <nav id="dir">

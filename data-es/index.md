@@ -13,11 +13,11 @@ El código está acá: [repositorio github nperrin](https://github.com/NormanPer
 Para seguir mis actualizaciones podés acceder a mi  [RSS feed acá](/es/feed/index.xml). Quiero hacer [varias mejoras](/es/mejoras), así que si estás subscripto, esperá actualizaciones.
 <nav id="file">
 	<ul>
-		<li><span class="mobile-hide">[2019/07/28 - </span>mejoras](/es/mejoras)</li>
-		<li><span class="mobile-hide">[2019/07/28 - </span>gracias](/es/gracias)</li>
-		<li><span class="mobile-hide">[2019/07/23 - </span>pendientes](/es/pendientes)</li>
-		<li><span class="mobile-hide">[2019/07/21 - </span>acerca-de](/es/acerca-de)</li>
-		<li><span class="mobile-hide">[2019/07/17 - </span>politica-privacidad](/es/politica-privacidad)</li>
+		<li>[<span class="mobile-hide">2019/07/28 - </span>mejoras](/es/mejoras)</li>
+		<li>[<span class="mobile-hide">2019/07/28 - </span>gracias](/es/gracias)</li>
+		<li>[<span class="mobile-hide">2019/07/23 - </span>pendientes](/es/pendientes)</li>
+		<li>[<span class="mobile-hide">2019/07/21 - </span>acerca-de](/es/acerca-de)</li>
+		<li>[<span class="mobile-hide">2019/07/17 - </span>politica-privacidad](/es/politica-privacidad)</li>
 	</ul>
 </nav>
 <nav id="dir">
