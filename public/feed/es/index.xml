@@ -13,8 +13,71 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Fri, 09 Aug 2019 22:00:45 -0300</lastBuildDate>
+		<lastBuildDate>Sat, 10 Aug 2019 16:38:29 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/es/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Inicio</title>
+			<link>https://nperrin.io/es</link>
+			<description>Página de inicio de Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:28:32 -0300</pubDate>
+			<guid>https://nperrin.io/es</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Consultor técnico</title>
+			<link>https://nperrin.io/es/trabajo/nobility</link>
+			<description>Trabajo como Consultor técnico en Nobility</description>
+			<category>Trabajo</category>
+			<pubDate>Sat, 10 Aug 2019 16:25:34 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/nobility</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Tech</title>
+			<link>https://nperrin.io/es/tech</link>
+			<description>Guías, machetes, explicaciones, cosas relacionadas a la tecnología y proyectos</description>
+			<category>Tech</category>
+			<pubDate>Sat, 10 Aug 2019 16:24:36 -0300</pubDate>
+			<guid>https://nperrin.io/es/tech</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Artículo</title>
+			<link>https://nperrin.io/es/articulo</link>
+			<description>Pensamientos and reflexiones que tuve en algún momento</description>
+			<category>Articulo</category>
+			<pubDate>Sat, 10 Aug 2019 16:22:48 -0300</pubDate>
+			<guid>https://nperrin.io/es/articulo</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Mejoras</title>
+			<link>https://nperrin.io/es/mejoras</link>
+			<description>Cosas que quiero mejorar del sitio</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:20:14 -0300</pubDate>
+			<guid>https://nperrin.io/es/mejoras</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Pendientes</title>
+			<link>https://nperrin.io/es/pendientes</link>
+			<description>Cosas que quiero hacer</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:16:53 -0300</pubDate>
+			<guid>https://nperrin.io/es/pendientes</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Acerca de</title>
+			<link>https://nperrin.io/es/acerca-de</link>
+			<description>Información acerca de Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:02:11 -0300</pubDate>
+			<guid>https://nperrin.io/es/acerca-de</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Por qué usar RSS feed</title>
 			<link>https://nperrin.io/es/articulo/por-que-usar-rss-feed</link>
@@ -25,75 +88,12 @@
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 		<item>
-			<title>Mejoras</title>
-			<link>https://nperrin.io/es/mejoras</link>
-			<description>Cosas que quiero mejorar del sitio</description>
-			<category>Main</category>
-			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/mejoras</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Inicio</title>
-			<link>https://nperrin.io/es</link>
-			<description>Página de inicio de Norman Perrin</description>
-			<category>Main</category>
-			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
 			<title>Gracias</title>
 			<link>https://nperrin.io/es/gracias</link>
 			<description>Merecida lista de agradecimiento</description>
 			<category>Main</category>
 			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/es/gracias</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Trabajo</title>
-			<link>https://nperrin.io/es/trabajo</link>
-			<description>Algunos trabajos que hice</description>
-			<category>Trabajo</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Tech</title>
-			<link>https://nperrin.io/es/tech</link>
-			<description>Guías, machetes, explicaciones y artículos técnicos</description>
-			<category>Tech</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/tech</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Introducción a Git y GitHub</title>
-			<link>https://nperrin.io/es/tech/guia-introduccion-a-git</link>
-			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
-			<category>Tech</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/tech/guia-introduccion-a-git</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Meetup</title>
-			<link>https://nperrin.io/es/meetup</link>
-			<description>Resumen de algunas meetups que tuve, y anuncios de meetups futuros.</description>
-			<category>Meetup</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/meetup</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Artículo</title>
-			<link>https://nperrin.io/es/articulo</link>
-			<description>Pensamientos, reflexiones que tuve en algún momento. O historias</description>
-			<category>Articulo</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/articulo</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 	</channel>
