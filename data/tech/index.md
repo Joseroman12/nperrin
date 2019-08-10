@@ -2,13 +2,13 @@
 pre-title: Index
 title: Tech
 url: /tech
-description: Guides, cheatsheets, explanations, and tech posts
-date: 2019/07/24 00:00:00
+description: Guides, cheatsheets, explanations, tech projects and more related things
+date: 2019/08/10 16:24:36
 ---
 
-Guides, cheatsheets, explanations, and tech posts.
+Guides, cheatsheets, explanations, tech projects and more related things
 
-I'll also upload some experiments and tech related content I want to share.
+
 
 <nav id="file">
 	<ul>

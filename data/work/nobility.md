@@ -1,9 +1,9 @@
 ---
 pre-title: Work
-title: Nobility Technical advisor and Fullstack developer
+title: Technical advisor
 url: /work/nobility
-description: Norman Perrin work on Nobility
-date: 2019/07/23 00:00:00
+description: Work as Technical advisor at Nobility
+date: 2019/08/10 16:25:34
 ---
 
 [Nobility](https://www.nobilitytechnologies.com) is a small startup that is creating a Product while consulting for another companies.
@@ -21,4 +21,3 @@ We developed a lot of e-commerces for different companies. For that I created a 
 - Frontend: [GatsbyJS](https://www.gatsbyjs.org), [some antd components](https://ant.design/), and Redux.
 - Backend: NodeJS, Netlify hosting, Netlify Lambdas.
 - Services: Netlify, Netlify CMS, Snipcart, Stripe, Shopify, Takeshape CMS, Zapier, Shipbob and Google Sheet API.
-

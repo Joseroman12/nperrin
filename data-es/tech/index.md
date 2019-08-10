@@ -2,11 +2,11 @@
 pre-title: Index
 title: Tech
 url: /es/tech
-description: Guías, machetes, explicaciones y artículos técnicos
-date: 2019/07/24 00:00:00
+description: Guías, machetes, explicaciones, cosas relacionadas a la tecnología y proyectos
+date: 2019/08/10 16:24:36
 ---
 
-Guías, machetes, explicaciones y artículos técnicos
+Guías, machetes, explicaciones, cosas relacionadas a la tecnología y proyectos
 
 <nav id="file">
 	<ul>

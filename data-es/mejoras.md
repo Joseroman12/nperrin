@@ -2,7 +2,7 @@
 title: Mejoras
 url: /es/mejoras
 description: Cosas que quiero mejorar del sitio
-date: 2019/07/28 00:00:00
+date: 2019/08/10 16:20:14
 ---
 
 ## Agregar
@@ -14,14 +14,9 @@ date: 2019/07/28 00:00:00
 - webmentions.
 - h-entry.
 - Replica instagram con microformats.
-
-## Mejorar
-
 - Subir a servidor propio.
-- Actualizar listado índice automáticamente.
 
 ## Investigar
 
 - blogroll.
 - webring.
-

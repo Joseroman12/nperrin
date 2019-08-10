@@ -2,16 +2,15 @@
 title: Pendings
 url: /pendings
 description: Tasks I want to accomplish
-date: 2019/08/04 10:16:12
+date: 2019/08/10 16:16:53
 ---
 
-If something is not specific or clear, it means I have to think more about that subject, but still a to-do I want to accomplish.
+If something is not specific or clear, it means I should think more about that, but still something I should do.
 
 ## Programming
 
 - Make program to form words from an input of text.
 - Make program that saves lectures for later like pocket, but with pandoc.
-- Make program to track my hours of work and send to my boss.
 - Better config of `youtube-dl`.
 - Make ios dating app to learn React Native.
 - Make ios app on Swift.
@@ -39,4 +38,3 @@ If something is not specific or clear, it means I have to think more about that 
 
 - Move alone by 2019.
 - Travel to Europe by 2020.
-

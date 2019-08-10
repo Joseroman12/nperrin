@@ -40,6 +40,7 @@ main {
   max-width: 800px;
   margin: auto;
   padding: 20px;
+  overflow-x: scroll;
   box-sizing: border-box;
   background-color: #fefefe;
 }

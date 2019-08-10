@@ -3,20 +3,21 @@ pre-title: Index
 title: Inicio
 url: /es
 description: Página de inicio de Norman Perrin
-date: 2019/07/28 00:00:00
+date: 2019/08/10 16:28:32
 ---
 
-Sitio simple que construí para subir contenido de forma fácil. Construido de una forma rara pero divertida (para mi).
+Sitio para subir lo que se me cruza por la cabeza, y aparte algunas cosas útiles como guías técnicas.
 
-El código está acá: [repositorio github nperrin](https://github.com/NormanPerrin/nperrin/tree/src). Sentite libre de copiar y usar como quieras el código.
+Construido con shell scripts y pandoc. Si estás interesado, el código con el que genero estas páginas está acá: [repositorio github nperrin](https://github.com/NormanPerrin/nperrin/tree/src). Sos libre de copiar y usar como quieras el código. Algunos scripts son medio feos, así que escucho sugerencias.
 
-Para seguir mis actualizaciones podés acceder a mi  [RSS feed acá](/es/feed/index.xml). Quiero hacer [varias mejoras](/es/mejoras), así que si estás subscripto, esperá actualizaciones.
+Para seguir mis actualizaciones podés acceder a mi  [RSS feed acá](/es/feed/index.xml).
+
 <nav id="file">
 	<ul>
-		<li>[<span class="mobile-hide">2019/07/28 - </span>mejoras](/es/mejoras)</li>
+		<li>[<span class="mobile-hide">2019/08/10 - </span>pendientes](/es/pendientes)</li>
+		<li>[<span class="mobile-hide">2019/08/10 - </span>mejoras](/es/mejoras)</li>
+		<li>[<span class="mobile-hide">2019/08/10 - </span>acerca-de](/es/acerca-de)</li>
 		<li>[<span class="mobile-hide">2019/07/28 - </span>gracias](/es/gracias)</li>
-		<li>[<span class="mobile-hide">2019/07/23 - </span>pendientes](/es/pendientes)</li>
-		<li>[<span class="mobile-hide">2019/07/21 - </span>acerca-de](/es/acerca-de)</li>
 		<li>[<span class="mobile-hide">2019/07/17 - </span>politica-privacidad](/es/politica-privacidad)</li>
 	</ul>
 </nav>

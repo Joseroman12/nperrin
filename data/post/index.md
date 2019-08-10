@@ -2,8 +2,8 @@
 pre-title: Index
 title: Post
 url: /post
-description: Thoughts, reflexions I had some time. Or stories
-date: 2019/07/24 00:00:00
+description: Thoughts and reflexions I had some time
+date: 2019/08/10 16:22:48
 ---
 
 My reflections and thoughts that I had in some period.

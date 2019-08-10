@@ -2,16 +2,15 @@
 title: Pendientes
 url: /es/pendientes
 description: Cosas que quiero hacer
-date: 2019/07/23 00:00:00
+date: 2019/08/10 16:16:53
 ---
 
-Si algo no es específico o claro, significa que tengo que pensar un poco más acerca de eso, pero sigue siendo algo para hacer.
+Si algo no es específico o claro, significa que tengo que lo tengo que pensar un poco más, pero sigue siendo un item a pensar.
 
 ## Programación
 
 - Hacer programa que forme palabras desde una entrada de texto.
 - Hacer programa para guardar lecturas como pocket, con pandoc.
-- Hacer programa para trackear horas de trabajo y que se mande a mi jefe.
 - Configurar mac para usar mejor `youtube-dl`.
 - Hacer app ios de salidas para aprender RN.
 - Hacer app ios en Swift.
@@ -39,4 +38,3 @@ Si algo no es específico o claro, significa que tengo que pensar un poco más a
 
 - Move alone by 2019.
 - Travel to Europe by 2020.
-
