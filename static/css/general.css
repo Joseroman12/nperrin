@@ -1,3 +1,7 @@
+.desktop-hide {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,17 +30,16 @@ header div {
 header div nav {
   width: 70%;
   text-align: left;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  overflow: scroll;
   white-space: nowrap;
 }
 header span {
-  color: #fefefe;
   letter-spacing: 2px;
+  color: #fefefe;
 }
 header a {
-  color: mediumspringgreen;
   letter-spacing: 2px;
+  color: mediumspringgreen;
   text-decoration-color: mediumspringgreen;
 }
 
@@ -44,7 +47,7 @@ main {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  padding: 20px;
+  padding: 40px 20px;
   overflow-x: scroll;
   box-sizing: border-box;
 }
@@ -154,12 +157,11 @@ figcaption {
 
 @media (max-width: 768px) {
   main {
-    padding: 10px;
+    padding: 30px 10px;
   }
   header div {
     padding: 20px 10px;
   }
-  .mobile-hide {
-    display: none;
-  }
+  .mobile-hide { display: none; }
+  .desktop-hide { display: block; }
 }
