@@ -18,19 +18,19 @@ build_from_path () {
 		pandoc -s --toc --template nperrin.html5 -f markdown -t html -o "$path" "$1"
 		lang_alt_url="$(grep -w "$lang_actual_url" i18n_dir |sed -E 's/^.* (.*)$/\1/')"
 		if [ -z "$lang_alt_url" ]; then
-			sed -i.bak 's/i18n@lang_alt_url@/#/; s/i18n@lang_alt_text@/Castellano/; s/i18n@last_update@/Last update/; s/i18n@lang_alt_text_short@/ES/' "$path"
+			sed -i.bak 's/i18n@lang_alt_url@/#/g; s/i18n@lang_alt_text@/Castellano/g; s/i18n@last_update@/Last update/g; s/i18n@lang_alt_text_short@/ES/' "$path"
 		else
 			sanitized="$(echo "$lang_alt_url" |sed 's@\/@\\/@g')"
-			sed -i.bak 's/i18n@lang_alt_url@/'"$sanitized"'/; s/i18n@lang_alt_text@/Castellano/; s/i18n@last_update@/Last update/; s/i18n@lang_alt_text_short@/ES/' "$path"
+			sed -i.bak 's/i18n@lang_alt_url@/'"$sanitized"'/g; s/i18n@lang_alt_text@/Castellano/g; s/i18n@last_update@/Last update/g; s/i18n@lang_alt_text_short@/ES/g' "$path"
 		fi
 	else
 		pandoc -M lang=es -s --toc --template nperrin.html5 -f markdown -t html -o "$path" "$1"
 		lang_alt_url="$(grep -w "$lang_actual_url" i18n_dir |sed -E 's/^(.*) .*$/\1/')"
 		if [ -z "$lang_alt_url" ]; then
-			sed -i.bak 's/i18n@lang_alt_url@/#/; s/i18n@lang_alt_text@/English/; s/i18n@last_update@/Última actualización/; s/i18n@lang_alt_text_short@/EN/' "$path"
+			sed -i.bak 's/i18n@lang_alt_url@/#/g; s/i18n@lang_alt_text@/English/g; s/i18n@last_update@/Última actualización/g; s/i18n@lang_alt_text_short@/EN/' "$path"
 		else
 			sanitized="$(echo "$lang_alt_url" |sed 's@\/@\\/@g')"
-			sed -i.bak 's/i18n@lang_alt_url@/'"$sanitized"'/; s/i18n@lang_alt_text@/English/; s/i18n@last_update@/Última actualización/; s/i18n@lang_alt_text_short@/EN/' "$path"
+			sed -i.bak 's/i18n@lang_alt_url@/'"$sanitized"'/g; s/i18n@lang_alt_text@/English/g; s/i18n@last_update@/Última actualización/g; s/i18n@lang_alt_text_short@/EN/g' "$path"
 		fi
 	fi
 
