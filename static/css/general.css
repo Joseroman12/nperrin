@@ -4,19 +4,15 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
-  font-family: eczar,Helvetica Neue,Arial,sans-serif;
+  font-family: 'Eczar',serif;
   scroll-behavior: smooth;
   color: #333;
-  background-color: #333;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2)), linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2));
-  background-size: 50px 50px;
-  background-position: 0 0, 25px 25px;
+  background-color: #fefefe;
 }
 
 header {
   text-align: center;
-  border-bottom: 5px solid #fefefe;
-  background-color: mediumspringgreen;
+  background-color: #222;
 }
 header div {
   max-width: 800px;
@@ -34,6 +30,15 @@ header div nav {
   overflow: hidden;
   white-space: nowrap;
 }
+header span {
+  color: #fefefe;
+  letter-spacing: 2px;
+}
+header a {
+  color: mediumspringgreen;
+  letter-spacing: 2px;
+  text-decoration-color: mediumspringgreen;
+}
 
 main {
   width: 100%;
@@ -42,12 +47,11 @@ main {
   padding: 20px;
   overflow-x: scroll;
   box-sizing: border-box;
-  background-color: #fefefe;
 }
 
 h1 {
   margin: 0;
-  font-size: 26px;
+  font-size: 36px;
 }
 
 h1,
