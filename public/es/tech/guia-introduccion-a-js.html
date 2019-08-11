@@ -1,223 +1,495 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<title>Introducción a JavaScript - Guía</title>
+		<meta charset="utf-8" />
+		<meta name="generator" content="pandoc" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=yes"
+		/>
+		<meta name="author" content="Norman Perrin" />
+		<link
+			rel="canonical"
+			href="https://nperrin.io/es/tech/guia-introduccion-a-js"
+		/>
+		<meta
+			name="description"
+			content="Guía introductoria teórica y práctica de JavaScript"
+		/>
+		<meta name="dcterms.date" content="2019/06/18 00:00:00" />
+		<meta name="og:title" content="Introducción a JavaScript - Guía" />
+		<meta
+			name="og:description"
+			content="Guía introductoria teórica y práctica de JavaScript"
+		/>
+		<meta name="og:site_name" content="Norman Perrin" />
+		<meta
+			name="og:url"
+			content="https://nperrin.io/es/tech/guia-introduccion-a-js"
+		/>
+		<meta name="og:type" content="article" />
+		<meta
+			name="og:image"
+			content="https://nperrin.io/img/es/tech/guia-introduccion-a-js/thumbnail.png"
+		/>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@NormanPerrinOK" />
+		<meta name="twitter:creator" content="@NormanPerrinOK" />
+		<meta name="twitter:title" content="Introducción a JavaScript - Guía" />
+		<meta
+			name="twitter:description"
+			content="Guía introductoria teórica y práctica de JavaScript"
+		/>
+		<meta
+			name="twitter:url"
+			content="https://nperrin.io/es/tech/guia-introduccion-a-js"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://nperrin.io/img/es/tech/guia-introduccion-a-js/thumbnail.png"
+		/>
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
+		<link
+			rel="alternate home"
+			href="/feed/index.xml"
+			type="application/rss+xml"
+			hreflang="en"
+			title="Norman Perrin"
+		/>
+		<link rel="stylesheet" href="/css/general.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Eczar&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/code.css" />
+		<!--[if lt IE 9]>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+	</head>
 
-<head>
-	<title>Introducción a JavaScript - Guía</title>
-	<meta charset="utf-8" />
-	<meta name="generator" content="pandoc" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-	<meta name="author" content="Norman Perrin" />
-	<link rel="canonical" href="https://nperrin.io/es/tech/guia-introduccion-a-js" />
-	<meta name="description" content="Guía introductoria teórica y práctica de JavaScript" />
-	<meta name="dcterms.date" content="2019/06/18 00:00:00" />
-	<meta name="og:title" content="Introducción a JavaScript - Guía" />
-	<meta name="og:description" content="Guía introductoria teórica y práctica de JavaScript" />
-	<meta name="og:site_name" content="Norman Perrin" />
-	<meta name="og:url" content="https://nperrin.io/es/tech/guia-introduccion-a-js" />
-	<meta name="og:type" content="article" />
-	<meta name="og:image" content="https://nperrin.io/img/es/tech/guia-introduccion-a-js/thumbnail.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@NormanPerrinOK">
-	<meta name="twitter:creator" content="@NormanPerrinOK" />
-	<meta name="twitter:title" content="Introducción a JavaScript - Guía" />
-	<meta name="twitter:description" content="Guía introductoria teórica y práctica de JavaScript" />
-	<meta name="twitter:url" content="https://nperrin.io/es/tech/guia-introduccion-a-js" />
-	<meta name="twitter:image" content="https://nperrin.io/img/es/tech/guia-introduccion-a-js/thumbnail.png" />
-	<link rel="icon" type="image/png" href="/img/favicon.png" />
-	<link rel="alternate home" href="/feed/index.xml" type="application/rss+xml" hreflang="en" title="Norman Perrin">
-	<link rel="stylesheet" href="/css/general.css" />
-	<link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/code.css" />
-	<!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-	<![endif]-->
-</head>
-
-<body>
-	<header id="title-block-header">
-		<div>
-		<nav id="hierarchy" role="navigation"><a href="/es">nperrin</a><span> → </span><a href="/es/tech">tech</a><span> → </span><span>guia-introduccion-a-js</span></nav>
-			<a href="/tech/guide-introduction-to-js.html">English</a>
-		</div>
-	</header>
-	<main>
-		<h1>Introducción a JavaScript</h1>
-		<p><em>Última actualización: 2019/06/18 00:00:00</em></p>
-		<h2>Tabla de contenidos</h2>
-		<nav id="TOC" role="doc-toc">
-<ul>
-<li><a href="#introducción">Introducción</a></li>
-<li><a href="#motivación">Motivación</a></li>
-<li><a href="#requisitos-previos">Requisitos previos</a></li>
-<li><a href="#tener-en-cuenta">Tener en cuenta</a></li>
-<li><a href="#qué-es-javascript">Qué es JavaScript</a></li>
-<li><a href="#empezando">Empezando</a><ul>
-<li><a href="#ejercicio">Ejercicio</a></li>
-</ul></li>
-<li><a href="#strings">Strings</a><ul>
-<li><a href="#ejercicio-1">Ejercicio</a></li>
-</ul></li>
-<li><a href="#valores-y-variables">Valores y variables</a><ul>
-<li><a href="#declaración">Declaración</a></li>
-<li><a href="#partes">Partes</a></li>
-<li><a href="#uso">Uso</a></li>
-<li><a href="#reasignación">Reasignación</a></li>
-<li><a href="#caso-real">Caso real</a></li>
-<li><a href="#errores-comunes">Errores comunes</a></li>
-<li><a href="#ejercicio-2">Ejercicio</a></li>
-</ul></li>
-<li><a href="#operadores">Operadores</a><ul>
-<li><a href="#orden">Orden</a></li>
-<li><a href="#paréntesis">Paréntesis</a></li>
-<li><a href="#ejercicio-3">Ejercicio</a></li>
-</ul></li>
-<li><a href="#funciones">Funciones</a><ul>
-<li><a href="#parámetros">Parámetros</a></li>
-<li><a href="#retorno">Retorno</a></li>
-<li><a href="#partes-1">Partes</a></li>
-<li><a href="#ejercicio-4">Ejercicio</a></li>
-</ul></li>
-<li><a href="#javascript-en-nuestro-html">JavaScript en nuestro HTML</a><ul>
-<li><a href="#aclaraciones">Aclaraciones</a></li>
-<li><a href="#ahora-sí">Ahora sí</a></li>
-</ul></li>
-<li><a href="#condicionales">Condicionales</a><ul>
-<li><a href="#boolean">Boolean</a></li>
-<li><a href="#operadores-de-booleanos">Operadores de booleanos</a></li>
-<li><a href="#ahora-sí-1">Ahora sí</a></li>
-<li><a href="#condiciones-añadidas">Condiciones añadidas</a></li>
-<li><a href="#operadores-lógicos">Operadores lógicos</a></li>
-<li><a href="#ejercicios">Ejercicios</a></li>
-</ul></li>
-<li><a href="#objetos">Objetos</a><ul>
-<li><a href="#partes-2">Partes</a></li>
-<li><a href="#cuándo-se-usa">Cuándo se usa?</a></li>
-<li><a href="#ejercicios-1">Ejercicios</a></li>
-</ul></li>
-<li><a href="#arrays">Arrays</a><ul>
-<li><a href="#cómo-accedo-a-los-valores">Cómo accedo a los valores</a></li>
-<li><a href="#atributos-auto-definidos">Atributos auto definidos</a></li>
-<li><a href="#ejercicios-2">Ejercicios</a></li>
-</ul></li>
-<li><a href="#cheat-sheet">Cheat Sheet</a><ul>
-<li><a href="#general">General</a></li>
-<li><a href="#variables">Variables</a></li>
-<li><a href="#operadores-1">Operadores</a></li>
-<li><a href="#booleanos">Booleanos</a></li>
-<li><a href="#funciones-1">Funciones</a></li>
-<li><a href="#objetos-1">Objetos</a></li>
-<li><a href="#arrays-1">Arrays</a></li>
-</ul></li>
-<li><a href="#comunidades-geniales">Comunidades geniales</a></li>
-</ul>
-		</nav>
-<h2 id="introducción">Introducción</h2>
-<p>En esta guía van a encontrar explicaciones y ejercicios de los conceptos que considero básicos de programación en JavaScript.</p>
-<p>Hay otra guía un poco más amena que se llama “<a href="https://jsparagatos.com/">JavaScript para gatos</a>”. Recomiendo que lean esa guía y en todo caso si les quedó alguna consulta, guiarse por la tabla de contenidos de esta guía. O si confían en mi estilo, leerla directamente.</p>
-<p>También recomiendo la guía de MDN “<a href="https://developer.mozilla.org/es/docs/Learn/JavaScript">JavaScript</a>”.</p>
-<p><strong>Hago los ejercicios?</strong> Aunque pueden saltearse un ejercicio, no lo recomiendo. Quizás parezca trivial y piensen que saben cómo resolverlo, de ser así, más razón para hacerlos. Los ejercicios no van a ser muy largos y los va a ayudar a consolidar lo que acaban de leer.</p>
-<h2 id="motivación">Motivación</h2>
-<p>Cada uno tiene sus objetivos, pero les puedo decir que</p>
-<ul>
-<li>JavaScript es uno de los lenguajes de programación más populares que existen… en realidad creo que es el más popular que existe.</li>
-<li>Suele ser solicitado en puestos de trabajo como programador (trabajo que suele pagarse bien).</li>
-<li>Pueden empezar a programar solo con un navegador web.</li>
-<li>Es fácil y divertido de aprender al tener feedback rápido en el desarrollo.</li>
-<li>Tiene <a href="#comunidades-geniales">comunidades geniales</a> siempre dispuestas a ayudar, en especial a los que empiezan.</li>
-<li>No solo se usa en la web, se usa para aplicaciones, robots, servidores, …</li>
-</ul>
-<p>Ya sea que quieren conseguir un trabajo o crear algo por ustedes, es una muy buena opción para empezar.</p>
-<h2 id="requisitos-previos">Requisitos previos</h2>
-<ul>
-<li>Un navegador web instalado, recomiendo <a href="https://brave.com/">Brave</a> o <a href="https://www.google.com/chrome/">Google Chrome</a>.</li>
-</ul>
-<p>Nada más 😁</p>
-<h2 id="tener-en-cuenta">Tener en cuenta</h2>
-<ul>
-<li>Al ejecutar todo en un navegador web, no vamos a entrar en problemas con la compu. A lo sumo si nos quedamos trabados podemos recargar la página y volver a escribir lo que habíamos puesto.</li>
-<li>Los errores de sintaxis son muy frecuentes al empezar. Recomiendo llevar nota de la sintaxis al principio (aunque hay un <a href="#cheat-sheet">cheat sheet</a> también), para consultar rápido al escribir una instrucción de código.</li>
-<li>No copien y peguen, escriban las instrucciones siempre así se acostumbran a la sintaxis y ven mejor lo que ponen.</li>
-<li>No le tengas miedo a los errores. Los errores nos dicen (en inglés) qué hicimos mal. Es parte del proceso. Generalmente son buenos indicando exactamente cuál fue nuestro problema. Más adelante vamos a ver alguno de los errores más comunes que nos podemos encontrar.</li>
-<li>Probá todo lo que se te ocurra en el snippet o consola de desarrollador, no te quedes con dudas. Yo espero que si pongo un pedazo de código, lo pruebes y veas qué pasa.</li>
-<li>Si hay algo que no te quedó claro, googlea. Si no encontraste respuesta después de buscar, podés contactarme y feliz de responderte.</li>
-<li>Pueden comentar su código agregando una línea así <code>// comentario, esto no se va a ejecutar</code>.</li>
-</ul>
-<h2 id="qué-es-javascript">Qué es JavaScript</h2>
-<p>Es un <strong>lenguaje de programación</strong>, con el cual vamos a <strong>definir las instrucciones</strong> a seguir para <strong>lo que estemos programando</strong>.</p>
-<p>Mucha gente que aprende JavaScript lo hace para desarrollo web, o sea, darle comandos a una página web para que haga algo. Pero tengan en cuenta que también se puede usar para darle comandos a una computadora, celular, robot, y más.</p>
-<p>Al estar en un entorno web, cuando escribamos código le vamos a decir a nuestra página web qué pasos debe hacer.</p>
-<p>Es importante saber también que debemos respectar por completo la sintaxis, de lo contrario nuestro programa no funcionará (o funcionará mal).</p>
-<h2 id="empezando">Empezando</h2>
-<p>Les voy a introducir su entorno de desarrollo. Para abrirlo sigan estos pasos: <a href="/video/tech/guia-introduccion-a-js/demo-snippet.mp4">Video demostración abriendo snippets</a>.</p>
-<p>Si quieren saber más acerca de los “snippets” pueden ver esta <a href="https://developers.google.com/web/tools/chrome-devtools/javascript/snippets">entrada sobre snippets</a> que hizo Google.</p>
-<p>Cada línea que escriban en ese editor va a ser una “sentencia” o instrucción para el navegador web, el cual va a leer esa instrucción y va a hacer lo que le digan a través de esa instrucción.</p>
-<p>Por ejemplo podemos escribir</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">alert</span>(<span class="st">&quot;Hola mundo!&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<p>y cuando lo ejecutemos apretando “Run” vamos a ver que aparece una ventana molesta con nuestro mensaje.</p>
-<p>Si nos molesta mucho esa ventana podemos escribir</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola mundo!&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<p>y el mensaje va a aparecer en la consola, y no una ventana molesta.</p>
-<p>Podemos escribir varias de estas sentencias, una debajo de la otra.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola&quot;</span>)<span class="op">;</span></span>
+	<body>
+		<header id="title-block-header">
+			<div>
+				<nav id="hierarchy" role="navigation">
+					<a href="/es">nperrin</a><span> → </span><a href="/es/tech">tech</a
+					><span> → </span><span>guia-introduccion-a-js</span>
+				</nav>
+				<a href="/tech/guide-introduction-to-js.html">English</a>
+			</div>
+		</header>
+		<main>
+			<h1>Introducción a JavaScript</h1>
+			<p><em>Última actualización: 2019/06/18 00:00:00</em></p>
+			<h2>Tabla de contenidos</h2>
+			<nav id="TOC" role="doc-toc">
+				<ul>
+					<li><a href="#introducción">Introducción</a></li>
+					<li><a href="#motivación">Motivación</a></li>
+					<li><a href="#requisitos-previos">Requisitos previos</a></li>
+					<li><a href="#tener-en-cuenta">Tener en cuenta</a></li>
+					<li><a href="#qué-es-javascript">Qué es JavaScript</a></li>
+					<li>
+						<a href="#empezando">Empezando</a>
+						<ul>
+							<li><a href="#ejercicio">Ejercicio</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#strings">Strings</a>
+						<ul>
+							<li><a href="#ejercicio-1">Ejercicio</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#valores-y-variables">Valores y variables</a>
+						<ul>
+							<li><a href="#declaración">Declaración</a></li>
+							<li><a href="#partes">Partes</a></li>
+							<li><a href="#uso">Uso</a></li>
+							<li><a href="#reasignación">Reasignación</a></li>
+							<li><a href="#caso-real">Caso real</a></li>
+							<li><a href="#errores-comunes">Errores comunes</a></li>
+							<li><a href="#ejercicio-2">Ejercicio</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#operadores">Operadores</a>
+						<ul>
+							<li><a href="#orden">Orden</a></li>
+							<li><a href="#paréntesis">Paréntesis</a></li>
+							<li><a href="#ejercicio-3">Ejercicio</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#funciones">Funciones</a>
+						<ul>
+							<li><a href="#parámetros">Parámetros</a></li>
+							<li><a href="#retorno">Retorno</a></li>
+							<li><a href="#partes-1">Partes</a></li>
+							<li><a href="#ejercicio-4">Ejercicio</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#javascript-en-nuestro-html">JavaScript en nuestro HTML</a>
+						<ul>
+							<li><a href="#aclaraciones">Aclaraciones</a></li>
+							<li><a href="#ahora-sí">Ahora sí</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#condicionales">Condicionales</a>
+						<ul>
+							<li><a href="#boolean">Boolean</a></li>
+							<li>
+								<a href="#operadores-de-booleanos">Operadores de booleanos</a>
+							</li>
+							<li><a href="#ahora-sí-1">Ahora sí</a></li>
+							<li><a href="#condiciones-añadidas">Condiciones añadidas</a></li>
+							<li><a href="#operadores-lógicos">Operadores lógicos</a></li>
+							<li><a href="#ejercicios">Ejercicios</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#objetos">Objetos</a>
+						<ul>
+							<li><a href="#partes-2">Partes</a></li>
+							<li><a href="#cuándo-se-usa">Cuándo se usa?</a></li>
+							<li><a href="#ejercicios-1">Ejercicios</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#arrays">Arrays</a>
+						<ul>
+							<li>
+								<a href="#cómo-accedo-a-los-valores"
+									>Cómo accedo a los valores</a
+								>
+							</li>
+							<li>
+								<a href="#atributos-auto-definidos">Atributos auto definidos</a>
+							</li>
+							<li><a href="#ejercicios-2">Ejercicios</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#cheat-sheet">Cheat Sheet</a>
+						<ul>
+							<li><a href="#general">General</a></li>
+							<li><a href="#variables">Variables</a></li>
+							<li><a href="#operadores-1">Operadores</a></li>
+							<li><a href="#booleanos">Booleanos</a></li>
+							<li><a href="#funciones-1">Funciones</a></li>
+							<li><a href="#objetos-1">Objetos</a></li>
+							<li><a href="#arrays-1">Arrays</a></li>
+						</ul>
+					</li>
+					<li><a href="#comunidades-geniales">Comunidades geniales</a></li>
+				</ul>
+			</nav>
+			<h2 id="introducción">Introducción</h2>
+			<p>
+				En esta guía van a encontrar explicaciones y ejercicios de los conceptos
+				que considero básicos de programación en JavaScript.
+			</p>
+			<p>
+				Hay otra guía un poco más amena que se llama “<a
+					href="https://jsparagatos.com/"
+					>JavaScript para gatos</a
+				>”. Recomiendo que lean esa guía y en todo caso si les quedó alguna
+				consulta, guiarse por la tabla de contenidos de esta guía. O si confían
+				en mi estilo, leerla directamente.
+			</p>
+			<p>
+				También recomiendo la guía de MDN “<a
+					href="https://developer.mozilla.org/es/docs/Learn/JavaScript"
+					>JavaScript</a
+				>”.
+			</p>
+			<p>
+				<strong>Hago los ejercicios?</strong> Aunque pueden saltearse un
+				ejercicio, no lo recomiendo. Quizás parezca trivial y piensen que saben
+				cómo resolverlo, de ser así, más razón para hacerlos. Los ejercicios no
+				van a ser muy largos y los va a ayudar a consolidar lo que acaban de
+				leer.
+			</p>
+			<h2 id="motivación">Motivación</h2>
+			<p>Cada uno tiene sus objetivos, pero les puedo decir que</p>
+			<ul>
+				<li>
+					JavaScript es uno de los lenguajes de programación más populares que
+					existen… en realidad creo que es el más popular que existe.
+				</li>
+				<li>
+					Suele ser solicitado en puestos de trabajo como programador (trabajo
+					que suele pagarse bien).
+				</li>
+				<li>Pueden empezar a programar solo con un navegador web.</li>
+				<li>
+					Es fácil y divertido de aprender al tener feedback rápido en el
+					desarrollo.
+				</li>
+				<li>
+					Tiene <a href="#comunidades-geniales">comunidades geniales</a> siempre
+					dispuestas a ayudar, en especial a los que empiezan.
+				</li>
+				<li>
+					No solo se usa en la web, se usa para aplicaciones, robots,
+					servidores, …
+				</li>
+			</ul>
+			<p>
+				Ya sea que quieren conseguir un trabajo o crear algo por ustedes, es una
+				muy buena opción para empezar.
+			</p>
+			<h2 id="requisitos-previos">Requisitos previos</h2>
+			<ul>
+				<li>
+					Un navegador web instalado, recomiendo
+					<a href="https://brave.com/">Brave</a> o
+					<a href="https://www.google.com/chrome/">Google Chrome</a>.
+				</li>
+			</ul>
+			<p>Nada más 😁</p>
+			<h2 id="tener-en-cuenta">Tener en cuenta</h2>
+			<ul>
+				<li>
+					Al ejecutar todo en un navegador web, no vamos a entrar en problemas
+					con la compu. A lo sumo si nos quedamos trabados podemos recargar la
+					página y volver a escribir lo que habíamos puesto.
+				</li>
+				<li>
+					Los errores de sintaxis son muy frecuentes al empezar. Recomiendo
+					llevar nota de la sintaxis al principio (aunque hay un
+					<a href="#cheat-sheet">cheat sheet</a> también), para consultar rápido
+					al escribir una instrucción de código.
+				</li>
+				<li>
+					No copien y peguen, escriban las instrucciones siempre así se
+					acostumbran a la sintaxis y ven mejor lo que ponen.
+				</li>
+				<li>
+					No le tengas miedo a los errores. Los errores nos dicen (en inglés)
+					qué hicimos mal. Es parte del proceso. Generalmente son buenos
+					indicando exactamente cuál fue nuestro problema. Más adelante vamos a
+					ver alguno de los errores más comunes que nos podemos encontrar.
+				</li>
+				<li>
+					Probá todo lo que se te ocurra en el snippet o consola de
+					desarrollador, no te quedes con dudas. Yo espero que si pongo un
+					pedazo de código, lo pruebes y veas qué pasa.
+				</li>
+				<li>
+					Si hay algo que no te quedó claro, googlea. Si no encontraste
+					respuesta después de buscar, podés contactarme y feliz de responderte.
+				</li>
+				<li>
+					Pueden comentar su código agregando una línea así
+					<code>// comentario, esto no se va a ejecutar</code>.
+				</li>
+			</ul>
+			<h2 id="qué-es-javascript">Qué es JavaScript</h2>
+			<p>
+				Es un <strong>lenguaje de programación</strong>, con el cual vamos a
+				<strong>definir las instrucciones</strong> a seguir para
+				<strong>lo que estemos programando</strong>.
+			</p>
+			<p>
+				Mucha gente que aprende JavaScript lo hace para desarrollo web, o sea,
+				darle comandos a una página web para que haga algo. Pero tengan en
+				cuenta que también se puede usar para darle comandos a una computadora,
+				celular, robot, y más.
+			</p>
+			<p>
+				Al estar en un entorno web, cuando escribamos código le vamos a decir a
+				nuestra página web qué pasos debe hacer.
+			</p>
+			<p>
+				Es importante saber también que debemos respectar por completo la
+				sintaxis, de lo contrario nuestro programa no funcionará (o funcionará
+				mal).
+			</p>
+			<h2 id="empezando">Empezando</h2>
+			<p>
+				Les voy a introducir su entorno de desarrollo. Para abrirlo sigan estos
+				pasos:
+				<a href="/video/tech/guia-introduccion-a-js/demo-snippet.mp4"
+					>Video demostración abriendo snippets</a
+				>.
+			</p>
+			<p>
+				Si quieren saber más acerca de los “snippets” pueden ver esta
+				<a
+					href="https://developers.google.com/web/tools/chrome-devtools/javascript/snippets"
+					>entrada sobre snippets</a
+				>
+				que hizo Google.
+			</p>
+			<p>
+				Cada línea que escriban en ese editor va a ser una “sentencia” o
+				instrucción para el navegador web, el cual va a leer esa instrucción y
+				va a hacer lo que le digan a través de esa instrucción.
+			</p>
+			<p>Por ejemplo podemos escribir</p>
+			<div class="sourceCode" id="cb1">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">alert</span>(<span class="st">&quot;Hola mundo!&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				y cuando lo ejecutemos apretando “Run” vamos a ver que aparece una
+				ventana molesta con nuestro mensaje.
+			</p>
+			<p>Si nos molesta mucho esa ventana podemos escribir</p>
+			<div class="sourceCode" id="cb2">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola mundo!&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>y el mensaje va a aparecer en la consola, y no una ventana molesta.</p>
+			<p>Podemos escribir varias de estas sentencias, una debajo de la otra.</p>
+			<div class="sourceCode" id="cb3">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola&quot;</span>)<span class="op">;</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
 <span id="cb3-3"><a href="#cb3-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Cómo estás?&quot;</span>)<span class="op">;</span></span>
 <span id="cb3-4"><a href="#cb3-4"></a></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Que bien!&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<h3 id="ejercicio">Ejercicio</h3>
-<p>Para entender lo molesto que puede llegar a ser un <code>alert</code>, escribir 10 mensajes con alert, cada mensaje que indique el número de mensaje que es.</p>
-<p>Luego hacer lo mismo pero con <code>console.log</code>.</p>
-<h2 id="strings">Strings</h2>
-<p>Lo que escribimos antes era un string: “Hola Mundo”.</p>
-<p>A tener en cuenta con los strings, (o textos), deben empezar <strong>y</strong> terminar con comillas simples <code>'</code> o dobles <code>"</code>.</p>
-<p>Si queremos juntar 2 strings los podemos hacer así</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, me llamo &quot;</span> <span class="op">+</span> <span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<h3 id="ejercicio-1">Ejercicio</h3>
-<p>Imprimir 10 mensajes por consola o ventana de alerta (alert), haciendo 1 concatenación más por cada nuevo mensaje que hagan.</p>
-<p>Por ejemplo si hago un nuevo mensaje, teniendo en cuenta el anterior mensaje que escribí, podría ser</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, me llamo &quot;</span> <span class="op">+</span> <span class="st">&quot;Norman &quot;</span> <span class="op">+</span> <span class="st">&quot; y escribí una guía.&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<h2 id="valores-y-variables">Valores y variables</h2>
-<p>Primer concepto clave.</p>
-<blockquote>
-<p>Una variable es un lugar donde puedo guardar un valor.</p>
-</blockquote>
-<p>Entonces, qué es un valor? y para qué puedo querer guardar uno ahí?</p>
-<blockquote>
-<p>Los valores son datos que puede manejar un programa, estos pueden ser de distinto tipo.</p>
-</blockquote>
-<p>En JavaScript los tipos de datos que puede manejar son strings, números, funciones, listas, … y sigue, pero hasta acá por ahora.</p>
-<h3 id="declaración">Declaración</h3>
-<p>Y cómo guardo un valor en una variable?</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="kw">var</span> edad <span class="op">=</span> <span class="dv">24</span><span class="op">;</span></span></code></pre></div>
-<p>Cuando el tipo es numérico, no hace falta ponerlo entre comillas el valor, sino que ya entiende que es un número si empieza con un dígito.</p>
-<h3 id="partes">Partes</h3>
-<p>Vemos que esta sentencia tiene 4 partes.</p>
-<ul>
-<li><code>var</code>: palabra reservada en JavaScript para declarar una variable.</li>
-<li><code>nombre</code>: nombre de la variable, con la que luego voy a poder identificarla para obtener su valor. No pueden poner caracteres especiales, espacios o números al principio para definir la variable.</li>
-<li><code>=</code>: la asignación, esto delimita el lado izquierdo y derecho de la declaración. En el lado izquierdo siempre voy a tener el nombre de la variable, identificar, del lado derecho siempre voy a tener el valor.</li>
-<li><code>"Norman"</code>: valor que le asigno a la variable llamada <code>nombre</code>. Nos damos cuenta que es un valor al estar rodeado de comillas dobles.</li>
-</ul>
-<p>Si al definir una variable usamos la asignación podemos acordarnos como regla que</p>
-<blockquote>
-<p>Del izquierdo de la asignación va un nombre identificador para la variable, del lado derecho de la asignación, un valor.</p>
-</blockquote>
-<h3 id="uso">Uso</h3>
-<p>Y cómo uso esta variable luego?</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Que bien!&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="ejercicio">Ejercicio</h3>
+			<p>
+				Para entender lo molesto que puede llegar a ser un <code>alert</code>,
+				escribir 10 mensajes con alert, cada mensaje que indique el número de
+				mensaje que es.
+			</p>
+			<p>Luego hacer lo mismo pero con <code>console.log</code>.</p>
+			<h2 id="strings">Strings</h2>
+			<p>Lo que escribimos antes era un string: “Hola Mundo”.</p>
+			<p>
+				A tener en cuenta con los strings, (o textos), deben empezar
+				<strong>y</strong> terminar con comillas simples <code>'</code> o dobles
+				<code>"</code>.
+			</p>
+			<p>Si queremos juntar 2 strings los podemos hacer así</p>
+			<div class="sourceCode" id="cb4">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, me llamo &quot;</span> <span class="op">+</span> <span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="ejercicio-1">Ejercicio</h3>
+			<p>
+				Imprimir 10 mensajes por consola o ventana de alerta (alert), haciendo 1
+				concatenación más por cada nuevo mensaje que hagan.
+			</p>
+			<p>
+				Por ejemplo si hago un nuevo mensaje, teniendo en cuenta el anterior
+				mensaje que escribí, podría ser
+			</p>
+			<div class="sourceCode" id="cb5">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, me llamo &quot;</span> <span class="op">+</span> <span class="st">&quot;Norman &quot;</span> <span class="op">+</span> <span class="st">&quot; y escribí una guía.&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<h2 id="valores-y-variables">Valores y variables</h2>
+			<p>Primer concepto clave.</p>
+			<blockquote>
+				<p>Una variable es un lugar donde puedo guardar un valor.</p>
+			</blockquote>
+			<p>Entonces, qué es un valor? y para qué puedo querer guardar uno ahí?</p>
+			<blockquote>
+				<p>
+					Los valores son datos que puede manejar un programa, estos pueden ser
+					de distinto tipo.
+				</p>
+			</blockquote>
+			<p>
+				En JavaScript los tipos de datos que puede manejar son strings, números,
+				funciones, listas, … y sigue, pero hasta acá por ahora.
+			</p>
+			<h3 id="declaración">Declaración</h3>
+			<p>Y cómo guardo un valor en una variable?</p>
+			<div class="sourceCode" id="cb6">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="kw">var</span> edad <span class="op">=</span> <span class="dv">24</span><span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Cuando el tipo es numérico, no hace falta ponerlo entre comillas el
+				valor, sino que ya entiende que es un número si empieza con un dígito.
+			</p>
+			<h3 id="partes">Partes</h3>
+			<p>Vemos que esta sentencia tiene 4 partes.</p>
+			<ul>
+				<li>
+					<code>var</code>: palabra reservada en JavaScript para declarar una
+					variable.
+				</li>
+				<li>
+					<code>nombre</code>: nombre de la variable, con la que luego voy a
+					poder identificarla para obtener su valor. No pueden poner caracteres
+					especiales, espacios o números al principio para definir la variable.
+				</li>
+				<li>
+					<code>=</code>: la asignación, esto delimita el lado izquierdo y
+					derecho de la declaración. En el lado izquierdo siempre voy a tener el
+					nombre de la variable, identificar, del lado derecho siempre voy a
+					tener el valor.
+				</li>
+				<li>
+					<code>"Norman"</code>: valor que le asigno a la variable llamada
+					<code>nombre</code>. Nos damos cuenta que es un valor al estar rodeado
+					de comillas dobles.
+				</li>
+			</ul>
+			<p>
+				Si al definir una variable usamos la asignación podemos acordarnos como
+				regla que
+			</p>
+			<blockquote>
+				<p>
+					Del izquierdo de la asignación va un nombre identificador para la
+					variable, del lado derecho de la asignación, un valor.
+				</p>
+			</blockquote>
+			<h3 id="uso">Uso</h3>
+			<p>Y cómo uso esta variable luego?</p>
+			<div class="sourceCode" id="cb7">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a></span>
 <span id="cb7-3"><a href="#cb7-3"></a><span class="va">console</span>.<span class="at">log</span>(nombre)<span class="op">;</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre></div>
-<p>Obtenemos el valor de la variable por el nombre que le dimos.</p>
-<p>Cuando se va a ejecutar una sentencia con una referencia a una variable podemos pensar en que se reemplaza la variable por el valor que tiene. Entonces una vez que encuentra el valor las sentencias quedan así</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>Obtenemos el valor de la variable por el nombre que le dimos.</p>
+			<p>
+				Cuando se va a ejecutar una sentencia con una referencia a una variable
+				podemos pensar en que se reemplaza la variable por el valor que tiene.
+				Entonces una vez que encuentra el valor las sentencias quedan así
+			</p>
+			<div class="sourceCode" id="cb8">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a></span>
 <span id="cb8-3"><a href="#cb8-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> <span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<h3 id="reasignación">Reasignación</h3>
-<p>Y es importante saber que <code>nombre</code> puede tener otros valores que <code>"Norman"</code>, como <code>"Juan"</code>, <code>"Chocolate"</code>, … cualquier cosa que se nos ocurra. Pero nosotros siempre vamos a obtener su valor llamando a la variable por su nombre <code>nombre</code>.</p>
-<p>Luego podemos ponerle otro valor si queremos.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Pepe&quot;</span><span class="op">;</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> <span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="reasignación">Reasignación</h3>
+			<p>
+				Y es importante saber que <code>nombre</code> puede tener otros valores
+				que <code>"Norman"</code>, como <code>"Juan"</code>,
+				<code>"Chocolate"</code>, … cualquier cosa que se nos ocurra. Pero
+				nosotros siempre vamos a obtener su valor llamando a la variable por su
+				nombre <code>nombre</code>.
+			</p>
+			<p>Luego podemos ponerle otro valor si queremos.</p>
+			<div class="sourceCode" id="cb9">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;Pepe&quot;</span><span class="op">;</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a></span>
 <span id="cb9-3"><a href="#cb9-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span>
 <span id="cb9-4"><a href="#cb9-4"></a></span>
@@ -227,235 +499,584 @@
 <span id="cb9-8"><a href="#cb9-8"></a></span>
 <span id="cb9-9"><a href="#cb9-9"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="st">&quot;tortuga&quot;</span><span class="op">;</span></span>
 <span id="cb9-10"><a href="#cb9-10"></a></span>
-<span id="cb9-11"><a href="#cb9-11"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre></div>
-<p>Aunque el valor cambia, las sentencias son iguales.</p>
-<h3 id="caso-real">Caso real</h3>
-<p>Hay veces que queremos guardar valores para usarlos después. Por ejemplo un programa que pregunta por tu nombre 1 vez, guarda tu nombre en una variable y luego siempre que te habla hace referencia a esa variable para saber cómo llamarte.</p>
-<p>Las explicaciones quedan abstractas, vamos a hacer ese programa.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu nombre?&quot;</span>)<span class="op">;</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>Aunque el valor cambia, las sentencias son iguales.</p>
+			<h3 id="caso-real">Caso real</h3>
+			<p>
+				Hay veces que queremos guardar valores para usarlos después. Por ejemplo
+				un programa que pregunta por tu nombre 1 vez, guarda tu nombre en una
+				variable y luego siempre que te habla hace referencia a esa variable
+				para saber cómo llamarte.
+			</p>
+			<p>Las explicaciones quedan abstractas, vamos a hacer ese programa.</p>
+			<div class="sourceCode" id="cb10">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu nombre?&quot;</span>)<span class="op">;</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a></span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="at">alert</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre></div>
-<p>Hay código desconocido.</p>
-<p>Qué es ese <code>prompt</code>?</p>
-<p>Si lo ejecutás te vas a dar cuenta.</p>
-<p>Es como un <code>alert</code> pero te deja ponerle un valor, y lo que devuelve puede ser asignado a una variable.</p>
-<p>Algo a tener en cuenta con <code>prompt</code> es que siempre te devuelve un valor tipo <code>string</code>. Por lo tanto si preguntamos por la edad, luego no podemos usar ese valor que retorna el <code>prompt</code> como si fuese un número. Lo tenemos que convertir de <code>string</code> a <code>number</code>. Para eso podemos usar la función <code>Number</code> de la siguiente manera</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">var</span> edad_texto <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu edad?&quot;</span>)<span class="op">;</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="at">alert</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>Hay código desconocido.</p>
+			<p>Qué es ese <code>prompt</code>?</p>
+			<p>Si lo ejecutás te vas a dar cuenta.</p>
+			<p>
+				Es como un <code>alert</code> pero te deja ponerle un valor, y lo que
+				devuelve puede ser asignado a una variable.
+			</p>
+			<p>
+				Algo a tener en cuenta con <code>prompt</code> es que siempre te
+				devuelve un valor tipo <code>string</code>. Por lo tanto si preguntamos
+				por la edad, luego no podemos usar ese valor que retorna el
+				<code>prompt</code> como si fuese un número. Lo tenemos que convertir de
+				<code>string</code> a <code>number</code>. Para eso podemos usar la
+				función <code>Number</code> de la siguiente manera
+			</p>
+			<div class="sourceCode" id="cb11">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">var</span> edad_texto <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu edad?&quot;</span>)<span class="op">;</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="kw">var</span> edad_numero <span class="op">=</span> <span class="at">Number</span>(edad)<span class="op">;</span></span>
 <span id="cb11-3"><a href="#cb11-3"></a><span class="kw">var</span> edad_cumpleanios <span class="op">=</span> edad_number <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></span>
 <span id="cb11-4"><a href="#cb11-4"></a></span>
-<span id="cb11-5"><a href="#cb11-5"></a><span class="at">alert</span>(<span class="st">&quot;Cuando cumplas años vas a tener &quot;</span> <span class="op">+</span> edad_cumpleanios)<span class="op">;</span></span></code></pre></div>
-<h3 id="errores-comunes">Errores comunes</h3>
-<p>Poner del lado izquierdo un valor.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">// const 1 = 1; //&gt; solo se pone un nombre identificador, no un valor.</span></span></code></pre></div>
-<p>Esto es un valor, por lo tanto va a darnos un error.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">// const &quot;uno&quot; = 1; //&gt; el nombre se pone sin comillas, ya que no es un valor el lado izquierdo.</span></span></code></pre></div>
-<p>Poner espacios en el nombre.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">// const una variable = 1; //&gt; el nombre del identificador va sin espacios y caracteres especiales.</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a><span class="kw">const</span> una_variable <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> <span class="co">//&gt; se suele poner notación &quot;camel case&quot; o &quot;snake_case&quot; (como en este caso) cuando se tiene más de 1 palabra.</span></span></code></pre></div>
-<p>Usar un nombre reservado como nombre del identificador.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb15-1"><a href="#cb15-1"></a><span class="co">// const const = 1; //&gt; si pudiésemos, luego no habría forma de saber a qué nos referimos cuando ponemos `const`, si estamos declarando una variable o</span></span></code></pre></div>
-<h3 id="ejercicio-2">Ejercicio</h3>
-<ol type="1">
-<li>Definir 5 variables que sean de tipo string y mostrarlas por consola.</li>
-<li>Definir 5 variables que sean de tipo numéricas y mostrarlas por consola.</li>
-<li>Definir 1 variable y mostrarla por consola, luego reasignarle otro valor del mismo tipo y volverla a mostrar por consola, 5 veces.</li>
-<li>Pedir el nombre y edad a a través de <code>prompt</code> y luego mostrar esos valores por consola. Anteponiendo al nombre el texto <code>"Buen día, "</code> cuando se moestra por consola, y el texto <code>"Tu edad es "</code> cuando quieran mostrar la edad por consola.</li>
-</ol>
-<h2 id="operadores">Operadores</h2>
-<p>Una de las razones por las cuales hay tipos de datos es para que estos datos según su tipo respondan a diferentes operaciones.</p>
-<p>Por ejemplo, si yo hago</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb16-1"><a href="#cb16-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></span></code></pre></div>
-<p>Esto me va a mostrar <code>2</code> por la consola. Ya que entiende que son numéricos y por lo tanto hace la suma.</p>
-<p>En cambio si tengo algo como</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;1&quot;</span> <span class="op">+</span> <span class="st">&quot;1&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<p>Me va a retornar <code>"11"</code> por consola. No está mal, ya que un valor entre comillas es un string, por lo tanto el <code>+</code> lo entiende como concatenación, no como suma.</p>
-<p>Entonces podemos decir que un tipo de dato está asociado a distintos operadores.</p>
-<p>Como la suma podemos hacer una resta <code>-</code>, multiplicación <code>*</code>, división <code>/</code>, resto <code>%</code>.</p>
-<h3 id="orden">Orden</h3>
-<p>En matemática se dice que el orden de la suma no importa, en nuestro caso sí.</p>
-<p>Cuál piensan que va a ser el mensaje si hacemos algo como</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb18-1"><a href="#cb18-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tres más dos es: &quot;</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span>)<span class="op">;</span></span></code></pre></div>
-<p>JavaScript nos va a mostrar por consola <code>"Tres más dos es: 32"</code>, lo cuál sería correcto si nos referimos a strings, porque estaría haciendo una concatenación, pero nosotros queremos que lo sume y después muestre el resultado como string.</p>
-<p>Lo aconsejable para no entrar en problemas es calcular las partes por separado y después mostrarlo por consola. Por ejemplo</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1"></a><span class="kw">var</span> resultado <span class="op">=</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a><span class="at">alert</span>(<span class="st">&quot;Cuando cumplas años vas a tener &quot;</span> <span class="op">+</span> edad_cumpleanios)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="errores-comunes">Errores comunes</h3>
+			<p>Poner del lado izquierdo un valor.</p>
+			<div class="sourceCode" id="cb12">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb12-1"><a href="#cb12-1"></a><span class="co">// const 1 = 1; //&gt; solo se pone un nombre identificador, no un valor.</span></span></code></pre>
+			</div>
+			<p>Esto es un valor, por lo tanto va a darnos un error.</p>
+			<div class="sourceCode" id="cb13">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb13-1"><a href="#cb13-1"></a><span class="co">// const &quot;uno&quot; = 1; //&gt; el nombre se pone sin comillas, ya que no es un valor el lado izquierdo.</span></span></code></pre>
+			</div>
+			<p>Poner espacios en el nombre.</p>
+			<div class="sourceCode" id="cb14">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">// const una variable = 1; //&gt; el nombre del identificador va sin espacios y caracteres especiales.</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="kw">const</span> una_variable <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> <span class="co">//&gt; se suele poner notación &quot;camel case&quot; o &quot;snake_case&quot; (como en este caso) cuando se tiene más de 1 palabra.</span></span></code></pre>
+			</div>
+			<p>Usar un nombre reservado como nombre del identificador.</p>
+			<div class="sourceCode" id="cb15">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb15-1"><a href="#cb15-1"></a><span class="co">// const const = 1; //&gt; si pudiésemos, luego no habría forma de saber a qué nos referimos cuando ponemos `const`, si estamos declarando una variable o</span></span></code></pre>
+			</div>
+			<h3 id="ejercicio-2">Ejercicio</h3>
+			<ol type="1">
+				<li>
+					Definir 5 variables que sean de tipo string y mostrarlas por consola.
+				</li>
+				<li>
+					Definir 5 variables que sean de tipo numéricas y mostrarlas por
+					consola.
+				</li>
+				<li>
+					Definir 1 variable y mostrarla por consola, luego reasignarle otro
+					valor del mismo tipo y volverla a mostrar por consola, 5 veces.
+				</li>
+				<li>
+					Pedir el nombre y edad a a través de <code>prompt</code> y luego
+					mostrar esos valores por consola. Anteponiendo al nombre el texto
+					<code>"Buen día, "</code> cuando se moestra por consola, y el texto
+					<code>"Tu edad es "</code> cuando quieran mostrar la edad por consola.
+				</li>
+			</ol>
+			<h2 id="operadores">Operadores</h2>
+			<p>
+				Una de las razones por las cuales hay tipos de datos es para que estos
+				datos según su tipo respondan a diferentes operaciones.
+			</p>
+			<p>Por ejemplo, si yo hago</p>
+			<div class="sourceCode" id="cb16">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb16-1"><a href="#cb16-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Esto me va a mostrar <code>2</code> por la consola. Ya que entiende que
+				son numéricos y por lo tanto hace la suma.
+			</p>
+			<p>En cambio si tengo algo como</p>
+			<div class="sourceCode" id="cb17">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;1&quot;</span> <span class="op">+</span> <span class="st">&quot;1&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Me va a retornar <code>"11"</code> por consola. No está mal, ya que un
+				valor entre comillas es un string, por lo tanto el <code>+</code> lo
+				entiende como concatenación, no como suma.
+			</p>
+			<p>
+				Entonces podemos decir que un tipo de dato está asociado a distintos
+				operadores.
+			</p>
+			<p>
+				Como la suma podemos hacer una resta <code>-</code>, multiplicación
+				<code>*</code>, división <code>/</code>, resto <code>%</code>.
+			</p>
+			<h3 id="orden">Orden</h3>
+			<p>
+				En matemática se dice que el orden de la suma no importa, en nuestro
+				caso sí.
+			</p>
+			<p>Cuál piensan que va a ser el mensaje si hacemos algo como</p>
+			<div class="sourceCode" id="cb18">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb18-1"><a href="#cb18-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tres más dos es: &quot;</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				JavaScript nos va a mostrar por consola
+				<code>"Tres más dos es: 32"</code>, lo cuál sería correcto si nos
+				referimos a strings, porque estaría haciendo una concatenación, pero
+				nosotros queremos que lo sume y después muestre el resultado como
+				string.
+			</p>
+			<p>
+				Lo aconsejable para no entrar en problemas es calcular las partes por
+				separado y después mostrarlo por consola. Por ejemplo
+			</p>
+			<div class="sourceCode" id="cb19">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1"></a><span class="kw">var</span> resultado <span class="op">=</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span><span class="op">;</span></span>
 <span id="cb19-2"><a href="#cb19-2"></a></span>
-<span id="cb19-3"><a href="#cb19-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tres más dos es: &quot;</span> <span class="op">+</span> resultado)<span class="op">;</span></span></code></pre></div>
-<p>De esta forma se calcula primero la cuenta numérica y luego se hace la concatenación.</p>
-<p>Entonces si tenemos la expresión anterior: <code>"Tres más dos es: " + 3 + 2</code> se va a evaluar de la siguiente forma:</p>
-<ol type="1">
-<li><code>"Tres más dos es: " + 3 //&gt; "Tres más dos es: 3"</code></li>
-</ol>
-<p>Tiene un string y un número con la suma, JavaScript permite esta operación, pero tiene que transformar el número a string para poder hacer esta operación. Así que transforma el 3 a string y luego los concatena.</p>
-<ol start="2" type="1">
-<li><code>"Tres más dos es: 3" + 2 //&gt; "Tres más dos es: 32"</code></li>
-</ol>
-<p>Volvió a repetir lo de arriba, pero ahora en vez de transformar un 3 transformó un 2 a string.</p>
-<h3 id="paréntesis">Paréntesis</h3>
-<p>Por suerte podemos agrupar y priorizar ciertas operaciones, igual que en matemática, con los paréntesis.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb20-1"><a href="#cb20-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tres más dos es: &quot;</span> <span class="op">+</span> (<span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span>))<span class="op">;</span></span></code></pre></div>
-<p>Y ahora el paréntesis se va a resolver antes y luego su resultado (5) va a ser concatenado igual que antes.</p>
-<h3 id="ejercicio-3">Ejercicio</h3>
-<ol type="1">
-<li>Mostrar por consola la suma, multiplicación, división, resto de 2 números.</li>
-<li>Mostrar la concatenación de 2 strings.</li>
-</ol>
-<h2 id="funciones">Funciones</h2>
-<blockquote>
-<p>Una función es un valor, que ejecutado, realiza una serie de instrucciones que le hayamos definido.</p>
-</blockquote>
-<p>Así que por un lado agrupa instrucciones y las ejecuta en orden.</p>
-<p>Por otro hay una diferencia marcada entre la <strong>definición</strong> de una función, y su posterior <strong>ejecución</strong>.</p>
-<p>Veamos un ejemplo</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">// definición</span></span>
+<span id="cb19-3"><a href="#cb19-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tres más dos es: &quot;</span> <span class="op">+</span> resultado)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				De esta forma se calcula primero la cuenta numérica y luego se hace la
+				concatenación.
+			</p>
+			<p>
+				Entonces si tenemos la expresión anterior:
+				<code>"Tres más dos es: " + 3 + 2</code> se va a evaluar de la siguiente
+				forma:
+			</p>
+			<ol type="1">
+				<li>
+					<code>"Tres más dos es: " + 3 //&gt; "Tres más dos es: 3"</code>
+				</li>
+			</ol>
+			<p>
+				Tiene un string y un número con la suma, JavaScript permite esta
+				operación, pero tiene que transformar el número a string para poder
+				hacer esta operación. Así que transforma el 3 a string y luego los
+				concatena.
+			</p>
+			<ol start="2" type="1">
+				<li>
+					<code>"Tres más dos es: 3" + 2 //&gt; "Tres más dos es: 32"</code>
+				</li>
+			</ol>
+			<p>
+				Volvió a repetir lo de arriba, pero ahora en vez de transformar un 3
+				transformó un 2 a string.
+			</p>
+			<h3 id="paréntesis">Paréntesis</h3>
+			<p>
+				Por suerte podemos agrupar y priorizar ciertas operaciones, igual que en
+				matemática, con los paréntesis.
+			</p>
+			<div class="sourceCode" id="cb20">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb20-1"><a href="#cb20-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Tres más dos es: &quot;</span> <span class="op">+</span> (<span class="dv">3</span> <span class="op">+</span> <span class="dv">2</span>))<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Y ahora el paréntesis se va a resolver antes y luego su resultado (5) va
+				a ser concatenado igual que antes.
+			</p>
+			<h3 id="ejercicio-3">Ejercicio</h3>
+			<ol type="1">
+				<li>
+					Mostrar por consola la suma, multiplicación, división, resto de 2
+					números.
+				</li>
+				<li>Mostrar la concatenación de 2 strings.</li>
+			</ol>
+			<h2 id="funciones">Funciones</h2>
+			<blockquote>
+				<p>
+					Una función es un valor, que ejecutado, realiza una serie de
+					instrucciones que le hayamos definido.
+				</p>
+			</blockquote>
+			<p>Así que por un lado agrupa instrucciones y las ejecuta en orden.</p>
+			<p>
+				Por otro hay una diferencia marcada entre la
+				<strong>definición</strong> de una función, y su posterior
+				<strong>ejecución</strong>.
+			</p>
+			<p>Veamos un ejemplo</p>
+			<div class="sourceCode" id="cb21">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">// definición</span></span>
 <span id="cb21-2"><a href="#cb21-2"></a><span class="kw">function</span> <span class="at">saludar</span>() <span class="op">{</span></span>
 <span id="cb21-3"><a href="#cb21-3"></a>  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Voy a saludar al usuario&quot;</span>)<span class="op">;</span></span>
 <span id="cb21-4"><a href="#cb21-4"></a>  <span class="at">alert</span>(<span class="st">&quot;Hola, Norman&quot;</span>)<span class="op">;</span></span>
 <span id="cb21-5"><a href="#cb21-5"></a><span class="op">}</span></span>
 <span id="cb21-6"><a href="#cb21-6"></a></span>
 <span id="cb21-7"><a href="#cb21-7"></a><span class="co">// ejecución</span></span>
-<span id="cb21-8"><a href="#cb21-8"></a><span class="at">saludar</span>()<span class="op">;</span></span></code></pre></div>
-<p>Prueben de ejecutar ese pedazo de código a ver que pasa.</p>
-<p>Después de ejecutar el código, pueden probar de ejecutar la función que definieron desde la consola, volviendo a escribir <code>saludar()</code>.</p>
-<p>Una función puede ser llamada las veces que quieran luego de haber sido definida.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb22-1"><a href="#cb22-1"></a><span class="at">saludar</span>()<span class="op">;</span></span>
+<span id="cb21-8"><a href="#cb21-8"></a><span class="at">saludar</span>()<span class="op">;</span></span></code></pre>
+			</div>
+			<p>Prueben de ejecutar ese pedazo de código a ver que pasa.</p>
+			<p>
+				Después de ejecutar el código, pueden probar de ejecutar la función que
+				definieron desde la consola, volviendo a escribir
+				<code>saludar()</code>.
+			</p>
+			<p>
+				Una función puede ser llamada las veces que quieran luego de haber sido
+				definida.
+			</p>
+			<div class="sourceCode" id="cb22">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb22-1"><a href="#cb22-1"></a><span class="at">saludar</span>()<span class="op">;</span></span>
 <span id="cb22-2"><a href="#cb22-2"></a><span class="at">saludar</span>()<span class="op">;</span></span>
-<span id="cb22-3"><a href="#cb22-3"></a><span class="at">saludar</span>()<span class="op">;</span></span></code></pre></div>
-<h3 id="parámetros">Parámetros</h3>
-<p>Está genial con que podamos reutilizar código, poniéndole un nombre más entendible al código que queremos ejecutar, pero si quiero que ese “Norman” no esté, y en cambio esa variable tenga como valor lo que me ingresan?</p>
-<p>Podríamos usar parámetros</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1"></a><span class="kw">function</span> <span class="at">saludar</span>(parametro_nombre) <span class="op">{</span></span>
+<span id="cb22-3"><a href="#cb22-3"></a><span class="at">saludar</span>()<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="parámetros">Parámetros</h3>
+			<p>
+				Está genial con que podamos reutilizar código, poniéndole un nombre más
+				entendible al código que queremos ejecutar, pero si quiero que ese
+				“Norman” no esté, y en cambio esa variable tenga como valor lo que me
+				ingresan?
+			</p>
+			<p>Podríamos usar parámetros</p>
+			<div class="sourceCode" id="cb23">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb23-1"><a href="#cb23-1"></a><span class="kw">function</span> <span class="at">saludar</span>(parametro_nombre) <span class="op">{</span></span>
 <span id="cb23-2"><a href="#cb23-2"></a>  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Voy a saludar al usuario llamado: &quot;</span> <span class="op">+</span> parametro_nombre)<span class="op">;</span></span>
 <span id="cb23-3"><a href="#cb23-3"></a>  <span class="at">alert</span>(<span class="st">&quot;Hola, &quot;</span> <span class="op">+</span> parametro_nombre)<span class="op">;</span></span>
 <span id="cb23-4"><a href="#cb23-4"></a><span class="op">}</span></span>
 <span id="cb23-5"><a href="#cb23-5"></a></span>
 <span id="cb23-6"><a href="#cb23-6"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu nombre?&quot;</span>)<span class="op">;</span></span>
-<span id="cb23-7"><a href="#cb23-7"></a><span class="at">saludar</span>(nombre)<span class="op">;</span></span></code></pre></div>
-<p>Ahora la función llamada <code>saludar</code> va a obtener un nombre como parámetro de entrada, para luego usarlo dentro de la función.</p>
-<p>Es importante marcar que cuando <strong>defino</strong> la función le indico un nombre al parámetro, como una variable. Pero cuando la <strong>ejecuto</strong> le paso un valor a la función.</p>
-<p>Si quiero pasar más de 1 parámetro</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1"></a><span class="kw">function</span> <span class="at">saludar</span>(saludo<span class="op">,</span> nombre) <span class="op">{</span></span>
+<span id="cb23-7"><a href="#cb23-7"></a><span class="at">saludar</span>(nombre)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Ahora la función llamada <code>saludar</code> va a obtener un nombre
+				como parámetro de entrada, para luego usarlo dentro de la función.
+			</p>
+			<p>
+				Es importante marcar que cuando <strong>defino</strong> la función le
+				indico un nombre al parámetro, como una variable. Pero cuando la
+				<strong>ejecuto</strong> le paso un valor a la función.
+			</p>
+			<p>Si quiero pasar más de 1 parámetro</p>
+			<div class="sourceCode" id="cb24">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb24-1"><a href="#cb24-1"></a><span class="kw">function</span> <span class="at">saludar</span>(saludo<span class="op">,</span> nombre) <span class="op">{</span></span>
 <span id="cb24-2"><a href="#cb24-2"></a>  <span class="at">alert</span>(saludo <span class="op">+</span> <span class="st">&quot;, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span>
 <span id="cb24-3"><a href="#cb24-3"></a><span class="op">}</span></span>
 <span id="cb24-4"><a href="#cb24-4"></a></span>
-<span id="cb24-5"><a href="#cb24-5"></a><span class="at">saludar</span>(<span class="st">&quot;Buen día&quot;</span><span class="op">,</span> <span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<p>Cada parámetro está separado por una coma, tanto cuando se define como cuando se ejecuta una función.</p>
-<h3 id="retorno">Retorno</h3>
-<p>Una característica importante de las funciones es que pueden retornar valores.</p>
-<p>Por ejemplo la función concatenar.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb25-1"><a href="#cb25-1"></a><span class="kw">function</span> <span class="at">concatenar</span>(texto1<span class="op">,</span> texto2) <span class="op">{</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a><span class="at">saludar</span>(<span class="st">&quot;Buen día&quot;</span><span class="op">,</span> <span class="st">&quot;Norman&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Cada parámetro está separado por una coma, tanto cuando se define como
+				cuando se ejecuta una función.
+			</p>
+			<h3 id="retorno">Retorno</h3>
+			<p>
+				Una característica importante de las funciones es que pueden retornar
+				valores.
+			</p>
+			<p>Por ejemplo la función concatenar.</p>
+			<div class="sourceCode" id="cb25">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb25-1"><a href="#cb25-1"></a><span class="kw">function</span> <span class="at">concatenar</span>(texto1<span class="op">,</span> texto2) <span class="op">{</span></span>
 <span id="cb25-2"><a href="#cb25-2"></a>  <span class="cf">return</span> texto1 <span class="op">+</span> texto2<span class="op">;</span></span>
 <span id="cb25-3"><a href="#cb25-3"></a><span class="op">}</span></span>
 <span id="cb25-4"><a href="#cb25-4"></a></span>
 <span id="cb25-5"><a href="#cb25-5"></a><span class="kw">var</span> concatenacion <span class="op">=</span> <span class="at">concatenar</span>(texto1<span class="op">,</span> texto2)<span class="op">;</span></span>
 <span id="cb25-6"><a href="#cb25-6"></a></span>
-<span id="cb25-7"><a href="#cb25-7"></a><span class="va">console</span>.<span class="at">log</span>(concatenacion)<span class="op">;</span></span></code></pre></div>
-<p>Quizás ahora se estén dando cuenta que ya veníamos usando funciones.</p>
-<p><code>alert</code> y <code>console.log</code> son funciones, a los cuales le pasamos un string como valor cuando las ejecutamos.</p>
-<p>Pero estas funciones no devuelven nada, sino que <strong>hacen</strong> algo, que en estos casos es mostrar una ventana de alerta o un texto en la consola.</p>
-<p>Hay otras funciones que devuelven valores, como <code>prompt</code>, que además de <strong>hacer</strong>, mostrar un mensaje al usuario, <strong>retorna</strong> un valor.</p>
-<p>Importante a tener en cuenta, cuando una función retorna, no ejecuta más código. O sea que si tenía más instrucciones después del <code>return</code>, las ignora. Esto hace que la función solamente pueda retornar 1 valor.</p>
-<h3 id="partes-1">Partes</h3>
-<ul>
-<li><code>function</code>: palabra reservada para declarar una función.</li>
-<li><code>saludar</code>: nombre de la función.</li>
-<li><code>(parametro1, parametro2)</code>: parámetros de la función. No son valores, son nombres que les damos.</li>
-<li><code>{ /* ...bloque de código... */ }</code>: instrucciones que queremos que ejecute nuestra función.</li>
-<li><code>return</code>: dentro del bloque de código podemos retornar un valor para usarlo después.</li>
-</ul>
-<h3 id="ejercicio-4">Ejercicio</h3>
-<p>Mitad del ejercicio es definir la función, la otra mitad es ejecutarla y mostrar el resultado por consola de ser necesario.</p>
-<ol type="1">
-<li>Definir una función que imprima un mensaje por consola.</li>
-<li>Definir una función que imprima por consola el texto que reciba por parámetro.</li>
-<li>Definir la función llamada <code>suma</code>, que reciba 2 números y retorne la suma de los mismos.</li>
-<li>Definir la función multiplicación, división y resta, que reciba 2 números y haga lo que tenga que hacer, devolviendo el resultado.</li>
-<li>Con la función anterior, ejecutar la suma de 2 números y usar ese retorno para sumarlo con otro número.</li>
-<li>Definir la función <code>decir_lo_obvio</code>, que reciba un nombre y apellido como parámetros separados, imprima por consola “Te llamas Nombre, y tu apellido es Apellido” (haciendo el reemplazo que se imaginan), y retorne el mismo valor que imprimió por consola.</li>
-</ol>
-<h2 id="javascript-en-nuestro-html">JavaScript en nuestro HTML</h2>
-<p>Ahora que estamos por la mitad, tomemos un respiro y veamos algo sencillo, un poco diferente de lo que veníamos viendo.</p>
-<p>Quizás les queda abstracto ejecutar código JavaScript desde el navegador, así que vamos a disparar funciones desde un botón en nuestro HTML.</p>
-<p>Les digo cómo…</p>
-<h3 id="aclaraciones">Aclaraciones</h3>
-<p>Antes algunas aclaraciones</p>
-<ul>
-<li>Se suele usar el nombre “index” como archivo principal de la carpeta en donde esté.</li>
-<li>Usen nombres descriptivos.</li>
-<li>No pongan caracteres especiales, espacios ni mayúsculas en los nombres de archivos. Reemplacen los espacios por <code>_</code> o <code>-</code> y dejen todo en minúscula.</li>
-</ul>
-<h3 id="ahora-sí">Ahora sí</h3>
-<ol type="1">
-<li>Creen una carpeta, en algún lado accesible, como el escritorio.</li>
-<li>Creen un archivo <code>index.html</code> dentro de esa carpeta, con este contenido.</li>
-</ol>
-<div class="sourceCode" id="cb26"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb26-1"><a href="#cb26-1"></a><span class="kw">&lt;html&gt;</span></span>
+<span id="cb25-7"><a href="#cb25-7"></a><span class="va">console</span>.<span class="at">log</span>(concatenacion)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Quizás ahora se estén dando cuenta que ya veníamos usando funciones.
+			</p>
+			<p>
+				<code>alert</code> y <code>console.log</code> son funciones, a los
+				cuales le pasamos un string como valor cuando las ejecutamos.
+			</p>
+			<p>
+				Pero estas funciones no devuelven nada, sino que
+				<strong>hacen</strong> algo, que en estos casos es mostrar una ventana
+				de alerta o un texto en la consola.
+			</p>
+			<p>
+				Hay otras funciones que devuelven valores, como <code>prompt</code>, que
+				además de <strong>hacer</strong>, mostrar un mensaje al usuario,
+				<strong>retorna</strong> un valor.
+			</p>
+			<p>
+				Importante a tener en cuenta, cuando una función retorna, no ejecuta más
+				código. O sea que si tenía más instrucciones después del
+				<code>return</code>, las ignora. Esto hace que la función solamente
+				pueda retornar 1 valor.
+			</p>
+			<h3 id="partes-1">Partes</h3>
+			<ul>
+				<li>
+					<code>function</code>: palabra reservada para declarar una función.
+				</li>
+				<li><code>saludar</code>: nombre de la función.</li>
+				<li>
+					<code>(parametro1, parametro2)</code>: parámetros de la función. No
+					son valores, son nombres que les damos.
+				</li>
+				<li>
+					<code>{ /* ...bloque de código... */ }</code>: instrucciones que
+					queremos que ejecute nuestra función.
+				</li>
+				<li>
+					<code>return</code>: dentro del bloque de código podemos retornar un
+					valor para usarlo después.
+				</li>
+			</ul>
+			<h3 id="ejercicio-4">Ejercicio</h3>
+			<p>
+				Mitad del ejercicio es definir la función, la otra mitad es ejecutarla y
+				mostrar el resultado por consola de ser necesario.
+			</p>
+			<ol type="1">
+				<li>Definir una función que imprima un mensaje por consola.</li>
+				<li>
+					Definir una función que imprima por consola el texto que reciba por
+					parámetro.
+				</li>
+				<li>
+					Definir la función llamada <code>suma</code>, que reciba 2 números y
+					retorne la suma de los mismos.
+				</li>
+				<li>
+					Definir la función multiplicación, división y resta, que reciba 2
+					números y haga lo que tenga que hacer, devolviendo el resultado.
+				</li>
+				<li>
+					Con la función anterior, ejecutar la suma de 2 números y usar ese
+					retorno para sumarlo con otro número.
+				</li>
+				<li>
+					Definir la función <code>decir_lo_obvio</code>, que reciba un nombre y
+					apellido como parámetros separados, imprima por consola “Te llamas
+					Nombre, y tu apellido es Apellido” (haciendo el reemplazo que se
+					imaginan), y retorne el mismo valor que imprimió por consola.
+				</li>
+			</ol>
+			<h2 id="javascript-en-nuestro-html">JavaScript en nuestro HTML</h2>
+			<p>
+				Ahora que estamos por la mitad, tomemos un respiro y veamos algo
+				sencillo, un poco diferente de lo que veníamos viendo.
+			</p>
+			<p>
+				Quizás les queda abstracto ejecutar código JavaScript desde el
+				navegador, así que vamos a disparar funciones desde un botón en nuestro
+				HTML.
+			</p>
+			<p>Les digo cómo…</p>
+			<h3 id="aclaraciones">Aclaraciones</h3>
+			<p>Antes algunas aclaraciones</p>
+			<ul>
+				<li>
+					Se suele usar el nombre “index” como archivo principal de la carpeta
+					en donde esté.
+				</li>
+				<li>Usen nombres descriptivos.</li>
+				<li>
+					No pongan caracteres especiales, espacios ni mayúsculas en los nombres
+					de archivos. Reemplacen los espacios por <code>_</code> o
+					<code>-</code> y dejen todo en minúscula.
+				</li>
+			</ul>
+			<h3 id="ahora-sí">Ahora sí</h3>
+			<ol type="1">
+				<li>Creen una carpeta, en algún lado accesible, como el escritorio.</li>
+				<li>
+					Creen un archivo <code>index.html</code> dentro de esa carpeta, con
+					este contenido.
+				</li>
+			</ol>
+			<div class="sourceCode" id="cb26">
+				<pre
+					class="sourceCode html"
+				><code class="sourceCode html"><span id="cb26-1"><a href="#cb26-1"></a><span class="kw">&lt;html&gt;</span></span>
 <span id="cb26-2"><a href="#cb26-2"></a>  <span class="kw">&lt;head&gt;&lt;/head&gt;</span></span>
 <span id="cb26-3"><a href="#cb26-3"></a></span>
 <span id="cb26-4"><a href="#cb26-4"></a>  <span class="kw">&lt;body&gt;</span></span>
 <span id="cb26-5"><a href="#cb26-5"></a>    <span class="kw">&lt;button&gt;</span>Botón&lt;/button&gt;</span>
 <span id="cb26-6"><a href="#cb26-6"></a>  <span class="kw">&lt;/body&gt;</span></span>
-<span id="cb26-7"><a href="#cb26-7"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
-<p>Genial!</p>
-<p>Queremos que botón dispare una función cuando se le haga click, para eso deberíamos usar el evento de botón <code>onclick</code> y aclararle qué función disparar.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb27-1"><a href="#cb27-1"></a><span class="kw">&lt;button</span><span class="ot"> onclick=</span><span class="st">&quot;hacer_algo_re_loco()&quot;</span><span class="kw">&gt;</span>Botón&lt;/button&gt;</span></code></pre></div>
-<p>Si queremos ejecutar esto nos va a salir un error 😟</p>
-<p>El problema es que nunca definimos esa función.</p>
-<p>Para eso vamos a crear un archivo JavaScript llamado <code>script.js</code>, aunque el nombre lo pueden elegir ustedes, siempre y cuando tenga la extensión <code>.js</code> al final.</p>
-<p>En este archivo vamos a seguir escribiendo JavaScript como veníamos haciendo antes, entonces si tengo que definir una función, en el archivo voy a escribir algo como</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">function</span> <span class="at">hacer_algo_re_loco</span>() <span class="op">{</span></span>
+<span id="cb26-7"><a href="#cb26-7"></a><span class="kw">&lt;/html&gt;</span></span></code></pre>
+			</div>
+			<p>Genial!</p>
+			<p>
+				Queremos que botón dispare una función cuando se le haga click, para eso
+				deberíamos usar el evento de botón <code>onclick</code> y aclararle qué
+				función disparar.
+			</p>
+			<div class="sourceCode" id="cb27">
+				<pre
+					class="sourceCode html"
+				><code class="sourceCode html"><span id="cb27-1"><a href="#cb27-1"></a><span class="kw">&lt;button</span><span class="ot"> onclick=</span><span class="st">&quot;hacer_algo_re_loco()&quot;</span><span class="kw">&gt;</span>Botón&lt;/button&gt;</span></code></pre>
+			</div>
+			<p>Si queremos ejecutar esto nos va a salir un error 😟</p>
+			<p>El problema es que nunca definimos esa función.</p>
+			<p>
+				Para eso vamos a crear un archivo JavaScript llamado
+				<code>script.js</code>, aunque el nombre lo pueden elegir ustedes,
+				siempre y cuando tenga la extensión <code>.js</code> al final.
+			</p>
+			<p>
+				En este archivo vamos a seguir escribiendo JavaScript como veníamos
+				haciendo antes, entonces si tengo que definir una función, en el archivo
+				voy a escribir algo como
+			</p>
+			<div class="sourceCode" id="cb28">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">function</span> <span class="at">hacer_algo_re_loco</span>() <span class="op">{</span></span>
 <span id="cb28-2"><a href="#cb28-2"></a>  <span class="at">alert</span>(<span class="st">&quot;Ho-La&quot;</span>)<span class="op">;</span></span>
-<span id="cb28-3"><a href="#cb28-3"></a><span class="op">}</span></span></code></pre></div>
-<p>Pero eso no es suficiente. Si volvemos a apretar el botón vamos a seguir teniendo un error de función no definida… El problema está en que nunca vinculamos esos archivos. La forma de vincularlos es incluyendo al script desde el HTML, de la siguiente forma</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb29-1"><a href="#cb29-1"></a><span class="kw">&lt;body&gt;</span></span>
+<span id="cb28-3"><a href="#cb28-3"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<p>
+				Pero eso no es suficiente. Si volvemos a apretar el botón vamos a seguir
+				teniendo un error de función no definida… El problema está en que nunca
+				vinculamos esos archivos. La forma de vincularlos es incluyendo al
+				script desde el HTML, de la siguiente forma
+			</p>
+			<div class="sourceCode" id="cb29">
+				<pre
+					class="sourceCode html"
+				><code class="sourceCode html"><span id="cb29-1"><a href="#cb29-1"></a><span class="kw">&lt;body&gt;</span></span>
 <span id="cb29-2"><a href="#cb29-2"></a>  <span class="co">&lt;!-- tags HTML...  --&gt;</span></span>
 <span id="cb29-3"><a href="#cb29-3"></a></span>
 <span id="cb29-4"><a href="#cb29-4"></a>  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;./script.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
-<span id="cb29-5"><a href="#cb29-5"></a><span class="kw">&lt;/body&gt;</span></span></code></pre></div>
-<p>La inclusión del script la vamos a escribir abajo de todo en el body, antes del cierre de la etiqueta. Se puede hacer de otras formas, pero por ahora vamos a usar esta.</p>
-<p>Entonces ahora si apretamos ekl botón, el botón hace lo que tiene que hacer!</p>
-<p>Felicitaciones, ya saben cómo ejecutar código JavaScript desde una página web.</p>
-<p>No es mucho, pero ya saben cómo vincularlos. Más adelante vamos a ver casos más divertidos obteniendo información de formularios, trayendo información de afuera, animando elementos, … Por ahora espero que les haya sido útil para saber cómo se vinculan.</p>
-<h2 id="condicionales">Condicionales</h2>
-<p>Los condicionales son una parte fundamental de la programación.</p>
-<p>Y para introducirles este concepto voy a explicarles un tipo de valor que evité hasta ahora para que lo podamos ver en conjunto con los condicionales</p>
-<h3 id="boolean">Boolean</h3>
-<p>El booleano es un tipo de dato, como un número, texto, o función pero que solo puede ser verdadero <code>true</code> o falso <code>false</code>.</p>
-<p>He aquí la sintaxis</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb30-1"><a href="#cb30-1"></a><span class="kw">var</span> es_mayor_de_edad <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb29-5"><a href="#cb29-5"></a><span class="kw">&lt;/body&gt;</span></span></code></pre>
+			</div>
+			<p>
+				La inclusión del script la vamos a escribir abajo de todo en el body,
+				antes del cierre de la etiqueta. Se puede hacer de otras formas, pero
+				por ahora vamos a usar esta.
+			</p>
+			<p>
+				Entonces ahora si apretamos ekl botón, el botón hace lo que tiene que
+				hacer!
+			</p>
+			<p>
+				Felicitaciones, ya saben cómo ejecutar código JavaScript desde una
+				página web.
+			</p>
+			<p>
+				No es mucho, pero ya saben cómo vincularlos. Más adelante vamos a ver
+				casos más divertidos obteniendo información de formularios, trayendo
+				información de afuera, animando elementos, … Por ahora espero que les
+				haya sido útil para saber cómo se vinculan.
+			</p>
+			<h2 id="condicionales">Condicionales</h2>
+			<p>Los condicionales son una parte fundamental de la programación.</p>
+			<p>
+				Y para introducirles este concepto voy a explicarles un tipo de valor
+				que evité hasta ahora para que lo podamos ver en conjunto con los
+				condicionales
+			</p>
+			<h3 id="boolean">Boolean</h3>
+			<p>
+				El booleano es un tipo de dato, como un número, texto, o función pero
+				que solo puede ser verdadero <code>true</code> o falso
+				<code>false</code>.
+			</p>
+			<p>He aquí la sintaxis</p>
+			<div class="sourceCode" id="cb30">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb30-1"><a href="#cb30-1"></a><span class="kw">var</span> es_mayor_de_edad <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
 <span id="cb30-2"><a href="#cb30-2"></a><span class="kw">var</span> se_llama_norman <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
 <span id="cb30-3"><a href="#cb30-3"></a><span class="kw">var</span> es_pelado <span class="op">=</span> <span class="kw">false</span><span class="op">;</span> <span class="co">// por ahora (2019)</span></span>
 <span id="cb30-4"><a href="#cb30-4"></a></span>
-<span id="cb30-5"><a href="#cb30-5"></a><span class="va">console</span>.<span class="at">log</span>(es_mayor_de_edad<span class="op">,</span> se_llama_norman<span class="op">,</span> es_pelado)<span class="op">;</span></span></code></pre></div>
-<p>Se usa para “decidir” caminos en la ejecución de nuestro programa.</p>
-<p>Generalmente se obtienen como resultado de una operación, evaluando cierta condición, como si un número es más grande a otro, si un texto es igual a otro texto, and so on. Por lo tanto debería introducirles unos nuevos operadores.</p>
-<h3 id="operadores-de-booleanos">Operadores de booleanos</h3>
-<p>Estos operadores son como la suma o resta, pero en vez de devolver un número, devuelven un <code>true</code> o <code>false</code>.</p>
-<p>He aquí la sintaxis</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">var</span> nombre_del_profesor <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a><span class="va">console</span>.<span class="at">log</span>(es_mayor_de_edad<span class="op">,</span> se_llama_norman<span class="op">,</span> es_pelado)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>Se usa para “decidir” caminos en la ejecución de nuestro programa.</p>
+			<p>
+				Generalmente se obtienen como resultado de una operación, evaluando
+				cierta condición, como si un número es más grande a otro, si un texto es
+				igual a otro texto, and so on. Por lo tanto debería introducirles unos
+				nuevos operadores.
+			</p>
+			<h3 id="operadores-de-booleanos">Operadores de booleanos</h3>
+			<p>
+				Estos operadores son como la suma o resta, pero en vez de devolver un
+				número, devuelven un <code>true</code> o <code>false</code>.
+			</p>
+			<p>He aquí la sintaxis</p>
+			<div class="sourceCode" id="cb31">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">var</span> nombre_del_profesor <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
 <span id="cb31-2"><a href="#cb31-2"></a><span class="kw">var</span> nombre_ingresado <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu nombre?&quot;</span>)<span class="op">;</span></span>
 <span id="cb31-3"><a href="#cb31-3"></a></span>
 <span id="cb31-4"><a href="#cb31-4"></a><span class="kw">var</span> es_profesor <span class="op">=</span> nombre_ingresado <span class="op">===</span> nombre_del_profesor<span class="op">;</span></span>
-<span id="cb31-5"><a href="#cb31-5"></a><span class="va">console</span>.<span class="at">log</span>(es_profesor)<span class="op">;</span></span></code></pre></div>
-<p>Empezamos a entender cómo nos puede ayudar esto en nuestros programas, y cómo esto puede decidir distintos “caminos”.</p>
-<p>En este ejemplo con <code>es_profesor</code> podría mostrar cierta pantalla si es un profesor y otra diferente si no lo es. Pero no les dije cómo.</p>
-<h3 id="ahora-sí-1">Ahora sí</h3>
-<div class="sourceCode" id="cb32"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb32-1"><a href="#cb32-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu nombre?&quot;</span>)<span class="op">;</span></span>
+<span id="cb31-5"><a href="#cb31-5"></a><span class="va">console</span>.<span class="at">log</span>(es_profesor)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Empezamos a entender cómo nos puede ayudar esto en nuestros programas, y
+				cómo esto puede decidir distintos “caminos”.
+			</p>
+			<p>
+				En este ejemplo con <code>es_profesor</code> podría mostrar cierta
+				pantalla si es un profesor y otra diferente si no lo es. Pero no les
+				dije cómo.
+			</p>
+			<h3 id="ahora-sí-1">Ahora sí</h3>
+			<div class="sourceCode" id="cb32">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb32-1"><a href="#cb32-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Cuál es tu nombre?&quot;</span>)<span class="op">;</span></span>
 <span id="cb32-2"><a href="#cb32-2"></a><span class="kw">var</span> es_profesor <span class="op">=</span> nombre <span class="op">===</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
 <span id="cb32-3"><a href="#cb32-3"></a></span>
 <span id="cb32-4"><a href="#cb32-4"></a><span class="cf">if</span> (es_profesor) <span class="op">{</span></span>
 <span id="cb32-5"><a href="#cb32-5"></a>  <span class="at">alert</span>(<span class="st">&quot;Bienvenido querido profesor! 😁&quot;</span>)<span class="op">;</span></span>
 <span id="cb32-6"><a href="#cb32-6"></a><span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
 <span id="cb32-7"><a href="#cb32-7"></a>  <span class="at">alert</span>(<span class="st">&quot;Hola&quot;</span>)<span class="op">;</span></span>
-<span id="cb32-8"><a href="#cb32-8"></a><span class="op">}</span></span></code></pre></div>
-<p>Si saben inglés ya deben haberse imaginado de cómo funciona esto. La traducción de esta sentencia sería</p>
-<blockquote>
-<p>Si pasa esto, hace esto, sino, hace esto otro.</p>
-</blockquote>
-<p>La idea es que si es <code>true</code> lo que está entre paréntesis después del <code>if</code>, se ejecuta el primer bloque de código. Si es <code>false</code> se ejecuta el bloque de código después del <code>else</code>.</p>
-<p>En el bloque de código pueden ir el número de sentencias que queramos, como en las funciones.</p>
-<p>Otra cosa a tener en cuenta es que no hace falta que haya un <code>else</code>. Por ejemplo, supongamos que tenemos un sistema que toma los nombres de la gente que llega a clase, se saluda a todos los que llegan, pero si es un profesor se le da una manzana.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb33-1"><a href="#cb33-1"></a><span class="kw">var</span> nombre_del_profesor <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
+<span id="cb32-8"><a href="#cb32-8"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<p>
+				Si saben inglés ya deben haberse imaginado de cómo funciona esto. La
+				traducción de esta sentencia sería
+			</p>
+			<blockquote>
+				<p>Si pasa esto, hace esto, sino, hace esto otro.</p>
+			</blockquote>
+			<p>
+				La idea es que si es <code>true</code> lo que está entre paréntesis
+				después del <code>if</code>, se ejecuta el primer bloque de código. Si
+				es <code>false</code> se ejecuta el bloque de código después del
+				<code>else</code>.
+			</p>
+			<p>
+				En el bloque de código pueden ir el número de sentencias que queramos,
+				como en las funciones.
+			</p>
+			<p>
+				Otra cosa a tener en cuenta es que no hace falta que haya un
+				<code>else</code>. Por ejemplo, supongamos que tenemos un sistema que
+				toma los nombres de la gente que llega a clase, se saluda a todos los
+				que llegan, pero si es un profesor se le da una manzana.
+			</p>
+			<div class="sourceCode" id="cb33">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb33-1"><a href="#cb33-1"></a><span class="kw">var</span> nombre_del_profesor <span class="op">=</span> <span class="st">&quot;Norman&quot;</span><span class="op">;</span></span>
 <span id="cb33-2"><a href="#cb33-2"></a></span>
 <span id="cb33-3"><a href="#cb33-3"></a><span class="kw">var</span> nombre_del_ingresante <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Hola! Cómo te llamás?&quot;</span>)<span class="op">;</span></span>
 <span id="cb33-4"><a href="#cb33-4"></a></span>
@@ -463,16 +1084,33 @@
 <span id="cb33-6"><a href="#cb33-6"></a>  <span class="at">alert</span>(<span class="st">&quot;Tomá una manzana&quot;</span>)<span class="op">;</span></span>
 <span id="cb33-7"><a href="#cb33-7"></a><span class="op">}</span></span>
 <span id="cb33-8"><a href="#cb33-8"></a></span>
-<span id="cb33-9"><a href="#cb33-9"></a><span class="at">alert</span>(<span class="st">&quot;Bienvenido, &quot;</span> <span class="op">+</span> nombre_del_ingresante)<span class="op">;</span></span></code></pre></div>
-<p>No hizo falta poner un else, porque en el caso en el que no era profesor, no había un comportamiento específico. Luego el último <code>alert</code> se va a ejecutar tanto para el profesor, como para el que no es profesor.</p>
-<p>Sigamos con el ejemplo anterior. Pero ahora, si el ingresante se llama “Nicolás”, vamos a hacer un <code>alert</code> diciéndole que tiene un ananá de regalo. Manteniendo las condicones anteriores iguales. Entonces queda</p>
-<ul>
-<li>Te llamás Nicolás -&gt; <code>alert("Tomá un ananá")</code></li>
-<li>Te llamás Norman -&gt; <code>alert("Tomá una manzana")</code></li>
-<li>Para todos -&gt; <code>alert("Bienvenido, " + nombre_del_ingresante)</code></li>
-</ul>
-<p>Ok? Entonces quedaría así</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb34-1"><a href="#cb34-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Hola! Cómo te llamás?&quot;</span>)<span class="op">;</span></span>
+<span id="cb33-9"><a href="#cb33-9"></a><span class="at">alert</span>(<span class="st">&quot;Bienvenido, &quot;</span> <span class="op">+</span> nombre_del_ingresante)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				No hizo falta poner un else, porque en el caso en el que no era
+				profesor, no había un comportamiento específico. Luego el último
+				<code>alert</code> se va a ejecutar tanto para el profesor, como para el
+				que no es profesor.
+			</p>
+			<p>
+				Sigamos con el ejemplo anterior. Pero ahora, si el ingresante se llama
+				“Nicolás”, vamos a hacer un <code>alert</code> diciéndole que tiene un
+				ananá de regalo. Manteniendo las condicones anteriores iguales. Entonces
+				queda
+			</p>
+			<ul>
+				<li>Te llamás Nicolás -&gt; <code>alert("Tomá un ananá")</code></li>
+				<li>Te llamás Norman -&gt; <code>alert("Tomá una manzana")</code></li>
+				<li>
+					Para todos -&gt;
+					<code>alert("Bienvenido, " + nombre_del_ingresante)</code>
+				</li>
+			</ul>
+			<p>Ok? Entonces quedaría así</p>
+			<div class="sourceCode" id="cb34">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb34-1"><a href="#cb34-1"></a><span class="kw">var</span> nombre <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Hola! Cómo te llamás?&quot;</span>)<span class="op">;</span></span>
 <span id="cb34-2"><a href="#cb34-2"></a></span>
 <span id="cb34-3"><a href="#cb34-3"></a><span class="cf">if</span> (nombre <span class="op">===</span> <span class="st">&quot;Nicolás&quot;</span>) <span class="op">{</span></span>
 <span id="cb34-4"><a href="#cb34-4"></a>  <span class="at">alert</span>(<span class="st">&quot;Tomá un ananá&quot;</span>)<span class="op">;</span></span>
@@ -482,12 +1120,24 @@
 <span id="cb34-8"><a href="#cb34-8"></a>  <span class="at">alert</span>(<span class="st">&quot;Tomá una manzana&quot;</span>)<span class="op">;</span></span>
 <span id="cb34-9"><a href="#cb34-9"></a><span class="op">}</span></span>
 <span id="cb34-10"><a href="#cb34-10"></a></span>
-<span id="cb34-11"><a href="#cb34-11"></a><span class="at">alert</span>(<span class="st">&quot;Bienvenido, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre></div>
-<p>Genial!</p>
-<p>Estaría bueno que los sistemas sean así de simples, aunque por lo general son más complejos, así que vamos a ponerle un poco de complejidad.</p>
-<h3 id="condiciones-añadidas">Condiciones añadidas</h3>
-<p>Seguimos con lo anterior, ahora vamos a decir que se acaban de unir 2 mundos que antes eran paralelos, en uno se habla normal, en otro se dicen las palabras al revés. El programa ahora debería ser algo así</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb35-1"><a href="#cb35-1"></a><span class="kw">var</span> respuesta_mundo_normal <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Estamos en el mundo normal?&quot;</span>)<span class="op">;</span></span>
+<span id="cb34-11"><a href="#cb34-11"></a><span class="at">alert</span>(<span class="st">&quot;Bienvenido, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>Genial!</p>
+			<p>
+				Estaría bueno que los sistemas sean así de simples, aunque por lo
+				general son más complejos, así que vamos a ponerle un poco de
+				complejidad.
+			</p>
+			<h3 id="condiciones-añadidas">Condiciones añadidas</h3>
+			<p>
+				Seguimos con lo anterior, ahora vamos a decir que se acaban de unir 2
+				mundos que antes eran paralelos, en uno se habla normal, en otro se
+				dicen las palabras al revés. El programa ahora debería ser algo así
+			</p>
+			<div class="sourceCode" id="cb35">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb35-1"><a href="#cb35-1"></a><span class="kw">var</span> respuesta_mundo_normal <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Estamos en el mundo normal?&quot;</span>)<span class="op">;</span></span>
 <span id="cb35-2"><a href="#cb35-2"></a><span class="kw">var</span> es_mundo_normal <span class="op">=</span> respuesta_mundo_normal <span class="op">===</span> <span class="st">&quot;Sí&quot;</span><span class="op">;</span></span>
 <span id="cb35-3"><a href="#cb35-3"></a></span>
 <span id="cb35-4"><a href="#cb35-4"></a><span class="cf">if</span> (es_mundo_normal) <span class="op">{</span></span>
@@ -514,28 +1164,60 @@
 <span id="cb35-25"><a href="#cb35-25"></a>  <span class="op">}</span></span>
 <span id="cb35-26"><a href="#cb35-26"></a></span>
 <span id="cb35-27"><a href="#cb35-27"></a>  <span class="at">alert</span>(<span class="st">&quot;Odinevneib, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span>
-<span id="cb35-28"><a href="#cb35-28"></a><span class="op">}</span></span></code></pre></div>
-<p>Si quieren invertir un string pueden hacer <code>"norman".split("").reverse().join("")</code>, pero más de eso después.</p>
-<p>Nada nos dice que no podemos tener un <code>if</code> adentro de otro. En nuestro bloque de código podemos poner cualquier línea de código que se nos ocurra.</p>
-<h3 id="operadores-lógicos">Operadores lógicos</h3>
-<p>Último tema de condicionales, sus operadores, y no me refiero a los de comparación que usamos recién, como la igualdad, sino otros que operan entre booleanos.</p>
-<p>Los solemos usar cuando tenemos condiciones más complejas que queremos evaluar.</p>
-<p>Contamos con el operador</p>
-<ul>
-<li><code>!</code>: negación.</li>
-<li><code>&amp;&amp;</code>: el “y” lógico.</li>
-<li><code>||</code>: el “o” lógico.</li>
-</ul>
-<p>El primer operador es fácil, el de negación simplemente transforma un <code>true</code> a <code>false</code> y luego al revez, un <code>false</code> a <code>true</code>. Se escribe así</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb36-1"><a href="#cb36-1"></a><span class="kw">var</span> fui_al_mundial <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb35-28"><a href="#cb35-28"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<p>
+				Si quieren invertir un string pueden hacer
+				<code>"norman".split("").reverse().join("")</code>, pero más de eso
+				después.
+			</p>
+			<p>
+				Nada nos dice que no podemos tener un <code>if</code> adentro de otro.
+				En nuestro bloque de código podemos poner cualquier línea de código que
+				se nos ocurra.
+			</p>
+			<h3 id="operadores-lógicos">Operadores lógicos</h3>
+			<p>
+				Último tema de condicionales, sus operadores, y no me refiero a los de
+				comparación que usamos recién, como la igualdad, sino otros que operan
+				entre booleanos.
+			</p>
+			<p>
+				Los solemos usar cuando tenemos condiciones más complejas que queremos
+				evaluar.
+			</p>
+			<p>Contamos con el operador</p>
+			<ul>
+				<li><code>!</code>: negación.</li>
+				<li><code>&amp;&amp;</code>: el “y” lógico.</li>
+				<li><code>||</code>: el “o” lógico.</li>
+			</ul>
+			<p>
+				El primer operador es fácil, el de negación simplemente transforma un
+				<code>true</code> a <code>false</code> y luego al revez, un
+				<code>false</code> a <code>true</code>. Se escribe así
+			</p>
+			<div class="sourceCode" id="cb36">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb36-1"><a href="#cb36-1"></a><span class="kw">var</span> fui_al_mundial <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
 <span id="cb36-2"><a href="#cb36-2"></a><span class="kw">var</span> soy_argentino <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
 <span id="cb36-3"><a href="#cb36-3"></a></span>
 <span id="cb36-4"><a href="#cb36-4"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span>fui_al_mundial)<span class="op">;</span> <span class="co">//&gt; true</span></span>
 <span id="cb36-5"><a href="#cb36-5"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span>soy_argentino)<span class="op">;</span> <span class="co">//&gt; false</span></span>
-<span id="cb36-6"><a href="#cb36-6"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!!</span>soy_argentino)<span class="op">;</span> <span class="co">//&gt; true</span></span></code></pre></div>
-<p>Después seguimos con los otros operadores. Estos otros operadores se usan como el <code>+</code>, <code>*</code>, … o sea con 2 valores de cada lado. Estos valores deben ser de tipo booleano. Y al usarlos nos devuelve otro booleano.</p>
-<p>Su sintaxis es la siguiente</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb37-1"><a href="#cb37-1"></a><span class="kw">var</span> es_profesor <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb36-6"><a href="#cb36-6"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!!</span>soy_argentino)<span class="op">;</span> <span class="co">//&gt; true</span></span></code></pre>
+			</div>
+			<p>
+				Después seguimos con los otros operadores. Estos otros operadores se
+				usan como el <code>+</code>, <code>*</code>, … o sea con 2 valores de
+				cada lado. Estos valores deben ser de tipo booleano. Y al usarlos nos
+				devuelve otro booleano.
+			</p>
+			<p>Su sintaxis es la siguiente</p>
+			<div class="sourceCode" id="cb37">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb37-1"><a href="#cb37-1"></a><span class="kw">var</span> es_profesor <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
 <span id="cb37-2"><a href="#cb37-2"></a><span class="kw">var</span> es_pelado <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
 <span id="cb37-3"><a href="#cb37-3"></a></span>
 <span id="cb37-4"><a href="#cb37-4"></a><span class="co">// es profesor y es pelado: las 2 deben cumplirse para que sea true.</span></span>
@@ -550,46 +1232,56 @@
 <span id="cb37-13"><a href="#cb37-13"></a><span class="va">console</span>.<span class="at">log</span>(es_profesor <span class="op">&amp;&amp;</span> es_pelado)<span class="op">;</span> <span class="co">//&gt; false</span></span>
 <span id="cb37-14"><a href="#cb37-14"></a></span>
 <span id="cb37-15"><a href="#cb37-15"></a><span class="co">// si es todo falso, va a ser falso sin importar el operador que se aplique.</span></span>
-<span id="cb37-16"><a href="#cb37-16"></a><span class="va">console</span>.<span class="at">log</span>(es_profesor <span class="op">||</span> es_pelado)<span class="op">;</span> <span class="co">//&gt; false</span></span></code></pre></div>
-<p>Todas las posibilidades de resultados están en esta tabla, para que lo vean mejor</p>
-<table>
-<thead>
-<tr class="header">
-<th>p</th>
-<th>q</th>
-<th><code>&amp;&amp;</code> (y)</th>
-<th><code>||</code> (o)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-</tr>
-<tr class="even">
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>true</code></td>
-</tr>
-<tr class="odd">
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td><code>true</code></td>
-</tr>
-<tr class="even">
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-</tr>
-</tbody>
-</table>
-<p>Ahora que conocemos estos operadores, vamos a usarlo con el anterior ejemplo.</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb38-1"><a href="#cb38-1"></a><span class="kw">var</span> respuesta_mundo_normal <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Estamos en el mundo normal?&quot;</span>)<span class="op">;</span></span>
+<span id="cb37-16"><a href="#cb37-16"></a><span class="va">console</span>.<span class="at">log</span>(es_profesor <span class="op">||</span> es_pelado)<span class="op">;</span> <span class="co">//&gt; false</span></span></code></pre>
+			</div>
+			<p>
+				Todas las posibilidades de resultados están en esta tabla, para que lo
+				vean mejor
+			</p>
+			<table>
+				<thead>
+					<tr class="header">
+						<th>p</th>
+						<th>q</th>
+						<th><code>&amp;&amp;</code> (y)</th>
+						<th><code>||</code> (o)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>true</code></td>
+						<td><code>true</code></td>
+						<td><code>true</code></td>
+						<td><code>true</code></td>
+					</tr>
+					<tr class="even">
+						<td><code>true</code></td>
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+						<td><code>true</code></td>
+					</tr>
+					<tr class="odd">
+						<td><code>false</code></td>
+						<td><code>true</code></td>
+						<td><code>false</code></td>
+						<td><code>true</code></td>
+					</tr>
+					<tr class="even">
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				Ahora que conocemos estos operadores, vamos a usarlo con el anterior
+				ejemplo.
+			</p>
+			<div class="sourceCode" id="cb38">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb38-1"><a href="#cb38-1"></a><span class="kw">var</span> respuesta_mundo_normal <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&quot;Estamos en el mundo normal?&quot;</span>)<span class="op">;</span></span>
 <span id="cb38-2"><a href="#cb38-2"></a><span class="kw">var</span> es_mundo_normal <span class="op">=</span> respuesta_mundo_normal <span class="op">===</span> <span class="st">&quot;Sí&quot;</span><span class="op">;</span></span>
 <span id="cb38-3"><a href="#cb38-3"></a></span>
 <span id="cb38-4"><a href="#cb38-4"></a><span class="cf">if</span> (es_mundo_normal) <span class="op">{</span></span>
@@ -614,42 +1306,111 @@
 <span id="cb38-23"><a href="#cb38-23"></a>  <span class="at">alert</span>(<span class="st">&quot;Amot anu anaznam&quot;</span>)<span class="op">;</span></span>
 <span id="cb38-24"><a href="#cb38-24"></a><span class="op">}</span></span>
 <span id="cb38-25"><a href="#cb38-25"></a></span>
-<span id="cb38-26"><a href="#cb38-26"></a><span class="at">alert</span>(<span class="st">&quot;Odinevneib, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre></div>
-<p>Ufff que largo condicionales, vamos a hacer algo de práctica para repasar.</p>
-<h3 id="ejercicios">Ejercicios</h3>
-<p>Dado una orda de marcianos que invaden el planeta, obtener una respuesta adecuada que daría la humanidad según las siguientes condiciones.</p>
-<p><strong>Aclaración</strong>: obtener variables preguntando por prompt y las comunicaciones con ellos se realizan con <code>alert</code>.</p>
-<ol type="1">
-<li>Preguntar si los marcianos son amigables, las respuestas posibles son <code>"Jai"</code> que significa que sí, o “Neh” que significa que no. En caso de responder negativamente avisarles por <code>alert</code> que vamos a fusilarlos.</li>
-<li>A la condición anterior se agrega que en caso que sean amigables, les comunicamos con <code>alert</code> que vamos a darles una caja de chocolates.</li>
-<li>Ahora vamos a preguntarles también cuántos vinieron al planeta. Si la respuesta es menor a 100, decirles que necesitan a 10 marcianos para inspecciones, si la respuesta es mayor a 10000 entonces decirles que están para lo que necesiten, y si la respuesta está entre 100 y 10000, decirles que el Hipódromo de Palermo está abierto las 24hs.</li>
-<li>Finalmente, preguntarles si la batata es mejor que el membrillo, y si toman el mate amargo o dúlce. Si prefieren el la batata y el mate dúlce, decirles que están en guerra. Si prefieren la batata y toman mate amargo, o si prefieren el membrillo y toman mate dulce, decirles que pueden quedarse unos días. Finalmente si prefieren el membrillo y toman mate amargo decirles que pueden quedarse el tiempo que necesiten.</li>
-</ol>
-<h2 id="objetos">Objetos</h2>
-<p>Algo que ya veníamos usando y quizás no se dieron cuenta.</p>
-<p>Los objetos son otro tipo de dato, como texto, número o función, y que nos permite agrupar valores.</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb39-1"><a href="#cb39-1"></a><span class="kw">var</span> persona <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb38-26"><a href="#cb38-26"></a><span class="at">alert</span>(<span class="st">&quot;Odinevneib, &quot;</span> <span class="op">+</span> nombre)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Ufff que largo condicionales, vamos a hacer algo de práctica para
+				repasar.
+			</p>
+			<h3 id="ejercicios">Ejercicios</h3>
+			<p>
+				Dado una orda de marcianos que invaden el planeta, obtener una respuesta
+				adecuada que daría la humanidad según las siguientes condiciones.
+			</p>
+			<p>
+				<strong>Aclaración</strong>: obtener variables preguntando por prompt y
+				las comunicaciones con ellos se realizan con <code>alert</code>.
+			</p>
+			<ol type="1">
+				<li>
+					Preguntar si los marcianos son amigables, las respuestas posibles son
+					<code>"Jai"</code> que significa que sí, o “Neh” que significa que no.
+					En caso de responder negativamente avisarles por
+					<code>alert</code> que vamos a fusilarlos.
+				</li>
+				<li>
+					A la condición anterior se agrega que en caso que sean amigables, les
+					comunicamos con <code>alert</code> que vamos a darles una caja de
+					chocolates.
+				</li>
+				<li>
+					Ahora vamos a preguntarles también cuántos vinieron al planeta. Si la
+					respuesta es menor a 100, decirles que necesitan a 10 marcianos para
+					inspecciones, si la respuesta es mayor a 10000 entonces decirles que
+					están para lo que necesiten, y si la respuesta está entre 100 y 10000,
+					decirles que el Hipódromo de Palermo está abierto las 24hs.
+				</li>
+				<li>
+					Finalmente, preguntarles si la batata es mejor que el membrillo, y si
+					toman el mate amargo o dúlce. Si prefieren el la batata y el mate
+					dúlce, decirles que están en guerra. Si prefieren la batata y toman
+					mate amargo, o si prefieren el membrillo y toman mate dulce, decirles
+					que pueden quedarse unos días. Finalmente si prefieren el membrillo y
+					toman mate amargo decirles que pueden quedarse el tiempo que
+					necesiten.
+				</li>
+			</ol>
+			<h2 id="objetos">Objetos</h2>
+			<p>Algo que ya veníamos usando y quizás no se dieron cuenta.</p>
+			<p>
+				Los objetos son otro tipo de dato, como texto, número o función, y que
+				nos permite agrupar valores.
+			</p>
+			<div class="sourceCode" id="cb39">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb39-1"><a href="#cb39-1"></a><span class="kw">var</span> persona <span class="op">=</span> <span class="op">{</span></span>
 <span id="cb39-2"><a href="#cb39-2"></a>  <span class="dt">nombre</span><span class="op">:</span> <span class="st">&quot;Norman&quot;</span><span class="op">,</span></span>
 <span id="cb39-3"><a href="#cb39-3"></a>  <span class="dt">apellido</span><span class="op">:</span> <span class="st">&quot;Perrin&quot;</span><span class="op">,</span></span>
 <span id="cb39-4"><a href="#cb39-4"></a>  <span class="dt">edad</span><span class="op">:</span> <span class="dv">24</span><span class="op">,</span></span>
 <span id="cb39-5"><a href="#cb39-5"></a>  <span class="dt">puede_volar</span><span class="op">:</span> <span class="kw">false</span></span>
-<span id="cb39-6"><a href="#cb39-6"></a><span class="op">};</span></span></code></pre></div>
-<p>Si ven la variable <code>persona</code> está declarando dentro de sí otras variables. Luego para acceder a los valores de las “subvariables”, usamos el <code>.</code>.</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb40-1"><a href="#cb40-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">persona</span>.<span class="at">nombre</span>)<span class="op">;</span></span>
+<span id="cb39-6"><a href="#cb39-6"></a><span class="op">};</span></span></code></pre>
+			</div>
+			<p>
+				Si ven la variable <code>persona</code> está declarando dentro de sí
+				otras variables. Luego para acceder a los valores de las “subvariables”,
+				usamos el <code>.</code>.
+			</p>
+			<div class="sourceCode" id="cb40">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb40-1"><a href="#cb40-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">persona</span>.<span class="at">nombre</span>)<span class="op">;</span></span>
 <span id="cb40-2"><a href="#cb40-2"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">persona</span>.<span class="at">puede_volar</span>)<span class="op">;</span></span>
-<span id="cb40-3"><a href="#cb40-3"></a><span class="va">console</span>.<span class="at">log</span>(persona)<span class="op">;</span></span></code></pre></div>
-<h3 id="partes-2">Partes</h3>
-<ul>
-<li><code>{}</code>: apertura y cierre de llaves, adentro se ponen los atributos - valores que queramos. Este es un objeto vacío, es sintaxis válida.</li>
-<li><code>nombre</code>: atributo, o lo que decíamos antes como “subvariable”. También se la llama propiedad. Este es un identificador, igual que como declaramos una variable.</li>
-<li><code>:</code> el dos puntos separa el atributo del valor. Del lado izquierdo va el identificador, del derecho el valor.</li>
-<li><code>"Norman"</code>: valor del atributo.</li>
-<li><code>,</code>: los distintos atributos valores se separan con una coma entre ellos. En el último atributo - valor no hace falta poner una coma, ya que no hay uno que le siga.</li>
-</ul>
-<h3 id="cuándo-se-usa">Cuándo se usa?</h3>
-<p>Como dije antes, cuando quieran agrupar valores.</p>
-<p>Por ejemplo si quieren agrupar comandos para mostrar información en consola con cierto formato, pueden hacer lo siguiente.</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb41-1"><a href="#cb41-1"></a><span class="kw">function</span> <span class="at">mostrar_informacion</span>(mensaje) <span class="op">{</span></span>
+<span id="cb40-3"><a href="#cb40-3"></a><span class="va">console</span>.<span class="at">log</span>(persona)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="partes-2">Partes</h3>
+			<ul>
+				<li>
+					<code>{}</code>: apertura y cierre de llaves, adentro se ponen los
+					atributos - valores que queramos. Este es un objeto vacío, es sintaxis
+					válida.
+				</li>
+				<li>
+					<code>nombre</code>: atributo, o lo que decíamos antes como
+					“subvariable”. También se la llama propiedad. Este es un
+					identificador, igual que como declaramos una variable.
+				</li>
+				<li>
+					<code>:</code> el dos puntos separa el atributo del valor. Del lado
+					izquierdo va el identificador, del derecho el valor.
+				</li>
+				<li><code>"Norman"</code>: valor del atributo.</li>
+				<li>
+					<code>,</code>: los distintos atributos valores se separan con una
+					coma entre ellos. En el último atributo - valor no hace falta poner
+					una coma, ya que no hay uno que le siga.
+				</li>
+			</ul>
+			<h3 id="cuándo-se-usa">Cuándo se usa?</h3>
+			<p>Como dije antes, cuando quieran agrupar valores.</p>
+			<p>
+				Por ejemplo si quieren agrupar comandos para mostrar información en
+				consola con cierto formato, pueden hacer lo siguiente.
+			</p>
+			<div class="sourceCode" id="cb41">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb41-1"><a href="#cb41-1"></a><span class="kw">function</span> <span class="at">mostrar_informacion</span>(mensaje) <span class="op">{</span></span>
 <span id="cb41-2"><a href="#cb41-2"></a>  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;[i]: &quot;</span> <span class="op">+</span> mensaje)<span class="op">;</span></span>
 <span id="cb41-3"><a href="#cb41-3"></a><span class="op">}</span></span>
 <span id="cb41-4"><a href="#cb41-4"></a></span>
@@ -663,12 +1424,35 @@
 <span id="cb41-12"><a href="#cb41-12"></a><span class="op">};</span></span>
 <span id="cb41-13"><a href="#cb41-13"></a></span>
 <span id="cb41-14"><a href="#cb41-14"></a><span class="va">consola</span>.<span class="at">info</span>(<span class="st">&quot;Se cargó la página correctamente!&quot;</span>)<span class="op">;</span></span>
-<span id="cb41-15"><a href="#cb41-15"></a><span class="va">consola</span>.<span class="at">error</span>(<span class="st">&quot;Hubo un problema al completar el formulario&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<p>Agrupamos atributos que son parte de la consola, en esa misma variable. Entonces no tenemos varias funciones sueltas como <code>mostrar_informacion</code> o <code>mostrar_error</code>, sino que podemos acceder a ellas a través de <code>consola</code>.</p>
-<p>Incluso si no saben los atributos que tiene un objeto, la consola de chrome es tan amigable que nos da sugerencias.</p>
-<p>Por ejemplo, si escribimos en la consola (no snippet), <code>console.</code> cuando apretemos el <code>.</code> nos va a dar una lista de propiedades que podemos llamar.</p>
-<p>Cuando aparezca un símbolo parecido a una <code>ƒ</code> abajo, significa que el valor de ese atributo es de tipo función, pero como vimos en la definición de <code>persona</code>, también puede ser de tipo numérico, texto o booleano. Todo lo que pueda ser un valor… y si un objeto es un valor, adivinen, podemos poner un objeto como valor de un atributo, porque al final es otro tipo de dato, o sea un valor.</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb42-1"><a href="#cb42-1"></a><span class="kw">var</span> planeta <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb41-15"><a href="#cb41-15"></a><span class="va">consola</span>.<span class="at">error</span>(<span class="st">&quot;Hubo un problema al completar el formulario&quot;</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Agrupamos atributos que son parte de la consola, en esa misma variable.
+				Entonces no tenemos varias funciones sueltas como
+				<code>mostrar_informacion</code> o <code>mostrar_error</code>, sino que
+				podemos acceder a ellas a través de <code>consola</code>.
+			</p>
+			<p>
+				Incluso si no saben los atributos que tiene un objeto, la consola de
+				chrome es tan amigable que nos da sugerencias.
+			</p>
+			<p>
+				Por ejemplo, si escribimos en la consola (no snippet),
+				<code>console.</code> cuando apretemos el <code>.</code> nos va a dar
+				una lista de propiedades que podemos llamar.
+			</p>
+			<p>
+				Cuando aparezca un símbolo parecido a una <code>ƒ</code> abajo,
+				significa que el valor de ese atributo es de tipo función, pero como
+				vimos en la definición de <code>persona</code>, también puede ser de
+				tipo numérico, texto o booleano. Todo lo que pueda ser un valor… y si un
+				objeto es un valor, adivinen, podemos poner un objeto como valor de un
+				atributo, porque al final es otro tipo de dato, o sea un valor.
+			</p>
+			<div class="sourceCode" id="cb42">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb42-1"><a href="#cb42-1"></a><span class="kw">var</span> planeta <span class="op">=</span> <span class="op">{</span></span>
 <span id="cb42-2"><a href="#cb42-2"></a>  <span class="dt">nombre</span><span class="op">:</span> <span class="st">&quot;Melmac&quot;</span><span class="op">,</span></span>
 <span id="cb42-3"><a href="#cb42-3"></a>  <span class="dt">habitantes</span><span class="op">:</span> <span class="dv">1000000000</span><span class="op">,</span></span>
 <span id="cb42-4"><a href="#cb42-4"></a>  <span class="dt">habitante</span><span class="op">:</span> <span class="op">{</span></span>
@@ -676,83 +1460,212 @@
 <span id="cb42-6"><a href="#cb42-6"></a>    <span class="dt">frase_caracteristica</span><span class="op">:</span> <span class="st">&quot;No hay problema&quot;</span><span class="op">,</span></span>
 <span id="cb42-7"><a href="#cb42-7"></a>    <span class="dt">comida_preferida</span><span class="op">:</span> <span class="st">&quot;gato&quot;</span></span>
 <span id="cb42-8"><a href="#cb42-8"></a>  <span class="op">}</span></span>
-<span id="cb42-9"><a href="#cb42-9"></a><span class="op">};</span></span></code></pre></div>
-<p>Si queremos acceder a los valores más añadidos en la definición de ese objeto</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb43-1"><a href="#cb43-1"></a><span class="va">console</span>.<span class="at">log</span>(</span>
+<span id="cb42-9"><a href="#cb42-9"></a><span class="op">};</span></span></code></pre>
+			</div>
+			<p>
+				Si queremos acceder a los valores más añadidos en la definición de ese
+				objeto
+			</p>
+			<div class="sourceCode" id="cb43">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb43-1"><a href="#cb43-1"></a><span class="va">console</span>.<span class="at">log</span>(</span>
 <span id="cb43-2"><a href="#cb43-2"></a>  <span class="st">&quot;La comida preferida de alguien que vive en &quot;</span> <span class="op">+</span></span>
 <span id="cb43-3"><a href="#cb43-3"></a>    <span class="va">planeta</span>.<span class="at">nombre</span> <span class="op">+</span></span>
 <span id="cb43-4"><a href="#cb43-4"></a>    <span class="st">&quot; es &quot;</span> <span class="op">+</span></span>
 <span id="cb43-5"><a href="#cb43-5"></a>    <span class="va">planeta</span>.<span class="va">habitante</span>.<span class="at">comida_preferida</span></span>
-<span id="cb43-6"><a href="#cb43-6"></a>)<span class="op">;</span></span></code></pre></div>
-<p>Y váyanse familiarizando con esta sintaxis, porque JavaScript está lleno de objetos.</p>
-<h3 id="ejercicios-1">Ejercicios</h3>
-<p>Todo este ejercicio debe resolverse definiendo <strong>un</strong> objeto. Pueden definir las funciones por separado.</p>
-<ol type="1">
-<li>Crear un objeto que tenga atributos característicos de un cliente de una tienda de mascotas. El mismo debe tener 3 atributos, uno de tipo texto, otro numérico y por último un booleano.</li>
-<li>Agregar a la definición anterior, un atributo llamado “mascota” de tipo objeto, en ese objeto pueden haber los atributos que elijan.</li>
-<li>Agregar un atributo al cliente llamada “saludar” que sea de tipo función. Esta función debe recibir un nombre a saludar por parámetro y mandarle un saludo por <code>alert</code> a la persona, como <code>"Buen día " + nombre</code>. Luego de definir la función al cliente, llamarla pasándole su nombre.</li>
-<li>Agregarle el mismo atributo al perro, pero ahora en vez de decir <code>"Buen día " + nombre</code>, tiene que decir <code>"Ouf Ouf " + nombre</code>.</li>
-<li>Crear una función que obtenga un cliente, como el recién definido, por parámetro, y</li>
-<li>muestre por <code>alert</code> el nombre del cliente (o el atributo tipo texto que hayan elegido).</li>
-<li>ejecute la función <code>saludar</code> del perro, con el nombre del cliente.</li>
-</ol>
-<h2 id="arrays">Arrays</h2>
-<p>O también llamadas: listas, vectores, arreglos… Para nosotros arrays o listas.</p>
-<p>Y qué son?</p>
-<blockquote>
-<p>Tipo de valor que agrupa valores de forma ordenada</p>
-</blockquote>
-<p>Primero se puede decir que es una agrupación como los objetos, o sea que estos valores están contenidos en 1 lugar.</p>
-<p>Luego que estos valores están dispuestos de forma ordenada. Esto significa que podemos decir que un valor está antes o después que otro.</p>
-<p>Para que se entienda mejor</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb44-1"><a href="#cb44-1"></a><span class="kw">var</span> lista_de_alumnos <span class="op">=</span> [<span class="st">&quot;Camila&quot;</span><span class="op">,</span> <span class="st">&quot;Gabriel&quot;</span><span class="op">,</span> <span class="st">&quot;Martín&quot;</span><span class="op">,</span> <span class="st">&quot;Sol&quot;</span>]<span class="op">;</span></span></code></pre></div>
-<p>Como vemos tiene una sintáxis parecida a los objetos, pero en vez de llaves <code>{}</code> se usan corchetes <code>[]</code>, y no se le dan nombres a los atributos, sino que se ponen directamente los valores.</p>
-<h3 id="cómo-accedo-a-los-valores">Cómo accedo a los valores</h3>
-<p>Al no tener nombres los atributos, se accede a través de su índice, el cual depende del orden que tenga ese valor dentro de la lista.</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb45-1"><a href="#cb45-1"></a><span class="va">console</span>.<span class="at">log</span>(lista_de_alumnos[<span class="dv">0</span>])<span class="op">;</span></span>
+<span id="cb43-6"><a href="#cb43-6"></a>)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Y váyanse familiarizando con esta sintaxis, porque JavaScript está lleno
+				de objetos.
+			</p>
+			<h3 id="ejercicios-1">Ejercicios</h3>
+			<p>
+				Todo este ejercicio debe resolverse definiendo
+				<strong>un</strong> objeto. Pueden definir las funciones por separado.
+			</p>
+			<ol type="1">
+				<li>
+					Crear un objeto que tenga atributos característicos de un cliente de
+					una tienda de mascotas. El mismo debe tener 3 atributos, uno de tipo
+					texto, otro numérico y por último un booleano.
+				</li>
+				<li>
+					Agregar a la definición anterior, un atributo llamado “mascota” de
+					tipo objeto, en ese objeto pueden haber los atributos que elijan.
+				</li>
+				<li>
+					Agregar un atributo al cliente llamada “saludar” que sea de tipo
+					función. Esta función debe recibir un nombre a saludar por parámetro y
+					mandarle un saludo por <code>alert</code> a la persona, como
+					<code>"Buen día " + nombre</code>. Luego de definir la función al
+					cliente, llamarla pasándole su nombre.
+				</li>
+				<li>
+					Agregarle el mismo atributo al perro, pero ahora en vez de decir
+					<code>"Buen día " + nombre</code>, tiene que decir
+					<code>"Ouf Ouf " + nombre</code>.
+				</li>
+				<li>
+					Crear una función que obtenga un cliente, como el recién definido, por
+					parámetro, y
+				</li>
+				<li>
+					muestre por <code>alert</code> el nombre del cliente (o el atributo
+					tipo texto que hayan elegido).
+				</li>
+				<li>
+					ejecute la función <code>saludar</code> del perro, con el nombre del
+					cliente.
+				</li>
+			</ol>
+			<h2 id="arrays">Arrays</h2>
+			<p>
+				O también llamadas: listas, vectores, arreglos… Para nosotros arrays o
+				listas.
+			</p>
+			<p>Y qué son?</p>
+			<blockquote>
+				<p>Tipo de valor que agrupa valores de forma ordenada</p>
+			</blockquote>
+			<p>
+				Primero se puede decir que es una agrupación como los objetos, o sea que
+				estos valores están contenidos en 1 lugar.
+			</p>
+			<p>
+				Luego que estos valores están dispuestos de forma ordenada. Esto
+				significa que podemos decir que un valor está antes o después que otro.
+			</p>
+			<p>Para que se entienda mejor</p>
+			<div class="sourceCode" id="cb44">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb44-1"><a href="#cb44-1"></a><span class="kw">var</span> lista_de_alumnos <span class="op">=</span> [<span class="st">&quot;Camila&quot;</span><span class="op">,</span> <span class="st">&quot;Gabriel&quot;</span><span class="op">,</span> <span class="st">&quot;Martín&quot;</span><span class="op">,</span> <span class="st">&quot;Sol&quot;</span>]<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Como vemos tiene una sintáxis parecida a los objetos, pero en vez de
+				llaves <code>{}</code> se usan corchetes <code>[]</code>, y no se le dan
+				nombres a los atributos, sino que se ponen directamente los valores.
+			</p>
+			<h3 id="cómo-accedo-a-los-valores">Cómo accedo a los valores</h3>
+			<p>
+				Al no tener nombres los atributos, se accede a través de su índice, el
+				cual depende del orden que tenga ese valor dentro de la lista.
+			</p>
+			<div class="sourceCode" id="cb45">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb45-1"><a href="#cb45-1"></a><span class="va">console</span>.<span class="at">log</span>(lista_de_alumnos[<span class="dv">0</span>])<span class="op">;</span></span>
 <span id="cb45-2"><a href="#cb45-2"></a><span class="va">console</span>.<span class="at">log</span>(lista_de_alumnos[<span class="dv">1</span>])<span class="op">;</span></span>
 <span id="cb45-3"><a href="#cb45-3"></a><span class="va">console</span>.<span class="at">log</span>(lista_de_alumnos[<span class="dv">2</span>])<span class="op">;</span></span>
-<span id="cb45-4"><a href="#cb45-4"></a><span class="va">console</span>.<span class="at">log</span>(lista_de_alumnos[<span class="dv">3</span>])<span class="op">;</span></span></code></pre></div>
-<p>Si se fijan el primer elemento es el que tiene índice 0 y para acceder el último tiene como índice el tamaño de la lista menos 1 (4 - 1 = 3).</p>
-<p>Para saber el tamaño de la lista podemos usar un atributo del array llamado <code>length</code>.</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb46-1"><a href="#cb46-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">lista_de_alumnos</span>.<span class="at">length</span>)<span class="op">;</span> <span class="co">//&gt; 4</span></span></code></pre></div>
-<p>Y de dónde salió ese <code>length</code>?</p>
-<h3 id="atributos-auto-definidos">Atributos auto definidos</h3>
-<p>Yo lo llamo así, o propiedades, porque son como lo de los objetos, pero quizás tenga otro nombre…</p>
-<p>No solo los arrays, sino todos los tipos de valores tienen atributos auto definidos. Qué son estos?</p>
-<p>Son atributos o propiedades a las que podemos acceder según el tipo de valor que manejemos. Por ejemplo, una lista o un texto va a tener un atributo <code>length</code>.</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb47-1"><a href="#cb47-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;norman&quot;</span>.<span class="at">length</span>)<span class="op">;</span> <span class="co">//&gt; 6</span></span>
-<span id="cb47-2"><a href="#cb47-2"></a><span class="va">console</span>.<span class="at">log</span>([<span class="st">&quot;n&quot;</span><span class="op">,</span> <span class="st">&quot;o&quot;</span><span class="op">,</span> <span class="st">&quot;r&quot;</span><span class="op">,</span> <span class="st">&quot;m&quot;</span><span class="op">,</span> <span class="st">&quot;a&quot;</span><span class="op">,</span> <span class="st">&quot;n&quot;</span>].<span class="at">length</span>)<span class="op">;</span> <span class="co">//&gt; 6</span></span></code></pre></div>
-<p>Mientras que un número o booleano no tienen esos atributos.</p>
-<p>Ustedes pueden ver qué funciones o atributos pueden llamar envolviendo un valor entre paréntesis y poniéndole punto, en consola</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb48-1"><a href="#cb48-1"></a>(<span class="st">&quot;norman&quot;</span>). <span class="co">//&gt; les va a auto sugerir qué poner</span></span></code></pre></div>
-<p>Los más interesantes de estos, están en los arrays, ya que nos dan formas de recorrerlo, transformarlo, filtrar elementos, y mucho más.</p>
-<p>Veamos algunos atributos interesantes de arrays.</p>
-<h4 id="map">map</h4>
-<p>El <code>map</code> recibe una lista de un tamaño y devuelve otra lista del mismo tamaño, pero con alguna transformación de sus elementos. Esa transformación es aplicada por una función que definimos nosotros, y se pasa como parámetro de la función <code>map</code>. Ejemplo:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb49-1"><a href="#cb49-1"></a><span class="kw">function</span> <span class="at">doble</span>(numero) <span class="op">{</span></span>
+<span id="cb45-4"><a href="#cb45-4"></a><span class="va">console</span>.<span class="at">log</span>(lista_de_alumnos[<span class="dv">3</span>])<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Si se fijan el primer elemento es el que tiene índice 0 y para acceder
+				el último tiene como índice el tamaño de la lista menos 1 (4 - 1 = 3).
+			</p>
+			<p>
+				Para saber el tamaño de la lista podemos usar un atributo del array
+				llamado <code>length</code>.
+			</p>
+			<div class="sourceCode" id="cb46">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb46-1"><a href="#cb46-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">lista_de_alumnos</span>.<span class="at">length</span>)<span class="op">;</span> <span class="co">//&gt; 4</span></span></code></pre>
+			</div>
+			<p>Y de dónde salió ese <code>length</code>?</p>
+			<h3 id="atributos-auto-definidos">Atributos auto definidos</h3>
+			<p>
+				Yo lo llamo así, o propiedades, porque son como lo de los objetos, pero
+				quizás tenga otro nombre…
+			</p>
+			<p>
+				No solo los arrays, sino todos los tipos de valores tienen atributos
+				auto definidos. Qué son estos?
+			</p>
+			<p>
+				Son atributos o propiedades a las que podemos acceder según el tipo de
+				valor que manejemos. Por ejemplo, una lista o un texto va a tener un
+				atributo <code>length</code>.
+			</p>
+			<div class="sourceCode" id="cb47">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb47-1"><a href="#cb47-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;norman&quot;</span>.<span class="at">length</span>)<span class="op">;</span> <span class="co">//&gt; 6</span></span>
+<span id="cb47-2"><a href="#cb47-2"></a><span class="va">console</span>.<span class="at">log</span>([<span class="st">&quot;n&quot;</span><span class="op">,</span> <span class="st">&quot;o&quot;</span><span class="op">,</span> <span class="st">&quot;r&quot;</span><span class="op">,</span> <span class="st">&quot;m&quot;</span><span class="op">,</span> <span class="st">&quot;a&quot;</span><span class="op">,</span> <span class="st">&quot;n&quot;</span>].<span class="at">length</span>)<span class="op">;</span> <span class="co">//&gt; 6</span></span></code></pre>
+			</div>
+			<p>Mientras que un número o booleano no tienen esos atributos.</p>
+			<p>
+				Ustedes pueden ver qué funciones o atributos pueden llamar envolviendo
+				un valor entre paréntesis y poniéndole punto, en consola
+			</p>
+			<div class="sourceCode" id="cb48">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb48-1"><a href="#cb48-1"></a>(<span class="st">&quot;norman&quot;</span>). <span class="co">//&gt; les va a auto sugerir qué poner</span></span></code></pre>
+			</div>
+			<p>
+				Los más interesantes de estos, están en los arrays, ya que nos dan
+				formas de recorrerlo, transformarlo, filtrar elementos, y mucho más.
+			</p>
+			<p>Veamos algunos atributos interesantes de arrays.</p>
+			<h4 id="map">map</h4>
+			<p>
+				El <code>map</code> recibe una lista de un tamaño y devuelve otra lista
+				del mismo tamaño, pero con alguna transformación de sus elementos. Esa
+				transformación es aplicada por una función que definimos nosotros, y se
+				pasa como parámetro de la función <code>map</code>. Ejemplo:
+			</p>
+			<div class="sourceCode" id="cb49">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb49-1"><a href="#cb49-1"></a><span class="kw">function</span> <span class="at">doble</span>(numero) <span class="op">{</span></span>
 <span id="cb49-2"><a href="#cb49-2"></a>  <span class="cf">return</span> numero <span class="op">*</span> <span class="dv">2</span><span class="op">;</span></span>
 <span id="cb49-3"><a href="#cb49-3"></a><span class="op">}</span></span>
 <span id="cb49-4"><a href="#cb49-4"></a></span>
 <span id="cb49-5"><a href="#cb49-5"></a><span class="kw">var</span> numeros <span class="op">=</span> [<span class="dv">2</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">6</span>]<span class="op">;</span></span>
 <span id="cb49-6"><a href="#cb49-6"></a><span class="kw">var</span> doble_de_los_numeros <span class="op">=</span> <span class="va">numeros</span>.<span class="at">map</span>(doble)<span class="op">;</span></span>
 <span id="cb49-7"><a href="#cb49-7"></a></span>
-<span id="cb49-8"><a href="#cb49-8"></a><span class="va">console</span>.<span class="at">log</span>(doble_de_los_numeros)<span class="op">;</span> <span class="co">//&gt; [4, 8, 12]</span></span></code></pre></div>
-<p>Es importante definir bien la función a aplicar y tener en cuenta lo que recibe y devuelve.</p>
-<p>Como primer argumento el <code>map</code> recibe el valor actual que está recorriendo. <code>map</code> va a recorrer la lista de forma ordenada, aplicando la función a cada valor por separado.</p>
-<p>Luego el retorno va a ser un valor en la nueva lista, respetando el orden de recorrido.</p>
-<p>Otro ejemplo</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb50-1"><a href="#cb50-1"></a><span class="kw">function</span> <span class="at">transformar_texto_a_minuscula</span>(texto) <span class="op">{</span></span>
+<span id="cb49-8"><a href="#cb49-8"></a><span class="va">console</span>.<span class="at">log</span>(doble_de_los_numeros)<span class="op">;</span> <span class="co">//&gt; [4, 8, 12]</span></span></code></pre>
+			</div>
+			<p>
+				Es importante definir bien la función a aplicar y tener en cuenta lo que
+				recibe y devuelve.
+			</p>
+			<p>
+				Como primer argumento el <code>map</code> recibe el valor actual que
+				está recorriendo. <code>map</code> va a recorrer la lista de forma
+				ordenada, aplicando la función a cada valor por separado.
+			</p>
+			<p>
+				Luego el retorno va a ser un valor en la nueva lista, respetando el
+				orden de recorrido.
+			</p>
+			<p>Otro ejemplo</p>
+			<div class="sourceCode" id="cb50">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb50-1"><a href="#cb50-1"></a><span class="kw">function</span> <span class="at">transformar_texto_a_minuscula</span>(texto) <span class="op">{</span></span>
 <span id="cb50-2"><a href="#cb50-2"></a>  <span class="cf">return</span> <span class="va">texto</span>.<span class="at">toLowerCase</span>()<span class="op">;</span></span>
 <span id="cb50-3"><a href="#cb50-3"></a><span class="op">}</span></span>
 <span id="cb50-4"><a href="#cb50-4"></a></span>
 <span id="cb50-5"><a href="#cb50-5"></a><span class="kw">var</span> nombres <span class="op">=</span> [<span class="st">&quot;Norman&quot;</span><span class="op">,</span> <span class="st">&quot;maRtín&quot;</span><span class="op">,</span> <span class="st">&quot;camIla&quot;</span><span class="op">,</span> <span class="st">&quot;JuaN&quot;</span>]<span class="op">;</span></span>
 <span id="cb50-6"><a href="#cb50-6"></a><span class="kw">var</span> nombres_minuscula <span class="op">=</span> <span class="va">nombres</span>.<span class="at">map</span>(transformar_texto_a_minuscula)<span class="op">;</span></span>
 <span id="cb50-7"><a href="#cb50-7"></a></span>
-<span id="cb50-8"><a href="#cb50-8"></a><span class="va">console</span>.<span class="at">log</span>(nombres_minuscula)<span class="op">;</span> <span class="co">//&gt; [&quot;norman&quot;, &quot;martín&quot;, &quot;camila&quot;, &quot;juan&quot;]</span></span></code></pre></div>
-<h4 id="filter">filter</h4>
-<p>El <code>filter</code> recibe una lista de un tamaño y devuelve otra lista del mismo tamaño o menor, con los mismos valores que tenía. Recibe como parámetro una función que retorna un booleano, según si debe o no filtrar el elemento. Un ejemplo:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb51-1"><a href="#cb51-1"></a><span class="kw">function</span> <span class="at">es_nombre_de_superheroe</span>(nombre) <span class="op">{</span></span>
+<span id="cb50-8"><a href="#cb50-8"></a><span class="va">console</span>.<span class="at">log</span>(nombres_minuscula)<span class="op">;</span> <span class="co">//&gt; [&quot;norman&quot;, &quot;martín&quot;, &quot;camila&quot;, &quot;juan&quot;]</span></span></code></pre>
+			</div>
+			<h4 id="filter">filter</h4>
+			<p>
+				El <code>filter</code> recibe una lista de un tamaño y devuelve otra
+				lista del mismo tamaño o menor, con los mismos valores que tenía. Recibe
+				como parámetro una función que retorna un booleano, según si debe o no
+				filtrar el elemento. Un ejemplo:
+			</p>
+			<div class="sourceCode" id="cb51">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb51-1"><a href="#cb51-1"></a><span class="kw">function</span> <span class="at">es_nombre_de_superheroe</span>(nombre) <span class="op">{</span></span>
 <span id="cb51-2"><a href="#cb51-2"></a>  <span class="kw">var</span> tamanio_nombre <span class="op">=</span> <span class="va">nombre</span>.<span class="at">length</span><span class="op">;</span></span>
 <span id="cb51-3"><a href="#cb51-3"></a>  <span class="kw">var</span> ante_penultima_letra <span class="op">=</span> nombre[tamanio_nombre <span class="op">-</span> <span class="dv">3</span>]<span class="op">;</span></span>
 <span id="cb51-4"><a href="#cb51-4"></a>  <span class="kw">var</span> ante_ultima_letra <span class="op">=</span> nombre[tamanio_nombre <span class="op">-</span> <span class="dv">2</span>]<span class="op">;</span></span>
@@ -773,226 +1686,280 @@
 <span id="cb51-19"><a href="#cb51-19"></a><span class="kw">var</span> nombres <span class="op">=</span> [<span class="st">&quot;spiderman&quot;</span><span class="op">,</span> <span class="st">&quot;nicolás&quot;</span><span class="op">,</span> <span class="st">&quot;norman&quot;</span><span class="op">,</span> <span class="st">&quot;ironman&quot;</span>]<span class="op">;</span></span>
 <span id="cb51-20"><a href="#cb51-20"></a><span class="kw">var</span> superheroes <span class="op">=</span> <span class="va">nombres</span>.<span class="at">filter</span>(es_nombre_de_superheroe)<span class="op">;</span></span>
 <span id="cb51-21"><a href="#cb51-21"></a></span>
-<span id="cb51-22"><a href="#cb51-22"></a><span class="va">console</span>.<span class="at">log</span>(superheroes)<span class="op">;</span> <span class="co">//&gt; una lista de todos los elementos menos nicolás.</span></span></code></pre></div>
-<p>Y si supiesen las funciones de string, podrían haber definido la función de esta otra manera</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb52-1"><a href="#cb52-1"></a><span class="kw">function</span> <span class="at">es_nombre_de_superheroe</span>(nombre) <span class="op">{</span></span>
+<span id="cb51-22"><a href="#cb51-22"></a><span class="va">console</span>.<span class="at">log</span>(superheroes)<span class="op">;</span> <span class="co">//&gt; una lista de todos los elementos menos nicolás.</span></span></code></pre>
+			</div>
+			<p>
+				Y si supiesen las funciones de string, podrían haber definido la función
+				de esta otra manera
+			</p>
+			<div class="sourceCode" id="cb52">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb52-1"><a href="#cb52-1"></a><span class="kw">function</span> <span class="at">es_nombre_de_superheroe</span>(nombre) <span class="op">{</span></span>
 <span id="cb52-2"><a href="#cb52-2"></a>  <span class="cf">return</span> <span class="va">nombre</span>.<span class="at">slice</span>(<span class="op">-</span><span class="dv">3</span>) <span class="op">===</span> <span class="st">&quot;man&quot;</span><span class="op">;</span></span>
-<span id="cb52-3"><a href="#cb52-3"></a><span class="op">}</span></span></code></pre></div>
-<p>Igual les dejo que exploren eso por su cuenta.</p>
-<h4 id="foreach">forEach</h4>
-<p>A diferencia del <code>map</code> o <code>filter</code>, el <code>forEach</code> no devuelve un nuevo array, sino que <strong>hace</strong> algo por cada elemento que itera. El <strong>hace</strong> queda definido por la función que recibe el <code>forEach</code> por parámetro. Veamos un ejemplo</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb53-1"><a href="#cb53-1"></a><span class="kw">var</span> mensajes_molestos <span class="op">=</span> [</span>
+<span id="cb52-3"><a href="#cb52-3"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<p>Igual les dejo que exploren eso por su cuenta.</p>
+			<h4 id="foreach">forEach</h4>
+			<p>
+				A diferencia del <code>map</code> o <code>filter</code>, el
+				<code>forEach</code> no devuelve un nuevo array, sino que
+				<strong>hace</strong> algo por cada elemento que itera. El
+				<strong>hace</strong> queda definido por la función que recibe el
+				<code>forEach</code> por parámetro. Veamos un ejemplo
+			</p>
+			<div class="sourceCode" id="cb53">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb53-1"><a href="#cb53-1"></a><span class="kw">var</span> mensajes_molestos <span class="op">=</span> [</span>
 <span id="cb53-2"><a href="#cb53-2"></a>  <span class="st">&quot;No te olvides de desactivar el adblock&quot;</span><span class="op">,</span></span>
 <span id="cb53-3"><a href="#cb53-3"></a>  <span class="st">&quot;Subscribite a nuestro newsletter&quot;</span><span class="op">,</span></span>
 <span id="cb53-4"><a href="#cb53-4"></a>  <span class="st">&quot;Hemos detectado un virus en su máquina&quot;</span></span>
 <span id="cb53-5"><a href="#cb53-5"></a>]<span class="op">;</span></span>
 <span id="cb53-6"><a href="#cb53-6"></a></span>
-<span id="cb53-7"><a href="#cb53-7"></a><span class="va">mensajes_molestos</span>.<span class="at">forEach</span>(alert)<span class="op">;</span></span></code></pre></div>
-<p>Es importante entender el propósito de cada función, el <code>forEach</code> es para <strong>hacer</strong> algo por cada elemento que itera.</p>
-<h3 id="ejercicios-2">Ejercicios</h3>
-<p>Mucha info. Necesitamos algo de práctica</p>
-<ol type="1">
-<li>Crear un array que tenga 4 elementos,</li>
-<li>todos de tipo string</li>
-<li>todos de tipo objeto</li>
-<li>todos de tipo función</li>
-<li>todos de tipo array</li>
-<li>Crear una función que tome un array de números como primer parámetro y devuelva la suma del primer y último número.</li>
-<li>Crear una función que tome un array de números y devuelva un array del mismo tamaño, pero que los valores de salida sean la mitad de los de entrada. O sea que calcule la mitad de todos los números.</li>
-<li>Crear una función que reciba un array de objetos que tengan un atributo <code>nombre</code>, y retorne un array de solo los nombres.</li>
-<li>Crear 3 funciones que toman un número por parámetro y retornar alguna operación con ese número (el doble, el siguiente, la mitad, etc). Luego crear una función que tome una lista de 3 funciones como primer parámetro, un número como segundo parámetro y devuelva una lista de 3 elementos con los resultados de las funciones ejecutadas con el número pasádo por segundo parámetro.</li>
-</ol>
-<h2 id="cheat-sheet">Cheat Sheet</h2>
-<h3 id="general">General</h3>
-<table>
-<colgroup>
-<col style="width: 47%" />
-<col style="width: 52%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Instrucción</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>// comentario en línea</code></td>
-<td>Comentario en línea</td>
-</tr>
-<tr class="even">
-<td><code>/* comentario en bloque */</code></td>
-<td>Comentario en bloque (pueden ser varias líneas)</td>
-</tr>
-<tr class="odd">
-<td><code>console.log("Hola mundo!")</code></td>
-<td>Mostrar “Hola mundo!” por consola</td>
-</tr>
-<tr class="even">
-<td><code>alert("Hola mundo!")</code></td>
-<td>Mostrar “Hola mundo!” por ventana de alerta</td>
-</tr>
-<tr class="odd">
-<td><code>var nombre = prompt("Cuál es tu nombre?")</code></td>
-<td>Mostrar input con mensaje</td>
-</tr>
-</tbody>
-</table>
-<h3 id="variables">Variables</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Instrucción</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>var nombre = "Norman"</code></td>
-<td>Declarar variable</td>
-</tr>
-<tr class="even">
-<td><code>nombre = "Juan"</code></td>
-<td>Asignar o reasignar un valor</td>
-</tr>
-<tr class="odd">
-<td><code>console.log("Hola, " + nombre)</code></td>
-<td>Usar la variable</td>
-</tr>
-</tbody>
-</table>
-<h3 id="operadores-1">Operadores</h3>
-<h4 id="numéricos">Numéricos</h4>
-<table>
-<thead>
-<tr class="header">
-<th>Instrucción</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>1 + 1</code></td>
-<td>Suma</td>
-</tr>
-<tr class="even">
-<td><code>1 - 1</code></td>
-<td>Resta</td>
-</tr>
-<tr class="odd">
-<td><code>1 * 1</code></td>
-<td>Multiplicación</td>
-</tr>
-<tr class="even">
-<td><code>1 / 1</code></td>
-<td>División</td>
-</tr>
-<tr class="odd">
-<td><code>1 % 1</code></td>
-<td>Resto</td>
-</tr>
-</tbody>
-</table>
-<h4 id="texto">Texto</h4>
-<table>
-<thead>
-<tr class="header">
-<th>Instrucción</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>"Hola " + "Norman" + ". " + "Todo bien?"</code></td>
-<td>Concatenación</td>
-</tr>
-</tbody>
-</table>
-<h3 id="booleanos">Booleanos</h3>
-<h4 id="comparación">Comparación</h4>
-<table>
-<thead>
-<tr class="header">
-<th>Instrucción</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>1 &gt; 1</code></td>
-<td>Mayor</td>
-</tr>
-<tr class="even">
-<td><code>1 &lt; 1</code></td>
-<td>Menor</td>
-</tr>
-<tr class="odd">
-<td><code>1 === 1</code></td>
-<td>Igual</td>
-</tr>
-<tr class="even">
-<td><code>1 !== 1</code></td>
-<td>Distinto</td>
-</tr>
-</tbody>
-</table>
-<h4 id="lógicos">Lógicos</h4>
-<p>Actúan sobre valores booleanos</p>
-<p>Negación</p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb54-1"><a href="#cb54-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">true</span>)<span class="op">;</span> <span class="co">//&gt; false</span></span>
+<span id="cb53-7"><a href="#cb53-7"></a><span class="va">mensajes_molestos</span>.<span class="at">forEach</span>(alert)<span class="op">;</span></span></code></pre>
+			</div>
+			<p>
+				Es importante entender el propósito de cada función, el
+				<code>forEach</code> es para <strong>hacer</strong> algo por cada
+				elemento que itera.
+			</p>
+			<h3 id="ejercicios-2">Ejercicios</h3>
+			<p>Mucha info. Necesitamos algo de práctica</p>
+			<ol type="1">
+				<li>Crear un array que tenga 4 elementos,</li>
+				<li>todos de tipo string</li>
+				<li>todos de tipo objeto</li>
+				<li>todos de tipo función</li>
+				<li>todos de tipo array</li>
+				<li>
+					Crear una función que tome un array de números como primer parámetro y
+					devuelva la suma del primer y último número.
+				</li>
+				<li>
+					Crear una función que tome un array de números y devuelva un array del
+					mismo tamaño, pero que los valores de salida sean la mitad de los de
+					entrada. O sea que calcule la mitad de todos los números.
+				</li>
+				<li>
+					Crear una función que reciba un array de objetos que tengan un
+					atributo <code>nombre</code>, y retorne un array de solo los nombres.
+				</li>
+				<li>
+					Crear 3 funciones que toman un número por parámetro y retornar alguna
+					operación con ese número (el doble, el siguiente, la mitad, etc).
+					Luego crear una función que tome una lista de 3 funciones como primer
+					parámetro, un número como segundo parámetro y devuelva una lista de 3
+					elementos con los resultados de las funciones ejecutadas con el número
+					pasádo por segundo parámetro.
+				</li>
+			</ol>
+			<h2 id="cheat-sheet">Cheat Sheet</h2>
+			<h3 id="general">General</h3>
+			<table>
+				<colgroup>
+					<col style="width: 47%" />
+					<col style="width: 52%" />
+				</colgroup>
+				<thead>
+					<tr class="header">
+						<th>Instrucción</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>// comentario en línea</code></td>
+						<td>Comentario en línea</td>
+					</tr>
+					<tr class="even">
+						<td><code>/* comentario en bloque */</code></td>
+						<td>Comentario en bloque (pueden ser varias líneas)</td>
+					</tr>
+					<tr class="odd">
+						<td><code>console.log("Hola mundo!")</code></td>
+						<td>Mostrar “Hola mundo!” por consola</td>
+					</tr>
+					<tr class="even">
+						<td><code>alert("Hola mundo!")</code></td>
+						<td>Mostrar “Hola mundo!” por ventana de alerta</td>
+					</tr>
+					<tr class="odd">
+						<td><code>var nombre = prompt("Cuál es tu nombre?")</code></td>
+						<td>Mostrar input con mensaje</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 id="variables">Variables</h3>
+			<table>
+				<thead>
+					<tr class="header">
+						<th>Instrucción</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>var nombre = "Norman"</code></td>
+						<td>Declarar variable</td>
+					</tr>
+					<tr class="even">
+						<td><code>nombre = "Juan"</code></td>
+						<td>Asignar o reasignar un valor</td>
+					</tr>
+					<tr class="odd">
+						<td><code>console.log("Hola, " + nombre)</code></td>
+						<td>Usar la variable</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 id="operadores-1">Operadores</h3>
+			<h4 id="numéricos">Numéricos</h4>
+			<table>
+				<thead>
+					<tr class="header">
+						<th>Instrucción</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>1 + 1</code></td>
+						<td>Suma</td>
+					</tr>
+					<tr class="even">
+						<td><code>1 - 1</code></td>
+						<td>Resta</td>
+					</tr>
+					<tr class="odd">
+						<td><code>1 * 1</code></td>
+						<td>Multiplicación</td>
+					</tr>
+					<tr class="even">
+						<td><code>1 / 1</code></td>
+						<td>División</td>
+					</tr>
+					<tr class="odd">
+						<td><code>1 % 1</code></td>
+						<td>Resto</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4 id="texto">Texto</h4>
+			<table>
+				<thead>
+					<tr class="header">
+						<th>Instrucción</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>"Hola " + "Norman" + ". " + "Todo bien?"</code></td>
+						<td>Concatenación</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 id="booleanos">Booleanos</h3>
+			<h4 id="comparación">Comparación</h4>
+			<table>
+				<thead>
+					<tr class="header">
+						<th>Instrucción</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>1 &gt; 1</code></td>
+						<td>Mayor</td>
+					</tr>
+					<tr class="even">
+						<td><code>1 &lt; 1</code></td>
+						<td>Menor</td>
+					</tr>
+					<tr class="odd">
+						<td><code>1 === 1</code></td>
+						<td>Igual</td>
+					</tr>
+					<tr class="even">
+						<td><code>1 !== 1</code></td>
+						<td>Distinto</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4 id="lógicos">Lógicos</h4>
+			<p>Actúan sobre valores booleanos</p>
+			<p>Negación</p>
+			<div class="sourceCode" id="cb54">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb54-1"><a href="#cb54-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">true</span>)<span class="op">;</span> <span class="co">//&gt; false</span></span>
 <span id="cb54-2"><a href="#cb54-2"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!</span><span class="kw">false</span>)<span class="op">;</span> <span class="co">//&gt; true</span></span>
-<span id="cb54-3"><a href="#cb54-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!!</span><span class="kw">true</span>)<span class="op">;</span> <span class="co">//&gt; true</span></span></code></pre></div>
-<p>Se ejecuta como <code>p &amp;&amp; q</code> o <code>p || q</code>.</p>
-<table>
-<thead>
-<tr class="header">
-<th>p</th>
-<th>q</th>
-<th><code>&amp;&amp;</code> (y)</th>
-<th><code>||</code> (o)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-<td><code>true</code></td>
-</tr>
-<tr class="even">
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>true</code></td>
-</tr>
-<tr class="odd">
-<td><code>false</code></td>
-<td><code>true</code></td>
-<td><code>false</code></td>
-<td><code>true</code></td>
-</tr>
-<tr class="even">
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-<td><code>false</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="funciones-1">Funciones</h3>
-<h4 id="declarar">Declarar</h4>
-<div class="sourceCode" id="cb55"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb55-1"><a href="#cb55-1"></a><span class="kw">function</span> <span class="at">nombre</span>(parametro1<span class="op">,</span> parametro2<span class="op">,</span> parametro3) <span class="op">{</span></span>
+<span id="cb54-3"><a href="#cb54-3"></a><span class="va">console</span>.<span class="at">log</span>(<span class="op">!!</span><span class="kw">true</span>)<span class="op">;</span> <span class="co">//&gt; true</span></span></code></pre>
+			</div>
+			<p>Se ejecuta como <code>p &amp;&amp; q</code> o <code>p || q</code>.</p>
+			<table>
+				<thead>
+					<tr class="header">
+						<th>p</th>
+						<th>q</th>
+						<th><code>&amp;&amp;</code> (y)</th>
+						<th><code>||</code> (o)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="odd">
+						<td><code>true</code></td>
+						<td><code>true</code></td>
+						<td><code>true</code></td>
+						<td><code>true</code></td>
+					</tr>
+					<tr class="even">
+						<td><code>true</code></td>
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+						<td><code>true</code></td>
+					</tr>
+					<tr class="odd">
+						<td><code>false</code></td>
+						<td><code>true</code></td>
+						<td><code>false</code></td>
+						<td><code>true</code></td>
+					</tr>
+					<tr class="even">
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+						<td><code>false</code></td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 id="funciones-1">Funciones</h3>
+			<h4 id="declarar">Declarar</h4>
+			<div class="sourceCode" id="cb55">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb55-1"><a href="#cb55-1"></a><span class="kw">function</span> <span class="at">nombre</span>(parametro1<span class="op">,</span> parametro2<span class="op">,</span> parametro3) <span class="op">{</span></span>
 <span id="cb55-2"><a href="#cb55-2"></a>  <span class="co">/* Instrucciones */</span></span>
 <span id="cb55-3"><a href="#cb55-3"></a>  <span class="kw">var</span> concatenacion <span class="op">=</span> parametro1 <span class="op">+</span> parametro2 <span class="op">+</span> parametro3<span class="op">;</span></span>
 <span id="cb55-4"><a href="#cb55-4"></a>  <span class="cf">return</span> concatenacion<span class="op">;</span></span>
 <span id="cb55-5"><a href="#cb55-5"></a>  <span class="co">// lo que esté debajo no se ejecuta</span></span>
-<span id="cb55-6"><a href="#cb55-6"></a><span class="op">}</span></span></code></pre></div>
-<h4 id="ejecutar">Ejecutar</h4>
-<div class="sourceCode" id="cb56"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb56-1"><a href="#cb56-1"></a><span class="kw">var</span> concatenacion <span class="op">=</span> <span class="at">nombre</span>(<span class="st">&quot;Hola, &quot;</span><span class="op">,</span> <span class="st">&quot;cómo estás? &quot;</span><span class="op">,</span> <span class="st">&quot;todo bien?&quot;</span>)<span class="op">;</span></span>
-<span id="cb56-2"><a href="#cb56-2"></a><span class="va">console</span>.<span class="at">log</span>(concatenacion)<span class="op">;</span></span></code></pre></div>
-<h3 id="objetos-1">Objetos</h3>
-<h4 id="declarar-1">Declarar</h4>
-<div class="sourceCode" id="cb57"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb57-1"><a href="#cb57-1"></a><span class="kw">var</span> planeta <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb55-6"><a href="#cb55-6"></a><span class="op">}</span></span></code></pre>
+			</div>
+			<h4 id="ejecutar">Ejecutar</h4>
+			<div class="sourceCode" id="cb56">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb56-1"><a href="#cb56-1"></a><span class="kw">var</span> concatenacion <span class="op">=</span> <span class="at">nombre</span>(<span class="st">&quot;Hola, &quot;</span><span class="op">,</span> <span class="st">&quot;cómo estás? &quot;</span><span class="op">,</span> <span class="st">&quot;todo bien?&quot;</span>)<span class="op">;</span></span>
+<span id="cb56-2"><a href="#cb56-2"></a><span class="va">console</span>.<span class="at">log</span>(concatenacion)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="objetos-1">Objetos</h3>
+			<h4 id="declarar-1">Declarar</h4>
+			<div class="sourceCode" id="cb57">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb57-1"><a href="#cb57-1"></a><span class="kw">var</span> planeta <span class="op">=</span> <span class="op">{</span></span>
 <span id="cb57-2"><a href="#cb57-2"></a>  <span class="dt">nombre</span><span class="op">:</span> <span class="st">&quot;Melmac&quot;</span><span class="op">,</span></span>
 <span id="cb57-3"><a href="#cb57-3"></a>  <span class="dt">habitantes</span><span class="op">:</span> <span class="dv">1000000000</span><span class="op">,</span></span>
 <span id="cb57-4"><a href="#cb57-4"></a>  <span class="dt">habitante</span><span class="op">:</span> <span class="op">{</span></span>
@@ -1000,49 +1967,88 @@
 <span id="cb57-6"><a href="#cb57-6"></a>    <span class="dt">frase_caracteristica</span><span class="op">:</span> <span class="st">&quot;No hay problema&quot;</span><span class="op">,</span></span>
 <span id="cb57-7"><a href="#cb57-7"></a>    <span class="dt">comida_preferida</span><span class="op">:</span> <span class="st">&quot;gato&quot;</span></span>
 <span id="cb57-8"><a href="#cb57-8"></a>  <span class="op">}</span></span>
-<span id="cb57-9"><a href="#cb57-9"></a><span class="op">};</span></span></code></pre></div>
-<h4 id="acceder-a-valores">Acceder a valores</h4>
-<div class="sourceCode" id="cb58"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb58-1"><a href="#cb58-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">planeta</span>.<span class="at">nombre</span>)<span class="op">;</span></span>
-<span id="cb58-2"><a href="#cb58-2"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">planeta</span>.<span class="va">habitante</span>.<span class="at">dientes</span>)<span class="op">;</span></span></code></pre></div>
-<h3 id="arrays-1">Arrays</h3>
-<h4 id="declarar-2">Declarar</h4>
-<div class="sourceCode" id="cb59"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb59-1"><a href="#cb59-1"></a><span class="kw">var</span> lista <span class="op">=</span> [</span>
+<span id="cb57-9"><a href="#cb57-9"></a><span class="op">};</span></span></code></pre>
+			</div>
+			<h4 id="acceder-a-valores">Acceder a valores</h4>
+			<div class="sourceCode" id="cb58">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb58-1"><a href="#cb58-1"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">planeta</span>.<span class="at">nombre</span>)<span class="op">;</span></span>
+<span id="cb58-2"><a href="#cb58-2"></a><span class="va">console</span>.<span class="at">log</span>(<span class="va">planeta</span>.<span class="va">habitante</span>.<span class="at">dientes</span>)<span class="op">;</span></span></code></pre>
+			</div>
+			<h3 id="arrays-1">Arrays</h3>
+			<h4 id="declarar-2">Declarar</h4>
+			<div class="sourceCode" id="cb59">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb59-1"><a href="#cb59-1"></a><span class="kw">var</span> lista <span class="op">=</span> [</span>
 <span id="cb59-2"><a href="#cb59-2"></a>  <span class="op">{</span><span class="dt">nombre</span><span class="op">:</span> <span class="st">&quot;Norman&quot;</span><span class="op">},</span></span>
 <span id="cb59-3"><a href="#cb59-3"></a>  <span class="op">{</span><span class="dt">nombre</span><span class="op">:</span> <span class="st">&quot;Pepe&quot;</span><span class="op">},</span></span>
 <span id="cb59-4"><a href="#cb59-4"></a>  <span class="op">{</span><span class="dt">nombre</span><span class="op">:</span> <span class="st">&quot;Mariana&quot;</span><span class="op">}</span></span>
-<span id="cb59-5"><a href="#cb59-5"></a>]</span></code></pre></div>
-<h4 id="acceder-a-valores-1">Acceder a valores</h4>
-<div class="sourceCode" id="cb60"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb60-1"><a href="#cb60-1"></a><span class="va">console</span>.<span class="at">log</span>(lista[<span class="dv">0</span>].<span class="at">nombre</span>)</span>
+<span id="cb59-5"><a href="#cb59-5"></a>]</span></code></pre>
+			</div>
+			<h4 id="acceder-a-valores-1">Acceder a valores</h4>
+			<div class="sourceCode" id="cb60">
+				<pre
+					class="sourceCode javascript"
+				><code class="sourceCode javascript"><span id="cb60-1"><a href="#cb60-1"></a><span class="va">console</span>.<span class="at">log</span>(lista[<span class="dv">0</span>].<span class="at">nombre</span>)</span>
 <span id="cb60-2"><a href="#cb60-2"></a><span class="va">console</span>.<span class="at">log</span>(lista[<span class="dv">1</span>].<span class="at">nombre</span>)</span>
-<span id="cb60-3"><a href="#cb60-3"></a><span class="va">console</span>.<span class="at">log</span>(lista[<span class="dv">2</span>].<span class="at">nombre</span>)</span></code></pre></div>
-<h2 id="comunidades-geniales">Comunidades geniales</h2>
-<ul>
-<li><a href="https://freecodecampba.org/">Free Code Camp BA</a>: grupo para juntarse a programar y aprender de tecnología, tienen un chat muy activo donde pueden ayudarte. Orientado a todo tipo de desarrollo, web principalmente.</li>
-<li><a href="https://meetupjs.com.ar/">MeetupJS</a>: mismo que el anterior pero orientado a JavaScript principalmente.</li>
-<li><a href="http://www.comunidadit.org/">ComunidadIT</a>: organización que da cursos y becas a estudiantes de programación.</li>
-<li><a href="http://www.puerta18.org.ar/">Puerta18</a>: hacking space que da talleres gratuitos de programación, entre otros.</li>
-</ul>
-	</main>
-	<footer>
-		<div class="h-card hcard vcard" style="display:none;">
-			<img rel="me" class="u-photo" alt="Norman Perrin blurred" src="/img/me.jpeg">
-			<br>
-			<span>Name:</span>
-			<a class="p-name u-url" rel="me" href="https://nperrin.io/">Norman Perrin</a>
-			<br>
-			<span>Twitter:</span>
-			<a class="u-url" rel="me" href="https://twitter.com/normanperrinok">@NormanPerrinOK</a>
-			<br>
-			<span>Github:</span>
-			<a class="u-url" rel="me" href="https://github.com/normanperrin">normanperrin</a>
-			<br>
-			<span>Jobs:</span>
-			<span class="p-job-title">Developer, Freelancer, Consultant</span>
-			<br>
-			<span>PGP Key:</span>
-			<a rel="pgpkey authn" href="/nperrin.asc" class="u-key">0xDD6DD4CB21147E87</a>
-		</div>
-	</footer>
-</body>
-
+<span id="cb60-3"><a href="#cb60-3"></a><span class="va">console</span>.<span class="at">log</span>(lista[<span class="dv">2</span>].<span class="at">nombre</span>)</span></code></pre>
+			</div>
+			<h2 id="comunidades-geniales">Comunidades geniales</h2>
+			<ul>
+				<li>
+					<a href="https://freecodecampba.org/">Free Code Camp BA</a>: grupo
+					para juntarse a programar y aprender de tecnología, tienen un chat muy
+					activo donde pueden ayudarte. Orientado a todo tipo de desarrollo, web
+					principalmente.
+				</li>
+				<li>
+					<a href="https://meetupjs.com.ar/">MeetupJS</a>: mismo que el anterior
+					pero orientado a JavaScript principalmente.
+				</li>
+				<li>
+					<a href="http://www.comunidadit.org/">ComunidadIT</a>: organización
+					que da cursos y becas a estudiantes de programación.
+				</li>
+				<li>
+					<a href="http://www.puerta18.org.ar/">Puerta18</a>: hacking space que
+					da talleres gratuitos de programación, entre otros.
+				</li>
+			</ul>
+		</main>
+		<footer>
+			<div class="h-card hcard vcard" style="display:none;">
+				<img
+					rel="me"
+					class="u-photo"
+					alt="Norman Perrin blurred"
+					src="/img/me.jpeg"
+				/>
+				<br />
+				<span>Name:</span>
+				<a class="p-name u-url" rel="me" href="https://nperrin.io/"
+					>Norman Perrin</a
+				>
+				<br />
+				<span>Twitter:</span>
+				<a class="u-url" rel="me" href="https://twitter.com/normanperrinok"
+					>@NormanPerrinOK</a
+				>
+				<br />
+				<span>Github:</span>
+				<a class="u-url" rel="me" href="https://github.com/normanperrin"
+					>normanperrin</a
+				>
+				<br />
+				<span>Jobs:</span>
+				<span class="p-job-title">Developer, Freelancer, Consultant</span>
+				<br />
+				<span>PGP Key:</span>
+				<a rel="pgpkey authn" href="/nperrin.asc" class="u-key"
+					>0xDD6DD4CB21147E87</a
+				>
+			</div>
+		</footer>
+	</body>
 </html>

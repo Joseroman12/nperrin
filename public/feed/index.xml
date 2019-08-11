@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Norman Perrin</title>
+		<link>https://nperrin.io</link>
+		<docs>http://backend.userland.com/rss</docs>
+		<description>Recent content from Norman Perrin</description>
+		<language>en</language>
+		<image>
+			<url>https://nperrin.io/img/me.jpeg</url>
+			<title>Norman Perrin</title>
+			<link>https://nperrin.io</link>
+			<width>140</width>
+			<height>140</height>
+		</image>
+		<lastBuildDate>Sun, 11 Aug 2019 11:14:07 -0300</lastBuildDate>
+		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Home</title>
+			<link>https://nperrin.io/</link>
+			<description>Home site of Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:28:32 -0300</pubDate>
+			<guid>https://nperrin.io/</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Technical advisor</title>
+			<link>https://nperrin.io/work/nobility</link>
+			<description>Work as Technical advisor at Nobility</description>
+			<category>Work</category>
+			<pubDate>Sat, 10 Aug 2019 16:25:34 -0300</pubDate>
+			<guid>https://nperrin.io/work/nobility</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Tech</title>
+			<link>https://nperrin.io/tech</link>
+			<description>Guides, cheatsheets, explanations, tech projects and more related things</description>
+			<category>Tech</category>
+			<pubDate>Sat, 10 Aug 2019 16:24:36 -0300</pubDate>
+			<guid>https://nperrin.io/tech</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Post</title>
+			<link>https://nperrin.io/post</link>
+			<description>Thoughts and reflexions I had some time</description>
+			<category>Post</category>
+			<pubDate>Sat, 10 Aug 2019 16:22:48 -0300</pubDate>
+			<guid>https://nperrin.io/post</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Site improvements</title>
+			<link>https://nperrin.io/site-improvements</link>
+			<description>Things I could do to improve the site</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:20:14 -0300</pubDate>
+			<guid>https://nperrin.io/site-improvements</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Pendings</title>
+			<link>https://nperrin.io/pendings</link>
+			<description>Tasks I want to accomplish</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:16:53 -0300</pubDate>
+			<guid>https://nperrin.io/pendings</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>About</title>
+			<link>https://nperrin.io/about</link>
+			<description>Information about Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Sat, 10 Aug 2019 16:02:11 -0300</pubDate>
+			<guid>https://nperrin.io/about</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Privacy Policy</title>
+			<link>https://nperrin.io/privacy-policy</link>
+			<description>nperrin.io Privacy Policy</description>
+			<category>Main</category>
+			<pubDate>Sun, 04 Aug 2019 10:24:29 -0300</pubDate>
+			<guid>https://nperrin.io/privacy-policy</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Why using RSS feed</title>
+			<link>https://nperrin.io/post/why-using-rss-feed</link>
+			<description>I've been using RSS feed over a month now. This brought me some benefits that I want to tell you about.</description>
+			<category>Post</category>
+			<pubDate>Tue, 30 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/post/why-using-rss-feed</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
+	</channel>
+</rss>
