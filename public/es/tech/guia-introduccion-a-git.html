@@ -108,897 +108,939 @@
 			</div>
 		</header>
 		<main>
-			<h1>Introducción a Git y GitHub</h1>
-			<p><em>Última actualización: 2019/07/24 00:00:00</em></p>
-			<h2>Tabla de contenidos</h2>
-			<nav id="TOC" role="doc-toc">
-				<ul>
-					<li><a href="#introducción">Introducción</a></li>
-					<li><a href="#antes-de-empezar">Antes de empezar</a></li>
-					<li><a href="#paso-0">Paso 0</a></li>
-					<li><a href="#el-problema">El problema</a></li>
-					<li>
-						<a href="#introducción-1">Introducción</a>
-						<ul>
-							<li><a href="#versionado">Versionado</a></li>
-							<li><a href="#distribuido">Distribuido</a></li>
-							<li><a href="#repositorio-remoto">Repositorio remoto</a></li>
-							<li><a href="#repositorio-local">Repositorio local</a></li>
-							<li><a href="#juntando-las-partes">Juntando las partes</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#workshop">Workshop</a>
-						<ul>
-							<li>
-								<a href="#configuración-inicial">Configuración inicial</a>
-							</li>
-							<li><a href="#repositorio-de-cero">Repositorio de cero</a></li>
-							<li>
-								<a href="#repositorio-ya-creado">Repositorio ya creado</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#tldr">TLDR</a>
-						<ul>
-							<li><a href="#configurar-git">Configurar git</a></li>
-							<li>
-								<a href="#creando-y-clonando-un-repositorio"
-									>Creando y clonando un repositorio</a
-								>
-							</li>
-							<li>
-								<a href="#trabajando-localmente">Trabajando localmente</a>
-							</li>
-							<li>
-								<a href="#trabajando-en-la-nube">Trabajando en la nube</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#cierre">Cierre</a></li>
-				</ul>
-			</nav>
-			<h2 id="introducción">Introducción</h2>
-			<p>
-				Creando para que aprendan los conceptos básicos de
-				<strong>git</strong> y <strong>GitHub</strong> así pueden manejarse con
-				facilidad subiendo código a repositorios y haciendo cambios.
-			</p>
-			<h2 id="antes-de-empezar">Antes de empezar</h2>
-			<p>Cuando vean un contenedor de código.</p>
-			<ul>
-				<li>
-					El símbolo <code>$</code> indica que es un comando de terminal. No se
-					copia.
-				</li>
-				<li>
-					El símbolo <code>#</code> indica el comienzo de un comentario. No se
-					copia (y si se copia no pasa nada).
-				</li>
-				<li>
-					Cuando hay algo rodeado entre <code>[]</code> significa que lo tienen
-					que reemplazar por lo que les diga, omitiendo los corchetes.
-				</li>
-				<li>
-					Los cuadrados con código puede que tengan un scroll horizontal, si no
-					entran.
-				</li>
-			</ul>
-			<h2 id="paso-0">Paso 0</h2>
-			<p>Para empezar vamos a tener algunos requisitos previos.</p>
-			<ol type="1">
-				<li>
-					<strong>Terminal compatible con unix</strong> instalada y lista para
-					usar.
-				</li>
-				<li>
-					<strong>Conocimientos comandos básicos unix</strong>, para manejarse
-					entre archivos, crear carpetas, etc. desde la terminal (si no saben
-					tampoco es problema, pero es algo menos que entender).
-				</li>
-				<li>
-					<strong>git</strong> instalado en su máquina. Pueden confirmar que
-					esté instalado escribiendo
-				</li>
-			</ol>
-			<div class="sourceCode" id="cb1">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>$ <span class="fu">git</span> --version</span></code></pre>
-			</div>
-			<ol start="4" type="1">
-				<li>Una <strong>cuenta en GitHub</strong>.</li>
-			</ol>
-			<p>Ahora sí, estamos listos para empezar.</p>
-			<h2 id="el-problema">El problema</h2>
-			<p>
-				Hubo una época en la que Google Drive no existía, o no sabía que
-				existía.
-			</p>
-			<p>
-				No sé ahora cómo serán las cosas, pero cuando iba a la secundaria,
-				hacíamos TPs, nos mandábamos los cambios por mail, o las diferentes
-				partes para que otro después una todo.
-			</p>
-			<p>Había varios problemas con esta forma de trabajar.</p>
-			<ul>
-				<li>Alguien del grupo tenía que juntar todas las partes.</li>
-				<li>No estábamos seguros de lo que se estaba trabajando.</li>
-				<li>Tampoco estábamos seguros de lo que ya se había hecho.</li>
-				<li>El resultado final no era coherente entre partes.</li>
-				<li>No hablemos de versionado…</li>
-			</ul>
-			<figure>
-				<img
-					src="/img/tech/guia-introduccion-a-git/old-version-control.png"
-					alt=""
-				/>
-				<figcaption>old version control</figcaption>
-			</figure>
-			<p>Luego llegó Google Drive.</p>
-			<p>
-				Eso nos resolvió todo para hacer TPs, incluso si alguien la pifiaba y
-				borraba algo importante, podíamos acceder a versiones anteriores del
-				archivo y arreglarlo. Además
-				<a
-					href="https://support.google.com/drive/answer/2375012?co=GENIE.Platform%3DDesktop&amp;hl=es"
-					>con algo de trabajo</a
-				>
-				se puede trabajar sin conexión y luego subir los cambios sin necesidad
-				de crear otros archivos.
-			</p>
-			<p>Lo cual es genial.</p>
-			<figure>
-				<img
-					src="/img/tech/guia-introduccion-a-git/google-drive-version-control.png"
-					alt=""
-				/>
-				<figcaption>google drive version control</figcaption>
-			</figure>
-			<p>
-				Pero trabajar un documento es distinto a un programa con muchos
-				archivos, sub carpetas, etc.
-			</p>
-			<p>
-				Estaría bueno contar con un sistema que sea como Google Drive pero para
-				carpetas, o <strong><em>repositorio</em></strong> de archivos. Y que
-				además sea simple de usar, sin necesidad de conectarse a una interfaz
-				que nos relentice este proceso…
-			</p>
-			<p>
-				Por suerte contamos con una herramienta que hace todo lo que dije y
-				mucho más.
-			</p>
-			<h2 id="introducción-1">Introducción</h2>
-			<blockquote>
-				<p>
-					<strong>git</strong> es un sistema de control de versiones,
-					distribuido.
-				</p>
-			</blockquote>
-			<p>*insertar meme de que algo no se entiende*</p>
-			<p>Vamo de a partes.</p>
-			<h3 id="versionado">Versionado</h3>
-			<p>
-				Habiendo hecho la comparación podemos entender a lo que se refiere con
-				“control de versiones”. Significa que podemos
-				<strong><em>trackear cambios</em></strong> para saber quién hizo un
-				cambio, qué modificó, permitiéndonos
-				<strong><em>volver a versiones anteriores</em></strong> si queremos.
-			</p>
-			<h3 id="distribuido">Distribuido</h3>
-			<p>
-				La parte de <strong><em>distribuido</em></strong> necesita un poco más
-				de explicación que lo anterior.
-			</p>
-			<figure>
-				<img src="/img/tech/guia-introduccion-a-git/github-flow.png" alt="" />
-				<figcaption>github flow</figcaption>
-			</figure>
-			<p>Vamos a explicar las partes</p>
-			<h3 id="repositorio-remoto">Repositorio remoto</h3>
-			<p>
-				Este sería el encargado de guardar todos nuestros cambios en un solo
-				lugar. En Google Drive tenemos un documento al que todos acceden para
-				leer o modificar, acá es igual pero con un repositorio. Y con la leve
-				diferencia de que no se hacen cambios directamente.
-			</p>
-			<p>Entonces si no se hacen cambios directos?</p>
-			<p>
-				Cuando queramos trabajar el repositorio remoto, vamos a tener que,
-				<strong><em>primero, copiarlo a nuestra máquina</em></strong
-				>. A esta copia en nuestra máquina la vamos a llamar
-				<a href="#repositorio-local">repositorio local</a>.
-			</p>
-			<p>
-				Para trabajar con repositorios remotos, podemos usar plataformas como
-				<strong>GitHub</strong>, Bitbucket, GitLab, u otros.
-			</p>
-			<h3 id="repositorio-local">Repositorio local</h3>
-			<p>Este otro sería la copia en nuestra máquina del repositorio remoto.</p>
-			<p>
-				Una vez que contamos con un repositorio local, vamos a ver que podemos
-				modificarlo como cualquier archivo. Pero los cambios no se van a ver
-				reflejados en el repositorio remoto a menos que los subamos.
-			</p>
-			<p>
-				Para esta parte vamos a usar <strong>git</strong>. La herramienta que
-				nos va a ayudar a llevar cambios localmente, subirlos y traer nuevos
-				cambios.
-			</p>
-			<h3 id="juntando-las-partes">Juntando las partes</h3>
-			<p>
-				Entonces podemos decir que es distribuido porque se trabaja en distintas
-				partes, el código no está centralizado en 1 lado solamente.
-			</p>
-			<p>
-				Si el día de mañana le pasa algo al servidor remoto, no hay de que
-				preocuparse, ya que tenemos una copia.
-			</p>
-			<h2 id="workshop">Workshop</h2>
-			<p>Vamos a tener 2 caminos.</p>
-			<ol type="1">
-				<li>
-					Empezar con un <a href="#repositorio-de-cero">repositorio de cero</a>.
-				</li>
-				<li>
-					Empezar con un
-					<a href="#repositorio-ya-creado">repositorio ya creado</a>.
-				</li>
-			</ol>
-			<p>
-				Para los 2 casos, primero tenemos que configurar un poco
-				<strong>git</strong>.
-			</p>
-			<h3 id="configuración-inicial">Configuración inicial</h3>
-			<p>Configuro mi nombre:</p>
-			<div class="sourceCode" id="cb2">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>$ <span class="fu">git</span> config --global user.name <span class="st">&quot;[usuario github]&quot;</span> <span class="co"># Usar su nombre de usuario de GitHub</span></span></code></pre>
-			</div>
-			<p>Configuro mi mail:</p>
-			<div class="sourceCode" id="cb3">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>$ <span class="fu">git</span> config --global user.email <span class="st">&quot;[mail github]&quot;</span> <span class="co"># Usar su mail de GitHub</span></span></code></pre>
-			</div>
-			<p>Configuro mi editor por defecto</p>
-			<div class="sourceCode" id="cb4">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a>$ <span class="fu">git</span> config --global core.editor <span class="st">&quot;[comando para abrir editor]&quot;</span> <span class="co"># &quot;subl -n -w&quot; para Sublime Text o &quot;code&quot; para VSCode...</span></span></code></pre>
-			</div>
-			<p>Si quiero ver los valores que tienen puedo usar</p>
-			<div class="sourceCode" id="cb5">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a>$ <span class="fu">git</span> config --get user.name</span></code></pre>
-			</div>
-			<p>
-				Si quiero cambiar el <code>user.name</code> o <code>user.email</code>,
-				simplemente vuelvo a escribir esos comandos con los valores correctos,
-				pisando los que ya haya.
-			</p>
-			<h3 id="repositorio-de-cero">Repositorio de cero</h3>
-			<h4 id="creando-un-repositorio-local">Creando un repositorio local</h4>
-			<ol type="1">
-				<li>Vamos a la terminal.</li>
-				<li>Creamos una carpeta en algún lado de nuestra compu.</li>
-				<li>
-					Creamos un archivo dentro de la carpeta y le ponemos algún contenido.
-					Acá hay un contenido de ejemplo:
-					<a
-						href="https://raw.githubusercontent.com/KeenRivals/bestmotherfucking.website/master/index.html"
-						>contenido gratis!</a
-					>. Pueden hacer <code>Ctrl + A</code> para seleccionar todo, y lo
-					copian y pegan (copiar: <code>Ctrl + C</code>, pegar:
-					<code>Ctrl + V</code>) en el archivo <code>index.html</code> que
-					creen.
-				</li>
-				<li>Ahora que tenemos un proyectito metámosle <strong>git</strong>.</li>
-				<li><strong>Inicializamos</strong> un repositorio con este comando:</li>
-			</ol>
-			<div class="sourceCode" id="cb6">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a>$ <span class="fu">git</span> init</span></code></pre>
-			</div>
-			<p>
-				Quizás no nos dimos cuenta, pero se nos creó una carpeta oculta llamada
-				<code>.git/</code>. Acá se va a guardar el historial de cambios, así que
-				es importante no borrarla. Podemos ver los archivos y carpetas ocultas
-				con <code>ls -a</code>.
-			</p>
-			<h4 id="viendo-el-estado">Viendo el estado</h4>
-			<p>Un comando que vamos a usar todo el tiempo:</p>
-			<div class="sourceCode" id="cb7">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a>$ <span class="fu">git</span> status</span></code></pre>
-			</div>
-			<p>
-				Nos dice el <strong><em>estado de nuestro repositorio</em></strong
-				>. Cada vez que tiramos un comando podemos cambiar el estado del
-				repositorio, para verlo lo hacemos con <code>status</code>.
-			</p>
-			<p>
-				Generalmente queremos asegurarnos de hacer las cosas bien, y para no
-				pifiarla vemos el estado antes de hacer algo, por eso se usa bastante.
-			</p>
-			<p>
-				Habiendo tirado el comando, nos va a decir que no hay cambios que hacer,
-				que hay un archivo sin seguimiento, porque es nuevo, no tiene historial.
-			</p>
-			<h4 id="agregando-un-cambio">Agregando un cambio</h4>
-			<p>
-				Tanto para agregar un cambio, archivo nuevo, borrado, etc. vamos a usar
-			</p>
-			<div class="sourceCode" id="cb8">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a>$ <span class="fu">git</span> add [nombre_archivo]</span></code></pre>
-			</div>
-			<p>
-				Ahora, es importante entender que podemos tener un cambio en 3 estados,
-				uno cuando está <strong><em>modificado</em></strong> y sin agregar, otro
-				<strong><em>agregado</em></strong> y por último
-				<strong><em>“commiteado”</em></strong
-				>.
-			</p>
-			<figure>
-				<img src="/img/tech/guia-introduccion-a-git/estados.png" alt="" />
-				<figcaption>estados de un cambio</figcaption>
-			</figure>
-			<p>
-				El estado commiteado lo vamos a ver después, pero sería como asegurar el
-				cambio que agregamos, sumándole un mensaje.
-			</p>
-			<p>Así que al agregar el cambio no estamos confirmándolo todavía.</p>
-			<p>
-				También está bueno tener en cuenta que yo puedo agregar un archivo,
-				modificarlo y agregarlo de nuevo.
-			</p>
-			<p>
-				Podemos agregar archivo por archivo… o usar un <code>*</code> para
-				indicarle que queremos agregar todos los archivos.
-			</p>
-			<div class="sourceCode" id="cb9">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a>$ <span class="fu">git</span> add -A</span></code></pre>
-			</div>
-			<p>
-				<strong>Pero momento!</strong> Qué pasa si nos equivocamos y agregamos
-				un archivo que no iba.
-			</p>
-			<p>
-				A no preocuparse,
-				<em>tenemos un comando para revertir el que les acabo de enseñar</em>:
-			</p>
-			<div class="sourceCode" id="cb10">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a>$ <span class="fu">git</span> reset [nombre_archivo]</span></code></pre>
-			</div>
-			<p>Si no especificamos archivo nos va a hacer reset de todo.</p>
-			<h4 id="confirmando-el-cambio">Confirmando el cambio</h4>
-			<p>
-				Al confirmar el cambio vamos a agarrar todos los cambios a agregar que
-				pusimos y unir todos esos cambios en 1 commit, que sería como una
-				contribución.
-			</p>
-			<p>Para eso lo vamos a hacer con:</p>
-			<div class="sourceCode" id="cb11">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a>$ <span class="fu">git</span> commit -m <span class="st">&quot;[un mensaje descriptivo]&quot;</span></span></code></pre>
-			</div>
-			<p>
-				Por favor, que el mensaje sea descriptivo… si le ponemos como mensaje
-				<em>“foo”</em>, <em>“bar”</em>, cuando veamos el historial de cambios no
-				vamos a entender nada. O sus compañeros los van a mirar mal.
-			</p>
-			<p>Y cómo vemos el historial de cambios (commits)?</p>
-			<p><em>Hay un comando para eso.</em></p>
-			<div class="sourceCode" id="cb12">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a>$ <span class="fu">git</span> log</span></code></pre>
-			</div>
-			<p>
-				Si queremos un mensaje más conciso le podemos agregar la opción
-				<code>--oneline</code>.
-			</p>
-			<div class="sourceCode" id="cb13">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a>$ <span class="fu">git</span> log --oneline</span></code></pre>
-			</div>
-			<p>
-				<strong>Pero momento!</strong> Qué pasa si nos equivocamos y commiteamos
-				algo equivocado.
-			</p>
-			<p>A no preocuparse, <em>tenemos unos comandos para arreglarlo</em>.</p>
-			<p>Si queremos pisar el commit podemos seguir los siguientes pasos:</p>
-			<ol type="1">
-				<li>Modificar lo que queramos, borrar, o lo que queramos hacer.</li>
-				<li>Agregar nuestros cambios <code>git add *</code>.</li>
-				<li>Pisar nuestro commit:</li>
-			</ol>
-			<div class="sourceCode" id="cb14">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a>$ <span class="fu">git</span> commit --amend</span></code></pre>
-			</div>
-			<p>
-				Esto nos va a abrir el editor por defecto que hayamos elegido. Podemos
-				cambiarle el nombre al commit si nos equivocamos en algo, salvar el
-				archivo, y estamos listos. Pero solo modifiquen la primer línea, lo otro
-				déjenlo igual.
-			</p>
-			<p>
-				Difícil? Aunque no lo crean no mucha gente que usa git sabe de ese
-				comando, pero es súper útil.
-			</p>
-			<p>
-				<strong><em>Otra alternativa</em></strong> que tenemos, cuando ya
-				tenemos 1 commit o más, o sea no lo podemos usar para revertir el primer
-				commit, es con <code>reset</code>. Pero para probar esa alternativa
-				vamos tener que agregar otro cambio antes.
-			</p>
-			<p>
-				Ahora probemos de agregar otra página a la web y linkearla, o
-				simplemente agregar un archivo nuevo y modificar el anterior que
-				creamos.
-			</p>
-			<p>
-				De paso les digo que si tienen una modificación que quieren revertir, y
-				todavía no agregaron (con <code>add</code>). Pueden ver las diferencias
-				con
-			</p>
-			<div class="sourceCode" id="cb15">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a>$ <span class="fu">git</span> diff</span></code></pre>
-			</div>
-			<p>y volver al estado anterior con</p>
-			<div class="sourceCode" id="cb16">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a>$ <span class="fu">git</span> checkout [nombre archivo]</span></code></pre>
-			</div>
-			<p>o para revertir TODAS las modificaciones</p>
-			<div class="sourceCode" id="cb17">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">git</span> checkout .</span></code></pre>
-			</div>
-			<p>
-				Una vez que tenemos el cambio hecho, vamos a agregar los cambios y
-				commitearlos como ya vimos.
-			</p>
-			<div class="sourceCode" id="cb18">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a>$ <span class="fu">git</span> add -A</span></code></pre>
-			</div>
-			<div class="sourceCode" id="cb19">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1"></a>$ <span class="fu">git</span> commit -m <span class="st">&quot;agrego nueva página&quot;</span></span></code></pre>
-			</div>
-			<p>
-				Después de eso prueben de hacer <code>git log</code> a ver qué les dice.
-			</p>
-			<p>
-				Y recuerden de tirar <code>git status</code> así van viendo el estado
-				del repositorio.
-			</p>
-			<p>Ahora podemos revertir ese commit con:</p>
-			<div class="sourceCode" id="cb20">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1"></a>$ <span class="fu">git</span> reset HEAD~1</span></code></pre>
-			</div>
-			<p>
-				Si hacemos <code>git log</code> nuestro commit desapareció, pero no se
-				preocupen, seguimos teniendo el cambio, se pueden fijar con
-				<code>git status</code>.
-			</p>
-			<h4 id="usando-la-nube">Usando la nube</h4>
-			<p>
-				Todo lo venimos manejando localmente, en nuestra compu, lo cual puede
-				ser algo aburrido. Vamos a subirlo a internet.
-			</p>
-			<ol type="1">
-				<li>Ir a <a href="https://github.com/">GitHub</a>.</li>
-				<li>
-					A la derecha arriba van a tener un botón que les va a expandir un
-					menú, y les va a decir de crear un repositorio.
-				</li>
-			</ol>
-			<figure>
-				<img
-					src="/img/tech/guia-introduccion-a-git/new-repository.png"
-					alt=""
-				/>
-				<figcaption>new repository</figcaption>
-			</figure>
-			<ol start="3" type="1">
-				<li>
-					Darle un nombre al repositorio y dejar las otras opciones como están.
-				</li>
-				<li>
-					Felicitaciones! Ahora tienen un repositorio en internet… pero está
-					vacío 👀
-				</li>
-			</ol>
-			<p>
-				El buen GitHub les da las instrucciones para vincular un repositorio
-				local al que recién crearon.
-			</p>
-			<p>Pero les voy a decir los pasos igual.</p>
-			<p>
-				Si se fijan ahora tienen una url para referenciar al repositorio. Va a
-				ser algo como
-				<code>https://github.com/normanperrin/mi-repositorio-genial.git</code>.
-			</p>
-			<p>
-				Vamos a usar esa url para vincularla con el repositorio local. Le vamos
-				a decir que suba y traiga los cambios de ahí.
-			</p>
-			<p>Cómo?</p>
-			<ol start="5" type="1">
-				<li>Posicionados en nuestro repositorio vamos a escribir:</li>
-			</ol>
-			<div class="sourceCode" id="cb21">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1"></a>$ <span class="fu">git</span> remote add origin https://github.com/[usuario]/[nombre de repositorio].git</span></code></pre>
-			</div>
-			<p>
-				Esto va a declarar la variable <code>origin</code> con el valor de la
-				url que le pasamos.
-			</p>
-			<p>Para ver a dónde quedó apuntando nuestro repositorio podemos hacer</p>
-			<div class="sourceCode" id="cb22">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1"></a>$ <span class="fu">git</span> remote show origin</span></code></pre>
-			</div>
-			<p>
-				<strong>Pero momento!</strong> Qué pasa si nos volvimos a equivocar y
-				pusimos la url mal.
-			</p>
-			<p>No hay problema, podemos pisar el valor de <code>origin</code> así</p>
-			<div class="sourceCode" id="cb23">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1"></a>$ <span class="fu">git</span> remote set-url origin https://github.com/[usuario]/[nombre de repositorio].git</span></code></pre>
-			</div>
-			<p>
-				Nos debería decir que se hace <code>fetch</code> (traer cambios) y
-				<code>push</code> (subir cambios) a la url que le pasamos.
-			</p>
-			<ol start="6" type="1">
-				<li>
-					Ahora que los tenemos referenciados, podemos
-					<strong><em>pushear</em></strong> nuestros cambios.
-				</li>
-			</ol>
-			<div class="sourceCode" id="cb24">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1"></a>$ <span class="fu">git</span> push origin master</span></code></pre>
-			</div>
-			<p>Y si alguien subió cambios, podemos traer cambios con</p>
-			<div class="sourceCode" id="cb25">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1"></a>$ <span class="fu">git</span> pull origin master</span></code></pre>
-			</div>
-			<p>
-				Si ahora nos fijamos en el repositorio remoto, ya tenemos nuestros
-				cambios subidos, el repositorio no está vacío, sino que tiene nuestro
-				código!
-			</p>
-			<p>
-				<strong>Pero momento!</strong> Qué pasa si nos equivocamos (otra vez…) y
-				subimos algo que no iba.
-			</p>
-			<p>No se preocupen, <em>tenemos un comando para arreglarlo</em>.</p>
-			<div class="sourceCode" id="cb26">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1"></a>$ <span class="fu">git</span> revert [hash]</span></code></pre>
-			</div>
-			<p>
-				Pero qué demonios es el <strong><em>hash</em></strong
-				>?
-			</p>
-			<p>
-				Es un <strong><em>código identificador del commit</em></strong
-				>. Lo podemos ver con
-			</p>
-			<div class="sourceCode" id="cb27">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1"></a>$ <span class="fu">git</span> log --oneline</span></code></pre>
-			</div>
-			<p>
-				Van a ver que aparece un código al principio de cada commit, esa es el
-				<em>hash</em>. Entonces para revertir un commit tenemos que indicar qué
-				commit queremos revertir, referenciando su <em>hash</em>.
-			</p>
-			<p>Por ejemplo si vemos algo como:</p>
-			<pre
-				class="console"
-			><code>f6069db (HEAD -&gt; master, origin/master) otro mensaje descriptivo
+			<article class="h-entry">
+				<h1 class="p-name">Introducción a Git y GitHub</h1>
+				<p><em>Última actualización: 2019/07/24 00:00:00</em></p>
+				<h2>Tabla de contenidos</h2>
+				<nav id="TOC" role="doc-toc">
+					<ul>
+						<li><a href="#introducción">Introducción</a></li>
+						<li><a href="#antes-de-empezar">Antes de empezar</a></li>
+						<li><a href="#paso-0">Paso 0</a></li>
+						<li><a href="#el-problema">El problema</a></li>
+						<li>
+							<a href="#introducción-1">Introducción</a>
+							<ul>
+								<li><a href="#versionado">Versionado</a></li>
+								<li><a href="#distribuido">Distribuido</a></li>
+								<li><a href="#repositorio-remoto">Repositorio remoto</a></li>
+								<li><a href="#repositorio-local">Repositorio local</a></li>
+								<li><a href="#juntando-las-partes">Juntando las partes</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#workshop">Workshop</a>
+							<ul>
+								<li>
+									<a href="#configuración-inicial">Configuración inicial</a>
+								</li>
+								<li><a href="#repositorio-de-cero">Repositorio de cero</a></li>
+								<li>
+									<a href="#repositorio-ya-creado">Repositorio ya creado</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#tldr">TLDR</a>
+							<ul>
+								<li><a href="#configurar-git">Configurar git</a></li>
+								<li>
+									<a href="#creando-y-clonando-un-repositorio"
+										>Creando y clonando un repositorio</a
+									>
+								</li>
+								<li>
+									<a href="#trabajando-localmente">Trabajando localmente</a>
+								</li>
+								<li>
+									<a href="#trabajando-en-la-nube">Trabajando en la nube</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#cierre">Cierre</a></li>
+					</ul>
+				</nav>
+				<div class="e-content">
+					<h2 id="introducción">Introducción</h2>
+					<p>
+						Creando para que aprendan los conceptos básicos de
+						<strong>git</strong> y <strong>GitHub</strong> así pueden manejarse
+						con facilidad subiendo código a repositorios y haciendo cambios.
+					</p>
+					<h2 id="antes-de-empezar">Antes de empezar</h2>
+					<p>Cuando vean un contenedor de código.</p>
+					<ul>
+						<li>
+							El símbolo <code>$</code> indica que es un comando de terminal. No
+							se copia.
+						</li>
+						<li>
+							El símbolo <code>#</code> indica el comienzo de un comentario. No
+							se copia (y si se copia no pasa nada).
+						</li>
+						<li>
+							Cuando hay algo rodeado entre <code>[]</code> significa que lo
+							tienen que reemplazar por lo que les diga, omitiendo los
+							corchetes.
+						</li>
+						<li>
+							Los cuadrados con código puede que tengan un scroll horizontal, si
+							no entran.
+						</li>
+					</ul>
+					<h2 id="paso-0">Paso 0</h2>
+					<p>Para empezar vamos a tener algunos requisitos previos.</p>
+					<ol type="1">
+						<li>
+							<strong>Terminal compatible con unix</strong> instalada y lista
+							para usar.
+						</li>
+						<li>
+							<strong>Conocimientos comandos básicos unix</strong>, para
+							manejarse entre archivos, crear carpetas, etc. desde la terminal
+							(si no saben tampoco es problema, pero es algo menos que
+							entender).
+						</li>
+						<li>
+							<strong>git</strong> instalado en su máquina. Pueden confirmar que
+							esté instalado escribiendo
+						</li>
+					</ol>
+					<div class="sourceCode" id="cb1">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>$ <span class="fu">git</span> --version</span></code></pre>
+					</div>
+					<ol start="4" type="1">
+						<li>Una <strong>cuenta en GitHub</strong>.</li>
+					</ol>
+					<p>Ahora sí, estamos listos para empezar.</p>
+					<h2 id="el-problema">El problema</h2>
+					<p>
+						Hubo una época en la que Google Drive no existía, o no sabía que
+						existía.
+					</p>
+					<p>
+						No sé ahora cómo serán las cosas, pero cuando iba a la secundaria,
+						hacíamos TPs, nos mandábamos los cambios por mail, o las diferentes
+						partes para que otro después una todo.
+					</p>
+					<p>Había varios problemas con esta forma de trabajar.</p>
+					<ul>
+						<li>Alguien del grupo tenía que juntar todas las partes.</li>
+						<li>No estábamos seguros de lo que se estaba trabajando.</li>
+						<li>Tampoco estábamos seguros de lo que ya se había hecho.</li>
+						<li>El resultado final no era coherente entre partes.</li>
+						<li>No hablemos de versionado…</li>
+					</ul>
+					<figure>
+						<img
+							src="/img/tech/guia-introduccion-a-git/old-version-control.png"
+							alt=""
+						/>
+						<figcaption>old version control</figcaption>
+					</figure>
+					<p>Luego llegó Google Drive.</p>
+					<p>
+						Eso nos resolvió todo para hacer TPs, incluso si alguien la pifiaba
+						y borraba algo importante, podíamos acceder a versiones anteriores
+						del archivo y arreglarlo. Además
+						<a
+							href="https://support.google.com/drive/answer/2375012?co=GENIE.Platform%3DDesktop&amp;hl=es"
+							>con algo de trabajo</a
+						>
+						se puede trabajar sin conexión y luego subir los cambios sin
+						necesidad de crear otros archivos.
+					</p>
+					<p>Lo cual es genial.</p>
+					<figure>
+						<img
+							src="/img/tech/guia-introduccion-a-git/google-drive-version-control.png"
+							alt=""
+						/>
+						<figcaption>google drive version control</figcaption>
+					</figure>
+					<p>
+						Pero trabajar un documento es distinto a un programa con muchos
+						archivos, sub carpetas, etc.
+					</p>
+					<p>
+						Estaría bueno contar con un sistema que sea como Google Drive pero
+						para carpetas, o <strong><em>repositorio</em></strong> de archivos.
+						Y que además sea simple de usar, sin necesidad de conectarse a una
+						interfaz que nos relentice este proceso…
+					</p>
+					<p>
+						Por suerte contamos con una herramienta que hace todo lo que dije y
+						mucho más.
+					</p>
+					<h2 id="introducción-1">Introducción</h2>
+					<blockquote>
+						<p>
+							<strong>git</strong> es un sistema de control de versiones,
+							distribuido.
+						</p>
+					</blockquote>
+					<p>*insertar meme de que algo no se entiende*</p>
+					<p>Vamo de a partes.</p>
+					<h3 id="versionado">Versionado</h3>
+					<p>
+						Habiendo hecho la comparación podemos entender a lo que se refiere
+						con “control de versiones”. Significa que podemos
+						<strong><em>trackear cambios</em></strong> para saber quién hizo un
+						cambio, qué modificó, permitiéndonos
+						<strong><em>volver a versiones anteriores</em></strong> si queremos.
+					</p>
+					<h3 id="distribuido">Distribuido</h3>
+					<p>
+						La parte de <strong><em>distribuido</em></strong> necesita un poco
+						más de explicación que lo anterior.
+					</p>
+					<figure>
+						<img
+							src="/img/tech/guia-introduccion-a-git/github-flow.png"
+							alt=""
+						/>
+						<figcaption>github flow</figcaption>
+					</figure>
+					<p>Vamos a explicar las partes</p>
+					<h3 id="repositorio-remoto">Repositorio remoto</h3>
+					<p>
+						Este sería el encargado de guardar todos nuestros cambios en un solo
+						lugar. En Google Drive tenemos un documento al que todos acceden
+						para leer o modificar, acá es igual pero con un repositorio. Y con
+						la leve diferencia de que no se hacen cambios directamente.
+					</p>
+					<p>Entonces si no se hacen cambios directos?</p>
+					<p>
+						Cuando queramos trabajar el repositorio remoto, vamos a tener que,
+						<strong><em>primero, copiarlo a nuestra máquina</em></strong
+						>. A esta copia en nuestra máquina la vamos a llamar
+						<a href="#repositorio-local">repositorio local</a>.
+					</p>
+					<p>
+						Para trabajar con repositorios remotos, podemos usar plataformas
+						como <strong>GitHub</strong>, Bitbucket, GitLab, u otros.
+					</p>
+					<h3 id="repositorio-local">Repositorio local</h3>
+					<p>
+						Este otro sería la copia en nuestra máquina del repositorio remoto.
+					</p>
+					<p>
+						Una vez que contamos con un repositorio local, vamos a ver que
+						podemos modificarlo como cualquier archivo. Pero los cambios no se
+						van a ver reflejados en el repositorio remoto a menos que los
+						subamos.
+					</p>
+					<p>
+						Para esta parte vamos a usar <strong>git</strong>. La herramienta
+						que nos va a ayudar a llevar cambios localmente, subirlos y traer
+						nuevos cambios.
+					</p>
+					<h3 id="juntando-las-partes">Juntando las partes</h3>
+					<p>
+						Entonces podemos decir que es distribuido porque se trabaja en
+						distintas partes, el código no está centralizado en 1 lado
+						solamente.
+					</p>
+					<p>
+						Si el día de mañana le pasa algo al servidor remoto, no hay de que
+						preocuparse, ya que tenemos una copia.
+					</p>
+					<h2 id="workshop">Workshop</h2>
+					<p>Vamos a tener 2 caminos.</p>
+					<ol type="1">
+						<li>
+							Empezar con un
+							<a href="#repositorio-de-cero">repositorio de cero</a>.
+						</li>
+						<li>
+							Empezar con un
+							<a href="#repositorio-ya-creado">repositorio ya creado</a>.
+						</li>
+					</ol>
+					<p>
+						Para los 2 casos, primero tenemos que configurar un poco
+						<strong>git</strong>.
+					</p>
+					<h3 id="configuración-inicial">Configuración inicial</h3>
+					<p>Configuro mi nombre:</p>
+					<div class="sourceCode" id="cb2">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>$ <span class="fu">git</span> config --global user.name <span class="st">&quot;[usuario github]&quot;</span> <span class="co"># Usar su nombre de usuario de GitHub</span></span></code></pre>
+					</div>
+					<p>Configuro mi mail:</p>
+					<div class="sourceCode" id="cb3">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>$ <span class="fu">git</span> config --global user.email <span class="st">&quot;[mail github]&quot;</span> <span class="co"># Usar su mail de GitHub</span></span></code></pre>
+					</div>
+					<p>Configuro mi editor por defecto</p>
+					<div class="sourceCode" id="cb4">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a>$ <span class="fu">git</span> config --global core.editor <span class="st">&quot;[comando para abrir editor]&quot;</span> <span class="co"># &quot;subl -n -w&quot; para Sublime Text o &quot;code&quot; para VSCode...</span></span></code></pre>
+					</div>
+					<p>Si quiero ver los valores que tienen puedo usar</p>
+					<div class="sourceCode" id="cb5">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a>$ <span class="fu">git</span> config --get user.name</span></code></pre>
+					</div>
+					<p>
+						Si quiero cambiar el <code>user.name</code> o
+						<code>user.email</code>, simplemente vuelvo a escribir esos comandos
+						con los valores correctos, pisando los que ya haya.
+					</p>
+					<h3 id="repositorio-de-cero">Repositorio de cero</h3>
+					<h4 id="creando-un-repositorio-local">
+						Creando un repositorio local
+					</h4>
+					<ol type="1">
+						<li>Vamos a la terminal.</li>
+						<li>Creamos una carpeta en algún lado de nuestra compu.</li>
+						<li>
+							Creamos un archivo dentro de la carpeta y le ponemos algún
+							contenido. Acá hay un contenido de ejemplo:
+							<a
+								href="https://raw.githubusercontent.com/KeenRivals/bestmotherfucking.website/master/index.html"
+								>contenido gratis!</a
+							>. Pueden hacer <code>Ctrl + A</code> para seleccionar todo, y lo
+							copian y pegan (copiar: <code>Ctrl + C</code>, pegar:
+							<code>Ctrl + V</code>) en el archivo <code>index.html</code> que
+							creen.
+						</li>
+						<li>
+							Ahora que tenemos un proyectito metámosle <strong>git</strong>.
+						</li>
+						<li>
+							<strong>Inicializamos</strong> un repositorio con este comando:
+						</li>
+					</ol>
+					<div class="sourceCode" id="cb6">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a>$ <span class="fu">git</span> init</span></code></pre>
+					</div>
+					<p>
+						Quizás no nos dimos cuenta, pero se nos creó una carpeta oculta
+						llamada <code>.git/</code>. Acá se va a guardar el historial de
+						cambios, así que es importante no borrarla. Podemos ver los archivos
+						y carpetas ocultas con <code>ls -a</code>.
+					</p>
+					<h4 id="viendo-el-estado">Viendo el estado</h4>
+					<p>Un comando que vamos a usar todo el tiempo:</p>
+					<div class="sourceCode" id="cb7">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1"></a>$ <span class="fu">git</span> status</span></code></pre>
+					</div>
+					<p>
+						Nos dice el <strong><em>estado de nuestro repositorio</em></strong
+						>. Cada vez que tiramos un comando podemos cambiar el estado del
+						repositorio, para verlo lo hacemos con <code>status</code>.
+					</p>
+					<p>
+						Generalmente queremos asegurarnos de hacer las cosas bien, y para no
+						pifiarla vemos el estado antes de hacer algo, por eso se usa
+						bastante.
+					</p>
+					<p>
+						Habiendo tirado el comando, nos va a decir que no hay cambios que
+						hacer, que hay un archivo sin seguimiento, porque es nuevo, no tiene
+						historial.
+					</p>
+					<h4 id="agregando-un-cambio">Agregando un cambio</h4>
+					<p>
+						Tanto para agregar un cambio, archivo nuevo, borrado, etc. vamos a
+						usar
+					</p>
+					<div class="sourceCode" id="cb8">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1"></a>$ <span class="fu">git</span> add [nombre_archivo]</span></code></pre>
+					</div>
+					<p>
+						Ahora, es importante entender que podemos tener un cambio en 3
+						estados, uno cuando está <strong><em>modificado</em></strong> y sin
+						agregar, otro <strong><em>agregado</em></strong> y por último
+						<strong><em>“commiteado”</em></strong
+						>.
+					</p>
+					<figure>
+						<img src="/img/tech/guia-introduccion-a-git/estados.png" alt="" />
+						<figcaption>estados de un cambio</figcaption>
+					</figure>
+					<p>
+						El estado commiteado lo vamos a ver después, pero sería como
+						asegurar el cambio que agregamos, sumándole un mensaje.
+					</p>
+					<p>Así que al agregar el cambio no estamos confirmándolo todavía.</p>
+					<p>
+						También está bueno tener en cuenta que yo puedo agregar un archivo,
+						modificarlo y agregarlo de nuevo.
+					</p>
+					<p>
+						Podemos agregar archivo por archivo… o usar un <code>*</code> para
+						indicarle que queremos agregar todos los archivos.
+					</p>
+					<div class="sourceCode" id="cb9">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a>$ <span class="fu">git</span> add -A</span></code></pre>
+					</div>
+					<p>
+						<strong>Pero momento!</strong> Qué pasa si nos equivocamos y
+						agregamos un archivo que no iba.
+					</p>
+					<p>
+						A no preocuparse,
+						<em>tenemos un comando para revertir el que les acabo de enseñar</em
+						>:
+					</p>
+					<div class="sourceCode" id="cb10">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a>$ <span class="fu">git</span> reset [nombre_archivo]</span></code></pre>
+					</div>
+					<p>Si no especificamos archivo nos va a hacer reset de todo.</p>
+					<h4 id="confirmando-el-cambio">Confirmando el cambio</h4>
+					<p>
+						Al confirmar el cambio vamos a agarrar todos los cambios a agregar
+						que pusimos y unir todos esos cambios en 1 commit, que sería como
+						una contribución.
+					</p>
+					<p>Para eso lo vamos a hacer con:</p>
+					<div class="sourceCode" id="cb11">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a>$ <span class="fu">git</span> commit -m <span class="st">&quot;[un mensaje descriptivo]&quot;</span></span></code></pre>
+					</div>
+					<p>
+						Por favor, que el mensaje sea descriptivo… si le ponemos como
+						mensaje <em>“foo”</em>, <em>“bar”</em>, cuando veamos el historial
+						de cambios no vamos a entender nada. O sus compañeros los van a
+						mirar mal.
+					</p>
+					<p>Y cómo vemos el historial de cambios (commits)?</p>
+					<p><em>Hay un comando para eso.</em></p>
+					<div class="sourceCode" id="cb12">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a>$ <span class="fu">git</span> log</span></code></pre>
+					</div>
+					<p>
+						Si queremos un mensaje más conciso le podemos agregar la opción
+						<code>--oneline</code>.
+					</p>
+					<div class="sourceCode" id="cb13">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a>$ <span class="fu">git</span> log --oneline</span></code></pre>
+					</div>
+					<p>
+						<strong>Pero momento!</strong> Qué pasa si nos equivocamos y
+						commiteamos algo equivocado.
+					</p>
+					<p>
+						A no preocuparse, <em>tenemos unos comandos para arreglarlo</em>.
+					</p>
+					<p>
+						Si queremos pisar el commit podemos seguir los siguientes pasos:
+					</p>
+					<ol type="1">
+						<li>Modificar lo que queramos, borrar, o lo que queramos hacer.</li>
+						<li>Agregar nuestros cambios <code>git add *</code>.</li>
+						<li>Pisar nuestro commit:</li>
+					</ol>
+					<div class="sourceCode" id="cb14">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a>$ <span class="fu">git</span> commit --amend</span></code></pre>
+					</div>
+					<p>
+						Esto nos va a abrir el editor por defecto que hayamos elegido.
+						Podemos cambiarle el nombre al commit si nos equivocamos en algo,
+						salvar el archivo, y estamos listos. Pero solo modifiquen la primer
+						línea, lo otro déjenlo igual.
+					</p>
+					<p>
+						Difícil? Aunque no lo crean no mucha gente que usa git sabe de ese
+						comando, pero es súper útil.
+					</p>
+					<p>
+						<strong><em>Otra alternativa</em></strong> que tenemos, cuando ya
+						tenemos 1 commit o más, o sea no lo podemos usar para revertir el
+						primer commit, es con <code>reset</code>. Pero para probar esa
+						alternativa vamos tener que agregar otro cambio antes.
+					</p>
+					<p>
+						Ahora probemos de agregar otra página a la web y linkearla, o
+						simplemente agregar un archivo nuevo y modificar el anterior que
+						creamos.
+					</p>
+					<p>
+						De paso les digo que si tienen una modificación que quieren
+						revertir, y todavía no agregaron (con <code>add</code>). Pueden ver
+						las diferencias con
+					</p>
+					<div class="sourceCode" id="cb15">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a>$ <span class="fu">git</span> diff</span></code></pre>
+					</div>
+					<p>y volver al estado anterior con</p>
+					<div class="sourceCode" id="cb16">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a>$ <span class="fu">git</span> checkout [nombre archivo]</span></code></pre>
+					</div>
+					<p>o para revertir TODAS las modificaciones</p>
+					<div class="sourceCode" id="cb17">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">git</span> checkout .</span></code></pre>
+					</div>
+					<p>
+						Una vez que tenemos el cambio hecho, vamos a agregar los cambios y
+						commitearlos como ya vimos.
+					</p>
+					<div class="sourceCode" id="cb18">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a>$ <span class="fu">git</span> add -A</span></code></pre>
+					</div>
+					<div class="sourceCode" id="cb19">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1"></a>$ <span class="fu">git</span> commit -m <span class="st">&quot;agrego nueva página&quot;</span></span></code></pre>
+					</div>
+					<p>
+						Después de eso prueben de hacer <code>git log</code> a ver qué les
+						dice.
+					</p>
+					<p>
+						Y recuerden de tirar <code>git status</code> así van viendo el
+						estado del repositorio.
+					</p>
+					<p>Ahora podemos revertir ese commit con:</p>
+					<div class="sourceCode" id="cb20">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1"></a>$ <span class="fu">git</span> reset HEAD~1</span></code></pre>
+					</div>
+					<p>
+						Si hacemos <code>git log</code> nuestro commit desapareció, pero no
+						se preocupen, seguimos teniendo el cambio, se pueden fijar con
+						<code>git status</code>.
+					</p>
+					<h4 id="usando-la-nube">Usando la nube</h4>
+					<p>
+						Todo lo venimos manejando localmente, en nuestra compu, lo cual
+						puede ser algo aburrido. Vamos a subirlo a internet.
+					</p>
+					<ol type="1">
+						<li>Ir a <a href="https://github.com/">GitHub</a>.</li>
+						<li>
+							A la derecha arriba van a tener un botón que les va a expandir un
+							menú, y les va a decir de crear un repositorio.
+						</li>
+					</ol>
+					<figure>
+						<img
+							src="/img/tech/guia-introduccion-a-git/new-repository.png"
+							alt=""
+						/>
+						<figcaption>new repository</figcaption>
+					</figure>
+					<ol start="3" type="1">
+						<li>
+							Darle un nombre al repositorio y dejar las otras opciones como
+							están.
+						</li>
+						<li>
+							Felicitaciones! Ahora tienen un repositorio en internet… pero está
+							vacío 👀
+						</li>
+					</ol>
+					<p>
+						El buen GitHub les da las instrucciones para vincular un repositorio
+						local al que recién crearon.
+					</p>
+					<p>Pero les voy a decir los pasos igual.</p>
+					<p>
+						Si se fijan ahora tienen una url para referenciar al repositorio. Va
+						a ser algo como
+						<code
+							>https://github.com/normanperrin/mi-repositorio-genial.git</code
+						>.
+					</p>
+					<p>
+						Vamos a usar esa url para vincularla con el repositorio local. Le
+						vamos a decir que suba y traiga los cambios de ahí.
+					</p>
+					<p>Cómo?</p>
+					<ol start="5" type="1">
+						<li>Posicionados en nuestro repositorio vamos a escribir:</li>
+					</ol>
+					<div class="sourceCode" id="cb21">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1"></a>$ <span class="fu">git</span> remote add origin https://github.com/[usuario]/[nombre de repositorio].git</span></code></pre>
+					</div>
+					<p>
+						Esto va a declarar la variable <code>origin</code> con el valor de
+						la url que le pasamos.
+					</p>
+					<p>
+						Para ver a dónde quedó apuntando nuestro repositorio podemos hacer
+					</p>
+					<div class="sourceCode" id="cb22">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1"></a>$ <span class="fu">git</span> remote show origin</span></code></pre>
+					</div>
+					<p>
+						<strong>Pero momento!</strong> Qué pasa si nos volvimos a equivocar
+						y pusimos la url mal.
+					</p>
+					<p>
+						No hay problema, podemos pisar el valor de <code>origin</code> así
+					</p>
+					<div class="sourceCode" id="cb23">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1"></a>$ <span class="fu">git</span> remote set-url origin https://github.com/[usuario]/[nombre de repositorio].git</span></code></pre>
+					</div>
+					<p>
+						Nos debería decir que se hace <code>fetch</code> (traer cambios) y
+						<code>push</code> (subir cambios) a la url que le pasamos.
+					</p>
+					<ol start="6" type="1">
+						<li>
+							Ahora que los tenemos referenciados, podemos
+							<strong><em>pushear</em></strong> nuestros cambios.
+						</li>
+					</ol>
+					<div class="sourceCode" id="cb24">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1"></a>$ <span class="fu">git</span> push origin master</span></code></pre>
+					</div>
+					<p>Y si alguien subió cambios, podemos traer cambios con</p>
+					<div class="sourceCode" id="cb25">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1"></a>$ <span class="fu">git</span> pull origin master</span></code></pre>
+					</div>
+					<p>
+						Si ahora nos fijamos en el repositorio remoto, ya tenemos nuestros
+						cambios subidos, el repositorio no está vacío, sino que tiene
+						nuestro código!
+					</p>
+					<p>
+						<strong>Pero momento!</strong> Qué pasa si nos equivocamos (otra
+						vez…) y subimos algo que no iba.
+					</p>
+					<p>No se preocupen, <em>tenemos un comando para arreglarlo</em>.</p>
+					<div class="sourceCode" id="cb26">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1"></a>$ <span class="fu">git</span> revert [hash]</span></code></pre>
+					</div>
+					<p>
+						Pero qué demonios es el <strong><em>hash</em></strong
+						>?
+					</p>
+					<p>
+						Es un <strong><em>código identificador del commit</em></strong
+						>. Lo podemos ver con
+					</p>
+					<div class="sourceCode" id="cb27">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1"></a>$ <span class="fu">git</span> log --oneline</span></code></pre>
+					</div>
+					<p>
+						Van a ver que aparece un código al principio de cada commit, esa es
+						el <em>hash</em>. Entonces para revertir un commit tenemos que
+						indicar qué commit queremos revertir, referenciando su
+						<em>hash</em>.
+					</p>
+					<p>Por ejemplo si vemos algo como:</p>
+					<pre
+						class="console"
+					><code>f6069db (HEAD -&gt; master, origin/master) otro mensaje descriptivo
 87c0987 mensaje descriptivo</code></pre>
-			<p>Y queremos revertir el segundo commit, tendríamos que hacer</p>
-			<div class="sourceCode" id="cb29">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1"></a>$ <span class="fu">git</span> revert f6069db</span></code></pre>
-			</div>
-			<p>
-				Luego elegir un nombre para el commit que va a revertir el segundo
-				commit, guardar el archivo, cerrar el editor.
-			</p>
-			<p>
-				Y si nos fijamos ahora con <code>git log --oneline</code> vamos a ver
-				que tenemos 3 commits en vez de 2. Y que el 3ro revierte el 2do commit.
-			</p>
-			<p>
-				Así que una vez commiteado pusheamos los cambios para que el repositorio
-				remoto tome el cambio.
-			</p>
-			<h3 id="repositorio-ya-creado">Repositorio ya creado</h3>
-			<p>
-				Si tenemos el repositorio remoto creado, con commits. En vez de crear
-				uno nuevo deberíamos copiarlo a nuestra máquina, o clonarlo. Así que nos
-				vamos a salvar de hacer <code>git init</code> y toda la cosa con
-				<code>git remote</code>.
-			</p>
-			<p>Para esta parte vamos a seguir estos pasos:</p>
-			<ol type="1">
-				<li>Vamos a la terminal.</li>
-				<li>Vamos a un directorio vacío.</li>
-				<li>Clonamos el repositorio remoto a nuestra máquina.</li>
-			</ol>
-			<div class="sourceCode" id="cb30">
-				<pre
-					class="sourceCode bash"
-				><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1"></a>$ <span class="fu">git</span> clone https://github.com/[usuario]/[nombre del repositorio].git</span></code></pre>
-			</div>
-			<p>
-				Van a ver que se creó una carpeta en donde estaban. Esa carpeta es su
-				repositorio local.
-			</p>
-			<p>
-				Y ya está, si entramos a la carpeta del repositorio y nos fijamos con
-				<code>git remote show origin</code> a dónde apunta, ya nos dice que está
-				apuntando a la url que se usó para clonar.
-			</p>
-			<p>
-				Así que de acá en adelante pueden seguir los pasos de
-				<a href="#viendo-el-estado">viendo el estado</a>.
-			</p>
-			<h2 id="tldr">TLDR</h2>
-			<h3 id="configurar-git">Configurar git</h3>
-			<table>
-				<colgroup>
-					<col style="width: 63%" />
-					<col style="width: 36%" />
-				</colgroup>
-				<thead>
-					<tr class="header">
-						<th>Comando</th>
-						<th>Descripción</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd">
-						<td><code>git config --get user.name</code></td>
-						<td>Ver valor de configuración</td>
-					</tr>
-					<tr class="even">
-						<td>
-							<code>git config --global user.name "[usuario github]"</code>
-						</td>
-						<td>Configurar nombre usuario</td>
-					</tr>
-					<tr class="odd">
-						<td>
-							<code>git config --global user.email "[email github]"</code>
-						</td>
-						<td>Configurar email usuario</td>
-					</tr>
-					<tr class="even">
-						<td><code>git config --global core.editor "code"</code></td>
-						<td>Configurar editor por defecto</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="creando-y-clonando-un-repositorio">
-				Creando y clonando un repositorio
-			</h3>
-			<table>
-				<colgroup>
-					<col style="width: 61%" />
-					<col style="width: 38%" />
-				</colgroup>
-				<thead>
-					<tr class="header">
-						<th>Comando</th>
-						<th>Descripción</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd">
-						<td><code>git init</code></td>
-						<td>Inicializa un repositorio git</td>
-					</tr>
-					<tr class="even">
-						<td>
-							<code
-								>git clone https://github.com/[usuario]/[nombre del
-								repositorio].git</code
-							>
-						</td>
-						<td>Crea una copia local del repositorio remoto</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="trabajando-localmente">Trabajando localmente</h3>
-			<table>
-				<thead>
-					<tr class="header">
-						<th>Comando</th>
-						<th>Descripción</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd">
-						<td><code>git status</code></td>
-						<td>Ver estado repositorio</td>
-					</tr>
-					<tr class="even">
-						<td><code>git checkout [nombre archivo]</code></td>
-						<td>Revertir modificación</td>
-					</tr>
-					<tr class="odd">
-						<td><code>git diff</code></td>
-						<td>Ver diferencia actual versión y modificación</td>
-					</tr>
-					<tr class="even">
-						<td><code>git add [nombre archivo]</code></td>
-						<td>Agregar un cambio</td>
-					</tr>
-					<tr class="odd">
-						<td><code>git reset [nombre archivo]</code></td>
-						<td>Revertir un cambio</td>
-					</tr>
-					<tr class="even">
-						<td><code>git commit -m "[mensaje]"</code></td>
-						<td>Agregar un commit</td>
-					</tr>
-					<tr class="odd">
-						<td><code>git commit --amend</code></td>
-						<td>Pisar un commit</td>
-					</tr>
-					<tr class="even">
-						<td><code>git log</code></td>
-						<td>Ver historial commits</td>
-					</tr>
-					<tr class="odd">
-						<td><code>git reset HEAD~1</code></td>
-						<td>Sacar último cambio de estado commiteado, a modificado</td>
-					</tr>
-					<tr class="even">
-						<td><code>git revert [hash]</code></td>
-						<td>Revertir un commit</td>
-					</tr>
-				</tbody>
-			</table>
-			<h3 id="trabajando-en-la-nube">Trabajando en la nube</h3>
-			<table>
-				<colgroup>
-					<col style="width: 61%" />
-					<col style="width: 38%" />
-				</colgroup>
-				<thead>
-					<tr class="header">
-						<th>Comando</th>
-						<th>Descripción</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="odd">
-						<td><code>git remote show origin</code></td>
-						<td>Ver valor de variable origin</td>
-					</tr>
-					<tr class="even">
-						<td>
-							<code
-								>git remote add origin [https://github.com/[usuario]/[nombre del
-								repositorio].git]</code
-							>
-						</td>
-						<td>Agregar variabl origin</td>
-					</tr>
-					<tr class="odd">
-						<td>
-							<code
-								>git remote set-url origin [https://github.com/[usuario]/[nombre
-								del repositorio].git]</code
-							>
-						</td>
-						<td>Pisar variable origin</td>
-					</tr>
-					<tr class="even">
-						<td><code>git remote show origin</code></td>
-						<td>Ver a dónde sube y de dónde trae cambios el repositorio</td>
-					</tr>
-					<tr class="odd">
-						<td><code>git push origin master</code></td>
-						<td>Subir commit al repositorio remoto</td>
-					</tr>
-					<tr class="even">
-						<td><code>git pull origin master</code></td>
-						<td>Traer cambios del repositorio remoto</td>
-					</tr>
-				</tbody>
-			</table>
-			<h2 id="cierre">Cierre</h2>
-			<p>Fue un viaje largo.</p>
-			<p>
-				Quedan algunos temas que ver como branches, resolución de conflictos y
-				flujo de trabajo con GitHub, pero creo que por hoy es suficiente.
-			</p>
-			<p>
-				Solo comentar que, afortunadamente, <strong>git</strong> es una
-				herramienta muy popular, y como esta guía, hay muchas más que explica
-				cómo usarlo, juegos interactivos, cheatsheets, y es fácil conseguir
-				ayuda si tenemos un problema.
-			</p>
-			<p>
-				A mi me pueden encontrar en mi
-				<a href="https://twitter.com/normanperrinok/">twitter</a> donde subo
-				cosas random. O mejor, pueden unirse al
-				<a href="https://freecodecampba.org/chat/"
-					>slack de Free Code Camp BA</a
-				>
-				donde no solo yo estoy para ayudar, sino que un montón de otras
-				personas.
-			</p>
-			<p>Por último les dejo algunos recursos:</p>
-			<ul>
-				<li>
-					<a href="https://try.github.io/">Un montón de recursos en 1 página</a
-					>.
-				</li>
-				<li>
-					<a href="https://guide.freecodecamp.org/git/"
-						>Ejercicios de Free Code Camp</a
-					>.
-				</li>
-				<li>
-					<a href="https://youtu.be/4fbzjJH5LIQ/">Charla introductoria a git</a
-					>.
-				</li>
-				<li>
-					<a
-						href="https://github.com/NormanPerrin/nperrin/blob/master/data/tech/2019-05-18-guia-introduccion-a-git.md"
-						>Repositorio con este doc</a
-					>.
-				</li>
-			</ul>
+					<p>Y queremos revertir el segundo commit, tendríamos que hacer</p>
+					<div class="sourceCode" id="cb29">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1"></a>$ <span class="fu">git</span> revert f6069db</span></code></pre>
+					</div>
+					<p>
+						Luego elegir un nombre para el commit que va a revertir el segundo
+						commit, guardar el archivo, cerrar el editor.
+					</p>
+					<p>
+						Y si nos fijamos ahora con <code>git log --oneline</code> vamos a
+						ver que tenemos 3 commits en vez de 2. Y que el 3ro revierte el 2do
+						commit.
+					</p>
+					<p>
+						Así que una vez commiteado pusheamos los cambios para que el
+						repositorio remoto tome el cambio.
+					</p>
+					<h3 id="repositorio-ya-creado">Repositorio ya creado</h3>
+					<p>
+						Si tenemos el repositorio remoto creado, con commits. En vez de
+						crear uno nuevo deberíamos copiarlo a nuestra máquina, o clonarlo.
+						Así que nos vamos a salvar de hacer <code>git init</code> y toda la
+						cosa con <code>git remote</code>.
+					</p>
+					<p>Para esta parte vamos a seguir estos pasos:</p>
+					<ol type="1">
+						<li>Vamos a la terminal.</li>
+						<li>Vamos a un directorio vacío.</li>
+						<li>Clonamos el repositorio remoto a nuestra máquina.</li>
+					</ol>
+					<div class="sourceCode" id="cb30">
+						<pre
+							class="sourceCode bash"
+						><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1"></a>$ <span class="fu">git</span> clone https://github.com/[usuario]/[nombre del repositorio].git</span></code></pre>
+					</div>
+					<p>
+						Van a ver que se creó una carpeta en donde estaban. Esa carpeta es
+						su repositorio local.
+					</p>
+					<p>
+						Y ya está, si entramos a la carpeta del repositorio y nos fijamos
+						con <code>git remote show origin</code> a dónde apunta, ya nos dice
+						que está apuntando a la url que se usó para clonar.
+					</p>
+					<p>
+						Así que de acá en adelante pueden seguir los pasos de
+						<a href="#viendo-el-estado">viendo el estado</a>.
+					</p>
+					<h2 id="tldr">TLDR</h2>
+					<h3 id="configurar-git">Configurar git</h3>
+					<table>
+						<colgroup>
+							<col style="width: 63%" />
+							<col style="width: 36%" />
+						</colgroup>
+						<thead>
+							<tr class="header">
+								<th>Comando</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="odd">
+								<td><code>git config --get user.name</code></td>
+								<td>Ver valor de configuración</td>
+							</tr>
+							<tr class="even">
+								<td>
+									<code>git config --global user.name "[usuario github]"</code>
+								</td>
+								<td>Configurar nombre usuario</td>
+							</tr>
+							<tr class="odd">
+								<td>
+									<code>git config --global user.email "[email github]"</code>
+								</td>
+								<td>Configurar email usuario</td>
+							</tr>
+							<tr class="even">
+								<td><code>git config --global core.editor "code"</code></td>
+								<td>Configurar editor por defecto</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 id="creando-y-clonando-un-repositorio">
+						Creando y clonando un repositorio
+					</h3>
+					<table>
+						<colgroup>
+							<col style="width: 61%" />
+							<col style="width: 38%" />
+						</colgroup>
+						<thead>
+							<tr class="header">
+								<th>Comando</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="odd">
+								<td><code>git init</code></td>
+								<td>Inicializa un repositorio git</td>
+							</tr>
+							<tr class="even">
+								<td>
+									<code
+										>git clone https://github.com/[usuario]/[nombre del
+										repositorio].git</code
+									>
+								</td>
+								<td>Crea una copia local del repositorio remoto</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 id="trabajando-localmente">Trabajando localmente</h3>
+					<table>
+						<thead>
+							<tr class="header">
+								<th>Comando</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="odd">
+								<td><code>git status</code></td>
+								<td>Ver estado repositorio</td>
+							</tr>
+							<tr class="even">
+								<td><code>git checkout [nombre archivo]</code></td>
+								<td>Revertir modificación</td>
+							</tr>
+							<tr class="odd">
+								<td><code>git diff</code></td>
+								<td>Ver diferencia actual versión y modificación</td>
+							</tr>
+							<tr class="even">
+								<td><code>git add [nombre archivo]</code></td>
+								<td>Agregar un cambio</td>
+							</tr>
+							<tr class="odd">
+								<td><code>git reset [nombre archivo]</code></td>
+								<td>Revertir un cambio</td>
+							</tr>
+							<tr class="even">
+								<td><code>git commit -m "[mensaje]"</code></td>
+								<td>Agregar un commit</td>
+							</tr>
+							<tr class="odd">
+								<td><code>git commit --amend</code></td>
+								<td>Pisar un commit</td>
+							</tr>
+							<tr class="even">
+								<td><code>git log</code></td>
+								<td>Ver historial commits</td>
+							</tr>
+							<tr class="odd">
+								<td><code>git reset HEAD~1</code></td>
+								<td>Sacar último cambio de estado commiteado, a modificado</td>
+							</tr>
+							<tr class="even">
+								<td><code>git revert [hash]</code></td>
+								<td>Revertir un commit</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 id="trabajando-en-la-nube">Trabajando en la nube</h3>
+					<table>
+						<colgroup>
+							<col style="width: 61%" />
+							<col style="width: 38%" />
+						</colgroup>
+						<thead>
+							<tr class="header">
+								<th>Comando</th>
+								<th>Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="odd">
+								<td><code>git remote show origin</code></td>
+								<td>Ver valor de variable origin</td>
+							</tr>
+							<tr class="even">
+								<td>
+									<code
+										>git remote add origin [https://github.com/[usuario]/[nombre
+										del repositorio].git]</code
+									>
+								</td>
+								<td>Agregar variabl origin</td>
+							</tr>
+							<tr class="odd">
+								<td>
+									<code
+										>git remote set-url origin
+										[https://github.com/[usuario]/[nombre del
+										repositorio].git]</code
+									>
+								</td>
+								<td>Pisar variable origin</td>
+							</tr>
+							<tr class="even">
+								<td><code>git remote show origin</code></td>
+								<td>Ver a dónde sube y de dónde trae cambios el repositorio</td>
+							</tr>
+							<tr class="odd">
+								<td><code>git push origin master</code></td>
+								<td>Subir commit al repositorio remoto</td>
+							</tr>
+							<tr class="even">
+								<td><code>git pull origin master</code></td>
+								<td>Traer cambios del repositorio remoto</td>
+							</tr>
+						</tbody>
+					</table>
+					<h2 id="cierre">Cierre</h2>
+					<p>Fue un viaje largo.</p>
+					<p>
+						Quedan algunos temas que ver como branches, resolución de conflictos
+						y flujo de trabajo con GitHub, pero creo que por hoy es suficiente.
+					</p>
+					<p>
+						Solo comentar que, afortunadamente, <strong>git</strong> es una
+						herramienta muy popular, y como esta guía, hay muchas más que
+						explica cómo usarlo, juegos interactivos, cheatsheets, y es fácil
+						conseguir ayuda si tenemos un problema.
+					</p>
+					<p>
+						A mi me pueden encontrar en mi
+						<a href="https://twitter.com/normanperrinok/">twitter</a> donde subo
+						cosas random. O mejor, pueden unirse al
+						<a href="https://freecodecampba.org/chat/"
+							>slack de Free Code Camp BA</a
+						>
+						donde no solo yo estoy para ayudar, sino que un montón de otras
+						personas.
+					</p>
+					<p>Por último les dejo algunos recursos:</p>
+					<ul>
+						<li>
+							<a href="https://try.github.io/"
+								>Un montón de recursos en 1 página</a
+							>.
+						</li>
+						<li>
+							<a href="https://guide.freecodecamp.org/git/"
+								>Ejercicios de Free Code Camp</a
+							>.
+						</li>
+						<li>
+							<a href="https://youtu.be/4fbzjJH5LIQ/"
+								>Charla introductoria a git</a
+							>.
+						</li>
+						<li>
+							<a
+								href="https://github.com/NormanPerrin/nperrin/blob/master/data/tech/2019-05-18-guia-introduccion-a-git.md"
+								>Repositorio con este doc</a
+							>.
+						</li>
+					</ul>
+				</div>
+			</article>
 		</main>
 		<footer>
-			<div class="h-card hcard vcard" style="display:none;">
+			<div class="h-card p-author hcard vcard" style="display:none;">
 				<img
 					rel="me"
 					class="u-photo"

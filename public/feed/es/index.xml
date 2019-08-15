@@ -13,8 +13,71 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Sun, 11 Aug 2019 16:27:19 -0300</lastBuildDate>
+		<lastBuildDate>Thu, 15 Aug 2019 12:40:17 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/es/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Analista programador</title>
+			<link>https://nperrin.io/es/trabajo/snoop-consulting</link>
+			<description>Trabajo como Analista programador en Snoop Consulting</description>
+			<category>Trabajo</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/snoop-consulting</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Profesor</title>
+			<link>https://nperrin.io/es/trabajo/puerta-18</link>
+			<description>Trabajo como profesor en Puerta 18</description>
+			<category>Trabajo</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/puerta-18</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Programador Fullstack</title>
+			<link>https://nperrin.io/es/trabajo/novit</link>
+			<description>Trabajo como programador Fullstack en Novit</description>
+			<category>Trabajo</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/novit</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Programador Fullstack</title>
+			<link>https://nperrin.io/es/trabajo/freelance</link>
+			<description>Trabajo como Programador Fullstack independiente</description>
+			<category>Trabajo</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/freelance</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Colaborador</title>
+			<link>https://nperrin.io/es/trabajo/comunidad-it</link>
+			<description>Mi trabajo como colaborador en Comunidad IT</description>
+			<category>Trabajo</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/comunidad-it</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Acerca de</title>
+			<link>https://nperrin.io/es/acerca-de</link>
+			<description>Información acerca de Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/acerca-de</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Mejoras</title>
+			<link>https://nperrin.io/es/mejoras</link>
+			<description>Cosas que quiero mejorar del sitio</description>
+			<category>Main</category>
+			<pubDate>Sun, 11 Aug 2019 19:21:12 -0300</pubDate>
+			<guid>https://nperrin.io/es/mejoras</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Inicio</title>
 			<link>https://nperrin.io/es</link>
@@ -31,69 +94,6 @@
 			<category>Trabajo</category>
 			<pubDate>Sat, 10 Aug 2019 16:25:34 -0300</pubDate>
 			<guid>https://nperrin.io/es/trabajo/nobility</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Tech</title>
-			<link>https://nperrin.io/es/tech</link>
-			<description>Guías, machetes, explicaciones, cosas relacionadas a la tecnología y proyectos</description>
-			<category>Tech</category>
-			<pubDate>Sat, 10 Aug 2019 16:24:36 -0300</pubDate>
-			<guid>https://nperrin.io/es/tech</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Artículo</title>
-			<link>https://nperrin.io/es/articulo</link>
-			<description>Pensamientos and reflexiones que tuve en algún momento</description>
-			<category>Articulo</category>
-			<pubDate>Sat, 10 Aug 2019 16:22:48 -0300</pubDate>
-			<guid>https://nperrin.io/es/articulo</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Mejoras</title>
-			<link>https://nperrin.io/es/mejoras</link>
-			<description>Cosas que quiero mejorar del sitio</description>
-			<category>Main</category>
-			<pubDate>Sat, 10 Aug 2019 16:20:14 -0300</pubDate>
-			<guid>https://nperrin.io/es/mejoras</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Pendientes</title>
-			<link>https://nperrin.io/es/pendientes</link>
-			<description>Cosas que quiero hacer</description>
-			<category>Main</category>
-			<pubDate>Sat, 10 Aug 2019 16:16:53 -0300</pubDate>
-			<guid>https://nperrin.io/es/pendientes</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Acerca de</title>
-			<link>https://nperrin.io/es/acerca-de</link>
-			<description>Información acerca de Norman Perrin</description>
-			<category>Main</category>
-			<pubDate>Sat, 10 Aug 2019 16:02:11 -0300</pubDate>
-			<guid>https://nperrin.io/es/acerca-de</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Por qué usar RSS feed</title>
-			<link>https://nperrin.io/es/articulo/por-que-usar-rss-feed</link>
-			<description>Estuve usando RSS feed por un mes ya. Le veo algunos beneficios que quiero compartir</description>
-			<category>Articulo</category>
-			<pubDate>Tue, 30 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/articulo/por-que-usar-rss-feed</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Gracias</title>
-			<link>https://nperrin.io/es/gracias</link>
-			<description>Merecida lista de agradecimiento</description>
-			<category>Main</category>
-			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/gracias</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 	</channel>

@@ -104,155 +104,163 @@
 			</div>
 		</header>
 		<main>
-			<h1>Por qué usar RSS feed</h1>
-			<p><em>Última actualización: 2019/07/30 00:00:00</em></p>
-			<p>
-				Estuve usando RSS feed por un mes ya. Le veo algunos beneficios que
-				quiero compartir
-			</p>
-			<p>
-				Pero primero, puede que no estés familiarizado con lo que es, así que
-				una explicación:
-			</p>
-			<h2 id="qué-es">Qué es?</h2>
-			<p>
-				RSS (Really Simple Syndication) es una manera de compartir
-				actualizaciones de un sitio de forma estandarizada.
-			</p>
-			<p>La forma en la que funciona es muy simple.</p>
-			<p>Hay archivos RSS y clientes.</p>
-			<h3 id="archivos-rss">Archivos RSS</h3>
-			<p>
-				Si querés tener uno, primero tenés que tener en cuenta cierto
-				<a href="https://validator.w3.org/feed/docs/rss2.html">formato</a> con
-				la información que querés compartir. Ese archivo va a ser actualizado
-				cuando haya algún cambio en el sitio. Un ejemplo común es de actualizar
-				el archivo cuando se agrega un nuevo artículo en la página.
-			</p>
-			<p>
-				Tenés que subir ese arhivo a un dominio tuyo, como
-				<a href="/es/feed/index.xml"
-					><code>https:nperrin.io/feed/index.xml</code></a
-				>, y asegurarte de actualizarlo.
-			</p>
-			<p>
-				Muchos sitios exponen sus archivos RSS. Podés tener tu lista de sitios
-				de interés y obtener actualizaciones de ellos con un cliente RSS, todo
-				en un lugar y sabiendo a qué estás subscripto, a diferencia de una
-				subscripción vía e-mail.
-			</p>
-			<h3 id="clientes-rss">Clientes RSS</h3>
-			<p>
-				Los clientes RSS consultan los archivos RSS por su url, cada X tiempo.
-				Verifican si hubo alguna actualización, si hubo, muestra una indicación
-				de eso, quizás un artículo fue agregado, entonces podrías saber que hay
-				nuevo contenido para consumir.
-			</p>
-			<h2 id="lo-bien">Lo bien</h2>
-			<h3 id="todo-en-un-lugar">Todo en un lugar</h3>
-			<p>
-				No tenés que ir a diferentes plataformas, que siguen tu comportamiento
-				en internet y te muestran publicidades. Tenés todo desde el cliente RSS.
-			</p>
-			<h3 id="implementación">Implementación</h3>
-			<p>
-				Como creador de contenido, si querés notificar a tus subscriptores de
-				una actualización, solamente tenés que modificar el archivo RSS. Es muy
-				simple de implementar.
-			</p>
-			<h3 id="sabés-la-fuente">Sabés la fuente</h3>
-			<p>Quizás es algo particular mío.</p>
-			<p>
-				Leyendo noticias en twitter puede que me encuentre con una url random de
-				una noticia, voy a leerla y seguir a lo mío sin saber si esa fuente era
-				confiable o no.
-			</p>
-			<p>
-				Tener una lista de sitios de noticias de los cuales obtener información
-				me hace tener una mejor idea si son o no confiables, ya que sigo otras
-				noticias de ellos también.
-			</p>
-			<p>
-				Aunque existen algunas extensiones como
-				<a href="https://www.newsguardtech.com/">News Guard</a>, creo que es
-				mejor tener y conocer un grupo chico de fuentes de información en los
-				cuales uno pueda confiar.
-			</p>
-			<h3 id="tenés-el-control">Tenés el control</h3>
-			<p>
-				Como creador de contenidos, vos elegís qué notificar. No vas a ser
-				censurado. Mientras seas dueño de tu archivo RSS.
-			</p>
-			<h3 id="spam">Spam</h3>
-			<p>
-				Cuando alguien te pide tu e-mail para un newsletter, supongo que no solo
-				van a usar tu e-mail para mandarte actualizaciones.
-			</p>
-			<p>
-				Tu e-mail puede ser vendido a otra companía (ya que los subscriptores
-				pueden mostrar un interés en cómún, y una empresa puede apuntar a ese
-				público).
-			</p>
-			<p>
-				El sitio puede recibir incentivos para publicar publicidades. Solo hace
-				falta que le muestre la cantidad de e-mails que tiene para que una
-				companía le pague.
-			</p>
-			<p>
-				Así que para usuarios que quieran mantenerse libre de spam, esta es una
-				buena alternativa.
-			</p>
-			<h2 id="lo-no-tan-bien">Lo no tan bien</h2>
-			<h3 id="nuevo-contenido">Nuevo contenido</h3>
-			<p>
-				Cuando tenés una lista fija de canales, es difícil descubrir nuevos, ya
-				que solo consumís contenido, no tenés las recomendaciones.
-			</p>
-			<p>
-				El problema de la burbuja también se encuentra en canales con
-				recomendaciones. Pero creo que tenés una mejor chance de descrubrir
-				nuevo contenido por alguna recomendación o navegando por internet de
-				forma random.
-			</p>
-			<p>
-				Una posible solución a esto, sería buscar proactivamente diferentes
-				miradas sobre un tema de interés (<a href="https://duckduckgo.com"
-					>DuckDuckGo</a
-				>…), y mirar si los sitios que uno consume tienen recomendaciones.
-			</p>
-			<h2 id="conclusión">Conclusión</h2>
-			<p>
-				Hay un montón de cosas que no sé. Subí mi
-				<a href="/es/feed/index.xml">rss feed</a> ayer (28 Jul), así que sentite
-				libre de corregirme si ves que puse algo mal.
-			</p>
-			<p>
-				Finalmente, les dejo algunos links por si están interesados en leer más
-				del tema:
-			</p>
-			<ul>
-				<li><a href="/feed/index.xml">My RSS feed</a>.</li>
-				<li>
-					<a href="https://www.thunderbird.net/en-US/thunderbird/all/"
-						>Thunderbird</a
-					>
-					(is a RSS client too).
-				</li>
-				<li>
-					<a href="https://validator.w3.org/feed/docs/rss2.html"
-						>RSS reference</a
-					>.
-				</li>
-				<li>
-					<a href="https://github.com/NormanPerrin/utils/tree/master/rss"
-						>Some RSS utils</a
-					>.
-				</li>
-				<li><a href="https://en.wikipedia.org/wiki/RSS">RSS wiki entry</a>.</li>
-			</ul>
+			<article class="h-entry">
+				<h1 class="p-name">Por qué usar RSS feed</h1>
+				<p><em>Última actualización: 2019/07/30 00:00:00</em></p>
+				<div class="e-content">
+					<p>
+						Estuve usando RSS feed por un mes ya. Le veo algunos beneficios que
+						quiero compartir
+					</p>
+					<p>
+						Pero primero, puede que no estés familiarizado con lo que es, así
+						que una explicación:
+					</p>
+					<h2 id="qué-es">Qué es?</h2>
+					<p>
+						RSS (Really Simple Syndication) es una manera de compartir
+						actualizaciones de un sitio de forma estandarizada.
+					</p>
+					<p>La forma en la que funciona es muy simple.</p>
+					<p>Hay archivos RSS y clientes.</p>
+					<h3 id="archivos-rss">Archivos RSS</h3>
+					<p>
+						Si querés tener uno, primero tenés que tener en cuenta cierto
+						<a href="https://validator.w3.org/feed/docs/rss2.html">formato</a>
+						con la información que querés compartir. Ese archivo va a ser
+						actualizado cuando haya algún cambio en el sitio. Un ejemplo común
+						es de actualizar el archivo cuando se agrega un nuevo artículo en la
+						página.
+					</p>
+					<p>
+						Tenés que subir ese arhivo a un dominio tuyo, como
+						<a href="/es/feed/index.xml"
+							><code>https:nperrin.io/feed/index.xml</code></a
+						>, y asegurarte de actualizarlo.
+					</p>
+					<p>
+						Muchos sitios exponen sus archivos RSS. Podés tener tu lista de
+						sitios de interés y obtener actualizaciones de ellos con un cliente
+						RSS, todo en un lugar y sabiendo a qué estás subscripto, a
+						diferencia de una subscripción vía e-mail.
+					</p>
+					<h3 id="clientes-rss">Clientes RSS</h3>
+					<p>
+						Los clientes RSS consultan los archivos RSS por su url, cada X
+						tiempo. Verifican si hubo alguna actualización, si hubo, muestra una
+						indicación de eso, quizás un artículo fue agregado, entonces podrías
+						saber que hay nuevo contenido para consumir.
+					</p>
+					<h2 id="lo-bien">Lo bien</h2>
+					<h3 id="todo-en-un-lugar">Todo en un lugar</h3>
+					<p>
+						No tenés que ir a diferentes plataformas, que siguen tu
+						comportamiento en internet y te muestran publicidades. Tenés todo
+						desde el cliente RSS.
+					</p>
+					<h3 id="implementación">Implementación</h3>
+					<p>
+						Como creador de contenido, si querés notificar a tus subscriptores
+						de una actualización, solamente tenés que modificar el archivo RSS.
+						Es muy simple de implementar.
+					</p>
+					<h3 id="sabés-la-fuente">Sabés la fuente</h3>
+					<p>Quizás es algo particular mío.</p>
+					<p>
+						Leyendo noticias en twitter puede que me encuentre con una url
+						random de una noticia, voy a leerla y seguir a lo mío sin saber si
+						esa fuente era confiable o no.
+					</p>
+					<p>
+						Tener una lista de sitios de noticias de los cuales obtener
+						información me hace tener una mejor idea si son o no confiables, ya
+						que sigo otras noticias de ellos también.
+					</p>
+					<p>
+						Aunque existen algunas extensiones como
+						<a href="https://www.newsguardtech.com/">News Guard</a>, creo que es
+						mejor tener y conocer un grupo chico de fuentes de información en
+						los cuales uno pueda confiar.
+					</p>
+					<h3 id="tenés-el-control">Tenés el control</h3>
+					<p>
+						Como creador de contenidos, vos elegís qué notificar. No vas a ser
+						censurado. Mientras seas dueño de tu archivo RSS.
+					</p>
+					<h3 id="spam">Spam</h3>
+					<p>
+						Cuando alguien te pide tu e-mail para un newsletter, supongo que no
+						solo van a usar tu e-mail para mandarte actualizaciones.
+					</p>
+					<p>
+						Tu e-mail puede ser vendido a otra companía (ya que los
+						subscriptores pueden mostrar un interés en cómún, y una empresa
+						puede apuntar a ese público).
+					</p>
+					<p>
+						El sitio puede recibir incentivos para publicar publicidades. Solo
+						hace falta que le muestre la cantidad de e-mails que tiene para que
+						una companía le pague.
+					</p>
+					<p>
+						Así que para usuarios que quieran mantenerse libre de spam, esta es
+						una buena alternativa.
+					</p>
+					<h2 id="lo-no-tan-bien">Lo no tan bien</h2>
+					<h3 id="nuevo-contenido">Nuevo contenido</h3>
+					<p>
+						Cuando tenés una lista fija de canales, es difícil descubrir nuevos,
+						ya que solo consumís contenido, no tenés las recomendaciones.
+					</p>
+					<p>
+						El problema de la burbuja también se encuentra en canales con
+						recomendaciones. Pero creo que tenés una mejor chance de descrubrir
+						nuevo contenido por alguna recomendación o navegando por internet de
+						forma random.
+					</p>
+					<p>
+						Una posible solución a esto, sería buscar proactivamente diferentes
+						miradas sobre un tema de interés (<a href="https://duckduckgo.com"
+							>DuckDuckGo</a
+						>…), y mirar si los sitios que uno consume tienen recomendaciones.
+					</p>
+					<h2 id="conclusión">Conclusión</h2>
+					<p>
+						Hay un montón de cosas que no sé. Subí mi
+						<a href="/es/feed/index.xml">rss feed</a> ayer (28 Jul), así que
+						sentite libre de corregirme si ves que puse algo mal.
+					</p>
+					<p>
+						Finalmente, les dejo algunos links por si están interesados en leer
+						más del tema:
+					</p>
+					<ul>
+						<li><a href="/feed/index.xml">My RSS feed</a>.</li>
+						<li>
+							<a href="https://www.thunderbird.net/en-US/thunderbird/all/"
+								>Thunderbird</a
+							>
+							(is a RSS client too).
+						</li>
+						<li>
+							<a href="https://validator.w3.org/feed/docs/rss2.html"
+								>RSS reference</a
+							>.
+						</li>
+						<li>
+							<a href="https://github.com/NormanPerrin/utils/tree/master/rss"
+								>Some RSS utils</a
+							>.
+						</li>
+						<li>
+							<a href="https://en.wikipedia.org/wiki/RSS">RSS wiki entry</a>.
+						</li>
+					</ul>
+				</div>
+			</article>
 		</main>
 		<footer>
-			<div class="h-card hcard vcard" style="display:none;">
+			<div class="h-card p-author hcard vcard" style="display:none;">
 				<img
 					rel="me"
 					class="u-photo"
