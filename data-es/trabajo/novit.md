@@ -1,9 +1,9 @@
 ---
 pre-title: Trabajo
-title: Programador Fullstack Novit
+title: Programador Fullstack
 url: /es/trabajo/novit
 description: Trabajo como programador Fullstack en Novit
-date: 2018/10/31 00:00:00
+date: 2019/08/15 12:37:32
 ---
 
 [Novit](https://www.novit.com.ar) es una empresa chica que tiene un producto que comercializa, y hace consultoría y desarrollo de software.

@@ -1,9 +1,9 @@
 ---
 pre-title: Work
-title: Novit Fullstack developer
+title: Fullstack developer
 url: /work/novit
 description: Norman Perrin work on Novit
-date: 2018/10/31 00:00:00
+date: 2019/08/15 12:37:32
 ---
 
 [Novit](https://www.novit.com.ar) is a small company that consults and develops for other companies. It also has his own product for companies.

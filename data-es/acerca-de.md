@@ -2,7 +2,7 @@
 title: Acerca de
 url: /es/acerca-de
 description: Información acerca de Norman Perrin
-date: 2019/08/10 16:02:11
+date: 2019/08/15 12:37:32
 ---
 
 Hola, me llamo Norman Perrin.
@@ -11,7 +11,7 @@ Vivo en Argentina, Francés, desarrollador de software y algunas veces enseño p
 Interesado en hacer trabajo de calidad y ayudar a otros.
 
 Ahora trabajando de forma freelance, mientras comparto lo que voy aprendiendo. Dando charlas o workshops cada tanto.
-Viendo con interés el ir a Europa, y aprender alguna habilidad no técnica... quizás piano pero escucho sugerencias.
+Viendo con interés el ir a Europa, y aprender alguna habilidad no técnica... puede ser piano o carpintería.
 
 ## Motivación
 

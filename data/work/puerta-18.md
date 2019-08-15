@@ -1,9 +1,9 @@
 ---
 pre-title: Work
-title: Teacher at Puerta 18
+title: Teacher
 url: /work/puerta-18
 description: Norman Perrin work at Puerta 18
-date: 2019/06/25 00:00:00
+date: 2019/08/15 12:37:32
 ---
 
 [Puerta 18](http://www.puerta18.org.ar/) is kind of a hacker space for people between 13 and 24 years old. In there they give different courses and workshops.

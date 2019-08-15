@@ -2,19 +2,23 @@
 title: Site improvements
 url: /site-improvements
 description: Things I could do to improve the site
-date: 2019/08/10 16:20:14
+date: 2019/08/11 19:21:12
 ---
 
 ## Add
 
-- Atom feed.
+- h-entry.
+- webmentions.
+- Atom and JSON feed.
+- Deploy on own server.
 - Subdomains for habits tracking and work.
 - Pre-commit dictionary validations.
 - Add option to download lecture as PDF.
-- webmentions.
-- h-entry.
 - Instagram replica with microformats.
-- Deploy on own server.
+
+## Better
+
+- Build and deploy process.
 
 ## Investigate
 

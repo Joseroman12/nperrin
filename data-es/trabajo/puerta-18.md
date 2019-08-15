@@ -1,9 +1,9 @@
 ---
 pre-title: Trabajo
-title: Profesor en Puerta 18
+title: Profesor
 url: /es/trabajo/puerta-18
 description: Trabajo como profesor en Puerta 18
-date: 2019/06/25 00:00:00
+date: 2019/08/15 12:37:32
 ---
 
 [Puerta 18](http://www.puerta18.org.ar/) es una especie de hacker space para chicos entre 13 y 24 años. Se brindan cursos y workshops.

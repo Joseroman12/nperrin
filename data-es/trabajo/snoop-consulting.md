@@ -3,7 +3,7 @@ pre-title: Trabajo
 title: Analista programador
 url: /es/trabajo/snoop-consulting
 description: Trabajo como Analista programador en Snoop Consulting
-date: 2017/08/30 00:00:00
+date: 2019/08/15 12:37:32
 ---
 
 El primer trabajo que tuve como programador. [Snoop Consulting](https://www.snoopconsulting.com) es una software factory.

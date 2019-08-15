@@ -1,9 +1,9 @@
 ---
 pre-title: Trabajo
-title: Programador Fullstack independiente
+title: Programador Fullstack
 url: /es/trabajo/freelance
 description: Trabajo como Programador Fullstack independiente
-date: 2018/12/25 00:00:00
+date: 2019/08/15 12:37:32
 ---
 
 Algo de trabajo **freelance** que vale la pena mencionar.
