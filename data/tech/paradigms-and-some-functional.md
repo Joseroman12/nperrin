@@ -1,7 +1,6 @@
 ---
 pre-title: Tech
 title: Paradigms and some functional
-url: /tech/paradigms-and-some-functional
 description: Un-traduced site :(
 date: 2018/02/16 00:00:00
 ---

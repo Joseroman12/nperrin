@@ -1,9 +1,8 @@
 ---
 pre-title: Work
 title: Analyst Programmer
-url: /work/snoop-consulting
 description: Norman Perrin work at Snoop Consulting
-date: 2019/08/15 12:37:32
+date: 2016/11/25 00:00:00
 ---
 
 The first job I had as a developer. [Snoop Consulting](https://www.snoopconsulting.com) is a software factory.

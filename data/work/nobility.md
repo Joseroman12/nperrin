@@ -1,9 +1,8 @@
 ---
 pre-title: Work
 title: Technical advisor
-url: /work/nobility
 description: Work as Technical advisor at Nobility
-date: 2019/08/10 16:25:34
+date: 2018/11/01 00:00:00
 ---
 
 [Nobility](https://www.nobilitytechnologies.com) is a small startup that is creating a Product while consulting for another companies.

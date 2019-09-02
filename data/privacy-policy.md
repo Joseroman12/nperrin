@@ -1,6 +1,5 @@
 ---
 title: Privacy Policy
-url: /privacy-policy
 description: nperrin.io Privacy Policy
 date: 2019/08/04 10:24:29
 ---

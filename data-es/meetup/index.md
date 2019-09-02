@@ -1,8 +1,7 @@
 ---
 pre-title: Index
 title: Meetup
-url: /es/meetup
-description: Resumen de algunas meetups que tuve, y anuncios de meetups futuros.
+description: Resumen de algunas meetups que tuve, y anuncios de meetups futuros
 date: 2019/07/24 00:00:00
 ---
 

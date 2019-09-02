@@ -1,11 +1,8 @@
 ---
 title: Gracias
-url: /es/gracias
 date: 2019/07/28 00:00:00
 description: Merecida lista de agradecimiento
 ---
-
-Gracas por
 
 ## Tecnología
 

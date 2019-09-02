@@ -1,7 +1,6 @@
 ---
 pre-title: Meetup
 title: Opinions - Ideas that matter
-url: /post/opinions-ideas-that-matter
 description: Un-traduced site :(
 date: 2018/09/01 00:00:00
 ---

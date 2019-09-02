@@ -1,7 +1,6 @@
 ---
 pre-title: Artículo
 title: Opinar - imprecisión
-url: /es/articulo/opinar-imprecision
 description: Reflexión sobre la imprecisión que podemos tener al opinar
 date: 2018/05/26 00:00:00
 ---

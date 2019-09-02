@@ -3,8 +3,7 @@
 process_path () {
 	index_directory="$(dirname "$1")"
 	sed -i.bak '/<.*>/d' "$1"
-	find data -name '*.bak' -exec rm {} \;
-	find data-es -name '*.bak' -exec rm {} \;
+	find . -name '*.bak' -exec rm {} \;
 	./scripts/list_index.sh "$index_directory" >> "$1"
 }
 

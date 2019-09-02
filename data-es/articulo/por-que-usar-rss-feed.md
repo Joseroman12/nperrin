@@ -1,7 +1,6 @@
 ---
 pre-title: Artículo
 title: Por qué usar RSS feed
-url: /es/articulo/por-que-usar-rss-feed
 date: 2019/07/30 00:00:00
 description: Estuve usando RSS feed por un mes ya. Le veo algunos beneficios que quiero compartir
 ---

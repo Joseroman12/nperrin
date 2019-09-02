@@ -1,9 +1,8 @@
 ---
 pre-title: Index
 title: Meetup
-url: /meetup
 description: Resume of some meetups or events I had at some time, and future ones
-date: 2019/07/24 00:00:00
+date: 2019/09/01 20:04:02
 ---
 
 Resume of some meetups or events I had at some time, and future ones.

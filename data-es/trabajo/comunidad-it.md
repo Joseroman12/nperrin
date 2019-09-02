@@ -1,9 +1,8 @@
 ---
 pre-title: Trabajo
 title: Colaborador
-url: /es/trabajo/comunidad-it
 description: Mi trabajo como colaborador en Comunidad IT
-date: 2019/08/15 12:37:32
+date: 2018/07/10 00:00:00
 ---
 
 Desde 2018/07/10 a 2019/04/17.

@@ -1,7 +1,6 @@
 ---
 pre-title: Tech
 title: Guide - Introduction to JS
-url: /tech/guide-introduction-to-js
 description: Un-traduced site :(
 date: 2019/06/18 00:00:00
 ---

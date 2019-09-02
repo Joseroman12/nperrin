@@ -1,7 +1,6 @@
 ---
 pre-title: Artículo
 title: Mi primer trabajo
-url: /es/articulo/mi-primer-trabajo
 description: Cómo empecé mi carrera profesional como programador
 date: 2018/01/13 00:00:00
 ---

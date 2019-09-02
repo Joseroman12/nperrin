@@ -1,8 +1,7 @@
 ---
 title: Pendientes
-url: /es/pendientes
-description: Cosas que quiero hacer
-date: 2019/08/10 16:16:53
+description: Cosas que podría hacer algún día
+date: 2019/09/01 19:55:23
 ---
 
 Si algo no es específico o claro, significa que tengo que lo tengo que pensar un poco más, pero sigue siendo un item a pensar.
@@ -14,27 +13,27 @@ Si algo no es específico o claro, significa que tengo que lo tengo que pensar u
 - Configurar mac para usar mejor `youtube-dl`.
 - Hacer app ios de salidas para aprender RN.
 - Hacer app ios en Swift.
-- Mejorar `https://nperrin.io site`. Ver [mejoras](/es/mejoras).
+- Mejorar `https://nperrin.io site`. Ver [mejoras](/es/sitio#mejoras).
 
 ## Educacional
 
 - Hacer contenido relacionado a seguridad.
 - Hacer guía manipulación DOM.
 
-## Computer
+## Computadora
 
 - Formatear mac.
 - Linkear `dash` a `sh`.
 
-## Learning
+## Aprender
 
 - Makefiles.
 - Microformats.
-- Learn when vagrant vs when docker.
-- Learn more about Unix and related programs.
-- Learn a low level language (like C, Rust, ...).
+- Virtualización.
+- Cosas relacionadas a Unix.
+- Un lenguaje bajo nivel (like C, Rust, ...).
 
-## Life
+## Vida
 
-- Move alone by 2019.
-- Travel to Europe by 2020.
+- Vivir solo para el 2019.
+- Viajar a Europa para el 2020.

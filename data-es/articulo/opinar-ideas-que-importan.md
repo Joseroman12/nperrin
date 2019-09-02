@@ -1,7 +1,6 @@
 ---
 pre-title: Artículo
 title: Opinar - ideas que importan
-url: /es/articulo/opinar-ideas-que-importan
 description: Reflexión sobre las opiniones y su importancia
 date: 2018/09/01 00:00:00
 ---

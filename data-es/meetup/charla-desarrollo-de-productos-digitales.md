@@ -1,7 +1,6 @@
 ---
 pre-title: Meetup
 title: Desarrollo de productos digitales
-url: /es/meetup/charla-desarrollo-de-productos-digitales
 description: Recursos y resumen de la charla sobre Desarrollo de productos digitales, dada en ComunidadIT
 date: 2019/03/01 00:00:00
 ---

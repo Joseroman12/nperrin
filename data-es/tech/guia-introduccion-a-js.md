@@ -1,7 +1,6 @@
 ---
 pre-title: Guía
 title: Introducción a JavaScript
-url: /es/tech/guia-introduccion-a-js
 description: Guía introductoria teórica y práctica de JavaScript
 date: 2019/06/18 00:00:00
 show-toc: true

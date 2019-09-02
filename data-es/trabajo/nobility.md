@@ -1,9 +1,8 @@
 ---
 pre-title: Trabajo
 title: Consultor técnico
-url: /es/trabajo/nobility
 description: Trabajo como Consultor técnico en Nobility
-date: 2019/08/10 16:25:34
+date: 2018/11/01 00:00:00
 ---
 
 [Nobility](https://www.nobilitytechnologies.com) es una startup que mientras crea un producto, hace consultoría para empresas.

@@ -1,6 +1,5 @@
 ---
 title: Política Privacidad
-url: /es/politica-privacidad
 description: Política privacidad de nperrin.io
 date: 2019/07/17 00:00:00
 ---

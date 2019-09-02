@@ -1,8 +1,7 @@
 ---
 title: Pendings
-url: /pendings
-description: Tasks I want to accomplish
-date: 2019/08/10 16:16:53
+description: Things I could do some day
+date: 2019/09/01 19:55:23
 ---
 
 If something is not specific or clear, it means I should think more about that, but still something I should do.
@@ -14,7 +13,7 @@ If something is not specific or clear, it means I should think more about that, 
 - Better config of `youtube-dl`.
 - Make ios dating app to learn React Native.
 - Make ios app on Swift.
-- Better `https://nperrin.io site`, see [improvements](/site-improvements).
+- Better `https://nperrin.io site`, see [the improvements](/site#improvements).
 
 ## Educational
 
@@ -26,13 +25,13 @@ If something is not specific or clear, it means I should think more about that, 
 - Format mac.
 - Link `sh` to `dash`.
 
-## Learning
+## Learn
 
 - Makefiles.
 - Microformats.
-- Learn when vagrant vs when docker.
-- Learn more about Unix and related programs.
-- Learn a low level language (like C, Rust, ...).
+- Virtualization.
+- More about Unix and related programs.
+- A low level language (like C, Rust, ...).
 
 ## Life
 

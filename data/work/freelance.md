@@ -1,7 +1,6 @@
 ---
 pre-title: Work
 title: Fullstack developer
-url: /work/freelance
 description: Norman Perrin work as a freelancer
 date: 2019/08/15 12:37:32
 ---

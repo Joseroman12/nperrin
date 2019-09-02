@@ -1,7 +1,6 @@
 ---
 pre-title: Meetup
 title: Introducción a la Programación Funcional
-url: /es/meetup/charla-introduccion-a-la-programacion-funcional
 date: 2017/11/11 00:00:00
 ---
 

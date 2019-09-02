@@ -1,7 +1,6 @@
 ---
 pre-title: Meetup
 title: Opinions - Imprecision
-url: /post/opinions-imprecision
 description: Un-traduced site :(
 date: 2018/05/26 00:00:00
 ---

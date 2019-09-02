@@ -18,16 +18,18 @@ rss_item () {
 	compliant_date="$(map_date "$(grep '^date:' "$path" |sed -E 's/^date: (.*)/\1/')")"
 	category="$(capitalize "$(basename "$(dirname "$path")" |sed 's/\-es//; s/data/Main/')")"
 	if [ "$2" = 'es' ]; then
+		url="$(echo "$path" |sed 's/data-es/\/es/; s/\.md/.html/')"
 		feed_src='https://nperrin.io/feed/es/index.xml'
 	else
+		url="$(echo "$path" |sed 's/data//; s/\.md/.html/')"
 		feed_src='https://nperrin.io/feed/index.xml'
 	fi
 
 	title="$(printf '\t\t\t<title>%s</title>' "$(grep '^title:' "$path" |sed -E 's/title: (.*)/\1/')")"
-	link="$(printf '\t\t\t<link>https://nperrin.io%s</link>' "$(grep '^url:' "$path" |sed -E 's/url: (.*)/\1/')")"
+	link="$(printf '\t\t\t<link>https://nperrin.io%s</link>' "$url")"
 	description="$(printf '\t\t\t<description>%s</description>' "$(grep '^description:' "$path" |sed -E 's/description: (.*)$/\1/')")"
 	pubDate="$(printf '\t\t\t<pubDate>%s</pubDate>' "$compliant_date")"
-	guid="$(printf '\t\t\t<guid>https://nperrin.io%s</guid>' "$(grep '^url:' "$path" |sed -E 's/url: (.*)/\1/')")"
+	guid="$(printf '\t\t\t<guid>https://nperrin.io%s</guid>' "$url")"
 	category="$(printf '\t\t\t<category>%s</category>' "$category")"
 	source="$(printf '\t\t\t<source url=\"%s\">nperrin</source>' "$feed_src")"
 
@@ -50,7 +52,7 @@ create_output () {
 
 # <!-- en -->
 create_output "$output_rss_en" 'en' 'Recent content from Norman Perrin'
-find data -type f ! -name '404.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
+find data -type f ! -name '404.md' ! -name 'index.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
 feed_list="$(sort -r .temp-rss |head -n 10)"
 rm .temp-rss
 printf '%s' "$feed_list" |while read -r line; do rss_item "$line" >> "$output_rss_en"; done
@@ -58,7 +60,7 @@ printf '\t</channel>\n</rss>\n' >> "$output_rss_en"
 
 # <!-- es -->
 create_output "$output_rss_es" 'es' 'Contenido reciente de Norman Perrin'
-find data-es -type f ! -name '404.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
+find data-es -type f ! -name '404.md' -name 'index.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
 feed_list="$(sort -r .temp-rss |head -n 10)"
 rm .temp-rss
 printf '%s' "$feed_list" |while read -r line; do rss_item "$line" 'es' >> "$output_rss_es"; done

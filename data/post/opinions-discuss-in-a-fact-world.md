@@ -1,7 +1,6 @@
 ---
 pre-title: Meetup
 title: Opinions - Discuss in a fact world
-url: /post/opinions-discuss-in-a-fact-world
 date: 2019/02/10 00:00:00
 description: Un-traduced site :(
 ---
