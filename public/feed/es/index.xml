@@ -13,42 +13,87 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Sun, 01 Sep 2019 23:17:42 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 01 Sep 2019 23:24:21 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/es/index.xml" rel="self" type="application/rss+xml"/>
 		<item>
-			<title>Inicio</title>
-			<link>https://nperrin.io/es/index.html</link>
-			<description>Sitio para subir lo que se me cruza por la cabeza, y aparte algunas cosas útiles como guías técnicas</description>
-			<category>Main</category>
-			<pubDate>Sun, 01 Sep 2019 20:05:08 -0300</pubDate>
-			<guid>https://nperrin.io/es/index.html</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Tech</title>
-			<link>https://nperrin.io/es/tech/index.html</link>
-			<description>Guías, machetes, explicaciones, cosas relacionadas a la tecnología y proyectos</description>
-			<category>Tech</category>
-			<pubDate>Sat, 10 Aug 2019 16:24:36 -0300</pubDate>
-			<guid>https://nperrin.io/es/tech/index.html</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Artículo</title>
-			<link>https://nperrin.io/es/articulo/index.html</link>
-			<description>Pensamientos, reflexiones, y cosas random</description>
+			<title>Septiembre</title>
+			<link>https://nperrin.io/es/articulo/septiembre.html</link>
+			<description>Hábitos que arranco en septiembre</description>
 			<category>Articulo</category>
-			<pubDate>Sat, 10 Aug 2019 16:22:48 -0300</pubDate>
-			<guid>https://nperrin.io/es/articulo/index.html</guid>
+			<pubDate>Sun, 01 Sep 2019 22:34:13 -0300</pubDate>
+			<guid>https://nperrin.io/es/articulo/septiembre.html</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 		<item>
-			<title>Trabajo</title>
-			<link>https://nperrin.io/es/trabajo/index.html</link>
-			<description>Algunos trabajos que hice</description>
-			<category>Trabajo</category>
+			<title>Antes de leer</title>
+			<link>https://nperrin.io/es/articulo/antes-de-leer.html</link>
+			<description>Una explicación a la estupidez</description>
+			<category>Articulo</category>
+			<pubDate>Sun, 01 Sep 2019 20:19:56 -0300</pubDate>
+			<guid>https://nperrin.io/es/articulo/antes-de-leer.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Sitio</title>
+			<link>https://nperrin.io/es/sitio.html</link>
+			<description>Cosas que quiero mejorar del sitio</description>
+			<category>Main</category>
+			<pubDate>Sun, 01 Sep 2019 20:06:17 -0300</pubDate>
+			<guid>https://nperrin.io/es/sitio.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Pendientes</title>
+			<link>https://nperrin.io/es/pendientes.html</link>
+			<description>Cosas que podría hacer algún día</description>
+			<category>Main</category>
+			<pubDate>Sun, 01 Sep 2019 19:55:23 -0300</pubDate>
+			<guid>https://nperrin.io/es/pendientes.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Acerca de</title>
+			<link>https://nperrin.io/es/acerca-de.html</link>
+			<description>Información acerca de Norman Perrin</description>
+			<category>Main</category>
+			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
+			<guid>https://nperrin.io/es/acerca-de.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Por qué usar RSS feed</title>
+			<link>https://nperrin.io/es/articulo/por-que-usar-rss-feed.html</link>
+			<description>Estuve usando RSS feed por un mes ya. Le veo algunos beneficios que quiero compartir</description>
+			<category>Articulo</category>
+			<pubDate>Tue, 30 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/es/articulo/por-que-usar-rss-feed.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Gracias</title>
+			<link>https://nperrin.io/es/gracias.html</link>
+			<description>Merecida lista de agradecimiento</description>
+			<category>Main</category>
+			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/es/gracias.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Introducción a Git y GitHub</title>
+			<link>https://nperrin.io/es/tech/guia-introduccion-a-git.html</link>
+			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
+			<category>Tech</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/index.html</guid>
+			<guid>https://nperrin.io/es/tech/guia-introduccion-a-git.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Política Privacidad</title>
+			<link>https://nperrin.io/es/politica-privacidad.html</link>
+			<description>Política privacidad de nperrin.io</description>
+			<category>Main</category>
+			<pubDate>Wed, 17 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/es/politica-privacidad.html</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 	</channel>
