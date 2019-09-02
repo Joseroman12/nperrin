@@ -14,7 +14,7 @@ Esto es lo que pensé.
 ## Alimentación
 
 - Keto, todos los días.
-- Ayuno intermedio, 3 veces por semana, voy viendo igual.
+- Ayuno intermitente, 3 veces por semana, voy viendo igual.
 - No más de 1 café al día.
 
 ## Ejercicio
