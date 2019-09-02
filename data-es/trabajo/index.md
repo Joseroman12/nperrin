@@ -1,6 +1,6 @@
 ---
 pre-title: Index
-title: Trabajo
+title: Trabajos
 description: Algunos trabajos que hice
 date: 2019/07/24 00:00:00
 ---

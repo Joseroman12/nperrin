@@ -1,6 +1,6 @@
 ---
 pre-title: Index
-title: Artículo
+title: Artículos
 description: Pensamientos, reflexiones, y cosas random
 date: 2019/08/10 16:22:48
 ---

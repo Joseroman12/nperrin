@@ -1,6 +1,6 @@
 ---
 pre-title: Index
-title: Post
+title: Posts
 description: Thoughts, reflections, and random stuff
 date: 2019/08/10 16:22:48
 ---

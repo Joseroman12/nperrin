@@ -1,6 +1,6 @@
 ---
 pre-title: Index
-title: Work
+title: Works
 description: Jobs and work I did
 date: 2019/09/01 19:58:29
 ---
