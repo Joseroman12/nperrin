@@ -60,7 +60,7 @@ printf '\t</channel>\n</rss>\n' >> "$output_rss_en"
 
 # <!-- es -->
 create_output "$output_rss_es" 'es' 'Contenido reciente de Norman Perrin'
-find data-es -type f ! -name '404.md' -name 'index.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
+find data-es -type f ! -name '404.md' ! -name 'index.md' |while read -r path; do list_dates "$path" >> .temp-rss; done
 feed_list="$(sort -r .temp-rss |head -n 10)"
 rm .temp-rss
 printf '%s' "$feed_list" |while read -r line; do rss_item "$line" 'es' >> "$output_rss_es"; done
