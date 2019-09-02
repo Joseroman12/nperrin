@@ -1,165 +1,118 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-	<head>
-		<title>Introducción a la Programación Funcional - Meetup</title>
-		<meta charset="utf-8" />
-		<meta name="generator" content="pandoc" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, user-scalable=yes"
-		/>
-		<meta name="author" content="Norman Perrin" />
-		<link
-			rel="canonical"
-			href="https://nperrin.io/es/meetup/charla-introduccion-a-la-programacion-funcional"
-		/>
-		<meta name="description" content="" />
-		<meta name="dcterms.date" content="2017/11/11 00:00:00" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#54c99d" />
-		<meta name="theme-color" content="#fefefe" />
-		<meta name="apple-mobile-web-app-title" content="nperrin" />
-		<meta name="msapplication-TileColor" content="#fefefe" />
-		<meta name="msapplication-TileImage" content="/favicon.png" />
-		<meta name="application-name" content="nperrin" />
-		<meta
-			name="og:title"
-			content="Introducción a la Programación Funcional - Meetup"
-		/>
-		<meta name="og:description" content="" />
-		<meta name="og:site_name" content="Norman Perrin" />
-		<meta
-			name="og:url"
-			content="https://nperrin.io/es/meetup/charla-introduccion-a-la-programacion-funcional"
-		/>
-		<meta name="og:type" content="article" />
-		<meta
-			name="og:image"
-			content="https://nperrin.io/img/es/meetup/charla-introduccion-a-la-programacion-funcional/thumbnail.png"
-		/>
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@NormanPerrinOK" />
-		<meta name="twitter:creator" content="@NormanPerrinOK" />
-		<meta
-			name="twitter:title"
-			content="Introducción a la Programación Funcional - Meetup"
-		/>
-		<meta name="twitter:description" content="" />
-		<meta
-			name="twitter:url"
-			content="https://nperrin.io/es/meetup/charla-introduccion-a-la-programacion-funcional"
-		/>
-		<meta
-			name="twitter:image"
-			content="https://nperrin.io/img/es/meetup/charla-introduccion-a-la-programacion-funcional/thumbnail.png"
-		/>
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<link
-			rel="alternate home"
-			href="https://nperrin.io/feed/es/index.xml"
-			type="application/rss+xml"
-			hreflang="es"
-			title="Norman Perrin"
-		/>
-		<link
-			rel="alternate home"
-			href="https://nperrin.io/feed/index.xml"
-			type="application/rss+xml"
-			hreflang="en"
-			title="Norman Perrin"
-		/>
-		<link
-			rel="alternate"
-			hreflang="en"
-			href="https://nperrin.io/meetup/talk-introduction-to-functional-programming.html"
-		/>
-		<meta name="og:locale" content="es_ES" />
-		<meta property="og:locale:alternate" content="en_US" />
-		<link rel="stylesheet" href="/css/general.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Eczar&display=swap"
-			rel="stylesheet"
-		/>
-		<!--[if lt IE 9]>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-		<![endif]-->
-	</head>
+	<title>Introducción a la Programación Funcional - Meetup</title>
+	<meta charset="utf-8" />
+	<meta name="generator" content="pandoc" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=yes"
+	/>
+	<meta name="author" content="Norman Perrin" />
+	<link
+		rel="canonical"
+		href="https://nperrin.io/es/meetup/charla-introduccion-a-la-programacion-funcional.html"
+	/>
+	<meta name="description" content="" />
+	<meta name="dcterms.date" content="2017/11/11 00:00:00" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#54c99d" />
+	<meta name="theme-color" content="#fefefe" />
+	<meta name="apple-mobile-web-app-title" content="nperrin" />
+	<meta name="msapplication-TileColor" content="#fefefe" />
+	<meta name="msapplication-TileImage" content="/favicon.png" />
+	<meta name="application-name" content="nperrin" />
+	<meta
+		name="og:title"
+		content="Introducción a la Programación Funcional - Meetup"
+	/>
+	<meta name="og:description" content="" />
+	<meta name="og:site_name" content="Norman Perrin" />
+	<meta
+		name="og:url"
+		content="https://nperrin.io/es/meetup/charla-introduccion-a-la-programacion-funcional.html"
+	/>
+	<meta name="og:type" content="article" />
+	<meta name="og:image" content="https://nperrin.io/img/thumbnail.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@NormanPerrinOK" />
+	<meta name="twitter:creator" content="@NormanPerrinOK" />
+	<meta
+		name="twitter:title"
+		content="Introducción a la Programación Funcional - Meetup"
+	/>
+	<meta name="twitter:description" content="" />
+	<meta
+		name="twitter:url"
+		content="https://nperrin.io/es/meetup/charla-introduccion-a-la-programacion-funcional.html"
+	/>
+	<meta name="twitter:image" content="https://nperrin.io/img/thumbnail.png" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link
+		rel="alternate home"
+		href="https://nperrin.io/feed/es/index.xml"
+		type="application/rss+xml"
+		hreflang="es"
+		title="Norman Perrin"
+	/>
+	<link
+		rel="alternate home"
+		href="https://nperrin.io/feed/index.xml"
+		type="application/rss+xml"
+		hreflang="en"
+		title="Norman Perrin"
+	/>
+	<link
+		rel="alternate"
+		hreflang="en"
+		href="https://nperrin.io/meetup/talk-introduction-to-functional-programming.html"
+	/>
+	<meta name="og:locale" content="es_ES" />
+	<meta property="og:locale:alternate" content="en_US" />
+	<link rel="stylesheet" href="/css/general.css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Eczar&display=swap"
+		rel="stylesheet"
+	/>
 
-	<body>
-		<header id="title-block-header">
-			<div>
-				<nav id="hierarchy" role="navigation">
-					<a href="/es">nperrin</a><span> → </span
-					><a href="/es/meetup">meetup</a><span> → </span
-					><span>charla-introduccion-a-la-programacion-funcional</span>
-				</nav>
-				<a
-					href="/meetup/talk-introduction-to-functional-programming.html"
-					class="mobile-hide"
-					>English</a
-				>
-				<a
-					href="/meetup/talk-introduction-to-functional-programming.html"
-					class="desktop-hide"
-					>EN</a
-				>
+	<header id="title-block-header">
+		<div>
+			<nav id="hierarchy" role="navigation">
+				<a href="/es">nperrin</a><span> → </span><a href="/es/meetup">meetup</a
+				><span> → </span
+				><span>charla-introduccion-a-la-programacion-funcional</span>
+			</nav>
+			<a
+				href="/meetup/talk-introduction-to-functional-programming.html"
+				class="mobile-hide"
+				>English</a
+			>
+			<a
+				href="/meetup/talk-introduction-to-functional-programming.html"
+				class="desktop-hide"
+				>EN</a
+			>
+		</div>
+	</header>
+	<main>
+		<article class="h-entry">
+			<h1 class="p-name">Introducción a la Programación Funcional</h1>
+			<div class="e-content">
+				<p>
+					Primer charla que me atreví a dar. Tuve la fortuna de que me tocó
+					darla en <a href="https://www.medallia.com">Medallia</a> (gracias) y
+					para la gente de
+					<a href="https://freecodecampba.org">Free Code Camp BA</a>.
+				</p>
+				<p>
+					El link al evento del meetup está
+					<a href="https://www.meetup.com/es/freeCodeCampBA/events/244852127/"
+						>acá</a
+					>.
+				</p>
 			</div>
-		</header>
-		<main>
-			<article class="h-entry">
-				<h1 class="p-name">Introducción a la Programación Funcional</h1>
-				<p><em>Última actualización: 2017/11/11 00:00:00</em></p>
-				<div class="e-content">
-					<p>
-						Primer charla que me atreví a dar. Tuve la fortuna de que me tocó
-						darla en <a href="https://www.medallia.com">Medallia</a> (gracias) y
-						para la gente de
-						<a href="https://freecodecampba.org">Free Code Camp BA</a>.
-					</p>
-					<p>
-						El link al evento del meetup está
-						<a href="https://www.meetup.com/es/freeCodeCampBA/events/244852127/"
-							>acá</a
-						>.
-					</p>
-				</div>
-			</article>
-		</main>
-		<footer>
-			<div class="h-card p-author hcard vcard" style="display:none;">
-				<img
-					rel="me"
-					class="u-photo"
-					alt="Norman Perrin blurred"
-					src="/img/me.jpeg"
-				/>
-				<br />
-				<span>Name:</span>
-				<a class="p-name u-url" rel="me" href="https://nperrin.io/"
-					>Norman Perrin</a
-				>
-				<br />
-				<span>Twitter:</span>
-				<a class="u-url" rel="me" href="https://twitter.com/normanperrinok"
-					>@NormanPerrinOK</a
-				>
-				<br />
-				<span>Github:</span>
-				<a class="u-url" rel="me" href="https://github.com/normanperrin"
-					>normanperrin</a
-				>
-				<br />
-				<span>Jobs:</span>
-				<span class="p-job-title">Developer, Freelancer, Consultant</span>
-				<br />
-				<span>PGP Key:</span>
-				<a rel="pgpkey authn" href="/nperrin.asc" class="u-key"
-					>0xDD6DD4CB21147E87</a
-				>
-			</div>
-		</footer>
-	</body>
+		</article>
+	</main>
 </html>

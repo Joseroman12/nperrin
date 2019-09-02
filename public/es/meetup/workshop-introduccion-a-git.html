@@ -1,212 +1,164 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-	<head>
-		<title>Workshop introductorio a Git y GitHub - Meetup</title>
-		<meta charset="utf-8" />
-		<meta name="generator" content="pandoc" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, user-scalable=yes"
-		/>
-		<meta name="author" content="Norman Perrin" />
-		<link
-			rel="canonical"
-			href="https://nperrin.io/es/meetup/workshop-introduccion-a-git"
-		/>
-		<meta
-			name="description"
-			content="Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub"
-		/>
-		<meta name="dcterms.date" content="2019/05/18 00:00:00" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#54c99d" />
-		<meta name="theme-color" content="#fefefe" />
-		<meta name="apple-mobile-web-app-title" content="nperrin" />
-		<meta name="msapplication-TileColor" content="#fefefe" />
-		<meta name="msapplication-TileImage" content="/favicon.png" />
-		<meta name="application-name" content="nperrin" />
-		<meta
-			name="og:title"
-			content="Workshop introductorio a Git y GitHub - Meetup"
-		/>
-		<meta
-			name="og:description"
-			content="Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub"
-		/>
-		<meta name="og:site_name" content="Norman Perrin" />
-		<meta
-			name="og:url"
-			content="https://nperrin.io/es/meetup/workshop-introduccion-a-git"
-		/>
-		<meta name="og:type" content="article" />
-		<meta
-			name="og:image"
-			content="https://nperrin.io/img/es/meetup/workshop-introduccion-a-git/thumbnail.png"
-		/>
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@NormanPerrinOK" />
-		<meta name="twitter:creator" content="@NormanPerrinOK" />
-		<meta
-			name="twitter:title"
-			content="Workshop introductorio a Git y GitHub - Meetup"
-		/>
-		<meta
-			name="twitter:description"
-			content="Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub"
-		/>
-		<meta
-			name="twitter:url"
-			content="https://nperrin.io/es/meetup/workshop-introduccion-a-git"
-		/>
-		<meta
-			name="twitter:image"
-			content="https://nperrin.io/img/es/meetup/workshop-introduccion-a-git/thumbnail.png"
-		/>
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<link
-			rel="alternate home"
-			href="https://nperrin.io/feed/es/index.xml"
-			type="application/rss+xml"
-			hreflang="es"
-			title="Norman Perrin"
-		/>
-		<link
-			rel="alternate home"
-			href="https://nperrin.io/feed/index.xml"
-			type="application/rss+xml"
-			hreflang="en"
-			title="Norman Perrin"
-		/>
-		<link
-			rel="alternate"
-			hreflang="en"
-			href="https://nperrin.io/meetup/workshop-introduction-to-git.html"
-		/>
-		<meta name="og:locale" content="es_ES" />
-		<meta property="og:locale:alternate" content="en_US" />
-		<link rel="stylesheet" href="/css/general.css" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Eczar&display=swap"
-			rel="stylesheet"
-		/>
-		<!--[if lt IE 9]>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-		<![endif]-->
-	</head>
+	<title>Workshop introductorio a Git y GitHub - Meetup</title>
+	<meta charset="utf-8" />
+	<meta name="generator" content="pandoc" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=yes"
+	/>
+	<meta name="author" content="Norman Perrin" />
+	<link
+		rel="canonical"
+		href="https://nperrin.io/es/meetup/workshop-introduccion-a-git.html"
+	/>
+	<meta
+		name="description"
+		content="Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub"
+	/>
+	<meta name="dcterms.date" content="2019/05/18 00:00:00" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#54c99d" />
+	<meta name="theme-color" content="#fefefe" />
+	<meta name="apple-mobile-web-app-title" content="nperrin" />
+	<meta name="msapplication-TileColor" content="#fefefe" />
+	<meta name="msapplication-TileImage" content="/favicon.png" />
+	<meta name="application-name" content="nperrin" />
+	<meta
+		name="og:title"
+		content="Workshop introductorio a Git y GitHub - Meetup"
+	/>
+	<meta
+		name="og:description"
+		content="Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub"
+	/>
+	<meta name="og:site_name" content="Norman Perrin" />
+	<meta
+		name="og:url"
+		content="https://nperrin.io/es/meetup/workshop-introduccion-a-git.html"
+	/>
+	<meta name="og:type" content="article" />
+	<meta name="og:image" content="https://nperrin.io/img/thumbnail.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@NormanPerrinOK" />
+	<meta name="twitter:creator" content="@NormanPerrinOK" />
+	<meta
+		name="twitter:title"
+		content="Workshop introductorio a Git y GitHub - Meetup"
+	/>
+	<meta
+		name="twitter:description"
+		content="Recursos y resumen del worshop dado en Córdoba para MET sobre Git y GitHub"
+	/>
+	<meta
+		name="twitter:url"
+		content="https://nperrin.io/es/meetup/workshop-introduccion-a-git.html"
+	/>
+	<meta name="twitter:image" content="https://nperrin.io/img/thumbnail.png" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link
+		rel="alternate home"
+		href="https://nperrin.io/feed/es/index.xml"
+		type="application/rss+xml"
+		hreflang="es"
+		title="Norman Perrin"
+	/>
+	<link
+		rel="alternate home"
+		href="https://nperrin.io/feed/index.xml"
+		type="application/rss+xml"
+		hreflang="en"
+		title="Norman Perrin"
+	/>
+	<link
+		rel="alternate"
+		hreflang="en"
+		href="https://nperrin.io/meetup/workshop-introduction-to-git.html"
+	/>
+	<meta name="og:locale" content="es_ES" />
+	<meta property="og:locale:alternate" content="en_US" />
+	<link rel="stylesheet" href="/css/general.css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Eczar&display=swap"
+		rel="stylesheet"
+	/>
 
-	<body>
-		<header id="title-block-header">
-			<div>
-				<nav id="hierarchy" role="navigation">
-					<a href="/es">nperrin</a><span> → </span
-					><a href="/es/meetup">meetup</a><span> → </span
-					><span>workshop-introduccion-a-git</span>
-				</nav>
-				<a href="/meetup/workshop-introduction-to-git.html" class="mobile-hide"
-					>English</a
-				>
-				<a href="/meetup/workshop-introduction-to-git.html" class="desktop-hide"
-					>EN</a
-				>
+	<header id="title-block-header">
+		<div>
+			<nav id="hierarchy" role="navigation">
+				<a href="/es">nperrin</a><span> → </span><a href="/es/meetup">meetup</a
+				><span> → </span><span>workshop-introduccion-a-git</span>
+			</nav>
+			<a href="/meetup/workshop-introduction-to-git.html" class="mobile-hide"
+				>English</a
+			>
+			<a href="/meetup/workshop-introduction-to-git.html" class="desktop-hide"
+				>EN</a
+			>
+		</div>
+	</header>
+	<main>
+		<article class="h-entry">
+			<h1 class="p-name">Workshop introductorio a Git y GitHub</h1>
+			<div class="e-content">
+				<p>Una oportunidad de ayudar que surgió de muy poco.</p>
+				<p>
+					Hace poco en la <a href="https://webconf.tech/">WebConf</a> que se
+					hizo en Córdoba conocí a
+					<a href="https://twitter.com/JessiePenaloza">Jessi</a> que me mencionó
+					de un grupo de programadores que querían aprender Git… al usarlo todos
+					los días ofrecí mi ayuda. Me dió el OK y de 1 semana a otra ya me
+					había comprometido a presentar esta herramienta.
+				</p>
+				<p>
+					Inicialmente iba a ser una presentación, pero al no ser tantos,
+					terminamos haciendo un
+					<a href="/es/tech/guia-introduccion-a-git">workshop o guía</a> que
+					preparé.
+				</p>
+				<p>
+					El grupo de acá (sigo en Córdoba) es genial. No solo me junté con
+					ellos para la presentación sino que me invitaron después al próximo
+					meetup que hicieron (se juntan todos los sábados).
+				</p>
+				<p>
+					Acá la única foto mía en el workshop dando la introducción (no mi foto
+					más agraciada):
+				</p>
+				<figure>
+					<img
+						src="/img/meetup/workshop-introduccion-a-git/norman-explicando-git-en-cordoba.jpg"
+						alt=""
+					/>
+					<figcaption>norman explicando git en cordoba para MET</figcaption>
+				</figure>
+				<p>
+					Y para el segundo meetup tuvimos alto host gracias a
+					<a href="https://picanteverde.wordpress.com/">picante verde</a>.
+				</p>
+				<figure>
+					<img
+						src="/img/meetup/workshop-introduccion-a-git/vista-meetup-cordoba.jpeg"
+						alt=""
+					/>
+					<figcaption>vista meetup MET en Córdoba</figcaption>
+				</figure>
+				<figure>
+					<img
+						src="/img/meetup/workshop-introduccion-a-git/tirando-magia-en-cordoba-con-genias-de-met.jpeg"
+						alt=""
+					/>
+					<figcaption>tirando magia en cordoba con genias de MET</figcaption>
+				</figure>
+				<p>
+					Este grupo recién está empezando así que no tiene una estructura
+					todavía. Espero noticias de ellos.
+				</p>
+				<p>Y gracias por la buena onda.</p>
 			</div>
-		</header>
-		<main>
-			<article class="h-entry">
-				<h1 class="p-name">Workshop introductorio a Git y GitHub</h1>
-				<p><em>Última actualización: 2019/05/18 00:00:00</em></p>
-				<div class="e-content">
-					<p>Una oportunidad de ayudar que surgió de muy poco.</p>
-					<p>
-						Hace poco en la <a href="https://webconf.tech/">WebConf</a> que se
-						hizo en Córdoba conocí a
-						<a href="https://twitter.com/JessiePenaloza">Jessi</a> que me
-						mencionó de un grupo de programadores que querían aprender Git… al
-						usarlo todos los días ofrecí mi ayuda. Me dió el OK y de 1 semana a
-						otra ya me había comprometido a presentar esta herramienta.
-					</p>
-					<p>
-						Inicialmente iba a ser una presentación, pero al no ser tantos,
-						terminamos haciendo un
-						<a href="/es/tech/guia-introduccion-a-git">workshop o guía</a> que
-						preparé.
-					</p>
-					<p>
-						El grupo de acá (sigo en Córdoba) es genial. No solo me junté con
-						ellos para la presentación sino que me invitaron después al próximo
-						meetup que hicieron (se juntan todos los sábados).
-					</p>
-					<p>
-						Acá la única foto mía en el workshop dando la introducción (no mi
-						foto más agraciada):
-					</p>
-					<figure>
-						<img
-							src="/img/meetup/workshop-introduccion-a-git/norman-explicando-git-en-cordoba.jpg"
-							alt=""
-						/>
-						<figcaption>norman explicando git en cordoba para MET</figcaption>
-					</figure>
-					<p>
-						Y para el segundo meetup tuvimos alto host gracias a
-						<a href="https://picanteverde.wordpress.com/">picante verde</a>.
-					</p>
-					<figure>
-						<img
-							src="/img/meetup/workshop-introduccion-a-git/vista-meetup-cordoba.jpeg"
-							alt=""
-						/>
-						<figcaption>vista meetup MET en Córdoba</figcaption>
-					</figure>
-					<figure>
-						<img
-							src="/img/meetup/workshop-introduccion-a-git/tirando-magia-en-cordoba-con-genias-de-met.jpeg"
-							alt=""
-						/>
-						<figcaption>tirando magia en cordoba con genias de MET</figcaption>
-					</figure>
-					<p>
-						Este grupo recién está empezando así que no tiene una estructura
-						todavía. Espero noticias de ellos.
-					</p>
-					<p>Y gracias por la buena onda.</p>
-				</div>
-			</article>
-		</main>
-		<footer>
-			<div class="h-card p-author hcard vcard" style="display:none;">
-				<img
-					rel="me"
-					class="u-photo"
-					alt="Norman Perrin blurred"
-					src="/img/me.jpeg"
-				/>
-				<br />
-				<span>Name:</span>
-				<a class="p-name u-url" rel="me" href="https://nperrin.io/"
-					>Norman Perrin</a
-				>
-				<br />
-				<span>Twitter:</span>
-				<a class="u-url" rel="me" href="https://twitter.com/normanperrinok"
-					>@NormanPerrinOK</a
-				>
-				<br />
-				<span>Github:</span>
-				<a class="u-url" rel="me" href="https://github.com/normanperrin"
-					>normanperrin</a
-				>
-				<br />
-				<span>Jobs:</span>
-				<span class="p-job-title">Developer, Freelancer, Consultant</span>
-				<br />
-				<span>PGP Key:</span>
-				<a rel="pgpkey authn" href="/nperrin.asc" class="u-key"
-					>0xDD6DD4CB21147E87</a
-				>
-			</div>
-		</footer>
-	</body>
+		</article>
+	</main>
 </html>

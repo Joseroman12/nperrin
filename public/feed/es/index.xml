@@ -13,87 +13,42 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Thu, 15 Aug 2019 12:40:17 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 01 Sep 2019 23:17:42 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/es/index.xml" rel="self" type="application/rss+xml"/>
 		<item>
-			<title>Analista programador</title>
-			<link>https://nperrin.io/es/trabajo/snoop-consulting</link>
-			<description>Trabajo como Analista programador en Snoop Consulting</description>
-			<category>Trabajo</category>
-			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/snoop-consulting</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Profesor</title>
-			<link>https://nperrin.io/es/trabajo/puerta-18</link>
-			<description>Trabajo como profesor en Puerta 18</description>
-			<category>Trabajo</category>
-			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/puerta-18</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Programador Fullstack</title>
-			<link>https://nperrin.io/es/trabajo/novit</link>
-			<description>Trabajo como programador Fullstack en Novit</description>
-			<category>Trabajo</category>
-			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/novit</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Programador Fullstack</title>
-			<link>https://nperrin.io/es/trabajo/freelance</link>
-			<description>Trabajo como Programador Fullstack independiente</description>
-			<category>Trabajo</category>
-			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/freelance</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Colaborador</title>
-			<link>https://nperrin.io/es/trabajo/comunidad-it</link>
-			<description>Mi trabajo como colaborador en Comunidad IT</description>
-			<category>Trabajo</category>
-			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/comunidad-it</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Acerca de</title>
-			<link>https://nperrin.io/es/acerca-de</link>
-			<description>Información acerca de Norman Perrin</description>
-			<category>Main</category>
-			<pubDate>Thu, 15 Aug 2019 12:37:32 -0300</pubDate>
-			<guid>https://nperrin.io/es/acerca-de</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Mejoras</title>
-			<link>https://nperrin.io/es/mejoras</link>
-			<description>Cosas que quiero mejorar del sitio</description>
-			<category>Main</category>
-			<pubDate>Sun, 11 Aug 2019 19:21:12 -0300</pubDate>
-			<guid>https://nperrin.io/es/mejoras</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
 			<title>Inicio</title>
-			<link>https://nperrin.io/es</link>
-			<description>Página de inicio de Norman Perrin</description>
+			<link>https://nperrin.io/es/index.html</link>
+			<description>Sitio para subir lo que se me cruza por la cabeza, y aparte algunas cosas útiles como guías técnicas</description>
 			<category>Main</category>
-			<pubDate>Sat, 10 Aug 2019 16:28:32 -0300</pubDate>
-			<guid>https://nperrin.io/es</guid>
+			<pubDate>Sun, 01 Sep 2019 20:05:08 -0300</pubDate>
+			<guid>https://nperrin.io/es/index.html</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 		<item>
-			<title>Consultor técnico</title>
-			<link>https://nperrin.io/es/trabajo/nobility</link>
-			<description>Trabajo como Consultor técnico en Nobility</description>
+			<title>Tech</title>
+			<link>https://nperrin.io/es/tech/index.html</link>
+			<description>Guías, machetes, explicaciones, cosas relacionadas a la tecnología y proyectos</description>
+			<category>Tech</category>
+			<pubDate>Sat, 10 Aug 2019 16:24:36 -0300</pubDate>
+			<guid>https://nperrin.io/es/tech/index.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Artículo</title>
+			<link>https://nperrin.io/es/articulo/index.html</link>
+			<description>Pensamientos, reflexiones, y cosas random</description>
+			<category>Articulo</category>
+			<pubDate>Sat, 10 Aug 2019 16:22:48 -0300</pubDate>
+			<guid>https://nperrin.io/es/articulo/index.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
+		<item>
+			<title>Trabajo</title>
+			<link>https://nperrin.io/es/trabajo/index.html</link>
+			<description>Algunos trabajos que hice</description>
 			<category>Trabajo</category>
-			<pubDate>Sat, 10 Aug 2019 16:25:34 -0300</pubDate>
-			<guid>https://nperrin.io/es/trabajo/nobility</guid>
+			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
+			<guid>https://nperrin.io/es/trabajo/index.html</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 	</channel>
