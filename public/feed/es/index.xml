@@ -13,8 +13,17 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Sun, 01 Sep 2019 23:39:06 -0300</lastBuildDate>
+		<lastBuildDate>Mon, 02 Sep 2019 22:44:00 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/es/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Empezando un dia 2</title>
+			<link>https://nperrin.io/es/articulo/empezando-un-dia-2.html</link>
+			<description>Primer día de septiembre para mi, y unas reflexiones sobre el hábito de comer</description>
+			<category>Articulo</category>
+			<pubDate>Mon, 02 Sep 2019 21:15:45 -0300</pubDate>
+			<guid>https://nperrin.io/es/articulo/empezando-un-dia-2.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Septiembre</title>
 			<link>https://nperrin.io/es/articulo/septiembre.html</link>
@@ -85,15 +94,6 @@
 			<category>Tech</category>
 			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/es/tech/guia-introduccion-a-git.html</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Política Privacidad</title>
-			<link>https://nperrin.io/es/politica-privacidad.html</link>
-			<description>Política privacidad de nperrin.io</description>
-			<category>Main</category>
-			<pubDate>Wed, 17 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/politica-privacidad.html</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 	</channel>

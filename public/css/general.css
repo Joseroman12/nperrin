@@ -145,6 +145,18 @@ img {
   max-width: 100%;
 }
 
+hr {
+  border: 0;
+}
+hr::after {
+  content: "•\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0•\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0•\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0•\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0\0000a0•";
+  margin: 1.389rem auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  color: #444;
+}
+
 figcaption {
   font-style: italic;
 }
