@@ -13,8 +13,17 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Mon, 02 Sep 2019 22:49:14 -0300</lastBuildDate>
+		<lastBuildDate>Tue, 03 Sep 2019 09:45:49 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Starting the day 2</title>
+			<link>https://nperrin.io/post/starting-the-day-2.html</link>
+			<description>First day of september for me, and some thoughts on the habit of eating</description>
+			<category>Post</category>
+			<pubDate>Tue, 03 Sep 2019 08:47:50 -0300</pubDate>
+			<guid>https://nperrin.io/post/starting-the-day-2.html</guid>
+			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>September</title>
 			<link>https://nperrin.io/post/september.html</link>
@@ -85,15 +94,6 @@
 			<category>Post</category>
 			<pubDate>Tue, 30 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/post/why-using-rss-feed.html</guid>
-			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Thanks</title>
-			<link>https://nperrin.io/thanks.html</link>
-			<description>Deserved credit list</description>
-			<category>Main</category>
-			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/thanks.html</guid>
 			<source url="https://nperrin.io/feed/index.xml">nperrin</source>
 		</item>
 	</channel>
