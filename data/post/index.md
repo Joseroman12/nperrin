@@ -9,6 +9,7 @@ Thoughts, reflections, and random stuff.
 
 <nav id="file">
 	<ul>
+		<li>[<span class="mobile-hide">2019/09/03 - </span>starting-the-day-2](/post/starting-the-day-2)</li>
 		<li>[<span class="mobile-hide">2019/09/01 - </span>september](/post/september)</li>
 		<li>[<span class="mobile-hide">2019/09/01 - </span>before-reading](/post/before-reading)</li>
 		<li>[<span class="mobile-hide">2019/07/30 - </span>why-using-rss-feed](/post/why-using-rss-feed)</li>
