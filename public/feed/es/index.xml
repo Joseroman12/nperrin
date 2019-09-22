@@ -13,8 +13,17 @@
 			<width>140</width>
 			<height>140</height>
 		</image>
-		<lastBuildDate>Tue, 03 Sep 2019 09:54:27 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 22 Sep 2019 10:41:31 -0300</lastBuildDate>
 		<atom:link href="https://nperrin.io/feed/es/index.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Introducción a Git y GitHub</title>
+			<link>https://nperrin.io/es/tech/guia-introduccion-a-git.html</link>
+			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
+			<category>Tech</category>
+			<pubDate>Sun, 22 Sep 2019 10:29:44 -0300</pubDate>
+			<guid>https://nperrin.io/es/tech/guia-introduccion-a-git.html</guid>
+			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
+		</item>
 		<item>
 			<title>Empezando un día 2</title>
 			<link>https://nperrin.io/es/articulo/empezando-un-dia-2.html</link>
@@ -85,15 +94,6 @@
 			<category>Main</category>
 			<pubDate>Sun, 28 Jul 2019 00:00:00 -0300</pubDate>
 			<guid>https://nperrin.io/es/gracias.html</guid>
-			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
-		</item>
-		<item>
-			<title>Introducción a Git y GitHub</title>
-			<link>https://nperrin.io/es/tech/guia-introduccion-a-git.html</link>
-			<description>Guía introductoria teórica y práctica de Git y GitHub</description>
-			<category>Tech</category>
-			<pubDate>Wed, 24 Jul 2019 00:00:00 -0300</pubDate>
-			<guid>https://nperrin.io/es/tech/guia-introduccion-a-git.html</guid>
 			<source url="https://nperrin.io/feed/es/index.xml">nperrin</source>
 		</item>
 	</channel>
