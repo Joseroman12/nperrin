@@ -2,7 +2,7 @@
 pre-title: Guía
 title: Introducción a Git y GitHub
 description: Guía introductoria teórica y práctica de Git y GitHub
-date: 2019/07/24 00:00:00
+date: 2019/09/22 10:29:44
 show-toc: true
 toc-title: Tabla de contenidos
 includes-code: true
@@ -21,13 +21,15 @@ Cuando vean un contenedor de código.
 - Cuando hay algo rodeado entre `[]` significa que lo tienen que reemplazar por lo que les diga, omitiendo los corchetes.
 - Los cuadrados con código puede que tengan un scroll horizontal, si no entran.
 
+Por último, usando la terminal, sepan **dónde están parados**. Los comandos que ingresen van a ejecutarse en el directorio en donde estén parados con la terminal. Para ver dónde están, pueden  usar el comando `pwd`. Por seguridad, hagan todas sus pruebas desde una carpeta vacía que ustedes creen.
+
 ## Paso 0
 
 Para empezar vamos a tener algunos requisitos previos.
 
 1. **Terminal compatible con unix** instalada y lista para usar.
 2. **Conocimientos comandos básicos unix**, para manejarse entre archivos, crear carpetas, etc. desde la terminal (si no saben tampoco es problema, pero es algo menos que entender).
-3. **git** instalado en su máquina. Pueden confirmar que esté instalado escribiendo
+3. **git** instalado en su máquina. Pueden confirmar que esté instalado escribiendo.
 
 ```bash
 $ git --version
